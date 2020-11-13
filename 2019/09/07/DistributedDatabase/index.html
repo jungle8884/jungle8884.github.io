@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>分布式数据库 | blog of Jungle</title>
+  <meta name="keywords" content=" 分布式数据库 ">
+  <meta name="description" content="分布式数据库 | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍jungle （来源于高中时期同学叫我江哥）  本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 QQ: 983123369 email: &amp;#106;&amp;#117;&amp;#110;&amp;#x67;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍jungle （来源于高中时期同学叫我江哥）  本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 QQ: 983123369 email: &amp;#106;&amp;#117;&amp;#110;&amp;#x67;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2020-11-13T11:48:22.886Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/jaytp/activities" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:jungle8884@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(66)</small></div></li>
+    
+        
+            
+            <li><div data-rel="机器学习">机器学习<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="设计模式">设计模式<small>(24)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="Java">Java<small>(18)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="笔记">笔记<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="读书">读书<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="计算机技术">计算机技术<small>(8)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="日志">日志<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="算法笔记">算法笔记<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="英语">英语<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="GitHub">GitHub<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="66">
+<input type="hidden" id="yelog_site_word_count" value="83k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>层次聚类</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>泛型</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>方法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>封装</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>划分聚类</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>基本数据类型</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集成开发环境</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>继承</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>可变参数</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>类</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>流程控制</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>模糊数学</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>匿名对象</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>人工神经网络</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>日期</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>入门模拟</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>软件设计师</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>时间</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数组</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>算法</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>循环跳出</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>阅读</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>运算符</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>重载</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ACO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Array</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ASCII码表</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C++</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Collections</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Comparable</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Comparator</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>final</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>GA</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github搜索</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JDK</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Math</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>object</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OOP设计的原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ss</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>static</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>String</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 计算机技术 "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a id="top" class="全部文章 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="写作"
+           data-author="" >
+            <span class="post-title" title="CET-6-Writing">CET-6-Writing</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2020/11/13/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2020-11-13 18:18:09">2020/11/13</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/11/09/Java-Note18/"
+           data-tag="Map"
+           data-author="" >
+            <span class="post-title" title="Java-Note18">Java-Note18</span>
+            <span class="post-date" title="2020-11-09 20:12:02">2020/11/09</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/11/06/Java-Note17/"
+           data-tag="Collections,Comparable,Comparator"
+           data-author="" >
+            <span class="post-title" title="Java-Note17">Java-Note17</span>
+            <span class="post-date" title="2020-11-06 20:04:51">2020/11/06</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/11/05/Java-Note16/"
+           data-tag="可变参数"
+           data-author="" >
+            <span class="post-title" title="Java-Note16">Java-Note16</span>
+            <span class="post-date" title="2020-11-05 18:57:21">2020/11/05</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/11/04/Java-Note15/"
+           data-tag="List,Set"
+           data-author="" >
+            <span class="post-title" title="Java-Note15">Java-Note15</span>
+            <span class="post-date" title="2020-11-04 18:57:20">2020/11/04</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/11/02/Java-Note14/"
+           data-tag="泛型"
+           data-author="" >
+            <span class="post-title" title="Java-Note14">Java-Note14</span>
+            <span class="post-date" title="2020-11-02 15:36:23">2020/11/02</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/10/19/Java-Note13/"
+           data-tag="集合"
+           data-author="" >
+            <span class="post-title" title="Java-Note13">Java-Note13</span>
+            <span class="post-date" title="2020-10-19 16:11:14">2020/10/19</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2020/10/16/Ado-net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 20:20:42">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 算法笔记 "
+           href="/2020/10/15/Algorithm-Sort/"
+           data-tag="C++,算法,排序"
+           data-author="" >
+            <span class="post-title" title="算法笔记-排序">算法笔记-排序</span>
+            <span class="post-date" title="2020-10-15 18:17:02">2020/10/15</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/10/14/Java-Note12/"
+           data-tag="java,object,时间,日期"
+           data-author="" >
+            <span class="post-title" title="Java-Note12">Java-Note12</span>
+            <span class="post-date" title="2020-10-14 19:28:01">2020/10/14</span>
+        </a>
+        
+        <a  class="全部文章 GitHub "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github搜索"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/10/10/Java-Note11/"
+           data-tag="java,final"
+           data-author="" >
+            <span class="post-title" title="Java-Note11">Java-Note11</span>
+            <span class="post-date" title="2020-10-10 09:50:47">2020/10/10</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2020/10/06/SQLite/"
+           data-tag="数据库"
+           data-author="" >
+            <span class="post-title" title="SQLite">SQLite</span>
+            <span class="post-date" title="2020-10-06 11:06:41">2020/10/06</span>
+        </a>
+        
+        <a  class="全部文章 算法笔记 "
+           href="/2020/09/28/Algorithm-Introduction2Simulate/"
+           data-tag="C++,算法,入门模拟"
+           data-author="" >
+            <span class="post-title" title="算法笔记-入门模拟">算法笔记-入门模拟</span>
+            <span class="post-date" title="2020-09-28 16:36:16">2020/09/28</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/09/25/Java-Note10/"
+           data-tag="java,抽象,Array,Math"
+           data-author="" >
+            <span class="post-title" title="Java-Note10">Java-Note10</span>
+            <span class="post-date" title="2020-09-25 16:44:38">2020/09/25</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/09/16/Java-Note9/"
+           data-tag="java,static"
+           data-author="" >
+            <span class="post-title" title="Java-Note9">Java-Note9</span>
+            <span class="post-date" title="2020-09-16 11:03:46">2020/09/16</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/09/13/Java-Note8/"
+           data-tag="匿名对象,ArrayList,String"
+           data-author="" >
+            <span class="post-title" title="Java-Note8">Java-Note8</span>
+            <span class="post-date" title="2020-09-13 19:31:32">2020/09/13</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/09/09/Java-Note7/"
+           data-tag="类,封装,继承,多态"
+           data-author="" >
+            <span class="post-title" title="Java-Note7">Java-Note7</span>
+            <span class="post-date" title="2020-09-09 09:55:39">2020/09/09</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/08/14/Java-Note6/"
+           data-tag="数组"
+           data-author="" >
+            <span class="post-title" title="Java-Note6">Java-Note6</span>
+            <span class="post-date" title="2020-08-14 10:34:18">2020/08/14</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/08/13/Java-Note5/"
+           data-tag="方法,重载"
+           data-author="" >
+            <span class="post-title" title="Java-Note5">Java-Note5</span>
+            <span class="post-date" title="2020-08-13 09:26:12">2020/08/13</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2020/08/12/IDE/"
+           data-tag="集成开发环境"
+           data-author="" >
+            <span class="post-title" title="IDE">IDE</span>
+            <span class="post-date" title="2020-08-12 18:15:20">2020/08/12</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/07/29/Java-Note4/"
+           data-tag="方法,流程控制,循环跳出"
+           data-author="" >
+            <span class="post-title" title="Java-Note4">Java-Note4</span>
+            <span class="post-date" title="2020-07-29 10:07:37">2020/07/29</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/07/02/Java-Note3/"
+           data-tag="ASCII码表,运算符"
+           data-author="" >
+            <span class="post-title" title="Java-Note3">Java-Note3</span>
+            <span class="post-date" title="2020-07-02 15:48:11">2020/07/02</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/07/01/Java-Note2/"
+           data-tag="基本数据类型"
+           data-author="" >
+            <span class="post-title" title="Java-Note2">Java-Note2</span>
+            <span class="post-date" title="2020-07-01 14:38:15">2020/07/01</span>
+        </a>
+        
+        <a  class="全部文章 Java "
+           href="/2020/06/14/Java-Note1/"
+           data-tag="JDK"
+           data-author="" >
+            <span class="post-title" title="Java_Note1">Java_Note1</span>
+            <span class="post-date" title="2020-06-14 15:39:51">2020/06/14</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/07/VistorPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="访问者模式">访问者模式</span>
+            <span class="post-date" title="2020-06-07 15:44:02">2020/06/07</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/07/TemplatePattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="模板模式">模板模式</span>
+            <span class="post-date" title="2020-06-07 15:43:46">2020/06/07</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/07/StrategyPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2020-06-07 15:42:40">2020/06/07</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/04/StatePattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="状态模式">状态模式</span>
+            <span class="post-date" title="2020-06-04 14:49:24">2020/06/04</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/02/MementoPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="备忘录模式">备忘录模式</span>
+            <span class="post-date" title="2020-06-02 11:56:53">2020/06/02</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/02/MediatorPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="中介者模式">中介者模式</span>
+            <span class="post-date" title="2020-06-02 11:56:29">2020/06/02</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/06/02/ObserverPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2020-06-02 10:45:56">2020/06/02</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/13/IteratorPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="迭代器模式">迭代器模式</span>
+            <span class="post-date" title="2020-05-13 21:37:35">2020/05/13</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/13/InterpreterPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="解释器模式">解释器模式</span>
+            <span class="post-date" title="2020-05-13 21:37:09">2020/05/13</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/13/CommandPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="命令模式">命令模式</span>
+            <span class="post-date" title="2020-05-13 21:36:42">2020/05/13</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/13/ChainOfResponsibilityPattern/"
+           data-tag="行为型模式"
+           data-author="" >
+            <span class="post-title" title="责任链模式">责任链模式</span>
+            <span class="post-date" title="2020-05-13 21:36:19">2020/05/13</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/13/ProxyPattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2020-05-13 21:35:20">2020/05/13</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/12/FlyweightPattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="享元模式">享元模式</span>
+            <span class="post-date" title="2020-05-12 17:06:14">2020/05/12</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/05/11/FacadePattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="外观模式">外观模式</span>
+            <span class="post-date" title="2020-05-11 14:58:28">2020/05/11</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/04/28/DecoratorPattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="装饰器模式">装饰器模式</span>
+            <span class="post-date" title="2020-04-28 23:11:44">2020/04/28</span>
+        </a>
+        
+        <a  class="全部文章 机器学习 "
+           href="/2020/04/03/ACO-and-GA/"
+           data-tag="ACO,GA"
+           data-author="" >
+            <span class="post-title" title="蚁群算法和遗传算法">蚁群算法和遗传算法</span>
+            <span class="post-date" title="2020-04-03 14:40:23">2020/04/03</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/21/CompositePattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="组合模式">组合模式</span>
+            <span class="post-date" title="2020-03-21 12:42:00">2020/03/21</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/21/BridgePattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="桥接模式">桥接模式</span>
+            <span class="post-date" title="2020-03-21 10:46:45">2020/03/21</span>
+        </a>
+        
+        <a  class="全部文章 机器学习 "
+           href="/2020/03/19/BP/"
+           data-tag="人工神经网络"
+           data-author="" >
+            <span class="post-title" title="误差反向传播算法(BackPropagation算法)">误差反向传播算法(BackPropagation算法)</span>
+            <span class="post-date" title="2020-03-19 14:49:40">2020/03/19</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/18/AdapterPattern/"
+           data-tag="结构型模式"
+           data-author="" >
+            <span class="post-title" title="适配器模式">适配器模式</span>
+            <span class="post-date" title="2020-03-18 15:45:39">2020/03/18</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/18/PrototypePattern/"
+           data-tag="创建型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2020-03-18 15:33:02">2020/03/18</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/17/BuilderPattern/"
+           data-tag="创建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2020-03-17 11:10:20">2020/03/17</span>
+        </a>
+        
+        <a  class="全部文章 机器学习 "
+           href="/2020/03/15/FuzzyPatternRecognition/"
+           data-tag="模糊数学"
+           data-author="" >
+            <span class="post-title" title="模糊模式识别">模糊模式识别</span>
+            <span class="post-date" title="2020-03-15 20:47:36">2020/03/15</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/15/SingletonPattern/"
+           data-tag="创建型模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2020-03-15 10:18:42">2020/03/15</span>
+        </a>
+        
+        <a  class="全部文章 机器学习 "
+           href="/2020/03/06/DIANA/"
+           data-tag="层次聚类"
+           data-author="" >
+            <span class="post-title" title="DIANA">DIANA</span>
+            <span class="post-date" title="2020-03-06 16:48:46">2020/03/06</span>
+        </a>
+        
+        <a  class="全部文章 机器学习 "
+           href="/2020/03/03/AGNES/"
+           data-tag="层次聚类"
+           data-author="" >
+            <span class="post-title" title="AGNES">AGNES</span>
+            <span class="post-date" title="2020-03-03 14:01:31">2020/03/03</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/03/01/AbstractFactoryPattern/"
+           data-tag="创建型模式"
+           data-author="" >
+            <span class="post-title" title="抽象工厂模式">抽象工厂模式</span>
+            <span class="post-date" title="2020-03-01 11:19:00">2020/03/01</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/02/29/Factory-Pattern/"
+           data-tag="创建型模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2020-02-29 21:28:36">2020/02/29</span>
+        </a>
+        
+        <a  class="全部文章 设计模式 "
+           href="/2020/02/29/OOP-Principle/"
+           data-tag="OOP设计的原则"
+           data-author="" >
+            <span class="post-title" title="OOP_Principle">OOP_Principle</span>
+            <span class="post-date" title="2020-02-29 20:16:36">2020/02/29</span>
+        </a>
+        
+        <a  class="全部文章 机器学习 "
+           href="/2020/02/27/k-means/"
+           data-tag="划分聚类"
+           data-author="" >
+            <span class="post-title" title="k_means">k_means</span>
+            <span class="post-date" title="2020-02-27 22:51:47">2020/02/27</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="软件设计师,原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 19:33:36">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫"
+           data-author="" >
+            <span class="post-title" title="网络爬虫">网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 计算机技术 "
+           href="/2019/09/07/DistributedDatabase/"
+           data-tag="分布式数据库"
+           data-author="" >
+            <span class="post-title" title="分布式数据库">分布式数据库</span>
+            <span class="post-date" title="2019-09-07 18:25:19">2019/09/07</span>
+        </a>
+        
+        <a  class="全部文章 笔记 "
+           href="/2019/08/31/PythonNote/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="PythonNote">PythonNote</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 笔记 "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 读书 "
+           href="/2019/08/10/ReadBook/"
+           data-tag="阅读"
+           data-author="" >
+            <span class="post-title" title="读书笔记">读书笔记</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 笔记 "
+           href="/2019/06/13/LearningofGit/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 学习记录">git 学习记录</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 日志 "
+           href="/2019/06/13/SurfTheInternet/"
+           data-tag="ss"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-DistributedDatabase" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">分布式数据库</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="计算机技术">计算机技术</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">分布式数据库</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2020-11-13 19:11:32'>2019-09-07 18:25</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:3.6k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%80%8F%E6%98%8E%EF%BC%9F%E8%A7%A3%E9%87%8A%E5%88%86%E5%B8%83%E5%BC%8F%E9%80%8F%E6%98%8E"><span class="toc-text">什么是透明？解释分布式透明:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B%E5%88%86%E5%B8%83%E5%BC%8F%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A1%88%E4%BE%8B%EF%BC%8C%E9%92%88%E5%AF%B9%E6%A1%88%E4%BE%8B%E9%98%90%E8%BF%B0%E4%BD%9C%E7%94%A8%E5%8F%8A%E7%89%B9%E7%82%B9-%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-text">举例分布式库系统案例，针对案例阐述作用及特点 [参考链接]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%90%E8%BF%B0%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF"><span class="toc-text">阐述分布式数据库系统的关键技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">课本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-text">第二章, 第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BE%E5%A0%82%E4%BD%9C%E4%B8%9A"><span class="toc-text">课堂作业</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BE%E6%9C%AC%E6%A6%82%E5%BF%B5-1"><span class="toc-text">课本概念</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0"><span class="toc-text">第四章</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BE%E5%A0%82%E4%BD%9C%E4%B8%9A-1"><span class="toc-text">课堂作业</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-text">第五章</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BE%E5%A0%82%E4%BD%9C%E4%B8%9A-2"><span class="toc-text">课堂作业</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="什么是透明？解释分布式透明"><a href="#什么是透明？解释分布式透明" class="headerlink" title="什么是透明？解释分布式透明:"></a>什么是透明？解释分布式透明:</h3><pre><code>- 透明: [客观存在但是根本感觉不到的特性]
+    - 计算机术语“透明”可能指客观存在并且运行着但是我们看不到的特性。
+    - 即它客观存在，但对于大多数、特定类别的开发人员而言是不需要了解的东西，这就是计算机学中所指的透明。
+    - 换种说法，透明就是一个黑盒，你只需要应用它给出的接口，而不需要了解其内在机理。
+- 分布式透明:
+    - 分布透明性: 用户看到的是全局数据模型的描述, 使用时不需要考虑数据的储存和执行的场地. [对不是本地的数据库的操作就像是操作本地数据库一样]
+    - 分片透明性: 用户在使用时不用考虑数据分片的细节, 数据分片的细节有系统自动完成.
+    - 复制透明性: 数据可以重复存储在不同的场地上, 由系统完成对荣誉数据的控制, 提高系统的可用性和可靠性.
+    - 场地自治性: 局部场地独立的自主运行能力.
+        - 包括如下:    
+            - 设计自治性: 独立决定本地数据库系统的设计
+            - 通信自治性: 独立决定如何与其他场地通信
+            - 执行自治性: 自主决定怎么局部操作</code></pre>
+<h3 id="举例分布式库系统案例，针对案例阐述作用及特点-参考链接"><a href="#举例分布式库系统案例，针对案例阐述作用及特点-参考链接" class="headerlink" title="举例分布式库系统案例，针对案例阐述作用及特点 [参考链接]"></a>举例分布式库系统案例，针对案例阐述作用及特点 [<a target="_blank" rel="noopener" href="https://github.com/alibaba/oceanbase/tree/master/oceanbase_0.4" title="github地址">参考链接</a>]</h3><pre><code>- 案例: 
+    - OceanBase[淘宝研发的千亿级海量数据库]
+- 作用:
+    - 实现了数千亿条记录、数百ＴＢ数据上的跨行跨表事务
+- 特点:
+    - 支持跨行跨表事务的特点，应用程序将因此而简单
+    - 数据分布式存储的特点，解决了容量问题，避免了分库分表策略给业务应用带来的复杂影响，解决了系统横向性能扩容问题
+    - 系统的自动容错处理，简化了系统的管理，提高了系统的可用性</code></pre>
+<h3 id="阐述分布式数据库系统的关键技术"><a href="#阐述分布式数据库系统的关键技术" class="headerlink" title="阐述分布式数据库系统的关键技术"></a>阐述分布式数据库系统的关键技术</h3><pre><code>- 分布式数据库设计
+    - 如何恰当地对数据进行分片设计, 以及如何合理分布数据于各个场地上
+    - 如何设定复制型和非复制型数据, 以及如何有效地评价其效益和代价
+    - 如何实现元数据管理
+- 查询处理
+    - 对于分布在不同场地上的数据, 如何解决事务到数据操作命令的转换问题
+    - 如何有效利用各场地的处理能力, 同时减少各场地间的数据通信代价
+    - 如何选择副本和执行场地, 以最小访问时间执行查询策略的优化问题
+- 并发控制
+    - 对多个用户并发访问的同步问题, 并保证数据的完整性和一致性
+    - 保证事务的一致性和隔离性问题
+    - 解决和预防死锁问题
+- 可靠性
+    - 系统故障恢复问题
+    - 事务的原子性和耐久性实现问题
+- 安全性
+    - 用户授权和认证问题
+    - 访问权限控制问题
+    - 数据的加密与解密</code></pre>
+<h3 id="课本概念"><a href="#课本概念" class="headerlink" title="课本概念"></a>课本概念</h3><ul>
+<li>外模式: 数据库用户的数据视图 [view], 可以看见和使用的局部数据的逻辑结构和特征的描述.</li>
+<li>模式:     关于数据库中全体数据的逻辑结构和特征的描述, 是所有用户的公共数据试图. [一张表的定义]</li>
+<li>内模式: 关于数据物理结构和存储方式的描述, 数据在数据库内部的表示方式.</li>
+<li>分布式数据库分为四层: 全局外层[用户层], 全局概念层, 局部概念层, 局部内层.</li>
+</ul>
+<hr>
+<h3 id="第二章-第三章"><a href="#第二章-第三章" class="headerlink" title="第二章, 第三章"></a>第二章, 第三章</h3><h4 id="课堂作业"><a href="#课堂作业" class="headerlink" title="课堂作业"></a>课堂作业</h4><ol>
+<li>系统结构: 包括组成系统的组件, 定义各组件的功能及组件之间的内部联系 和 彼此间的作用.<ul>
+<li>可以从不同的角度来描述一个系统的体系结构</li>
+<li>基于层次结构: 依据系统不同层次的功能描述系统的构成.</li>
+<li>基于组件结构: 定义系统的构成组件及组件间的关系.</li>
+<li>基于数据模式结构: 定义不同的数据类别结构及其相互关系, 定义不同的视图提供给相应的组件应用.</li>
+</ul>
+</li>
+<li>详细解释 图2-3 [page15] C/S结构, 客户端与用户打交道, 服务端完成数据的管理.</li>
+<li>事务管理的四个特性: <ul>
+<li>事务: 应用程序中一系列逻辑相关的操作，所有操作必须成功完成，否则在每个操作中所作的所有更改都会被撤消。</li>
+<li>原子性: 事务是数据库的逻辑工作单位，不可分割，事务中包含的各操作要么都做，要么都不做</li>
+<li>一致性: 事务执行的结果必须是使数据库从一个一致性状态变到另一个一致性状态<ul>
+<li>当数据库只包含成功事务提交的结果时，就说数据库处于一致性状态</li>
+<li>如果数据库系统运行中发生故障，有些事务尚未完成就被迫中断，这些未完成事务对数据库所做的修改有一部分已写入物理数据库，这时数据库就处于一种不正确的状态，或者说是 不一致的状态</li>
+</ul>
+</li>
+<li>隔离性: 一个事务的执行不能其它事务干扰 </li>
+<li>持续性: 也称永久性，指一个事务一旦提交，它对数据库中的数据的改变就应该是永久性的，不能回滚</li>
+</ul>
+</li>
+<li>同构和异构代表什么?<ul>
+<li>同构: 指的是一个保持结构的双射. [个人理解: 相同的结构]<ul>
+<li>数学中，一个由集合X映射至集合Y的函数，若对每一在Y内的y，存在唯一一个在X内的x与其对应，则此函数为双射函数。换句话说，f是双射的，如果其为两集合间的一一对应。即，同时为单射和满射。</li>
+<li>同构是在数学对象之间定义的一类映射，它能揭示出在这些对象的属性或者操作之间存在的关系。若两个数学结构之间存在同构映射，那么这两个结构叫做是同构的。</li>
+</ul>
+</li>
+<li>异构: 不同的结构.</li>
+</ul>
+</li>
+<li>分布式数据库的三个特性:  <ul>
+<li>分布性: 各组成单元是否位于同一场地上.</li>
+<li>异构性: 系统的各组成单元是否相同. [相同为同构, 不同为异构.]<ul>
+<li>数据异构性: 数据在格式, 语法和语义上存在不同.</li>
+<li>数据库系统异构性: 各场地上的局部数据库系统是否相同.</li>
+<li>平台异构性: 计算机系统是否相同.</li>
+</ul>
+</li>
+<li>自治性: 每个场地的独立自主能力.</li>
+</ul>
+</li>
+<li>分布式数据库怎么设计?<ul>
+<li>存在两种设计策略</li>
+<li>自上而下 [Top-Down]: 适用于新设计一个数据库系统, 从无到有的设计与实现过程.<ul>
+<li>需求分析</li>
+<li>概念设计</li>
+<li>分布设计</li>
+<li>分片设计</li>
+<li>分配设计</li>
+<li>物理设计</li>
+<li>系统调优</li>
+</ul>
+</li>
+<li>自下而上 [Bottom-Up]: 适用于已存在多个数据库系统, 并需要将它们集成为一个数据库的设计过程.<ul>
+<li>GAV [Global As View]</li>
+<li>LAV [Local As View]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>什么是分片, 分片的作用是什么? 如何分片?<ul>
+<li>分片: 对全局数据的划分.<ul>
+<li>片段: 分布式数据库中数据的存储单位, 分片的结果即片段.</li>
+<li>分配: 对片段的存储场地的指定.</li>
+</ul>
+</li>
+<li>分片的作用: <ul>
+<li>减少网络传输量. [允许复制存储]</li>
+<li>增大事务处理的局部性. [减少数据访问的时间]</li>
+<li>提高数据的可用性和查询效率. </li>
+<li>均衡负载. [就近访问]</li>
+</ul>
+</li>
+<li>如何分片: <ul>
+<li>遵循分片原则: <ul>
+<li>完备性: 所有全局数据必须映射到某个片段上.</li>
+<li>可重构性: 所有片段必须可以重新构成全局数据.</li>
+<li>不相交性: 划分的各片段所包含的数据的交集为空.</li>
+</ul>
+</li>
+<li>方法:<ul>
+<li>水平分片: 按行进行划分.</li>
+<li>垂直分片: 按列进行划分.</li>
+<li>混合分片: 既包括水平分片, 也包括垂直分片.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>分片的表示方法是什么?<pre><code> - 图像表示法
+     - 全局关系: 整体矩形
+     - 片段关系: 矩形的一部分
+     - 水平分段: 水平划分的部分
+     - 垂直分段: 垂直划分的部分
+     - 混合分段: 既有水平分段, 又有垂直分段.
+ - 分片树表示法
+     - 全局关系: 根节点
+     - 片段关系: 叶子节点
+     - 分片操作: 边</code></pre>
+</li>
+<li>分完片以后, 如何进行分配?  <pre><code> - 分为三种:
+     - 分割式分配: 每个片段只存储在一个场地上
+     - 全复制分配: 每个片段在每个场地上都有副本
+     - 部分复制分配: 每个片段只有在部分场地上有副本</code></pre>
+</li>
+</ol>
+<h4 id="课本概念-1"><a href="#课本概念-1" class="headerlink" title="课本概念"></a>课本概念</h4><ul>
+<li>AP: 应用处理器, 用于完成客户端的用户查询处理和分布式数据处理的软件模块.<ul>
+<li>用户接口: 检测用户身份, 接受用户命令.</li>
+<li>语义数据控制器: 视图管理, 安全控制, 语义完整性控制等.</li>
+<li>分布式查询处理器: 将用户命令翻译成数据库命令.</li>
+<li>分布式事务管理器</li>
+<li>全局字典</li>
+</ul>
+</li>
+<li>DP: 数据处理器, 负责进行数据管理的软件模块.<ul>
+<li>局部查询处理器: 分布式查询命令到局部命令的转换.</li>
+<li>局部事务管理器</li>
+<li>局部调度管理器</li>
+<li>局部恢复管理器</li>
+<li>存储管理器: 按调度命令访问数据库.</li>
+<li>局部字典</li>
+</ul>
+</li>
+<li>CM: 通信处理器, 负责为AP和DP在多个场地之间传送命令和数据.</li>
+<li>GES: 全局外模式: 全局用户视图. [具有分布透明性]</li>
+<li>GCS: 全局概念模式: 分布式数据库的整体抽象, 包含了全部数据特性和逻辑结构.<ul>
+<li>经过分片模式和分配模式映射到局部模式.</li>
+<li>分片模式: 描述全局数据的逻辑划分视图, 即根据某种条件将全局数据逻辑结构划分为局部数据逻辑结构. [分片透明性]</li>
+<li>分配模式: 描述局部数据逻辑的局部物理结构, 即划分后的片段的物理分配视图. [复制透明性]</li>
+</ul>
+</li>
+<li>GFS: 全局片段模式</li>
+<li>GAS: 全局分配模式</li>
+<li>LCS: 局部概念模式: 局部概念视图, 描述局部场地上的局部数据逻辑结构.</li>
+<li>LIS: 局部内模式: 局部物理视图, 对物理数据库的描述.</li>
+<li>P2PDBS: 对等数据库系统</li>
+<li>非集中的多数据库系统(DDBS和MDBS)分为四层模式结构:<ul>
+<li>局部模式 [Local schema]: 本地数据库的模式</li>
+<li>成员模式 [Member schema]: 本地数据库模式转换后的规范模式 [canonical model]</li>
+<li>输出模式 [export schema]: 本地模式允许被共享的数据模式</li>
+<li>联邦模式 [federated schema]: 描述内部输出模式的分布和分配特性</li>
+</ul>
+</li>
+<li>元数据: 描述基本数据的数据</li>
+<li>数据字典: 存放与系统有关的元数据和各种控制信息的数据库</li>
+</ul>
+<hr>
+<h3 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h3><h4 id="课堂作业-1"><a href="#课堂作业-1" class="headerlink" title="课堂作业"></a>课堂作业</h4><ol>
+<li>查询优化为什么要优化？<ul>
+<li>使局部处理代价和通信代价最小化，快速并且高效地得到查询结果。</li>
+</ul>
+</li>
+<li>优化的内容是什么，请举例说明。<ul>
+<li>内容: <ul>
+<li>执行运算的次序</li>
+<li>执行每种运算的方法</li>
+<li>所访问的副本场地</li>
+<li>执行运算的场地的选择</li>
+</ul>
+</li>
+<li>举例: 设有两张表SUPPLIER(S)和SUPPLY(SP)是分布式存储的, S和SP各分为两个场地, 即场地1~4; 现有查询场地5, 从它开始发出查询.<ul>
+<li>执行计划1: 所有场地的数据分片传到查询场地5并执行选择, 连接, 投影等运算.</li>
+<li>执行计划2: 首先在场地1、 场地2局部场地执行选择运算, 然后将选择运算的结果传输到场地3、 场地4, 对应地执行连接运算, 最后将场地3和场地4的连接结果传输到查询场地5.</li>
+<li>显然, 执行计划2所消耗的代价远远小于执行计划1.    </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如何把分片树转换成查询树。<ul>
+<li>将分片树的水平节点转换为查询树的并集节点</li>
+<li>将分片树的垂直节点转换为查询树的连接节点</li>
+<li>用替换后的分片树代替分布式查询树中的全局关系, 得到查询树.</li>
+</ul>
+</li>
+<li>写出下题中的查询语句，关系代数表示和全局查询树。<ul>
+<li>设有一供应关系数据库, 有供应者和供应关系, 具体如下:<ul>
+<li>供应者关系: SUPPLIER(SNO, SNAME, AREA)        SNO供应者编号, SNAME供应者姓名, AREA供应者所属地域</li>
+<li>供应关系: SUPPLY(SNO, PNO, QTY)            QTY数量</li>
+<li>零件关系: PART(PNO, PNAME)                    PNO零件号, PNAME零件名称</li>
+</ul>
+</li>
+<li>查询要求: 找出供应100号零件的供应者的姓名.<ul>
+<li>SQL: Select SNAME from SUPPLIER S, SUPPLY SP Where S.SNO = SP.SNO and SP.PNO = 100;</li>
+<li>关系代数: 见附件</li>
+<li>全局查询树: 见附件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h3><h4 id="课堂作业-2"><a href="#课堂作业-2" class="headerlink" title="课堂作业"></a>课堂作业</h4><ol>
+<li>什么是半连接? [semi-join]<ul>
+<li>在两个关系的连接操作结果上执行在其中一个关系属性上的投影.</li>
+<li>是在连接和投影操作基础上定义的一种导出关系代数操作, 是对全连接操作的一种缩减.</li>
+</ul>
+</li>
+<li>半连接的作用.<ul>
+<li>能够减少其左变元关系的基数的关系操作, 在以减少通信代价为优化目标的分布式查询中具有重要意义.</li>
+</ul>
+</li>
+<li>SDD-1优化技术.<ul>
+<li>目标: 最小化场地之间的数据传输量, 从而得到最小的总体时间代价.</li>
+<li>SDD算法由两部分组成: <ul>
+<li>基本算法: <ul>
+<li>对查询进行初始化</li>
+<li>选择收益最大的半连接策略</li>
+<li>选择连接执行场地</li>
+</ul>
+</li>
+<li>后优化处理:<ul>
+<li>将基本算法得到的执行策略进行修正, 以得到更合理的执行策略.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=38592976&auto=1&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>
