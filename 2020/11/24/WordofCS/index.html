@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>算法笔记-排序 | blog of Jungle</title>
-  <meta name="keywords" content=" 算法 , C++ , 排序 ">
-  <meta name="description" content="算法笔记-排序 | blog of Jungle">
+  <title>WordofCS | blog of Jungle</title>
+  <meta name="keywords" content=" 词汇 ">
+  <meta name="description" content="WordofCS | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人介绍jungle （来源于高中时期同学叫我江哥）  本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 QQ: 983123369 email: &amp;#x6a;&amp;#117;&amp;#110;&amp;#103;&amp;#">
 <meta property="og:type" content="website">
@@ -1095,11 +1095,13 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Algorithm-Sort" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-WordofCS" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">算法笔记-排序</h1>
+        <h1 class="article-title">WordofCS</h1>
     
     <div class="article-meta">
+        
+        <span class="top"><a>置顶</a></span>
         
         
         
@@ -1107,7 +1109,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="算法笔记">算法笔记</a>
+            <a  data-rel="英语">英语</a>
             
         </span>
         
@@ -1115,23 +1117,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">算法</a>
-            
-            <a class="color4">C++</a>
-            
-            <a class="color3">排序</a>
+            <a class="color3">词汇</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-11-13 19:11:32'>2020-10-15 18:17</time>
+            发布时间 : <time class="date" title='最后更新: 2020-11-24 17:22:30'>2020-11-24 17:21</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.6k</span>
+        <span>字数:2.2k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1161,7 +1159,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="toc-text">冒泡排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">运行结果</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="toc-text">选择排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-1"><span class="toc-text">运行结果</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="toc-text">插入排序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-2"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C-2"><span class="toc-text">运行结果</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#A1025"><span class="toc-text">A1025</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="toc-text">输入格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="toc-text">输出格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A0%B7%E4%BE%8B"><span class="toc-text">输入样例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B"><span class="toc-text">输出样例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-text">代码分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-text">代码实现</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8F%8A%E5%8E%9F%E7%90%86"><span class="toc-text">分布式数据库系统及原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Maching-Learning-%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD"><span class="toc-text">Maching Learning 基本术语</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-text">第二章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"><span class="toc-text">深度学习</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD"><span class="toc-text">计算机专业英语</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1177,277 +1175,364 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code>    #include &lt;cstdio&gt; 
-
-    /*数组作为参数时, 第一维不需要填写长度;
-    实际调用时也只需要填写数组名;
-    数组作为参数时, 在函数中对数组元素的修改就等同于是对原数组元素的修改.*/
-
-    void BubbleSort(int n, int arry[])&#123;
-        for(int i = 0; i &lt; n-1; i++)&#123;
-            for(int j = 0; j &lt; n-i; j++)&#123;
-                if(arry[j] &gt; arry[j+1])&#123;
-                    int temp = arry[j];
-                    arry[j] = arry[j+1];
-                    arry[j+1] = temp;
-                &#125;
-            &#125;
-        &#125;
-    &#125;
-
-    int main()&#123;
-        int a[5] = &#123;3, 1, 4, 5, 2&#125;;
-        BubbleSort(5, a);
-        for(int i = 0; i &lt; 5; i++)&#123;
-            printf(&quot;%d\t&quot;, a[i]);
-        &#125;
-
-        return 0;
-    &#125;</code></pre>
-<h2 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h2><pre><code>    1       2       3       4       5
-    --------------------------------
-    Process exited with return value 0
-    Press any key to continue . . .</code></pre>
+        <h1 id="分布式数据库系统及原理"><a href="#分布式数据库系统及原理" class="headerlink" title="分布式数据库系统及原理"></a>分布式数据库系统及原理</h1><ul>
+<li>Transaction    事务</li>
+<li>Concurrent    并发</li>
+<li>Parallel        并行</li>
+<li>DDBS            分布式数据库系统<ul>
+<li>Distributed Database System</li>
+<li>地理上分散而逻辑上集中的数据库系统</li>
+<li>DDBS = DDB + DDBMS</li>
+<li>分布式数据库系统 = 分布式数据库 + 分布式数据库管理系统</li>
+</ul>
+</li>
+<li>DB            数据库</li>
+<li>DBMS            数据库管理系统</li>
+<li>DB + DBMS = DBS    </li>
+<li>数据库 + 数据库管理系统 = 数据库系统</li>
+<li>SQL            结构化查询语言</li>
+<li>node            节点</li>
+<li>site            场地</li>
+<li>p                处理机</li>
+<li>M                内存</li>
+<li>D                磁盘</li>
+<li>Shared-Memery Architecture    共享内存系统</li>
+<li>Shared-Disk   Architecture    共享磁盘系统</li>
+<li>Shared-Nothing Architecture    无共享系统</li>
+<li>union            并                ∪</li>
+<li>intersect        交                ∩</li>
+<li>difference    差                -</li>
+<li>product        乘                ×</li>
+<li>divide        除                ÷</li>
+<li>selcect        选择                σ</li>
+<li>project        投影                π</li>
+<li>join            连接                ⋈</li>
+<li>schema        模式</li>
+<li>wrapper        包装器</li>
+<li>mediator        协调器</li>
+<li>MDBS            多数据库系统[multi-Database System]</li>
+<li>LDBS           局部数据库系统</li>
+<li>FDBS            联邦数据库系统</li>
+<li>P2PDBS        对等数据库系统</li>
+<li>P2P            peer-to-Peer    对等计算模型</li>
+<li>fragment        片段</li>
+<li>fragmentation    分片</li>
+<li>allocation    分配</li>
+<li>partition        分割</li>
+<li>replication    复制</li>
+<li>GDB            Global DB        全局数据库</li>
+<li>FDB            Fragment DB        片段数据库</li>
+<li>PDB            Physical DB        物理数据库</li>
+</ul>
 <hr>
-<h1 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h1><h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><pre><code>    #include &lt;cstdio&gt;
-
-    void SelectSort(int n, int A[])&#123;
-        for(int i = 0; i &lt; n; i++)&#123; //进行 n 趟操作 
-            int k = i;
-            for(int j = i; j &lt; n; j++)&#123; //每趟操作找出待排序部分[i, n]中最小的元素. 
-                if(A[j] &lt; A[k])&#123;
-                    k = j;
-                &#125;
-            &#125;
-            //k 是本趟操作中最小元素的 下标, A[k]与 第一个元素A[i]交换. 
-            int temp = A[i];
-            A[i] = A[k];
-            A[k] = temp; 
-        &#125;
-    &#125;
-
-    int main()&#123;
-        int a[5] = &#123;3, 1, 4, 5, 2&#125;;
-        SelectSort(5, a);
-        for(int i = 0; i &lt; 5; i++)&#123;
-            printf(&quot;%d\t&quot;, a[i]);
-        &#125;
-
-        return 0;
-    &#125; </code></pre>
-<h2 id="运行结果-1"><a href="#运行结果-1" class="headerlink" title="运行结果"></a>运行结果</h2><pre><code>    1       2       3       4       5
-    --------------------------------
-    Process exited with return value 0
-    Press any key to continue . . .    </code></pre>
-<hr>
-<h1 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h1><h2 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h2><pre><code>    #include &lt;cstdio&gt;
-    // #include &lt;algorithm&gt;
-    // using namespace std;
-
-    void InsertSort(int n, int A[])&#123;
-        for(int i = 1; i &lt; n; i++)&#123; //进行 n-1 趟
-            int temp = A[i], j = i; //temp 临时存放 A[i], j 从 i 开始枚举
-            while(j &gt; 0 &amp;&amp; temp &lt; A[j-1])&#123; //只要 temp 小于前一个元素 A[j-1] 
-                A[j] = A[j-1]; //把 A[j-1&#125; 后移一位至 A[j&#125; 
-                j--;
-            &#125;
-            A[j] = temp; //插入位置为j 
-        &#125;
-    &#125;
-
-    int main()&#123;
-        int a[6] = &#123;5, 2, 4, 6, 3, 1&#125;;
-        InsertSort(6, a);
-        //sort(a, a+6); //可以直接使用 c++ 自带的函数进行排序, 记得加上 #include &lt;algorithm&gt; 和  using namespace std;
-        for(int i = 0; i &lt; 6; i++)&#123;
-            printf(&quot;%d\t&quot;, a[i]);
-        &#125;
-
-        return 0;
-    &#125;</code></pre>
-<h2 id="运行结果-2"><a href="#运行结果-2" class="headerlink" title="运行结果"></a>运行结果</h2><pre><code>    1       2       3       4       5       6
-    --------------------------------
-    Process exited with return value 0
-    Press any key to continue . . .</code></pre>
-<hr>
-<h1 id="A1025"><a href="#A1025" class="headerlink" title="A1025"></a>A1025</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><ul>
-<li>Programming Ability Test (PAT) is organized by the College of Computer Science and Technology of Zhejiang University.</li>
-<li> Each test is supposed to run simultaneously in several places, and the ranklists will be merged immediately after the test. </li>
-<li> Now it is your job to write a program to correctly merge all the ranklists and generate the final rank.</li>
-</ul>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><ul>
-<li>Each input file contains one test case.</li>
-<li> For each case, the first line contains a positive number N (≤100), the number of test locations. </li>
-<li>Then N ranklists follow, each starts with a line containing<ul>
-<li> a positive integer K (≤300), the number of testees, </li>
-<li>and then K lines containing <ul>
-<li> the registration number (a 13-digit number) </li>
-<li> and the total score of each testee. </li>
+<h1 id="Maching-Learning-基本术语"><a href="#Maching-Learning-基本术语" class="headerlink" title="Maching Learning 基本术语"></a>Maching Learning 基本术语</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><ul>
+<li>model 模型【learning algorithm 学习算法】</li>
+<li>data set        数据集<ul>
+<li>记录的集合</li>
+<li>每条记录是关于一个事件或对象的描述</li>
 </ul>
 </li>
+<li>instance        示例<ul>
+<li>【或 sample 样本】</li>
+<li>【一个示例就是一条记录】</li>
 </ul>
 </li>
-<li> All the numbers in a line are separated by a space.</li>
-</ul>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><ul>
-<li><p>For each test case, first print in one line the total number of testees. </p>
-</li>
-<li><p>Then print the final ranklist in the following format:</p>
-<pre><code>  registration_number final_rank location_number local_rank</code></pre>
-</li>
-<li><p>The locations are numbered from 1 to N. </p>
-</li>
-<li><p>The output must be sorted in nondecreasing order of the final ranks. </p>
-</li>
-<li><p>The testees with the same score must have the same rank, and the output must be sorted in nondecreasing order of their registration numbers.</p>
-</li>
-</ul>
-<h2 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例"></a>输入样例</h2><pre><code>2
-5
-1234567890001 95
-1234567890005 100
-1234567890003 95
-1234567890002 77
-1234567890004 85
-4
-1234567890013 65
-1234567890011 25
-1234567890014 100
-1234567890012 85</code></pre>
-<h2 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例"></a>输出样例</h2><pre><code>9
-1234567890005 1 1 1
-1234567890014 1 2 1
-1234567890001 3 1 2
-1234567890003 3 1 2
-1234567890004 5 1 4
-1234567890012 5 2 2
-1234567890002 7 1 5
-1234567890013 8 2 3
-1234567890011 9 2 4</code></pre>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><ol>
-<li>可以用结构体类型Student存放题目要求的信息: <ul>
-<li>准考证号: registration_number</li>
-<li>分数: score</li>
-<li>总排名: final_rank</li>
-<li>考场号: location_number</li>
-<li>考场内排名: local_rank</li>
+<li>attribute        属性<ul>
+<li>或 [反应事件或对象在某方面的表现或性质的事项.]</li>
 </ul>
 </li>
-<li>可以使用 C++ 自带的 sort() 函数<ul>
-<li>需要引入 #include <algorithm></li>
-<li>需要写一个排序函数 cmp 传入sort 使用.</li>
+<li>feature        特征</li>
+<li>attribute value    属性值</li>
+<li>attribute space    属性空间<ul>
+<li>属性张成的空间</li>
 </ul>
 </li>
-<li>算法步骤:<ul>
-<li>步骤一:<ul>
-<li>按考场读入各考生的信息, 并对当前读入考场的所有考生进行排序. </li>
-<li>之后将该考场的所有考生的排名写入他们的结构体中.</li>
+<li>sample space      样本空间</li>
+<li>feature vector    特征向量</li>
+<li>dimensionality    维数</li>
+<li>traning data        训练数据</li>
+<li>traning sample    训练样本<ul>
+<li>或</li>
 </ul>
 </li>
-<li>步骤二: 对所有考生进行排序.</li>
-<li>步骤三: <ul>
-<li>按顺序一边计算总排名,</li>
-<li>一边输出所有考生的信息.</li>
+<li>traning instance    训练示例</li>
+<li>traning set        训练集<ul>
+<li>训练样本组成的集合</li>
 </ul>
 </li>
+<li>hypothesis        假设</li>
+<li>ground-truth        真相【潜在规律】</li>
+<li>learner            学习器【模型】<ul>
+<li>有时将模型称为 “学习器”, 可看作学习算法在给定数据和参数空间上的实列话.</li>
 </ul>
 </li>
+<li>prediction        预测</li>
+<li>label                标记</li>
+<li>example            样例【拥有了标记信息的示例】<ul>
+<li>(Xi,yi) 表示第i个样例</li>
+</ul>
+</li>
+<li>label    space        标记空间【或 输出空间】<ul>
+<li>Xi 是一个示例</li>
+<li>yi 是示例Xi的标记</li>
+<li>Y 是所有标记yi的集合</li>
+</ul>
+</li>
+<li>classification    分类<ul>
+<li>预测的是离散值</li>
+</ul>
+</li>
+<li>regression        回归<ul>
+<li>预测的是连续值</li>
+</ul>
+</li>
+<li>binary classification    二分类<ul>
+<li>只涉及两个类别</li>
+<li> positive    class    正类</li>
+<li> negative class    反类</li>
+</ul>
+</li>
+<li>multi-class classification    多分类<ul>
+<li> 涉及多个类别</li>
+</ul>
+</li>
+<li>testing            测试【进行预测的过程】</li>
+<li>testing sample    测试样本【被预测的样本】</li>
+<li>clustering          聚类【将训练集中的西瓜分为若干组】</li>
+<li>cluster            簇【每一组称为一个簇】</li>
+<li>supervised learning    监督学习<ul>
+<li>分类</li>
+<li>回归</li>
+</ul>
+</li>
+<li>unsupervised learning 无监督学习【事先不知道，而且学习过程中使用的训练样本通常不拥有标记信息】<ul>
+<li>聚类</li>
+</ul>
+</li>
+<li>generalization    泛化【学的模型适用于新样本的能力】</li>
+<li>distribution        分布</li>
+<li>independent and identically distributed     独立同分布<ul>
+<li>abbreviated as i.i.d</li>
+</ul>
+</li>
+<li>induction            归纳<ul>
+<li>特殊到一般的 “泛化”[generalization] 过程</li>
+<li>从具体的事实归结出一般性规律</li>
+<li>从样例中学习显然是一个归纳的过程</li>
+</ul>
+</li>
+<li>deduction            演绎<ul>
+<li>一般到特殊的 “特化”[specialization] 过程</li>
+<li>从基础原理推演处具体状况</li>
+<li>基于一组公理和推导规则推导出与之相恰的定理</li>
+</ul>
+</li>
+<li>inductive learning    归纳学习<ul>
+<li>从样例中学习        [广义上的]</li>
+<li>从训练数据中学得概念[狭义上的, 又称概念学习]</li>
+</ul>
+</li>
+<li>concept        概念</li>
+<li>fit            匹配</li>
+<li>version space 版本空间<ul>
+<li>【存在着一个与训练集一致的“假设集合”，称为版本空间】</li>
+</ul>
+</li>
+<li>inductive bias    归纳偏好<ul>
+<li>【机器学习算法在学习过程中对某种类型假设的偏好】</li>
+<li>任何一个有效的机器学习算法必有其归纳偏好，</li>
+<li>否则它将被假设空间中在训练集中看似“等效”的假设所迷惑，而无法产生确定的学习结果。</li>
+<li>【算法的归纳偏好是否与问题本身匹配，大多数时候决定了算法能否取得好的性能。】</li>
+</ul>
+</li>
+<li>Occam’s razor 奥卡姆剃刀 【一种常用的, 自然科学研究中最基本的原则】<ul>
+<li> 若有多个假设与观察一致, 则选择最简单的那个.</li>
+</ul>
+</li>
+<li>NFL    No Free Lunch Theorem “没有免费的午餐”定理</li>
+</ul>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><ol>
+<li>error rate 错误率</li>
+<li>accuracy 精度</li>
+<li>error 误差</li>
+<li>在训练集上的误差:    <ol>
+<li>training error 训练误差</li>
+<li>或 empirical error 经验误差</li>
 </ol>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><pre><code>    #include &lt;cstdio&gt;
-    #include &lt;cstring&gt;
-    #include &lt;algorithm&gt;
-    using namespace std; 
-
-    struct Student &#123;
-        char registration_number[15]; //准考证号
-        int score; //分数
-        int location_number; //考场号 
-        int local_rank; //考场内排名 
-        int final_rank; //总排名 
-    &#125;stu[30010]; 
-
-    bool cmp(Student a, Student b)&#123;
-        if (a.score != b.score)  
-            return a.score &gt; b.score; //先按分数从高到低进行排序
-        else 
-            return strcmp(a.registration_number, b.registration_number) &lt; 0; //分数相同按准考证号从小到大排序 
-    &#125;
-
-
-
-    int main()&#123;
-
-        int n, k, num = 0; //num为总考生人数, k代表该考场的考生人数 
-        scanf(&quot;%d&quot;, &amp;n); //n为考场数 
-
-        //步骤一 
-        for(int i = 1; i &lt;= n; i++)&#123;
-            scanf(&quot;%d&quot;, &amp;k); //该考场人数
-            for(int j = 0; j &lt; k; j++)&#123;
-                scanf(&quot;%s %d&quot;, stu[num].registration_number, &amp;stu[num].score);
-                stu[num].location_number = i; //该考生的考场号为i
-                num++; 
-            &#125; 
-            sort(stu+num-k, stu+num, cmp); //将该考场的考生排序
-            stu[num-k].local_rank = 1; //该考场第一名的local_rank记为1 
-            printf(&quot;%s &quot;, stu[0].registration_number);
-            printf(&quot;%d %d\n&quot;, stu[0].location_number, stu[0].local_rank);
-            for(int j = num-k+1; j &lt; num; j++)&#123; //对该考场剩余的考生 
-                if(stu[j].score == stu[j-1].score)&#123; //如果与前一位考生同分
-                    //local_rank也相同
-                    stu[j].local_rank = stu[j-1].local_rank; 
-                &#125; else&#123; //如果与前一位考生不同分 
-                    //local_rank为该考生前的人数 
-                    stu[j].local_rank = j+1 - (num-k); //j+1是下标从0开始;  - (num-k)是为了抵消前面for循环赋值. 
-                &#125;
-                printf(&quot;%s &quot;, stu[j].registration_number);
-                printf(&quot;%d %d\n&quot;, stu[j].location_number, stu[j].local_rank);
-            &#125; 
-        &#125; 
-        printf(&quot;%d\n&quot;, num); //输出总考生人数
-        //步骤二 
-        sort(stu, stu+num, cmp); //将所有考生排名 
-        //步骤三 
-        int r = 1; //当前考生的排名
-        for(int i = 0; i &lt; num; i++)&#123;
-            stu[i].final_rank = r; //当前考生的总排名 
-            if(i &gt; 0 &amp;&amp; stu[i].score != stu[i-1].score)&#123; //从stu[1], 第二个考生开始判断. 
-                r = i+1; //当前考生与上一个考生分数不同时, 让r更新为人数+1. 
-                stu[i].final_rank = r; //更新总排名 
-            &#125; 
-            printf(&quot;%s &quot;, stu[i].registration_number);
-            printf(&quot;%d %d %d\n&quot;, stu[i].final_rank, stu[i].location_number, stu[i].local_rank); 
-        &#125; 
-
-        return 0;
-    &#125; </code></pre>
-<p>运行结果: </p>
-<pre><code>    2
-    5
-    1234567890001 95
-    1234567890005 100
-    1234567890003 95
-    1234567890002 77
-    1234567890004 85
-    4
-    1234567890013 65
-    1234567890011 25
-    1234567890014 100
-    1234567890012 85
-    9
-    1234567890005 1 1 1
-    1234567890014 1 2 1
-    1234567890001 3 1 2
-    1234567890003 3 1 2
-    1234567890004 5 1 4
-    1234567890012 5 2 2
-    1234567890002 7 1 5
-    1234567890013 8 2 3
-    1234567890011 9 2 4
-
-    --------------------------------
-    Process exited with return value 0
-    Press any key to continue . . .</code></pre>
+</li>
+<li>在新样本上的误差: generalization error 泛化误差</li>
+<li>overfitting 过拟合<ol>
+<li>把训练样本自身的一些特点当作了所有潜在样本都会具有的一般性质, 导致泛化性能下降.</li>
+<li>学习能力过于强大, 以至于把训练样本不一般的特性都学到了.</li>
+<li>过拟合是机器学习的关键障碍.</li>
+<li>过拟合是无法彻底避免的.</li>
+</ol>
+</li>
+<li>underfitting 欠拟合[学习能力低下造成, 比较容易克服.]</li>
+<li>model selection 模型选择</li>
+<li>testing set 测试集</li>
+<li>testing error 测试误差</li>
+<li>评估方法<ol>
+<li>hold-out 流出法</li>
+<li>cross validation 交叉验证法 [又称: K-fold corss validation k折交叉验证]</li>
+<li>bootstrapping 自助法</li>
+</ol>
+</li>
+<li>sampling 采样</li>
+<li>stratified sampling 分层采样 [保留类别比例的分层方式]</li>
+<li>fidelity 保真性</li>
+<li>out-of-bag estimate 包外估计</li>
+<li>parameter tuning 调参</li>
+<li>performance measure 性能度量</li>
+<li>mean squared error 均方误差</li>
+<li>precision 查准率</li>
+<li>recall 查全率</li>
+<li>true positive 真正例</li>
+<li>false positive 假正例</li>
+<li>true negative 真反例</li>
+<li>false negative 假反例</li>
+<li>confusion matrix 混淆矩阵</li>
+<li>BEP: Break-Even Point 平衡点</li>
+<li>harmonic mean 调和平均数</li>
+<li>macro 宏 [macro-P 宏查准率; macro-R 宏查全率; macro-F1]</li>
+<li>micro 微 [micro-P 宏查准率; micro-R 宏查全率; micro-F1]</li>
+<li>F1: 基于查准率和查全率的调和平均定义的. </li>
+<li>Fβ: 则是加权调和平均; 第32页.</li>
+<li>threshold 分类阈值</li>
+<li>cut point 截断点</li>
+<li>ROC: Receiver Operating Characteristic “受试者工作者特征”曲线</li>
+</ol>
+<hr>
+<h1 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h1><ol>
+<li>损失函数         loss function</li>
+<li>均方误差         mean squared error</li>
+<li>激活函数        activation function</li>
+<li>sigmoid 函数        sigmoid function</li>
+<li>结构化数据    structured data</li>
+<li>Numpy        Numerical Python 是Python科学计算的基础包</li>
+<li>Pandas        Python data analysis (Python数据分析)</li>
+<li>交叉熵误差    cross entropy error</li>
+<li>小批量        mini-batch</li>
+<li>数值微分        numerical differentiation</li>
+<li>舍入误差        rounding error</li>
+<li>解析性        analytic</li>
+<li>鞍点            saddle point</li>
+<li>梯度法        gradient method</li>
+<li>学习率        learning rate</li>
+<li>随机梯度下降法        stochastic gradient descent</li>
+<li>计算图        computational graph</li>
+<li>正向传播        forward propagation</li>
+<li>反向传播        backward propagation</li>
+<li>链式法则        chain rule</li>
+<li>乘法层        MulLayer</li>
+<li>加法层        AddLayer</li>
+<li>梯度确认        gradient check</li>
+<li>最优化        optimization</li>
+<li>非均向        anisotropic</li>
+<li>权值衰减        weight decay</li>
+<li>直方图        histogram</li>
+<li>梯度消失        gradient vanishing</li>
+</ol>
+<hr>
+<h1 id="计算机专业英语"><a href="#计算机专业英语" class="headerlink" title="计算机专业英语"></a>计算机专业英语</h1><ul>
+<li>computer graphics                                            计算机图形学</li>
+<li>cmputational complexity theory                            计算复杂性理论</li>
+<li>computability theory                                        可计算性理论</li>
+<li>computationally unsolvable and intractable problems        计算不可解和不可行问题</li>
+<li>scientific computing                                        科学计算</li>
+<li>artificial intelligence                                    人工智能</li>
+<li>machine learning                                            机器学习</li>
+<li>ACM [Asscociation for Computing Machinery]                美国计算机学会</li>
+<li>IEEE[Institute of Electrical and Electronic Engineers]    电气电子工程师协会</li>
+<li>algorithm and data structrues                                算法和数据结构</li>
+<li>programming methodology and languages                        程序设计方法与语言</li>
+<li>software engineering                                        软件工程</li>
+<li>computer elements and architecture                        计算机组成与架构</li>
+<li>computer network and communication                        计算机网络与通信</li>
+<li>database system                                            数据库系统</li>
+<li>parallel computation                                        并行计算</li>
+<li>distributed computation                                    分布式计算</li>
+<li>numerical and symbolic computation                        数值和符号计算</li>
+<li>mathematical logic                                        数理逻辑</li>
+<li>automata theory                                            自动机理论</li>
+<li>number   theory                                            数论</li>
+<li>graphy   theory                                            图论</li>
+<li>type     theory                                            类型论</li>
+<li>category theory                                            范畴论</li>
+<li>computational geometry                                    计算几何</li>
+<li>quantum computing theory                                    量子计算理论</li>
+<li>cryptography                                                密码学</li>
+<li>digital  logic                                            数字逻辑</li>
+<li>microarchitecture                                            微架构</li>
+<li>multiprocessing                                            多处理</li>
+<li>domain theory                                                范畴论</li>
+<li>algebra                                                    代数</li>
+<li>numerical analysis                                        数值分析</li>
+<li>computational physics                                        计算物理</li>
+<li>bioinformatics                                            生物信息学</li>
+<li>computer vision                                            计算机视觉</li>
+<li>image processing                                            图像处理</li>
+<li>pattern recognition                                        模式识别</li>
+<li>cognitive science                                            认知科学</li>
+<li>data mining                                                数据挖掘</li>
+<li>evolutionary computation                                    演化计算</li>
+<li>information retrieval                                        信息检索</li>
+<li>knowledge representation                                    知识表达</li>
+<li>nature language processing                                自然语言处理</li>
+<li>robotics                                                    机器人学</li>
+<li>human-computer interaction                                人机交互</li>
+<li>operating systems                                            操作系统</li>
+<li>computer security                                            计算机安全</li>
+<li>ubiquitous computing                                        普适计算</li>
+<li>compiler design                                            编译器设计</li>
+<li>inherent                                                    固有的</li>
+<li>disposed                                                    有倾向性的, 愿意的</li>
+<li>pernicious                                                有害的</li>
+<li>evangelize                                                传道</li>
+<li>manifest                                                    表明</li>
+<li>oligarchy                                                    寡头政治</li>
+<li>unassailable                                                无懈可击的</li>
+<li>shill                                                        诱饵, 托儿</li>
+<li>breed                                                        引起</li>
+<li>sinister                                                    阴险的</li>
+<li>vigorously                                                精力旺盛地</li>
+<li>allegation                                                主张, 断言</li>
+<li>divulge                                                    泄露</li>
+<li>unscrupulous                                                不讲道德的</li>
+<li>cybersecurity                                                网络安全</li>
+<li>exposure                                                    暴露</li>
+<li>underground economy                                        地下交易</li>
+<li>intellectual property                                        知识产权</li>
+<li>breach                                                    缺口, 破坏</li>
+<li>trillion                                                    万亿</li>
+<li>malicious                                                    恶意的</li>
+<li>infection                                                    感染</li>
+<li>merely                                                    仅仅, 只不过</li>
+<li>SQL injection                                                SQL注入攻击</li>
+<li>victim                                                    受害者</li>
+<li>cross-site scripting                                        跨站点脚本攻击</li>
+<li>rootkits                                                    一种嵌入在操作系统中的恶意程序</li>
+<li>botnet                                                    僵尸网络</li>
+<li>spam                                                        垃圾邮件</li>
+<li>phishing                                                    网络钓鱼攻击</li>
+<li>crack                                                        破解</li>
+<li>software patch                                            软件补丁</li>
+<li>evade                                                        逃避</li>
+<li>launch                                                    发起</li>
+<li>social engineering                                        社交工程</li>
+<li>compromise                                                妥协</li>
+<li>penetration test                                            渗透测试</li>
+<li>fraudulent                                                欺骗性的</li>
+<li>firewalls                                                    防火墙</li>
+<li>intrusion detection                                        入侵检测</li>
+<li>afterthought                                                事后的想法</li>
+<li>exploit                                                    利用</li>
+<li>rigorous                                                    严格的</li>
+<li>albeit                                                    虽然, 即使</li>
+<li>software defect                                             软件缺陷</li>
+<li>cloud computing                                            云计算</li>
+<li>trigger                                                    触发</li>
+</ul>
 <hr>
 
       
