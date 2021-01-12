@@ -14,7 +14,7 @@
 <meta property="og:description" content="进程进程是正在运行的程序。  是系统进行资源分配和调用的独立单位 每一个进程都有它自己的内存空间和系统资源  线程是进程中的单个顺序控制流，是一条执行路径  单线程：一个进程如果只有一条执行路径，则称为单线程程序 多线程：一个进程如果有多条执行路径，则称为多线程程序  多线程的实现方式方式1：继承Thread类 定义一个类MyThread继承Thread类  在MyThread类中重写run()方">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-09T03:38:15.000Z">
-<meta property="article:modified_time" content="2021-01-11T14:26:31.438Z">
+<meta property="article:modified_time" content="2021-01-12T10:53:46.136Z">
 <meta property="article:author" content="Jungle">
 <meta property="article:tag" content="进程">
 <meta property="article:tag" content="线程">
@@ -280,7 +280,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="72">
-<input type="hidden" id="yelog_site_word_count" value="102.4k">
+<input type="hidden" id="yelog_site_word_count" value="103.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1270,12 +1270,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-01-11 22:26:31'>2021-01-09 11:38</time>
+            发布时间 : <time class="date" title='最后更新: 2021-01-12 18:53:46'>2021-01-09 11:38</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:2.1k</span>
+        <span>字数:3.7k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1305,7 +1305,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-text">进程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B"><span class="toc-text">线程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-text">多线程的实现方式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F1%EF%BC%9A%E7%BB%A7%E6%89%BFThread%E7%B1%BB"><span class="toc-text">方式1：继承Thread类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F2%EF%BC%9A%E5%AE%9E%E7%8E%B0Runnable%E6%8E%A5%E5%8F%A3"><span class="toc-text">方式2：实现Runnable接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E6%AF%94%E7%BB%A7%E6%89%BFThread%E7%B1%BB%EF%BC%8C%E5%AE%9E%E7%8E%B0Runnable%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="toc-text">相比继承Thread类，实现Runnable接口的好处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread%E7%B1%BB%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%92%8C%E8%AE%BE%E7%BD%AE%E7%BA%BF%E7%A8%8B%E5%90%8D%E7%A7%B0%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">Thread类中获取和设置线程名称的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E8%B0%83%E5%BA%A6"><span class="toc-text">线程调度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread%E7%B1%BB%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%92%8C%E8%8E%B7%E5%8F%96%E7%BA%BF%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">Thread类中设置和获取线程优先级的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-text">线程控制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="toc-text">线程同步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">同步代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95"><span class="toc-text">同步方法</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-text">进程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B"><span class="toc-text">线程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-text">多线程的实现方式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F1%EF%BC%9A%E7%BB%A7%E6%89%BFThread%E7%B1%BB"><span class="toc-text">方式1：继承Thread类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F2%EF%BC%9A%E5%AE%9E%E7%8E%B0Runnable%E6%8E%A5%E5%8F%A3"><span class="toc-text">方式2：实现Runnable接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E6%AF%94%E7%BB%A7%E6%89%BFThread%E7%B1%BB%EF%BC%8C%E5%AE%9E%E7%8E%B0Runnable%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="toc-text">相比继承Thread类，实现Runnable接口的好处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread%E7%B1%BB%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%92%8C%E8%AE%BE%E7%BD%AE%E7%BA%BF%E7%A8%8B%E5%90%8D%E7%A7%B0%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">Thread类中获取和设置线程名称的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E8%B0%83%E5%BA%A6"><span class="toc-text">线程调度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Thread%E7%B1%BB%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%92%8C%E8%8E%B7%E5%8F%96%E7%BA%BF%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">Thread类中设置和获取线程优先级的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-text">线程控制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="toc-text">线程同步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-text">同步代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E6%96%B9%E6%B3%95"><span class="toc-text">同步方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E7%B1%BB"><span class="toc-text">线程安全的类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#StringBuffer"><span class="toc-text">StringBuffer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vector"><span class="toc-text">Vector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hashtable"><span class="toc-text">Hashtable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81"><span class="toc-text">示例代码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Lock%E9%94%81"><span class="toc-text">Lock锁</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Lock%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">Lock的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E4%BA%A7%E8%80%85%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98"><span class="toc-text">生产者和消费者问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E4%BA%A7%E8%80%85%E5%92%8C%E6%B6%88%E8%B4%B9%E8%80%85%E6%A1%88%E4%BE%8B"><span class="toc-text">生产者和消费者案例</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1693,6 +1693,205 @@
             t3.start();
         &#125;
     &#125;</code></pre>
+<hr>
+<h1 id="线程安全的类"><a href="#线程安全的类" class="headerlink" title="线程安全的类"></a>线程安全的类</h1><h2 id="StringBuffer"><a href="#StringBuffer" class="headerlink" title="StringBuffer"></a>StringBuffer</h2><ul>
+<li>线程安全，可变的字符序列</li>
+<li>从版本JDK 5开始，被StringBuilder 替代。 通常应该使用<strong>StringBuilder</strong>类，因为它支持所有相同的操作，但它更快，因为它不执行同步</li>
+</ul>
+<h2 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h2><ul>
+<li>从Java 2平台v1.2开始，该类改进了List接口，使其成为Java Collections Framework的成员。 </li>
+<li>与新的集合实现不同， Vector被同步。 如果不需要线程安全的实现，建议使用<strong>ArrayList</strong>代替Vector</li>
+</ul>
+<h2 id="Hashtable"><a href="#Hashtable" class="headerlink" title="Hashtable"></a>Hashtable</h2><ul>
+<li>该类实现了一个哈希表，它将键映射到值。 任何非null对象都可以用作键或者值</li>
+<li>从Java 2平台v1.2开始，该类进行了改进，实现了Map接口，使其成为Java Collections Framework的成员。</li>
+<li> 与新的集合实现不同， Hashtable被同步。 如果不需要线程安全的实现，建议使用<strong>HashMap</strong>代替Hashtable</li>
+</ul>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><p><strong>在编辑器内查看源码</strong></p>
+<pre><code>public class ThreadDemo &#123;
+    public static void main(String[] args) &#123;
+        StringBuffer sb = new StringBuffer(); //线程安全使用
+        StringBuilder sb2 = new StringBuilder();
+
+        Vector&lt;String&gt; v = new Vector&lt;String&gt;();
+        ArrayList&lt;String&gt; array = new ArrayList&lt;String&gt;();
+
+        Hashtable&lt;String,String&gt; ht = new Hashtable&lt;String, String&gt;();
+        HashMap&lt;String,String&gt; hm = new HashMap&lt;String, String&gt;();
+
+        //static &lt;T&gt; List&lt;T&gt; synchronizedList​(List&lt;T&gt; list) 返回由指定列表支持的同步（线程安全）列表
+        List&lt;String&gt; list = Collections.synchronizedList(new ArrayList&lt;String&gt;()); //包装成线程安全的
+    &#125;
+&#125;</code></pre>
+<hr>
+<h1 id="Lock锁"><a href="#Lock锁" class="headerlink" title="Lock锁"></a>Lock锁</h1><pre><code>Lock中提供了获得锁和释放锁的方法
+    void lock()：获得锁
+    void unlock()：释放锁
+
+Lock是接口不能直接实例化，这里采用它的实现类ReentrantLock来实例化
+    ReentrantLock​()：创建一个ReentrantLock的实例</code></pre>
+<h2 id="Lock的使用"><a href="#Lock的使用" class="headerlink" title="Lock的使用"></a>Lock的使用</h2><pre><code>public class SellTicket implements Runnable &#123;
+    private int tickets = 100;
+    private Lock lock = new ReentrantLock();
+
+    @Override
+    public void run() &#123;
+        while (true) &#123;
+            try &#123;
+                lock.lock();//加锁
+                if (tickets &gt; 0) &#123;
+                    try &#123;
+                        Thread.sleep(100);
+                    &#125; catch (InterruptedException e) &#123;
+                        e.printStackTrace();
+                    &#125;
+                    System.out.println(Thread.currentThread().getName() + &quot;正在出售第&quot; + tickets + &quot;张票&quot;);
+                    tickets--;
+                &#125;
+            &#125; finally &#123;
+                lock.unlock();//释放锁
+            &#125;
+        &#125;
+    &#125;
+&#125;</code></pre>
+<h2 id="生产者和消费者问题"><a href="#生产者和消费者问题" class="headerlink" title="生产者和消费者问题"></a>生产者和消费者问题</h2><p><strong>生产者消费者模式是一个十分经典的多线程协作的模式，弄懂生产者消费者问题能够让我们对多线程编程的理解更加深刻</strong></p>
+<ul>
+<li>所谓生产者消费者问题，实际上主要是包含了两类线程：<ul>
+<li>一类是生产者线程用于生产数据</li>
+<li>一类是消费者线程用于消费数据</li>
+</ul>
+</li>
+<li>为了解耦生产者和消费者的关系，通常会采用共享的数据区域，就像是一个仓库<ul>
+<li>生产者生产数据之后直接放置在共享数据区中，并不需要关心消费者的行为</li>
+<li>消费者只需要从共享数据区中去获取数据，并不需要关心生产者的行为</li>
+</ul>
+</li>
+</ul>
+<p><strong>为了体现生产和消费过程中的等待和唤醒，Java就提供了几个方法供我们使用，这几个方法在Object类中，<br>Object类的等待和唤醒方法：</strong></p>
+<ul>
+<li>void wait​()    导致当前线程等待，直到另一个线程调用该对象的 notify()方法或 notifyAll()方法</li>
+<li>void notify​()    唤醒正在等待对象监视器的单个线程</li>
+<li>void notifyAll​()    唤醒正在等待对象监视器的所有线程 </li>
+</ul>
+<h2 id="生产者和消费者案例"><a href="#生产者和消费者案例" class="headerlink" title="生产者和消费者案例"></a>生产者和消费者案例</h2><p><strong>生产者消费者案例中包含的类：</strong></p>
+<ul>
+<li><p>奶箱类(Box)：定义一个成员变量，表示第x瓶奶，提供存储牛奶和获取牛奶的操作</p>
+</li>
+<li><p>生产者类(Producer)：实现Runnable接口，重写run()方法，调用存储牛奶的操作</p>
+</li>
+<li><p>消费者类(Customer)：实现Runnable接口，重写run()方法，调用获取牛奶的操作</p>
+</li>
+<li><p>测试类(BoxDemo)：里面有main方法，main方法中的代码步骤如下</p>
+<ol>
+<li>创建奶箱对象，这是共享数据区域</li>
+<li>创建生产者对象，把奶箱对象作为构造方法参数传递，因为在这个类中要调用存储牛奶的操作</li>
+<li>创建消费者对象，把奶箱对象作为构造方法参数传递，因为在这个类中要调用获取牛奶的操作</li>
+<li>创建2个线程对象，分别把生产者对象和消费者对象作为构造方法参数传递</li>
+<li>启动线程</li>
+</ol>
+</li>
+<li><p>示例代码：</p>
+<p>  <strong>奶箱类</strong></p>
+<pre><code>  public class Box &#123;
+      //定义一个成员变量，表示第x瓶奶
+      private int milk;
+      //定义一个成员变量，表示奶箱的状态
+      private boolean state = false; //默认表示没有牛奶
+
+      //提供存储牛奶和获取牛奶的操作
+      public synchronized void put(int milk) &#123;
+          //如果有牛奶，等待消费
+          if(state) &#123;
+              try &#123;
+                  wait();
+              &#125; catch (InterruptedException e) &#123;
+                  e.printStackTrace();
+              &#125;
+          &#125;
+
+          //如果没有牛奶，就生产牛奶
+          this.milk = milk;
+          System.out.println(&quot;送奶工将第&quot; + this.milk + &quot;瓶奶放入奶箱&quot;);
+
+          //生产完毕之后，修改奶箱状态
+          state = true;
+
+          //唤醒其他等待的线程
+          notifyAll();
+      &#125;
+
+      public synchronized void get() &#123;
+          //如果没有牛奶，等待生产
+          if(!state) &#123;
+              try &#123;
+                  wait();
+              &#125; catch (InterruptedException e) &#123;
+                  e.printStackTrace();
+              &#125;
+          &#125;
+
+          //如果有牛奶，就消费牛奶
+          System.out.println(&quot;用户拿到第&quot; + this.milk + &quot;瓶奶&quot;);
+
+          //消费完毕之后，修改奶箱状态
+          state = false;
+
+          //唤醒其他等待的线程
+          notifyAll();
+      &#125;
+  &#125;</code></pre>
+<p>  <strong>生产者类</strong></p>
+<pre><code>  public class Producer implements Runnable &#123;
+      private Box b;
+
+      public Producer(Box b) &#123;
+          this.b = b;
+      &#125;
+
+      @Override
+      public void run() &#123;
+          for(int i=1; i&lt;=30; i++) &#123;
+              b.put(i);
+          &#125;
+      &#125;
+  &#125;</code></pre>
+<p>  <strong>消费者类</strong></p>
+<pre><code>  public class Customer implements Runnable &#123;
+      private Box b;
+
+      public Customer(Box b) &#123;
+          this.b = b;
+      &#125;
+
+      @Override
+      public void run() &#123;
+          while (true) &#123;
+              b.get();
+          &#125;
+      &#125;
+  &#125;</code></pre>
+<p>  <strong>测试类</strong></p>
+<pre><code>  public class BoxDemo &#123;
+      public static void main(String[] args) &#123;
+          //创建奶箱对象，这是共享数据区域
+          Box b = new Box();
+
+          //创建生产者对象，把奶箱对象作为构造方法参数传递，因为在这个类中要调用存储牛奶的操作
+          Producer p = new Producer(b);
+          //创建消费者对象，把奶箱对象作为构造方法参数传递，因为在这个类中要调用获取牛奶的操作
+          Customer c = new Customer(b);
+
+          //创建2个线程对象，分别把生产者对象和消费者对象作为构造方法参数传递
+          Thread t1 = new Thread(p);
+          Thread t2 = new Thread(c);
+
+          //启动线程
+          t1.start();
+          t2.start();
+      &#125;
+  &#125;</code></pre>
+</li>
+</ul>
 <hr>
 
       
