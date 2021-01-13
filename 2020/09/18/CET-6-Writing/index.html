@@ -6,18 +6,16 @@
   <meta name="keywords" content=" 写作 ">
   <meta name="description" content="CET-6-Writing | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="进程进程是正在运行的程序。  是系统进行资源分配和调用的独立单位 每一个进程都有它自己的内存空间和系统资源  线程是进程中的单个顺序控制流，是一条执行路径  单线程：一个进程如果只有一条执行路径，则称为单线程程序 多线程：一个进程如果有多条执行路径，则称为多线程程序  多线程的实现方式方式1：继承Thread类 定义一个类MyThread继承Thread类  在MyThread类中重写run()方">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Java-Note21">
-<meta property="og:url" content="http://example.com/2021/01/09/Java-Note21/index.html">
+<meta name="description" content="个人介绍jungle （来源于高中时期同学叫我江哥）  本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 QQ: 983123369 email: &amp;#106;&amp;#117;&amp;#110;&amp;#x67;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="进程进程是正在运行的程序。  是系统进行资源分配和调用的独立单位 每一个进程都有它自己的内存空间和系统资源  线程是进程中的单个顺序控制流，是一条执行路径  单线程：一个进程如果只有一条执行路径，则称为单线程程序 多线程：一个进程如果有多条执行路径，则称为多线程程序  多线程的实现方式方式1：继承Thread类 定义一个类MyThread继承Thread类  在MyThread类中重写run()方">
+<meta property="og:description" content="个人介绍jungle （来源于高中时期同学叫我江哥）  本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 QQ: 983123369 email: &amp;#106;&amp;#117;&amp;#110;&amp;#x67;&amp;#">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-09T03:38:15.000Z">
-<meta property="article:modified_time" content="2021-01-12T10:53:46.136Z">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2020-11-13T11:48:22.886Z">
 <meta property="article:author" content="Jungle">
-<meta property="article:tag" content="进程">
-<meta property="article:tag" content="线程">
 <meta name="twitter:card" content="summary">
 
 
@@ -280,7 +278,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="72">
-<input type="hidden" id="yelog_site_word_count" value="103.9k">
+<input type="hidden" id="yelog_site_word_count" value="103.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1270,12 +1268,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-12-11 11:06:39'>2020-09-18 10:21</time>
+            发布时间 : <time class="date" title='最后更新: 2021-01-13 16:42:27'>2020-09-18 10:21</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.2k</span>
+        <span>字数:784</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1305,7 +1303,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E4%BD%9C%E6%A8%A1%E6%9D%BF"><span class="toc-text">写作模板</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A4%B4"><span class="toc-text">开头</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E4%BD%93%E6%AE%B5"><span class="toc-text">主体段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE%E6%AE%B5"><span class="toc-text">结尾段</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8C%83%E6%96%87"><span class="toc-text">范文</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2018%E5%B9%B412%E6%9C%88%E5%85%AD%E7%BA%A7%E5%86%99%E4%BD%9C%E7%9C%9F%E9%A2%98%EF%BC%9A"><span class="toc-text">2018年12月六级写作真题：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2019%E5%B9%B46%E6%9C%88%E5%85%AD%E7%BA%A7%E4%BD%9C%E6%96%87%E7%9C%9F%E9%A2%98"><span class="toc-text">2019年6月六级作文真题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2017%E5%B9%B412%E6%9C%88%E7%AC%AC%E4%B8%80%E5%A5%97"><span class="toc-text">2017年12月第一套</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E4%BD%9C%E6%A8%A1%E6%9D%BF"><span class="toc-text">写作模板</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A4%B4"><span class="toc-text">开头</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E4%BD%93%E6%AE%B5"><span class="toc-text">主体段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE%E6%AE%B5"><span class="toc-text">结尾段</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2017%E5%B9%B412%E6%9C%88%E7%AC%AC%E4%B8%80%E5%A5%97"><span class="toc-text">2017年12月第一套</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1374,94 +1372,6 @@
 </li>
 </ol>
 <hr>
-<h1 id="范文"><a href="#范文" class="headerlink" title="范文"></a>范文</h1><h2 id="2018年12月六级写作真题："><a href="#2018年12月六级写作真题：" class="headerlink" title="2018年12月六级写作真题："></a>2018年12月六级写作真题：</h2><p><strong>For this part,you are allowed 30 minutes to write a short essay on<br>how to balance academic study and extra-curriculum activities<br>You should write at least 150 words but no more than 200 words.</strong></p>
-<ul>
-<li><p>开头</p>
-<pre><code>  - Nowadays,there has been growing awareness that 
-      - striking a balance between academic study and after-school activities 
-      - plays an important role in students’ daily life.
-  - However,a great number of students 
-      - are often caught up in a dilemma 
-      - about how to achieve such a balance.
-  - In this essay,the approaches are illustrated as follows.
-  - （开头描述写作的目的，注意对题目中句子的转述，词汇的多样性，因为是“方法”类作文，以approaches引出后文）</code></pre>
-</li>
-<li><p>主体段</p>
-<ul>
-<li><p>分论点1</p>
-<pre><code>  - First and foremost,
-      - I think that the most useful way is to increase students’ efficiency.
-  - Since both academic study and extra-curriculum 
-      - play a necessary part in 
-      - students’ personal development in such a modern society,
-      - it is inappropriate for students to give up either of them.
-  - If students are able to raise their efficiency well,
-      - not only will they learn a lot of theoretical knowledge through academic study,
-      - but they will also develop practical abilities through after-school activities.
-  - Thus they will be more likely to become well-rounded generalists in the future.
-  - （提出第一个论点，注意使用了Since从句，if从句，倒装句,thus句）</code></pre>
-</li>
-<li><p>分论点2</p>
-<pre><code>  - Subsequently,
-      - students also need to learn to allocate their time wisely.
-  - For students,
-      - there’s no doubt that academic study should be given priority 
-      - since academic performance determines whether they can get a decent job in the future.
-  - Although after-school activities benefit students’ development,
-  - they are only supplements to academic study.
-  - （提出第二个论点，注意使用there’s no doubt句型和Although句型）</code></pre>
-</li>
-</ul>
-</li>
-<li><p>结尾段</p>
-<pre><code>  - In a nutshell,
-      - there is no better way for students to balance study and extra-curriculum activities
-      -  than to manage their time better.
-  -  （最后结尾高度概括,manage time同时包括前两个论点的含义，使用结尾常见模板。）</code></pre>
-</li>
-</ul>
-<hr>
-<h2 id="2019年6月六级作文真题"><a href="#2019年6月六级作文真题" class="headerlink" title="2019年6月六级作文真题"></a>2019年6月六级作文真题</h2><p><strong>For this part, you are allowed 30 minutes to write an essay on the importance of mutual understanding and respect in interpersonal relationship.</strong></p>
-<ul>
-<li><p>开头</p>
-<pre><code>  - Nowadays, there has been growing awareness that 
-      - mutual understanding and respect 
-      - play an important role in interpersonal relationship.
-  - （开头点题，说明写作背景。）</code></pre>
-</li>
-<li><p>主体段</p>
-<ul>
-<li><p>分论点1</p>
-<pre><code>  - On one hand, 
-      - since different people have distinctive living backgrounds, 
-          - it is often the case that they have different personalities.
-      - If people don&#39;t share mutual understanding and respect during communication,
-          - not only will they quarrel with each other easily, 
-          - but also they will have bad mood, 
-      - thus they will have particularly tense interpersonal relationship.
-  - （从反面说，如果人们不互相尊重理解，会怎么样）</code></pre>
-</li>
-<li><p>分论点2</p>
-<pre><code>  - On the other hand, 
-      - in such a modern society, 
-          - it is hard for people to achieve success without cooperation. 
-      - If people share mutual understanding and respect during communication,
-          - they are more likely to have sound interpersonal relationship,
-          - which means they tend to achieve proficient collaboration more easily.
-  - （从正面说）</code></pre>
-</li>
-</ul>
-</li>
-<li><p>结尾段</p>
-<pre><code>  - In a nutshell,
-      - there is no better way to have sound interpersonal relationship
-      - than to share mutual understanding and respect.
-      - （结尾简单明了）</code></pre>
-</li>
-</ul>
-<hr>
-<p><strong>以上来源于：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/84485681">https://zhuanlan.zhihu.com/p/84485681</a></strong></p>
-<hr>
 <h1 id="2017年12月第一套"><a href="#2017年12月第一套" class="headerlink" title="2017年12月第一套"></a>2017年12月第一套</h1><p><strong>Respect others, and you will be respected.</strong><br><strong>&lt;敬人者人亦敬之&gt;</strong></p>
 <ul>
 <li><p>第一段:</p>
@@ -1471,30 +1381,45 @@
 <li><p>表明作者的观点：同意“敬人者人亦敬之”的说法。</p>
 <pre><code>  - Treat others the way you want to be treated. 
       - The same is true of respect. 
-      - I agree with the saying, **respect others and you will be respected**.</code></pre>
+      - I agree with the saying, respect others and you will be respected.
+  - 对应模板的改写：
+      - Nowadays, there has been growing awareness that 
+          - respection on each other 
+          - plays an important role in our daily life.</code></pre>
 </li>
 </ul>
 </li>
 <li><p>第二段：</p>
 <ul>
 <li><p>第一个观点：<strong>互惠原则是人际交往的基础</strong></p>
-<pre><code>  - **Reciprocity is undeniably&lt;不可否认地&gt; the basis of interpersonal relationship**, regardless of culture or race.
+<pre><code>  - Reciprocity is undeniably&lt;不可否认地&gt; the basis of interpersonal relationship, regardless of culture or race.
       - Hunmans are grateful animals. 
       - If we lend a helping hand to others, we are very likely to receive assistance when we need it. 
-      - **Likewise if we are respectful to others, we will be respected**. </code></pre>
+      - Likewise if we are respectful to others, we will be respected. 
+  - 对应模板的改写：
+      - First and foremost, Reciprocity is undeniably&lt;不可否认地&gt; the basis of interpersonal relationship, regardless of culture or race.
+          - Since Hunmans are grateful animals, we are supposed to help others,
+              - and we are very likely to receive assistance when we need it.
+          - It is often the case that if we are respectful to others, we will be respected.</code></pre>
 </li>
 <li><p>第二个观点：<strong>尊重他人被视为一种美德</strong></p>
 <pre><code>  - On the other hand, as we all know, 
-  - **showing respect for others has been regarded as a virtue since ancient times**.
+  - showing respect for others has been regarded as a virtue since ancient times.
   - To be exact, treating people with the dignity they deserve 
       - and allowing them to embrace without judging them 
-      - **is always considerd as one of great virtues**.
-  - And in cultures other than the barbarous&lt;野蛮的&gt; one, **a virtuous person will definitely gain respect from others**.</code></pre>
+      - is always considerd as one of great virtues.
+  - And in cultures other than the barbarous&lt;野蛮的&gt; one, a virtuous person will definitely gain respect from others.
+  - 对应模板的改写：
+      - Subsequently, as we all know, showing respect for others has been regarded as a virtue since ancient times.
+      - To be exact, treating people with the dignity they deserve and allowing them to embrace without judging them is always considerd as one of great virtues.
+      - And in cultures other than the barbarous&lt;野蛮的&gt; one, Not only will a virtuous person definitely gain respect from others, but will also make friends easily.</code></pre>
 </li>
 </ul>
 </li>
 <li><p>第三段： 总结全文，再次点题并表明观点。</p>
-<pre><code>  - In a summary, I am convinced that **those who respect others are certain to be respected**.</code></pre>
+<pre><code>  - In a summary, I am convinced that those who respect others are certain to be respected.
+  - 对应模板的改写：
+      - In a nutshell, there is no better way to be respected than to respect others.</code></pre>
 </li>
 </ul>
 <hr>
