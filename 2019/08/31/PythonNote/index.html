@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Python学习笔记 | blog of Jungle</title>
+  <meta name="keywords" content=" Python ">
+  <meta name="description" content="Python学习笔记 | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍jungle   本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 email: &amp;#106;&amp;#x75;&amp;#110;&amp;#x67;&amp;#x6c;&amp;#101;&amp;#x38;&amp;#56;&amp;#x38;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍jungle   本科毕业于CUIT, 目前在沈阳读研(参加了沈阳化工大学和中科院沈阳计算所联合培养1+2项目). 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 深度学习入门中… Java大法好   联系方式 email: &amp;#106;&amp;#x75;&amp;#110;&amp;#x67;&amp;#x6c;&amp;#101;&amp;#x38;&amp;#56;&amp;#x38;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2021-03-17T08:19:42.821Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/jaytp/activities" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:jungle8884@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(31)</small></div></li>
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(7)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(14)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->面经">面经<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(5)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(6)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="运维<--->shell">shell<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="31">
+<input type="hidden" id="yelog_site_word_count" value="103.3k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://lavender-z.github.io/">橘子</a></li>
+            
+            <li><a target="_blank" href="https://youngxhui.top/">ISLAND</a></li>
+            
+            <li><a target="_blank" href="https://www.liuchuo.net/about">柳神</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>面试</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>设计模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 后端 面经 "
+           href="/2021/08/16/JobQuestions/"
+           data-tag="面试"
+           data-author="" >
+            <span class="post-title" title="JobQuestions">JobQuestions</span>
+            <span class="post-date" title="2021-08-16 15:26:09">2021/08/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 运维 shell "
+           href="/2021/05/27/shellLearningNote/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="shell编程">shell编程</span>
+            <span class="post-date" title="2021-05-27 14:55:52">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/09/DesignPatternofSixPrinciples/"
+           data-tag="设计模式"
+           data-author="" >
+            <span class="post-title" title="DesignPatternofSixPrinciples">DesignPatternofSixPrinciples</span>
+            <span class="post-date" title="2021-04-09 21:38:52">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="Python,爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-PythonNote" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Python学习笔记</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="DL">DL</a> > 
+            
+            <a  data-rel="DL&lt;---&gt;Python">Python</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">Python</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-04-15 10:50:51'>2019-08-31 14:28</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:3.3k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>### 课堂笔记
+- 数字: int, float, complex
+- 字符串可以用: r&#39;abc&#39;, R&#39;bcd&#39; [文本表示]
+    - &#39;str&#39;    , &quot;str&quot;, &#39;&#39;&#39;str&#39;&#39;&#39;.
+    - 以字母r或R引导的表示原始字符串
+    - 不讨论编码, 纯粹是字符串
+    - 以Unicode在内存中表示
+- 字节串: b&#39;hello world&#39; 
+- 列表 [list]: [1,2,3] 方括号表示
+- 字典 [dict]: &#123;&quot;键&quot;:&quot;值&quot;&#125;
+- 元组 [tuple]: (1,2,)    
+    - 如果元组中只有一个元素的话, 后面的逗号不能重复
+- 集合 [set]: &#123;&#39;a&#39;, &#39;b&#39;, &#39;c&#39;&#125;
+    - 不允许重复
+- Python中的变量并不直接存储值, 而是存储了值的内存地址或者引用.
+- id()    函数 可以查看对象的内存地址
+- is    测试两个对象是否是同一个
+- in    测试一个对象是否包含在另一个列表或集合内
+- Python属于强类型编程语言, Python解释器会根据赋值或运算来自动判断变量类型
+- Python还是一种动态类型语言, 变量的类型也是可以随时变化的.
+- isinstace() 函数 测试对象是否是某个类型的实例
+- import keyword    print(keyword.kwlist)    打印关键字
+- Python支持任意大的数字, 具体可以大到什么程度仅受内存大小的限制.
+- 由于精度的问题, 对于实数运算可能会有一定的误差, 应尽量避免在实数之间直接进行相等性测试.
+    - 0.4 - 0.3 == 0.1
+    - abs(0.4-0.1 -0.3) &lt; 1e-6
+- ** 平方运算    等价于 pow()函数
+- 复数运算
+    - abs(x)    计算摸
+    - x.real    实部
+    - x.imag    虚部
+- 连接字符串
+     - x = &#39;good&#39; + &#39;morning&#39;
+     - x = &#39;good&#39; &#39;morning&#39;        #仅适用于字符串常量
+     - y = &#39;good&#39; 
+     - x = y &#39;morning&#39;            #错误 不适用于字符串变量
+- type()        查看对象类型
+- encode()        对字符串进行编码  字符串--&gt;变为字节
+    - &#39;hello&#39;.encode(&#39;utf-8&#39;)
+- decode()        对字符串进行解码     字节---&gt;变为字符串
+    - _.decode(&#39;utf-8&#39;)        #_下划线代表上一次出现的内容
+- // 整除
+- -15 // 4 --&gt; -4                     [向下取整]
+- 15.0 // 4 --&gt; 3.0
+- pow(3, 2, 8)                         等价于(3**2) % 8
+- 1 &lt; 2 &lt; 3                            关系运算符可以连用
+- 1 &lt; 4 &gt; 3
+- &#123;1, 2, 3&#125; &lt; &#123;1, 2, 3, 4&#125;            判断是否是子集
+- 数值在内存中只有一份
+- 不支持 ++ 和 -- 运算符
+- 内置函数 [[参考链接](https://docs.python.org/zh-cn/3/library/functions.html &quot;内置函数&quot;)]
+- map()                                会根据提供的函数对指定序列做映射
+    - 接受两个参数
+    - 第一个为指定函数
+    - 第二个为序列 [列表]                            
+- filter()                            过滤序列, 由符合条件的元素组成新的列表    
+    - 接受两个参数
+    - 第一个为判断函数
+    - 第二个为序列 [列表]
+- iter()                            用来生成迭代器 [只能向后移动]
+    - 只有先将列表对象转换为迭代器对象后, 才能用于for循环控制
+    - next()                        当使用一个循环机制需要下一个项时使用
+- repr()                            返回包含一个对象的可打印表示形式的字符串
+- 下面是定义一个函数的例子:
+    - `def myMap(iterable, op, value):
+               if op not in &#39;+-*/&#39;:
+               return &#39;Error operator&#39;
+               func = lambda i : eval(repr(i) + op + repr(value))
+            return map(func, iterable)`
+- int()                                Return an integer object constructed from a number or string x, or return 0 if no arguments are given
+- str()                                返回 object 的 字符串 版本
+- reduce()                            先引入 [from functools import reduce]
+    - 接受两个参数
+    - 以迭代的方式从左到右依次作用到一个序列上
+- reversed()                        返回一个反向的 iterator
+- sorted(iterable, key=None, reverse=False)
+    - iterable                        可迭代对象
+    - 具有两个可选参数，它们都必须指定为关键字参数
+    - key 指定带有单个参数的函数，用于从 iterable 的每个元素中提取用于比较的键 (例如 key=str.lower)。 默认值为 None (直接比较元素)
+    - reverse 为一个布尔值。 如果设为 True，则每个列表元素将按反向顺序比较进行排序
+        - 举例:
+    - L = [(&#39;b&#39;, 2), (&#39;a&#39;, 1), (&#39;c&#39;, 3)]
+    - sorted(L, key=lambda x:x[0], reverse=True) # 按照Tuple第一个元素来判断x[0]
+    - x = [&#39;aaaa&#39;, &#39;bc&#39;, &#39;d&#39;, &#39;b&#39;, &#39;ba&#39;]
+    - sorted(x, key=lambda item: (len(item), item)) # 先按长度比较, 后按字符顺序排序
+- random.shuffle()                    打乱顺序
+- zip()                                创建一个来自每个可迭代对象中的元素的迭代器
+    - 返回一个元组的迭代器，其中的第 i 个元组包含来自每个参数序列或可迭代对象的第 i 个元素
+    - 当所输入可迭代对象中最短的一个被耗尽时，迭代器将停止迭代
+- 类型转换:
+    - bin()                            转换成二进制
+    - oct()                            转换成十进制
+    - hex()                            转换成十六进制
+    - int()                            转换成整数
+        - int(&#39;0x22b&#39;, 16)
+        - bin(54321) # &#39;0b1101010000110001&#39;
+        - int(bin(54321), 2)
+    - float()
+    - ord()                            用来返回单个字符的Unicode码
+    - chr()                            用来返回Unicode编码对应得字符
+    - str()                            整体转换成字符串
+    - ascii()                        把对象转换为ASCII码表示形式
+    - bytes()                        用来生成字节串 或 把指定对象转换为特定编码得字节串
+        - bytes(&#39;詹姆斯&#39;, &#39;gbk&#39;)        # 等价于 &#39;詹姆斯&#39;.encode(&#39;gbk&#39;)
+        - str(_, &#39;gbk&#39;)                # 还原成字符串
+    - isinstance(值, 类型)            判断数据类型
+- 输入输出
+    - input()
+    - print(*objects, sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)
+        - 将 objects 打印到 file 指定的文本流，以 sep 分隔并在末尾加上 end
+        - 所有非关键字参数都会被转换为字符串，就像是执行了 str() 一样，并会被写入到流，以 sep 且在末尾加上 end 
+        - file 参数必须是一个具有 write(string) 方法的对象；如果参数不存在或为 None，则将使用 sys.stdout
+        - 由于要打印的参数会被转换为文本字符串，因此 print() 不能用于二进制模式的文件对象。 对于这些对象，应改用 file.write(...)。
+</code></pre>
+<hr>
+<pre><code>### 读书笔记
+1. Pycharm开发快捷建
+    - ctrl + F8        设置断点
+    - shift + F10    运行
+    - shift + F9    调试
+    - F8            跳过
+    - F7            进入
+    - shift + F8    退出
+    - ctrl + Enter    在下方新建行但不移动光标
+    - Shift + Enter    在下方新建行并移到新行行首
+    - Ctrl + /        注释(取消注释)选择的行
+    - Ctrl + Alt + L        格式化代码(与QQ锁定热键冲突，关闭QQ的热键)
+    - Ctrl + Shift + +        展开所有的代码块
+    - Ctrl + Shift + -        收缩所有的代码块
+    - Ctrl + Alt + I        自动缩进行
+    - Alt + Enter            优化代码，提示信息实现自动导包
+    - Ctrl + Shift + F        高级查找
+    - Ctrl + Shift + N         查找项目中的任何文件
+    - Ctrl + N                 查找所有的类的名称
+    - Ctrl + B                查看函数定义
+2. 字符串
+    - title()    首字母大写
+    - upper()    全部大写
+    - lower()    全部小写
+    - strip()    同时剔除字符串两端的空白
+    - rstrip()    确保字符串末尾没有空白
+    - lstrip()    剔除字符串开头的空白
+    - str()        将内容转换为字符串
+3. 数字
+    - ** 代表乘方
+4. 注释
+    - 单行注释    #注释内容
+    - 多行注释    &quot;&quot;&quot;注释内容&quot;&quot;&quot; 
+5. 列表 [由一系列按特定顺序排列的元素组成]
+    - append()                    在列表末尾添加元素
+    - insert(索引, &#39;插入元素&#39;)    在列表指定位置插入元素
+    - del 列表名[索引]            删除指定位置的元素
+    - pop()                        可删除列表末尾的元素, 并且能让你接着使用它
+    - pop(索引)                    可以指定索引删除
+    - remove(&#39;元素值&#39;)            只要知道元素值就可以删除该元素[只能删除第一个指定的值, 若出现多次, 需要循环来判断删除]
+    - sort()                    排序
+    - sort(reverse=True)        逆序
+    - sorted(列表名)                临时排序, 不影响原始的列表序列
+    - reverse()                    不排序, 只是反转列表元素
+    - len(列表名)                获取列表的长度
+6. for item in list_of_items:
+    - 缩进代码
+    - 每个缩进的代码都是循环的一部分
+    - 没有缩进的代码只执行一次
+    - 冒号告诉python, 下一行是循环的第一行.
+7. 数值列表
+    - range(起始索引, 结束索引)                生成数字集, 不包含第二个结束索引
+    - list(range(起始索引, 结束索引))            将一系列数字转换为一个数字列表
+    - range(起始索引, 结束索引, 指定步长)        间断生成一系列数字
+    - min()                                计算最小值
+    - max()                                计算最大值
+    - sum()                                计算总和
+    - squares = [value**2 for value in range(1, 11)]        列表解析
+    - 等价于
+    - for value in range(1, 11):
+    -     squares.append(value**2)
+8. 切片 [列表的一部分]
+    - [起始索引: 结束索引]                    不包含第二个结束索引
+    - [起始索引:]                            从起始索引到末尾
+    - [:结束索引]                            从列表头开始
+    - for value in list[:3]:                遍历前三个
+    -     print(value.title())
+    - 复制列表
+        - [:]                                同时省略起始索引和结束索引
+        - 举例:
+            - my_foods = [&#39;pizza&#39;, &#39;falafel&#39;, &#39;carrot cake&#39;]
+            - friend_foods = my_foods[:]
+            - my_foods.append(&#39;cannoli&#39;)
+            - friend_foods.append(&#39;ice cream&#39;)
+        - friend_foods 指向的是从 my_foods 复制出来的一个列表副本
+        - 若 friend_foods = my_foods, 则 friend_foods 和 my_foods 指向同一个列表
+9. 元组 [不可变的列表]
+    - 如果需要存储的一组值在程序的整个周期内都不变, 可使用元组
+    - 举例:
+        - dimension = (200, 50)
+        - dimension[0] = 250             会报错!    不能修改元组, 即不能给元组的元素赋值
+        - dimension = (250, 100)         但是可以给存储元组的变量赋值
+10. 代码格式
+    - 缩进:    每级缩进都使用四个空格
+    - 行长: 每行不超过80字符
+    - 空行: 使用空行来组织程序文件
+11. if-else
+    - if expression : else expression :
+    - 多个else 用 elif
+12. 字典: 
+    - &#123;&#39;键&#39;: 值&#125;
+    - Python 不关心键值对的添加顺序, 而只关心键和值之间的关联关系.
+    - 新增/修改:    字典名[&#39;键&#39;] = 值
+    - 删除:    del 字典名[&#39;键&#39;]
+    - 遍历: for key, value in 字典名.items(): 
+        - 注: 遍历时声明两个变量用于存储键-值对中的值, 但是这两个变量可以使用任何名称.
+        - for key in 字典名.keys():            # 遍历字典的所有键
+        - for key in sorted(字典名.keys()):    # 按顺序遍历字典中的所有键
+        - for value in 字典名.values():        # 遍历字典中的所有值
+            - 若设计到重复: 
+                - 则使用 for value in set(字典名.values()):
+                - [set]集合: 类似于列表, 但每个元素都必须是独一无二的.
+13. 输入: input
+    - message = input(&quot;提示信息&quot;)
+    - print(message)
+    - 若是数字类型, 则使用int()转换为数字
+14. While 条件表达式:
+    - break        # 立即退出此循环
+    - continue    # 返回到循环开头, 并根据条件判断决定是否继续执行 
+15. 函数: 带名字的代码块, 用于完成具体的工作.
+    - def 函数名():
+        - 函数体
+        - ...
+    - 实参: 调用函数时传递给函数的信息.
+    - 形参: 在定义函数时, 函数完成其工作所需要的一项信息.
+    - 模块: 扩展名为 .py 的文件
+    - 导入模块时: import语句允许在当前运行的程序文件中使用模块的代码.
+    - as 
+        - 给函数指定别名: from 模块名 import 函数名 as 别名
+        - 给模块指定别名: import 模块名 as 别名
+    - 导入模块中的所有函数: from 模块名 import *
+16. 类: 模拟任何信息
+    - 类中的函数称为    方法
+    - 通过实例访问的变量称为    属性
+    -  _init_(self, ...):
+        -  self形参必不可少, 还必须位于其它参数的前面.
+        -  self是一个指向实例本身的引用, 可以访问类中的属性和方法.
+        -  当通过 类名() 创建实例时, 不需要传递self [自动传递的]
+
+17. 导入模块 [car 为模块名, 文件为car.py | Car, ElectricCar为类名]
+    - from car import Car                    # 从模块中导入一个类
+    - from car import Car, ElectricCar        # 从模块中导入多个类
+    - import car                            # 导入整个模块
+    - form 模块名 import *                    # 导入模块中的所有类
+
+18. 文件
+    - with open(&#39;pi_digits.txt&#39;) as file_object:
+        - contents = file_object.read()
+        - print(contents)
+    - with 在不需要访问文件后将其关闭
+    - open() 打开文件
+    - read() 读取文件内容
+    - 
+    - 逐行读取:
+        - for line in file_object:
+            - print(line.rstrip())
+        - 或
+        - lines = file_object.readlines()    # 先将文件的各行存储在一个列表中
+        - 后面可以在with代码快外使用该列表:
+        - for line in lines:
+            - print(line.rstrip())
+    - 写入文件:
+        - with open(filename, &#39;w&#39;) as file_object:
+            - file_object.write(&#39;I love programming.&#39;)
+        - 第一个参数是打开文件的名称
+        - 第二个参数告诉Python, 以写入参数打开这个文件.
+            - w                写入模式 [注: 若指定的文件已经存在, Python将返回文件对象前清空该文件]
+            - r                读取模式
+            - a                附加模式 [注: 以便将内容附加到文件末尾，而不是覆盖文件原来的内容]
+            - r+            读取和写入文件的模式
+</code></pre>
+<p>​    </p>
+<pre><code>19. 异常
+    - try-except
+    - else                    依赖于 try 代码块成功执行的代码都放在 else 代码块中
+
+20. 分析文本
+    - split()                 以空格为分隔符将字符串分拆成多个部分，并将这些部分都存储到一个列表中
+
+21. 存储数据
+    - json.dump()            存储
+        - 函数 json.dump() 接受两个实参：要存储的数据以及可用于存储数据的文件对象。
+    - json.load()
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1300287&auto=0&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>
