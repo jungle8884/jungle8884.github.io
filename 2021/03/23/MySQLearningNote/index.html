@@ -6,12 +6,12 @@
   <meta name="keywords" content=" SQL , 约束 , 数据库的设计 , 数据库的备份和还原 , 多表查询 , 事务 ">
   <meta name="description" content="MySQL学习笔记 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#x6e;&amp;#x67;&amp;#x6c;&amp;#">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#x6e;&amp;#103;&amp;#x6c;&amp;#">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人简介">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#x6e;&amp;#x67;&amp;#x6c;&amp;#">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#x6e;&amp;#103;&amp;#x6c;&amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
 <meta property="article:modified_time" content="2021-09-09T07:39:37.451Z">
@@ -374,7 +374,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="40">
-<input type="hidden" id="yelog_site_word_count" value="128.3k">
+<input type="hidden" id="yelog_site_word_count" value="129k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1076,12 +1076,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-08-25 11:14:52'>2021-03-23 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2021-09-17 00:05:10'>2021-03-23 00:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:17.8k</span>
+        <span>字数:18.6k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1111,7 +1111,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库的基本概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BD%AF%E4%BB%B6"><span class="toc-text">MySQL数据库软件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SQL"><span class="toc-text">SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E7%B1%BB%EF%BC%88DDL-DML-DQL-DCL%EF%BC%89"><span class="toc-text">SQL定义及分类（DDL, DML, DQL, DCL）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DDL-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93%E3%80%81%E8%A1%A8"><span class="toc-text">DDL:操作数据库、表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93-CRUD"><span class="toc-text">操作数据库 CRUD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E8%A1%A8-CRUD"><span class="toc-text">操作表 CRUD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLYog-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%9B%BE%E5%BD%A2%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="toc-text">SQLYog 客户端图形化工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DML%EF%BC%9A%E5%A2%9E%E5%88%A0%E6%94%B9%E8%A1%A8%E4%B8%AD%E6%95%B0%E6%8D%AE"><span class="toc-text">DML：增删改表中数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE"><span class="toc-text">添加数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE"><span class="toc-text">删除数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE"><span class="toc-text">修改数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DQL%EF%BC%9A%E6%9F%A5%E8%AF%A2%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%AE%B0%E5%BD%95"><span class="toc-text">DQL：查询表中的记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2"><span class="toc-text">基础查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2"><span class="toc-text">条件查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2"><span class="toc-text">排序查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="toc-text">聚合函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2"><span class="toc-text">分组查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2"><span class="toc-text">分页查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DCL%EF%BC%9A%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7%EF%BC%8C%E6%8E%88%E6%9D%83"><span class="toc-text">DCL：管理用户，授权</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%A6%E6%9D%9F"><span class="toc-text">约束</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E7%A9%BA%E7%BA%A6%E6%9D%9F"><span class="toc-text">非空约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F"><span class="toc-text">唯一约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%94%AE%E7%BA%A6%E6%9D%9F"><span class="toc-text">主键约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E9%94%AE%E7%BA%A6%E6%9D%9F"><span class="toc-text">外键约束</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%AE%BE%E8%AE%A1"><span class="toc-text">数据库的设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">多表之间的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E7%9A%84%E8%8C%83%E5%BC%8F"><span class="toc-text">数据库设计的范式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A4%87%E4%BB%BD%E5%92%8C%E8%BF%98%E5%8E%9F"><span class="toc-text">数据库的备份和还原</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-text">多表查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF"><span class="toc-text">笛卡尔积</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2"><span class="toc-text">内连接查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2"><span class="toc-text">外链接查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-text">子查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E7%BB%83%E4%B9%A0%EF%BC%9A"><span class="toc-text">多表查询练习：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="toc-text">事务的基本介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E5%BE%81%EF%BC%88%E9%87%8D%E7%82%B9%E6%8E%8C%E6%8F%A1%EF%BC%81%EF%BC%89"><span class="toc-text">事务的四大特征（重点掌握！）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%81%EF%BC%89"><span class="toc-text">事务的隔离级别（了解！）</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">数据库的基本概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BD%AF%E4%BB%B6"><span class="toc-text">MySQL数据库软件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SQL"><span class="toc-text">SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%88%86%E7%B1%BB%EF%BC%88DDL-DML-DQL-DCL%EF%BC%89"><span class="toc-text">SQL定义及分类（DDL, DML, DQL, DCL）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DDL-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93%E3%80%81%E8%A1%A8"><span class="toc-text">DDL:操作数据库、表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93-CRUD"><span class="toc-text">操作数据库 CRUD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E8%A1%A8-CRUD"><span class="toc-text">操作表 CRUD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLYog-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%9B%BE%E5%BD%A2%E5%8C%96%E5%B7%A5%E5%85%B7"><span class="toc-text">SQLYog 客户端图形化工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DML%EF%BC%9A%E5%A2%9E%E5%88%A0%E6%94%B9%E8%A1%A8%E4%B8%AD%E6%95%B0%E6%8D%AE"><span class="toc-text">DML：增删改表中数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE"><span class="toc-text">添加数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE"><span class="toc-text">删除数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE"><span class="toc-text">修改数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DQL%EF%BC%9A%E6%9F%A5%E8%AF%A2%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%AE%B0%E5%BD%95"><span class="toc-text">DQL：查询表中的记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2"><span class="toc-text">基础查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2"><span class="toc-text">条件查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2"><span class="toc-text">排序查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%9A%E5%90%88%E5%87%BD%E6%95%B0"><span class="toc-text">聚合函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2"><span class="toc-text">分组查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2"><span class="toc-text">分页查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DCL%EF%BC%9A%E7%AE%A1%E7%90%86%E7%94%A8%E6%88%B7%EF%BC%8C%E6%8E%88%E6%9D%83"><span class="toc-text">DCL：管理用户，授权</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BA%A6%E6%9D%9F"><span class="toc-text">约束</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E7%A9%BA%E7%BA%A6%E6%9D%9F"><span class="toc-text">非空约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E7%BA%A6%E6%9D%9F"><span class="toc-text">唯一约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%94%AE%E7%BA%A6%E6%9D%9F"><span class="toc-text">主键约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E9%94%AE%E7%BA%A6%E6%9D%9F"><span class="toc-text">外键约束</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%AE%BE%E8%AE%A1"><span class="toc-text">数据库的设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-text">多表之间的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E7%9A%84%E8%8C%83%E5%BC%8F"><span class="toc-text">数据库设计的范式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A4%87%E4%BB%BD%E5%92%8C%E8%BF%98%E5%8E%9F"><span class="toc-text">数据库的备份和还原</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-text">多表查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF"><span class="toc-text">笛卡尔积</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2"><span class="toc-text">内连接查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2"><span class="toc-text">外链接查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-text">子查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E7%BB%83%E4%B9%A0%EF%BC%9A"><span class="toc-text">多表查询练习：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="toc-text">事务的基本介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E7%89%B9%E5%BE%81%EF%BC%88%E9%87%8D%E7%82%B9%E6%8E%8C%E6%8F%A1%EF%BC%81%EF%BC%89"><span class="toc-text">事务的四大特征（重点掌握！）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%EF%BC%88%E9%9D%A2%E8%AF%95%E9%87%8D%E7%82%B9%EF%BC%81%EF%BC%89"><span class="toc-text">事务的隔离级别（面试重点！）</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -3878,7 +3878,7 @@ UPDATE account SET balance = 1000;
 <li>隔离性：多个事务之间，相互独立。</li>
 <li>一致性：事务操作前后，数据总量不变。</li>
 </ol>
-<h2 id="事务的隔离级别（了解！）"><a href="#事务的隔离级别（了解！）" class="headerlink" title="事务的隔离级别（了解！）"></a>事务的隔离级别（了解！）</h2><blockquote>
+<h2 id="事务的隔离级别（面试重点！）"><a href="#事务的隔离级别（面试重点！）" class="headerlink" title="事务的隔离级别（面试重点！）"></a>事务的隔离级别（面试重点！）</h2><blockquote>
 <p>概念：多个事务之间是隔离的，相互独立的。</p>
 <p>但是如果多个事务操作同一批数据，则会引发一些问题，设置不同的隔离级别就可以解决这些问题。</p>
 </blockquote>
@@ -3886,24 +3886,46 @@ UPDATE account SET balance = 1000;
 <li><p>存在问题：</p>
 <ol>
 <li>脏读：一个事务，读取到另一个事务中没有提交的数据</li>
-<li>不可重复读(虚读)：在同一个事务中，两次读取到的数据不一样。</li>
-<li>幻读：一个事务操作(DML)数据表中所有记录，另一个事务添加了一条数据，则第一个事务查询不到</li>
+<li>不可重复读(虚读)：在同一个事务中，两次读取到的数据不一样 (两次的值不一样)</li>
+<li>幻读：一个事务查询数据表中所有记录，另一个事务添加了一条数据，则第一个事务就好像查询不到这条数据一样 (记录数不一样)</li>
 </ol>
 </li>
-<li><p>隔离级别：</p>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/bobbykey/article/details/88814697">隔离级别：</a></p>
 <ol>
 <li><p>read uncommitted：读未提交</p>
+<blockquote>
+<p><code>公司发工资了，领导把5000元打到singo的账号上，但是该事务并未提交，而singo正好去查看账户，发现工资已经到账，是5000元整，非常高 兴。可是不幸的是，领导发现发给singo的工资金额不对，是2000元，于是迅速回滚了事务，修改金额后，将事务提交，最后singo实际的工资只有 2000元，singo空欢喜一场。</code></p>
+<p><code>出现上述情况，即我们所说的脏读 ，两个并发的事务，“事务A：领导给singo发工资”、“事务B：singo查询工资账户”，事务B读取了事务A尚未提交的数据。</code></p>
+</blockquote>
 <ul>
 <li>产生的问题：脏读、不可重复读、幻读</li>
+<li>当隔离级别设置为Read uncommitted 时，就可能<code>出现脏读</code>，如何避免脏读，请看下一个隔离级别。</li>
 </ul>
 </li>
 <li><p>read committed：读已提交 （Oracle）</p>
+<blockquote>
+<p><code>singo拿着工资卡去消费，系统读取到卡里确实有2000元，而此时她的老婆也正好在网上转账，把singo工资卡的2000元转到另一账户，并在 singo之前提交了事务，当singo扣款时，系统检查到singo的工资卡已经没有钱，扣款失败，singo十分纳闷，明明卡里有钱，为 何...... </code></p>
+<p><code>出现上述情况，即我们所说的不可重复读 ，两个并发的事务，“事务A：singo消费”、“事务B：singo的老婆网上转账”，事务A事先读取了数据，事务B紧接了更新了数据，并提交了事务，而事务A再次读取该数据时，数据已经发生了改变。</code></p>
+</blockquote>
 <ul>
+<li>解决的问题: 当隔离级别设置为Read committed 时，<code>避免了脏读</code>，但是可能会造成不可重复读。</li>
 <li>产生的问题：不可重复读、幻读</li>
+<li>大多数数据库的默认级别就是Read committed，比如<code>Sql Server</code> , <code>Oracle</code>。如何解决不可重复读这一问题，请看下一个隔离级别。</li>
 </ul>
 </li>
 <li><p>repeatable read：可重复读 （MySQL默认）</p>
+<blockquote>
+<p><code>当singo拿着工资卡去消费时，一旦系统开始读取工资卡信息（即事务开始），singo的老婆就不可能对该记录进行修改，也就是singo的老婆不能在此时转账。</code></p>
+<p>(一个事务操作时, 另一个事务就不能进行操作)</p>
+<p><code>虽然Repeatable read避免了不可重复读，但还有可能出现幻读 :</code></p>
+<p>(一个事务查询操作, 另一个事务插入一条记录, 就好像第一个事务查询不到这条数据一样)</p>
+<p><code>singo的老婆工作在银行部门，她时常通过银行内部系统查看singo的信用卡消费记录。</code></p>
+<p><code>有一天，她正在查询到singo当月信用卡的总消费金额为80元，</code></p>
+<p><code>而singo此时正好在外面胡吃海塞后在收银台买单，消费1000元，即新增了一条1000元的消费记录，并提交了事务，</code></p>
+<p><code>随后singo的老婆将singo当月信用卡消费的明细打印到A4纸上，却发现消费总额为1080元，singo的老婆很诧异，以为出现了幻觉，幻读就这样产生了。</code></p>
+</blockquote>
 <ul>
+<li>解决的问题: 当隔离级别设置为Repeatable read 时，<code>可以避免不可重复读。</code></li>
 <li>产生的问题：幻读</li>
 </ul>
 </li>
