@@ -6,12 +6,12 @@
   <meta name="keywords" content=" SQL , 约束 , 数据库的设计 , 数据库的备份和还原 , 多表查询 , 事务 ">
   <meta name="description" content="MySQL学习笔记 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#x6e;&amp;#103;&amp;#x6c;&amp;#">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#110;&amp;#x67;&amp;#x6c;&amp;#">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人简介">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#x6e;&amp;#103;&amp;#x6c;&amp;#">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 改论文 刷算法题 秋招 看面经 做项目: https:&#x2F;&#x2F;gitee.com&#x2F;jungle8884&#x2F;NowCoder 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#110;&amp;#x67;&amp;#x6c;&amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
 <meta property="article:modified_time" content="2021-09-09T07:39:37.451Z">
@@ -1076,7 +1076,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-09-17 00:05:10'>2021-03-23 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2021-09-17 01:19:20'>2021-03-23 00:00</time>
         
     </div>
     <div class="article-meta">
@@ -3871,12 +3871,13 @@ UPDATE account SET balance = 1000;
 </ol>
 <h2 id="事务的四大特征（重点掌握！）"><a href="#事务的四大特征（重点掌握！）" class="headerlink" title="事务的四大特征（重点掌握！）"></a>事务的四大特征（重点掌握！）</h2><blockquote>
 <p>重点掌握！</p>
+<p><code>ACID</code></p>
 </blockquote>
 <ol>
-<li>原子性：是不可分割的最小操作单位，要么同时成功，要么同时失败。</li>
-<li>持久性：当事务提交或回滚后，数据库会持久化的保存数据。</li>
-<li>隔离性：多个事务之间，相互独立。</li>
-<li>一致性：事务操作前后，数据总量不变。</li>
+<li>原子性(<code>Atomicity</code>)：是不可分割的最小操作单位，要么同时成功，要么同时失败。</li>
+<li>持久性(<code>Consistency</code>)：当事务提交或回滚后，数据库会持久化的保存数据。</li>
+<li>隔离性(<code>Isolation</code>)：多个事务之间，相互独立。</li>
+<li>一致性(<code>Durability</code>)：事务操作前后，数据总量不变。</li>
 </ol>
 <h2 id="事务的隔离级别（面试重点！）"><a href="#事务的隔离级别（面试重点！）" class="headerlink" title="事务的隔离级别（面试重点！）"></a>事务的隔离级别（面试重点！）</h2><blockquote>
 <p>概念：多个事务之间是隔离的，相互独立的。</p>
