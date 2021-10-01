@@ -6,12 +6,12 @@
   <meta name="keywords" content=" NoSQL ">
   <meta name="description" content="redis学习笔记 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#x65;&amp;#56;&amp;#5">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#110;&amp;#x67;&amp;#108;&amp;#x65;&amp;#x38;&amp;#">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人简介">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#x65;&amp;#56;&amp;#5">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#110;&amp;#x67;&amp;#108;&amp;#x65;&amp;#x38;&amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
 <meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
@@ -372,7 +372,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="41">
-<input type="hidden" id="yelog_site_word_count" value="132.9k">
+<input type="hidden" id="yelog_site_word_count" value="136.7k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1084,12 +1084,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-10-01 09:59:18'>2021-06-29 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2021-10-01 21:21:34'>2021-06-29 00:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:3.4k</span>
+        <span>字数:7.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1119,7 +1119,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E5%B1%95%E5%8F%B2"><span class="toc-text">发展史</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E6%AD%A3%E6%96%87"><span class="toc-text">进入正文</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis"><span class="toc-text">Redis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">基本知识:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">五大数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#String-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">String: 字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#List-%E5%88%97%E8%A1%A8"><span class="toc-text">List: 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-%E6%97%A0%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Set : 无序集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hash-%E5%93%88%E5%B8%8C"><span class="toc-text">Hash: 哈希</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sorted-Sets-%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Sorted Sets : 有序集合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E7%89%B9%E6%AE%8A%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">三种特殊数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Gospatial-%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE"><span class="toc-text">Gospatial : 地理位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hyperloglog-%E5%9F%BA%E7%A1%80%E7%BB%9F%E8%AE%A1"><span class="toc-text">Hyperloglog : 基础统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bitmaps-%E4%BD%8D%E5%9B%BE"><span class="toc-text">Bitmaps : 位图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AD%94%E7%96%91"><span class="toc-text">答疑:</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E5%B1%95%E5%8F%B2"><span class="toc-text">发展史</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E6%AD%A3%E6%96%87"><span class="toc-text">进入正文</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis"><span class="toc-text">Redis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">基本知识:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">五大数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#String-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">String: 字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#List-%E5%88%97%E8%A1%A8"><span class="toc-text">List: 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-%E6%97%A0%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Set : 无序集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hash-%E5%93%88%E5%B8%8C"><span class="toc-text">Hash: 哈希</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sorted-Set-%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Sorted Set : 有序集合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E7%89%B9%E6%AE%8A%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">三种特殊数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Gospatial-%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE"><span class="toc-text">Gospatial : 地理位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hyperloglog-%E5%9F%BA%E7%A1%80%E7%BB%9F%E8%AE%A1"><span class="toc-text">Hyperloglog : 基础统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bitmaps-%E4%BD%8D%E5%9B%BE"><span class="toc-text">Bitmaps : 位图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jedis"><span class="toc-text">Jedis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-Boot-%E6%95%B4%E5%90%88"><span class="toc-text">Spring Boot 整合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis-conf-%E8%AF%A6%E8%A7%A3"><span class="toc-text">Redis.conf 详解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis-%E6%8C%81%E4%B9%85%E5%8C%96"><span class="toc-text">Redis 持久化</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AD%94%E7%96%91"><span class="toc-text">答疑:</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1476,7 +1476,7 @@ OK
 </blockquote>
 <p><strong>hash 适合存储对象, string 适合字符串存储!</strong></p>
 <hr>
-<h3 id="Sorted-Sets-有序集合"><a href="#Sorted-Sets-有序集合" class="headerlink" title="Sorted Sets : 有序集合"></a>Sorted Sets : 有序集合</h3><blockquote>
+<h3 id="Sorted-Set-有序集合"><a href="#Sorted-Set-有序集合" class="headerlink" title="Sorted Set : 有序集合"></a>Sorted Set : 有序集合</h3><blockquote>
 <p>zset : 在set的基础上添加了一个权重</p>
 <p>key 是有序集合名</p>
 <p>score 是权重</p>
@@ -1652,8 +1652,578 @@ OK
 127.0.0.1:6379&gt; bitcount jungle 0 6 # 一周打卡情况
 (integer) 5
 </code></pre>
-<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><hr>
-<p>未完待续…</p>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p><strong>Redis 事务的本质: 一组命令的集合!</strong></p>
+<blockquote>
+<p>一次性,  顺序性,  排他性.</p>
+<p>——— 队列 set set set 执行 ————-</p>
+</blockquote>
+<p>所有的命令都在事务中, 并没有直接被执行 ! 只有发起执行命令的时候才会执行</p>
+<blockquote>
+<p>使用 <a target="_blank" rel="noopener" href="https://redis.io/commands/multi"><code>MULTI</code></a>输入多个命令。Redis 不会立即执行这些命令，而是将它们放到队列，当调用了 <a target="_blank" rel="noopener" href="https://redis.io/commands/exec"><code>EXEC</code></a>将执行所有命令。</p>
+</blockquote>
+<p>这个过程是这样的：</p>
+<ol>
+<li>开始事务（<code>MULTI</code>）。</li>
+<li>命令入队(批量操作 Redis 的命令，先进先出（FIFO）的顺序执行)。</li>
+<li>执行事务(<code>EXEC</code>)。</li>
+</ol>
+<p>也可以通过 <a target="_blank" rel="noopener" href="https://redis.io/commands/discard"><code>DISCARD</code></a>，它会清空事务队列中保存的所有命令</p>
+<p>Redis 的事务和我们平时理解的关系型数据库的事务不同。我们知道事务具有四大特性： <strong>1. 原子性</strong>，<strong>2. 隔离性</strong>，<strong>3. 持久性</strong>，<strong>4. 一致性</strong>。</p>
+<ol>
+<li><strong>原子性（Atomicity）：</strong> 事务是最小的执行单位，不允许分割。事务的原子性确保动作要么全部完成，要么完全不起作用；</li>
+<li><strong>隔离性（Isolation）：</strong> 并发访问数据库时，一个用户的事务不被其他事务所干扰，各并发事务之间数据库是独立的；</li>
+<li><strong>持久性（Durability）：</strong> 一个事务被提交之后。它对数据库中数据的改变是持久的，即使数据库发生故障也不应该对其有任何影响。</li>
+<li><strong>一致性（Consistency）：</strong> 执行事务前后，数据保持一致，多个事务对同一个数据读取的结果是相同的；</li>
+</ol>
+<p><strong>Redis 是不支持 roll back 的，因而不满足原子性的（而且不满足持久性）。</strong></p>
+<ul>
+<li><p><strong>编译型异常(代码有问题, 错误的命令), 事务中所有的命令都不会被执行!</strong></p>
+</li>
+<li><p><strong>运行时异常 (incr 一个字符串),  如果事务队列中存在语法性, 那么执行命令的时候, 其他命令是可以正常执行的, 错误命令抛出异常!</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://redis.io/commands/watch"><code>WATCH</code></a>用于监听指定的键，当调用 <code>EXEC</code> 命令执行事务时，如果一个被 <code>WATCH</code> 命令监视的键被修改的话，整个事务都不会执行，直接返回失败。</p>
+</blockquote>
+<p>悲观锁: 任何时候都会出问题, 无论做什么都会加锁!</p>
+<p>乐观锁: 任何时候都不会出问题, 所以不会上锁!  更新时比较version判断是否数据被修改过.</p>
+<blockquote>
+<p>使用watch可以实现redis的乐观锁操作!</p>
+</blockquote>
+<p>正常执行：</p>
+<pre><code class="bash">127.0.0.1:6379&gt; set money 100 # 余额
+OK
+127.0.0.1:6379&gt; set out 0 # 花出去的钱
+OK
+127.0.0.1:6379&gt; watch money # 监视 money 对象
+OK
+127.0.0.1:6379&gt; multi # 事务正常结束, 数据期间没有发生变动, 此时正常执行成功!
+OK
+127.0.0.1:6379&gt; decrby money 20
+QUEUED
+127.0.0.1:6379&gt; incrby out 20
+QUEUED
+127.0.0.1:6379&gt; exec # 执行成功后, watch自动释放锁
+1) (integer) 80
+2) (integer) 20
+</code></pre>
+<p>多线程操作:</p>
+<ol>
+<li>client1:</li>
+</ol>
+<pre><code class="bash">127.0.0.1:6379&gt; watch money
+OK
+127.0.0.1:6379&gt; multi
+OK
+127.0.0.1:6379&gt; decryby money 10
+(error) ERR unknown command &#39;decryby&#39;
+127.0.0.1:6379&gt; decrby money 10
+QUEUED
+127.0.0.1:6379&gt; incrby out 10
+# 先不执行 事务
+</code></pre>
+<ol start="2">
+<li>此时, client2 进行存钱操作:</li>
+</ol>
+<pre><code class="bash">127.0.0.1:6379&gt; get money
+&quot;80&quot;
+127.0.0.1:6379&gt; set money 1000
+OK
+127.0.0.1:6379&gt; get money
+&quot;1000&quot;
+</code></pre>
+<ol start="3">
+<li>这个时候, client1 执行事务时, 由于监视的键发生修改, 所以事务执行失败!</li>
+</ol>
+<pre><code class="bash">127.0.0.1:6379&gt; watch money
+OK
+127.0.0.1:6379&gt; multi
+OK
+127.0.0.1:6379&gt; decryby money 10
+(error) ERR unknown command &#39;decryby&#39;
+127.0.0.1:6379&gt; decrby money 10
+QUEUED
+127.0.0.1:6379&gt; incrby out 10
+QUEUED
+127.0.0.1:6379&gt; exec # 执行时, 发现不是之前的100, 所以执行事务失败!
+(error) EXECABORT Transaction discarded because of previous errors.
+</code></pre>
+<p><strong>注: 要再次监视, 可以使用 unwach 先解除监视 (即解锁), 再添加新的监视.</strong></p>
+<hr>
+<h2 id="Jedis"><a href="#Jedis" class="headerlink" title="Jedis"></a>Jedis</h2><blockquote>
+<p>Redis 官方推荐的java连接开发工具, 使用java操作Redis的中间件.</p>
+</blockquote>
+<pre><code class="xml">&lt;!-- https://mvnrepository.com/artifact/redis.clients/jedis --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;redis.clients&lt;/groupId&gt;
+    &lt;artifactId&gt;jedis&lt;/artifactId&gt;
+    &lt;version&gt;3.7.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p>导包之后看源码: <code>package redis.clients.jedis;</code></p>
+<p>所有的api命令基本上都是对应上面学过的方法! </p>
+<blockquote>
+<p>操作事务:</p>
+</blockquote>
+<p>了解一下:  也可以通过 <code>jedis.watch(result)</code> 实现乐观锁.</p>
+<p><img src="/2021/06/29/redis-LearningNote/image-20211001174713664.png" alt="image-20211001174713664"></p>
+<hr>
+<h2 id="Spring-Boot-整合"><a href="#Spring-Boot-整合" class="headerlink" title="Spring Boot 整合"></a>Spring Boot 整合</h2><blockquote>
+<p><img src="/2021/06/29/redis-LearningNote/image-20211001180318938.png" alt="image-20211001180318938"></p>
+</blockquote>
+<p>源码分析: <code>RedisAutoConfiguration</code></p>
+<p><img src="/2021/06/29/redis-LearningNote/image-20211001190100303.png" alt="image-20211001190100303"></p>
+<p>源代码:</p>
+<p><code>class RedisAutoConfiguration</code></p>
+<pre><code class="java">/*
+ * Copyright 2012-2020 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.springframework.boot.autoconfigure.data.redis;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnSingleCandidate;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisOperations;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
+
+/**
+ * &#123;@link EnableAutoConfiguration Auto-configuration&#125; for Spring Data&#39;s Redis support.
+ *
+ * @author Dave Syer
+ * @author Andy Wilkinson
+ * @author Christian Dupuis
+ * @author Christoph Strobl
+ * @author Phillip Webb
+ * @author Eddú Meléndez
+ * @author Stephane Nicoll
+ * @author Marco Aust
+ * @author Mark Paluch
+ * @since 1.0.0
+ */
+@Configuration(proxyBeanMethods = false)
+@ConditionalOnClass(RedisOperations.class)
+@EnableConfigurationProperties(RedisProperties.class)
+@Import(&#123; LettuceConnectionConfiguration.class, JedisConnectionConfiguration.class &#125;)
+public class RedisAutoConfiguration &#123;
+
+    @Bean
+    @ConditionalOnMissingBean(name = &quot;redisTemplate&quot;)
+    @ConditionalOnSingleCandidate(RedisConnectionFactory.class)
+    public RedisTemplate&lt;Object, Object&gt; redisTemplate(RedisConnectionFactory redisConnectionFactory) &#123;
+        RedisTemplate&lt;Object, Object&gt; template = new RedisTemplate&lt;&gt;();
+        template.setConnectionFactory(redisConnectionFactory);
+        return template;
+    &#125;
+
+    @Bean
+    @ConditionalOnMissingBean
+    @ConditionalOnSingleCandidate(RedisConnectionFactory.class)
+    public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory redisConnectionFactory) &#123;
+        StringRedisTemplate template = new StringRedisTemplate();
+        template.setConnectionFactory(redisConnectionFactory);
+        return template;
+    &#125;
+
+&#125;
+</code></pre>
+<p>使用过程:</p>
+<ol>
+<li><p>导包</p>
+<pre><code class="xml">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-data-redis&lt;/artifactId&gt;
+&lt;!-- &lt;version&gt;2.5.3&lt;/version&gt; --&gt;
+&lt;/dependency&gt;
+</code></pre>
+</li>
+<li><p>配置</p>
+<pre><code class="xml"># RedisProperties
+# 选择哪个库
+spring.redis.database=11
+# 设置这个库的IP
+spring.redis.host=localhost
+# 配置端口
+spring.redis.port=6379
+</code></pre>
+</li>
+<li><p>自定义</p>
+<pre><code class="java">package com.nowcoder.community.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+
+/**
+ * @author Jungle
+ */
+@Configuration
+public class RedisConfig &#123;
+
+    @Bean
+    public RedisTemplate&lt;String, Object&gt; redisTemplate(RedisConnectionFactory factory) &#123;
+        RedisTemplate&lt;String, Object&gt; template = new RedisTemplate&lt;&gt;();
+        template.setConnectionFactory(factory);
+
+        /* 设置key的序列化方式
+        * String
+        * RedisSerializer.string()返回 能够序列化为String的序列化器 */
+        template.setKeySerializer(RedisSerializer.string());
+
+        /* 设置value的序列化
+        * Object*/
+        template.setValueSerializer(RedisSerializer.json());
+
+        /* 设置hash的key的序列化方式
+        * String */
+        template.setHashKeySerializer(RedisSerializer.string());
+
+        /* 设置hash的value的序列化方式 */
+        template.setHashValueSerializer(RedisSerializer.json());
+
+        /* 设置生效 */
+        template.afterPropertiesSet();
+
+        return template;
+    &#125;
+
+&#125;
+</code></pre>
+</li>
+<li><p>操作</p>
+<ul>
+<li><code>opsForValue</code> : 操作 String / Bitmaps</li>
+<li><code>opsForList</code> : 操作 List</li>
+<li><code>opsForSet</code> : 操作 Set</li>
+<li><code>opsForHash </code>: 操作 Hash</li>
+<li><code>opsForZSet</code> : 操作 Sorted Set</li>
+<li><code>opsForGeo</code> : 操作 GeoSpatial</li>
+<li><code>opsForHyperLogLog</code> : 操作 Hyperloglog</li>
+</ul>
+</li>
+</ol>
+<p>要去理解Redis的思想和数据结构的用处和作用场景.</p>
+<hr>
+<h2 id="Redis-conf-详解"><a href="#Redis-conf-详解" class="headerlink" title="Redis.conf 详解"></a>Redis.conf 详解</h2><blockquote>
+<p>单位</p>
+</blockquote>
+<pre><code class="xml"># Redis configuration file example
+
+# Note on units: when memory size is needed, it is possible to specify
+# it in the usual form of 1k 5GB 4M and so forth:
+#
+# 1k =&gt; 1000 bytes
+# 1kb =&gt; 1024 bytes
+# 1m =&gt; 1000000 bytes
+# 1mb =&gt; 1024*1024 bytes
+# 1g =&gt; 1000000000 bytes
+# 1gb =&gt; 1024*1024*1024 bytes
+#
+# units are case insensitive so 1GB 1Gb 1gB are all the same.
+</code></pre>
+<p>units are case insensitive so 1GB 1Gb 1gB are all the same.</p>
+<p><strong>单位对大小写不敏感.</strong></p>
+<blockquote>
+<p>包含 : 可以把其他的配置文件包含进来.</p>
+</blockquote>
+<pre><code class="xml">################################## INCLUDES ###################################
+
+# Include one or more other config files here.  This is useful if you
+# have a standard template that goes to all Redis servers but also need
+# to customize a few per-server settings.  Include files can include
+# other files, so use this wisely.
+#
+# Notice option &quot;include&quot; won&#39;t be rewritten by command &quot;CONFIG REWRITE&quot;
+# from admin or Redis Sentinel. Since Redis always uses the last processed
+# line as value of a configuration directive, you&#39;d better put includes
+# at the beginning of this file to avoid overwriting config change at runtime.
+#
+# If instead you are interested in using includes to override configuration
+# options, it is better to use include as the last line.
+#
+# include .\path\to\local.conf
+# include c:\path\to\other.conf
+</code></pre>
+<blockquote>
+<p>网络</p>
+</blockquote>
+<p><strong>绑定的ip</strong></p>
+<pre><code class="xml">################################## NETWORK #####################################
+
+# By default, if no &quot;bind&quot; configuration directive is specified, Redis listens
+# for connections from all the network interfaces available on the server.
+# It is possible to listen to just one or multiple selected interfaces using
+# the &quot;bind&quot; configuration directive, followed by one or more IP addresses.
+#
+# Examples:
+#
+# bind 192.168.1.100 10.0.0.1
+# bind 127.0.0.1 ::1
+#
+# ~~~ WARNING ~~~ If the computer running Redis is directly exposed to the
+# internet, binding to all the interfaces is dangerous and will expose the
+# instance to everybody on the internet. So by default we uncomment the
+# following bind directive, that will force Redis to listen only into
+# the IPv4 lookback interface address (this means Redis will be able to
+# accept connections only from clients running into the same computer it
+# is running).
+#
+# IF YOU ARE SURE YOU WANT YOUR INSTANCE TO LISTEN TO ALL THE INTERFACES
+# JUST COMMENT THE FOLLOWING LINE.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bind 127.0.0.1
+</code></pre>
+<p><strong>保护模式</strong></p>
+<pre><code class="xml"># Protected mode is a layer of security protection, in order to avoid that
+# Redis instances left open on the internet are accessed and exploited.
+#
+# When protected mode is on and if:
+#
+# 1) The server is not binding explicitly to a set of addresses using the
+#    &quot;bind&quot; directive.
+# 2) No password is configured.
+#
+# The server only accepts connections from clients connecting from the
+# IPv4 and IPv6 loopback addresses 127.0.0.1 and ::1, and from Unix domain
+# sockets.
+#
+# By default protected mode is enabled. You should disable it only if
+# you are sure you want clients from other hosts to connect to Redis
+# even if no authentication is configured, nor a specific set of interfaces
+# are explicitly listed using the &quot;bind&quot; directive.
+protected-mode yes
+</code></pre>
+<p><strong>绑定的端口</strong></p>
+<pre><code class="xml"># Accept connections on the specified port, default is 6379 (IANA #815344).
+# If port 0 is specified Redis will not listen on a TCP socket.
+port 6379
+</code></pre>
+<blockquote>
+<p>通用配置</p>
+</blockquote>
+<p><strong>守护进程和pid</strong></p>
+<pre><code class="xml"># By default Redis does not run as a daemon. Use &#39;yes&#39; if you need it.
+# Note that Redis will write a pid file in /var/run/redis.pid when daemonized.
+# NOT SUPPORTED ON WINDOWS daemonize no
+daemonize yes # 以守护进程的方式运行, 默认是 no, 需要自己开启!
+
+# If a pid file is specified, Redis writes it where specified at startup
+# and removes it at exit.
+#
+# When the server runs non daemonized, no pid file is created if none is
+# specified in the configuration. When the server is daemonized, the pid file
+# is used even if not specified, defaulting to &quot;/var/run/redis.pid&quot;.
+#
+# Creating a pid file is best effort: if Redis is not able to create it
+# nothing bad happens, the server will start and run normally.
+# NOT SUPPORTED ON WINDOWS pidfile /var/run/redis.pid
+pidfile /var/run/redis.pid # 如果以后台的方式运行, 就需要指定一个pid文件!
+</code></pre>
+<p><strong>日志和日志文件</strong></p>
+<pre><code class="xml"># Specify the server verbosity level.
+# This can be one of:
+# debug (a lot of information, useful for development/testing)
+# verbose (many rarely useful info, but not a mess like the debug level)
+# notice (moderately verbose, what you want in production probably)
+# warning (only very important / critical messages are logged)
+loglevel notice
+
+# Specify the log file name. Also &#39;stdout&#39; can be used to force
+# Redis to log on the standard output.
+logfile &quot;server_log.txt&quot; 
+</code></pre>
+<p><strong>默认数据库的数量</strong></p>
+<pre><code class="xml"># Set the number of databases. The default database is DB 0, you can select
+# a different one on a per-connection basis using SELECT &lt;dbid&gt; where
+# dbid is a number between 0 and &#39;databases&#39;-1
+databases 16
+</code></pre>
+<blockquote>
+<p>快照</p>
+<p>在规定的时间内, 执行了多少次操作,  则会持久化到文件 .rdb .aof</p>
+</blockquote>
+<p><strong>save <seconds> <changes></changes></seconds></strong></p>
+<pre><code class="xml">################################ SNAPSHOTTING  ################################
+#
+# Save the DB on disk:
+#
+#   save &lt;seconds&gt; &lt;changes&gt;
+#
+#   Will save the DB if both the given number of seconds and the given
+#   number of write operations against the DB occurred.
+#
+#   In the example below the behaviour will be to save:
+#   after 900 sec (15 min) if at least 1 key changed
+#   after 300 sec (5 min) if at least 10 keys changed
+#   after 60 sec if at least 10000 keys changed
+#
+#   Note: you can disable saving completely by commenting out all &quot;save&quot; lines.
+#
+#   It is also possible to remove all the previously configured save
+#   points by adding a save directive with a single empty string argument
+#   like in the following example:
+#
+#   save &quot;&quot;
+
+save 900 1      # 如果900秒-15分钟, 至少有一个key进行了修改, 就进行持久化操作
+save 300 10     # 如果300秒-5分钟, 至少有10个key进行了修改, 就进行持久化操作
+save 60 10000    # 如果60秒-1分钟, 至少有10000个key进行了修改, 就进行持久化操作
+</code></pre>
+<p><strong>stop-writes-on-bgsave-error</strong></p>
+<pre><code class="xml"># By default Redis will stop accepting writes if RDB snapshots are enabled
+# (at least one save point) and the latest background save failed.
+# This will make the user aware (in a hard way) that data is not persisting
+# on disk properly, otherwise chances are that no one will notice and some
+# disaster will happen.
+#
+# If the background saving process will start working again Redis will
+# automatically allow writes again.
+#
+# However if you have setup your proper monitoring of the Redis server
+# and persistence, you may want to disable this feature so that Redis will
+# continue to work as usual even if there are problems with disk,
+# permissions, and so forth.
+stop-writes-on-bgsave-error yes # 如果持久化出错, 是否还需要继续工作!
+</code></pre>
+<p><strong>rdbcompression</strong></p>
+<pre><code class="xml"># Compress string objects using LZF when dump .rdb databases?
+# For default that&#39;s set to &#39;yes&#39; as it&#39;s almost always a win.
+# If you want to save some CPU in the saving child set it to &#39;no&#39; but
+# the dataset will likely be bigger if you have compressible values or keys.
+rdbcompression yes # 是否压缩 rdb文件, 需要消耗一些cpu资源!
+</code></pre>
+<p><strong>rdbchecksum</strong></p>
+<pre><code class="xml"># Since version 5 of RDB a CRC64 checksum is placed at the end of the file.
+# This makes the format more resistant to corruption but there is a performance
+# hit to pay (around 10%) when saving and loading RDB files, so you can disable it
+# for maximum performances.
+#
+# RDB files created with checksum disabled have a checksum of zero that will
+# tell the loading code to skip the check.
+rdbchecksum yes # 保存rdb文件是否进行校验检查
+</code></pre>
+<p><strong>rdb文件保存的文件名和目录</strong></p>
+<pre><code class="xml"># The filename where to dump the DB
+dbfilename dump.rdb # 文件名
+
+# The working directory.
+#
+# The DB will be written inside this directory, with the filename specified
+# above using the &#39;dbfilename&#39; configuration directive.
+#
+# The Append Only File will also be created inside this directory.
+#
+# Note that you must specify a directory here, not a file name.
+dir ./ # 目录
+</code></pre>
+<blockquote>
+<p>安全</p>
+<p><strong>默认为空, 没有密码</strong></p>
+<p>可以在配置文件里设置: <code>requirepass 密码</code></p>
+<p>也可以通过命令:</p>
+<ul>
+<li><code>config set requirepass 123456</code> # 设置密码</li>
+<li><code>config get requirepass</code> # 查看密码</li>
+</ul>
+<p>之后需要登录: <code>auth 123456</code> # 登录</p>
+</blockquote>
+<pre><code class="xml">################################## SECURITY ###################################
+
+# Require clients to issue AUTH &lt;PASSWORD&gt; before processing any other
+# commands.  This might be useful in environments in which you do not trust
+# others with access to the host running redis-server.
+#
+# This should stay commented out for backward compatibility and because most
+# people do not need auth (e.g. they run their own servers).
+#
+# Warning: since Redis is pretty fast an outside user can try up to
+# 150k passwords per second against a good box. This means that you should
+# use a very strong password otherwise it will be very easy to break.
+#
+# requirepass foobared
+
+# Command renaming.
+#
+# It is possible to change the name of dangerous commands in a shared
+# environment. For instance the CONFIG command may be renamed into something
+# hard to guess so that it will still be available for internal-use tools
+# but not available for general clients.
+#
+# Example:
+#
+# rename-command CONFIG b840fc02d524045429941cc15f59e41cb7be6c52
+#
+# It is also possible to completely kill a command by renaming it into
+# an empty string:
+#
+# rename-command CONFIG &quot;&quot;
+#
+# Please note that changing the name of commands that are logged into the
+# AOF file or transmitted to slaves may cause problems.
+</code></pre>
+<blockquote>
+<p>客户端限制</p>
+</blockquote>
+<pre><code class="xml">################################### LIMITS ####################################
+maxclients 10000     # 最多能连上 redis 的客户端数量
+maxmemory &lt;bytes&gt;    # redis 配置最大的内存容量
+</code></pre>
+<p><strong>内存达到上限的处理策略</strong></p>
+<pre><code class="xml">maxmemory-policy noeviction # 默认处理策略
+
+# volatile-lru -&gt; remove the key with an expire set using an LRU algorithm
+1. 只对设置了过期时间的key进行LRU(默认值)
+
+# allkeys-lru -&gt; remove any key according to the LRU algorithm
+2. 删除lru算法的key
+
+# volatile-random -&gt; remove a random key with an expire set
+3. 随机删除即将过期的key
+
+# allkeys-random -&gt; remove a random key, any key
+4. 随机删除
+
+# volatile-ttl -&gt; remove the key with the nearest expire time (minor TTL)
+5. 删除即将过期的
+
+# noeviction -&gt; don&#39;t expire at all, just return an error on write operations
+6. 永不过期, 返回错误
+</code></pre>
+<blockquote>
+<p>APPEND ONLY 模式 : aof配置</p>
+</blockquote>
+<pre><code class="xml">appendonly no # 默认不开启aof模式, 默认使用rdb方式持久化, 大部分情况下, rdb完全够用!
+appendfilename &quot;appendonly.aof&quot; # 持久化的文件的名字
+
+# appendfsync always    # 每次修改都会写入
+appendfsync everysec    # 默认每秒都执行一次 sync, 可能会丢失这1s的数据!(假如宕机)
+# appendfsync no        # 不执行 sync, 这个时候操作系统自己同步数据, 速度最快!
+</code></pre>
+<hr>
+<h2 id="Redis-持久化"><a href="#Redis-持久化" class="headerlink" title="Redis 持久化"></a>Redis 持久化</h2><p>…</p>
+<hr>
 <h1 id="答疑"><a href="#答疑" class="headerlink" title="答疑:"></a>答疑:</h1><p>常见问题: <a target="_blank" rel="noopener" href="https://www.redis.com.cn/redis-interview-questions.html">https://www.redis.com.cn/redis-interview-questions.html</a></p>
 
       
