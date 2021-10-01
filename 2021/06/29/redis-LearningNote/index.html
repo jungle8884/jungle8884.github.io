@@ -6,12 +6,12 @@
   <meta name="keywords" content=" NoSQL ">
   <meta name="description" content="redis学习笔记 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#x75;&amp;#110;&amp;#103;&amp;#x6c;&amp;#101;&amp;#x38;&amp;">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#x65;&amp;#56;&amp;#5">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人简介">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#x75;&amp;#110;&amp;#103;&amp;#x6c;&amp;#101;&amp;#x38;&amp;">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#x65;&amp;#56;&amp;#5">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
 <meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
@@ -372,7 +372,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="41">
-<input type="hidden" id="yelog_site_word_count" value="132.1k">
+<input type="hidden" id="yelog_site_word_count" value="132.9k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1084,12 +1084,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-09-30 14:15:23'>2021-06-29 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2021-10-01 09:59:18'>2021-06-29 00:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:2.6k</span>
+        <span>字数:3.4k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1119,7 +1119,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E5%B1%95%E5%8F%B2"><span class="toc-text">发展史</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E6%AD%A3%E6%96%87"><span class="toc-text">进入正文</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis"><span class="toc-text">Redis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">基本知识:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">五大数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#String-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">String: 字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#List-%E5%88%97%E8%A1%A8"><span class="toc-text">List: 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-%E6%97%A0%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Set : 无序集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hash-%E5%93%88%E5%B8%8C"><span class="toc-text">Hash: 哈希</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sorted-Sets-%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Sorted Sets : 有序集合</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AD%94%E7%96%91"><span class="toc-text">答疑:</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E5%B1%95%E5%8F%B2"><span class="toc-text">发展史</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E6%AD%A3%E6%96%87"><span class="toc-text">进入正文</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis"><span class="toc-text">Redis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">基本知识:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">五大数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#String-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">String: 字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#List-%E5%88%97%E8%A1%A8"><span class="toc-text">List: 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-%E6%97%A0%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Set : 无序集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hash-%E5%93%88%E5%B8%8C"><span class="toc-text">Hash: 哈希</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sorted-Sets-%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88"><span class="toc-text">Sorted Sets : 有序集合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E7%89%B9%E6%AE%8A%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">三种特殊数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Gospatial-%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE"><span class="toc-text">Gospatial : 地理位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hyperloglog-%E5%9F%BA%E7%A1%80%E7%BB%9F%E8%AE%A1"><span class="toc-text">Hyperloglog : 基础统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bitmaps-%E4%BD%8D%E5%9B%BE"><span class="toc-text">Bitmaps : 位图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-text">事务</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AD%94%E7%96%91"><span class="toc-text">答疑:</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1187,7 +1187,7 @@
 <p>真正的实践: NoSQL + RDBMS 一起使用</p>
 </blockquote>
 <p><img src="/2021/06/29/redis-LearningNote/image-20210929235858444.png" alt="image-20210929235858444"></p>
-<h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a><a target="_blank" rel="noopener" href="http://www.redis.cn/">Redis</a></h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述:"></a>概述:</h2><blockquote>
+<h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a><a target="_blank" rel="noopener" href="https://redis.io/">Redis</a></h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述:"></a>概述:</h2><blockquote>
 <p>Redis是什么?</p>
 </blockquote>
 <p>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。 </p>
@@ -1517,7 +1517,142 @@ OK
 <li>“2000”</li>
 </ol>
 </blockquote>
+<h2 id="三种特殊数据类型"><a href="#三种特殊数据类型" class="headerlink" title="三种特殊数据类型"></a>三种特殊数据类型</h2><h3 id="Gospatial-地理位置"><a href="#Gospatial-地理位置" class="headerlink" title="Gospatial : 地理位置"></a>Gospatial : 地理位置</h3><p>可以推算地理位置的信息, 两地之间的距离, 方圆几里的人!</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://redis.io/commands/geoadd">geoadd</a> key longitude latitude member [longitude latitude member …] </p>
+</blockquote>
+<p><strong>添加 地理位置集合 的经纬度及地点名称</strong></p>
+<ul>
+<li><p>key : 地理位置集合</p>
+</li>
+<li><p>longitude 经度 </p>
+</li>
+<li><p>latitude 纬度</p>
+<p><img src="/2021/06/29/redis-LearningNote/image-20211001000149555.png" alt="image-20211001000149555"></p>
+</li>
+<li><p>member 地点名称</p>
+</li>
+</ul>
+<blockquote>
+<p> <a target="_blank" rel="noopener" href="https://redis.io/commands/geopos">geopos</a> key member [member …] </p>
+</blockquote>
+<p><strong>获取 地理位置集合中 指定地点的经度和纬度</strong></p>
+<ul>
+<li>key : 地理位置集合</li>
+<li>member : 指定地点名称</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://redis.io/commands/geodist">geodist</a> key member1 member2 [unit]</p>
+</blockquote>
+<p><strong>计算地理集合中两个地点之间的直线距离</strong></p>
+<ul>
+<li>key : 地理位置集合</li>
+<li>member1 :  地点1的名称</li>
+<li>member2 :  地点2的名称</li>
+</ul>
+<p><strong>unit 表示距离的单位:</strong></p>
+<p>The unit must be one of the following, and defaults to meters:</p>
+<ul>
+<li><strong>m</strong> for meters.</li>
+<li><strong>km</strong> for kilometers.</li>
+<li><strong>mi</strong> for miles.</li>
+<li><strong>ft</strong> for feet.</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://redis.io/commands/georadius">georadius</a> key longitude latitude radius m|km|ft|mi  [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT count] [ASC|DES]</p>
+</blockquote>
+<p><strong>在地理位置集合中, 计算以某个 坐标点 longitude latitude 为中心, 方圆半径为radius 的地点子集</strong></p>
+<ul>
+<li><p>key : 地理位置集合</p>
+</li>
+<li><p>longitude latitude : 坐标点</p>
+</li>
+<li><p>radius m|km|ft|mi  : 半径和单位</p>
+</li>
+<li><p>[WITHCOORD] : 显示计算出的子集的坐标</p>
+</li>
+<li><p>[WITHDIST] : 显示到中心位置的距离</p>
+</li>
+<li><p>[WITHHASH] : 显示计算出的子集的坐标 对应的hash字符串</p>
+</li>
+<li><p>[COUNT count] : 限定子集数量</p>
+</li>
+<li><p>[ASC|DES] : 升序 或 逆序</p>
+</li>
+</ul>
+<p><strong>个人理解: 以地图上某个点为中心找出周围的地点集合</strong></p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://redis.io/commands/georadiusbymember">georadiusbymember</a>  key member radius m|km|ft|mi [WITHCOORD] [WITHDIST] [WITHHASH] [COUNT count] [ASC|DES]</p>
+</blockquote>
+<p><strong>找出位于指定元素周围的其他元素</strong></p>
+<ul>
+<li>key : 地理位置集合</li>
+<li>member  : 地理位置集合中的某个元素</li>
+<li>radius m|km|ft|mi  : 半径和单位</li>
+<li>其他参数同上</li>
+</ul>
+<blockquote>
+<p> geohash key member [member …]</p>
+</blockquote>
+<p><strong>返回地理位置集合中一个或多个位置元素的hash字符串表示(通常11位)</strong></p>
+<p><strong>注: geospatial 是基于 sorted sets 的, 所以可以 使用 zset zrange zrem … 命令来操作 geo !</strong></p>
 <hr>
+<h3 id="Hyperloglog-基础统计"><a href="#Hyperloglog-基础统计" class="headerlink" title="Hyperloglog : 基础统计"></a>Hyperloglog : 基础统计</h3><p><strong>找不重复的数</strong></p>
+<img src="/2021/06/29/redis-LearningNote/image-20211001091857961.png" alt="image-20211001091857961" style="zoom:80%;">
+
+<p><strong>可以用来计算网站的访问量</strong></p>
+<ul>
+<li><p>pfadd key element [element …]  # 创建一组元素</p>
+</li>
+<li><p>pfcount key [key …] # 统计元素数量</p>
+</li>
+<li><p>pfmerge destkey sourcekey [sourcekey …] # 组间合并</p>
+</li>
+</ul>
+<pre><code class="shell">127.0.0.1:6379&gt; pfadd mykey1 6 7 8 9 10 11 12
+(integer) 1
+127.0.0.1:6379&gt; pfadd mykey2 1 2 3 4 5 6 7 8 9
+(integer) 1
+127.0.0.1:6379&gt; pfmerge mykey3 mykey1 mykey2
+OK
+127.0.0.1:6379&gt; pfcount mykey3
+(integer) 12
+</code></pre>
+<p><strong>注: 会有 0.81% 的错误率!</strong></p>
+<hr>
+<h3 id="Bitmaps-位图"><a href="#Bitmaps-位图" class="headerlink" title="Bitmaps : 位图"></a>Bitmaps : 位图</h3><blockquote>
+<p>位存储</p>
+</blockquote>
+<p>统计用户信息: 登录, 未登录, 只有两个状态的这种!</p>
+<p>某用户一年的登录信息: 365 bit 即 365/8 约等于 46 byte .</p>
+<blockquote>
+<p>统计 用户-jungle 一周内的打卡情况</p>
+</blockquote>
+<ul>
+<li>setbit key offset value</li>
+<li>getbit key offset</li>
+<li>bitcount key [start end]</li>
+</ul>
+<pre><code class="bash">127.0.0.1:6379&gt; setbit jungle 0 1
+(integer) 0
+127.0.0.1:6379&gt; setbit jungle 1 0
+(integer) 0
+127.0.0.1:6379&gt; setbit jungle 2 1
+(integer) 0
+127.0.0.1:6379&gt; setbit jungle 3 1
+(integer) 0
+127.0.0.1:6379&gt; setbit jungle 4 1
+(integer) 0
+127.0.0.1:6379&gt; setbit jungle 5 1
+(integer) 0
+127.0.0.1:6379&gt; setbit jungle 6 0
+(integer) 0
+127.0.0.1:6379&gt; getbit jungle 0 # 第一天是否打卡
+(integer) 1
+127.0.0.1:6379&gt; bitcount jungle 0 6 # 一周打卡情况
+(integer) 5
+</code></pre>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><hr>
 <p>未完待续…</p>
 <h1 id="答疑"><a href="#答疑" class="headerlink" title="答疑:"></a>答疑:</h1><p>常见问题: <a target="_blank" rel="noopener" href="https://www.redis.com.cn/redis-interview-questions.html">https://www.redis.com.cn/redis-interview-questions.html</a></p>
 
