@@ -6,17 +6,32 @@
   <meta name="keywords" content=" 二叉树 ">
   <meta name="description" content="二叉树 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#x6e;&amp;#x67;&amp;#108;&amp;#x65;&amp;#x38;&amp;#">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人简介">
-<meta property="og:url" content="http://example.com/about/index.html">
+<meta name="description" content="Linux简介 Linux内核最初只是由芬兰人李纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。  Linux 本质是指 Linux 内核 ： 严格来讲，Linux 这个词本身只表示 Linux 内核，单独的 Linux 内核并不能成为一个可以正常工作的操作系统。所以，就有了各种 Linux 发行版。  内核 : （英语：Kernel，又称核心）在计算机科学中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux 基本命令">
+<meta property="og:url" content="http://example.com/2021/10/02/linuxLearningNote/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#x75;&amp;#x6e;&amp;#x67;&amp;#108;&amp;#x65;&amp;#x38;&amp;#">
+<meta property="og:description" content="Linux简介 Linux内核最初只是由芬兰人李纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。  Linux 本质是指 Linux 内核 ： 严格来讲，Linux 这个词本身只表示 Linux 内核，单独的 Linux 内核并不能成为一个可以正常工作的操作系统。所以，就有了各种 Linux 发行版。  内核 : （英语：Kernel，又称核心）在计算机科学中">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
-<meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002201551841.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002202005299.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002172843522.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002173932727.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/%E6%96%87%E4%BB%B6inode%E4%BF%A1%E6%81%AF.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/Linux%E7%9B%AE%E5%BD%95%E6%A0%91.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002195322962.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002203533990.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211024213442194.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211025092806768.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211025093448221.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211025095407212.png">
+<meta property="og:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211025104500136.png">
+<meta property="article:published_time" content="2021-10-02T09:17:40.000Z">
+<meta property="article:modified_time" content="2021-10-25T04:40:16.131Z">
 <meta property="article:author" content="Jungle">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/10/02/linuxLearningNote/image-20211002201551841.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -388,7 +403,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="44">
-<input type="hidden" id="yelog_site_word_count" value="136.3k">
+<input type="hidden" id="yelog_site_word_count" value="137.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1136,12 +1151,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-11-09 19:16:35'>2021-06-01 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2021-11-15 17:56:20'>2021-06-01 00:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:4.6k</span>
+        <span>字数:5.7k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1171,7 +1186,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">二叉树</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#226-%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">226-翻转二叉树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#116-%E5%A1%AB%E5%85%85%E6%AF%8F%E4%B8%AA%E8%8A%82%E7%82%B9%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%8F%B3%E4%BE%A7%E8%8A%82%E7%82%B9%E6%8C%87%E9%92%88"><span class="toc-text">116-填充每个节点的下一个右侧节点指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#114-%E4%BA%8C%E5%8F%89%E6%A0%91%E5%B1%95%E5%BC%80%E4%B8%BA%E9%93%BE%E8%A1%A8"><span class="toc-text">114-二叉树展开为链表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#654-%E6%9E%84%E9%80%A0%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">654-构造最大二叉树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#105-%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">105-从前序与中序遍历序列构造二叉树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#106-%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">106-从中序与后序遍历序列构造二叉树</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">二叉搜索树</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#230-BST%E7%AC%ACK%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0"><span class="toc-text">230-BST第K小的元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#538-1038-%E6%8A%8A%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%B4%AF%E5%8A%A0%E6%A0%91"><span class="toc-text">538&#x2F;1038-把二叉搜索树转换为累加树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9"><span class="toc-text">450-删除二叉搜索树中的节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#701-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C"><span class="toc-text">701-二叉树中的插入操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#700-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2"><span class="toc-text">700-二叉搜索树中的搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#98-%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">98-验证二叉搜索树</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">二叉树</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#226-%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">226-翻转二叉树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#116-%E5%A1%AB%E5%85%85%E6%AF%8F%E4%B8%AA%E8%8A%82%E7%82%B9%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%8F%B3%E4%BE%A7%E8%8A%82%E7%82%B9%E6%8C%87%E9%92%88"><span class="toc-text">116-填充每个节点的下一个右侧节点指针</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#114-%E4%BA%8C%E5%8F%89%E6%A0%91%E5%B1%95%E5%BC%80%E4%B8%BA%E9%93%BE%E8%A1%A8"><span class="toc-text">114-二叉树展开为链表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#654-%E6%9E%84%E9%80%A0%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">654-构造最大二叉树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#105-%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">105-从前序与中序遍历序列构造二叉树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#106-%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">106-从中序与后序遍历序列构造二叉树</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">二叉搜索树</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#230-BST%E7%AC%ACK%E5%B0%8F%E7%9A%84%E5%85%83%E7%B4%A0"><span class="toc-text">230-BST第K小的元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#538-1038-%E6%8A%8A%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%B4%AF%E5%8A%A0%E6%A0%91"><span class="toc-text">538&#x2F;1038-把二叉搜索树转换为累加树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#450-%E5%88%A0%E9%99%A4%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9"><span class="toc-text">450-删除二叉搜索树中的节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#701-%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C"><span class="toc-text">701-二叉树中的插入操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#700-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2"><span class="toc-text">700-二叉搜索树中的搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#98-%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">98-验证二叉搜索树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#96-%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="toc-text">96-不同的二叉搜索树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#95-%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-II"><span class="toc-text">95-不同的二叉搜索树 II</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1869,6 +1884,143 @@ class Solution &#123;
 &#125;
 </code></pre>
 <p><strong>我们通过使用辅助函数，增加函数参数列表，在参数中携带额外信息，将这种约束传递给子树的所有节点，这也是二叉树算法的一个小技巧吧</strong>。</p>
+<hr>
+<h2 id="96-不同的二叉搜索树"><a href="#96-不同的二叉搜索树" class="headerlink" title="96-不同的二叉搜索树"></a>96-不同的二叉搜索树</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/unique-binary-search-trees/">https://leetcode-cn.com/problems/unique-binary-search-trees/</a></p>
+<p>给你一个整数 <code>n</code> ，求恰由 <code>n</code> 个节点组成且节点值从 <code>1</code> 到 <code>n</code> 互不相同的 <strong>二叉搜索树</strong> 有多少种？</p>
+<p>返回满足题意的二叉搜索树的种数。</p>
+<img src="/2021/06/01/BinaryTree/image-20211115174049902.png" alt="image-20211115174049902" style="zoom:80%; margin:10px;">
+</blockquote>
+<p><strong>这就是一个正宗的穷举问题，那么什么方式能够正确地穷举合法 BST 的数量呢？</strong></p>
+<p>我们前文说过，不要小看「穷举」，这是一件看起来简单但是比较有技术含量的事情，问题的关键就是不能数漏，也不能数多，你咋整？</p>
+<p><strong>二叉树算法的关键就在于明确根节点需要做什么，其实 BST 作为一种特殊的二叉树，核心思路也是一样的。</strong></p>
+<p>举个例子，比如给算法输入 <code>n = 5</code>，也就是说用 <code>&#123;1,2,3,4,5&#125;</code> 这些数字去构造 BST。</p>
+<p><strong>首先，这棵 BST 的根节点总共有几种情况？</strong></p>
+<p>显然有 5 种情况对吧，因为每个数字都可以作为根节点。</p>
+<p>比如说我们固定 <code>3</code> 作为根节点，这个前提下能有几种不同的 BST 呢？</p>
+<p><strong>根据 BST 的特性，根节点的左子树都比根节点的值小，右子树的值都比根节点的值大。</strong></p>
+<p>所以如果固定 <code>3</code> 作为根节点，左子树节点就是 <code>&#123;1,2&#125;</code> 的组合，右子树就是 <code>&#123;4,5&#125;</code> 的组合。</p>
+<p><strong>左子树的组合数和右子树的组合数乘积</strong>就是 <code>3</code> 作为根节点时的 BST 个数。</p>
+<img src="/2021/06/01/BinaryTree/image-20211115174948606.png" alt="image-20211115174948606" style="zoom:80%; margin:10px;">
+
+<p>我们这是说了 <code>3</code> 为根节点这一种特殊情况，其实其他的节点也是一样的。</p>
+<p>注意 base case，显然当 <code>lo &gt; hi</code> 闭区间 <code>[lo, hi]</code> 肯定是个空区间，也就对应着空节点 null，虽然是空节点，但是也是一种情况，所以要返回 1 而不能返回 0。</p>
+<p>这样，题目的要求已经实现了，但是时间复杂度非常高，肯定存在重叠子问题。</p>
+<p>前文动态规划相关的问题多次讲过消除重叠子问题的方法，无非就是加一个备忘录：</p>
+<pre><code class="java">class Solution &#123;
+    
+    /**
+     * 备忘录
+     * */
+    private int[][] memo;
+    
+    public int numTrees(int n) &#123;
+        // 备忘录的值初始化为 0
+        memo = new int[n+1][n+1];
+        
+        // 计算闭区间 [1, n] 组成的 BST 个数
+        return count(1, n);
+    &#125;
+    
+    /**
+     * 计算闭区间 [lo, hi] 组成的 BST 个数
+     * */
+    int count(int lo, int hi) &#123;
+        //base code
+        if (lo &gt; hi) &#123;
+            return 1;
+        &#125;
+        
+        // 查备忘录
+        if (memo[lo][hi] != 0) &#123;
+            return memo[lo][hi];
+        &#125;
+
+        int res = 0;
+        for (int i = lo; i &lt;= hi; i++) &#123;
+            // i 的值作为根节点 root
+            int left = count(lo, i-1);
+            int right = count(i+1, hi);
+            // 左右子树的组合数乘积是 BST 的总数
+            res += left * right;
+        &#125;
+        
+        // 将结果存入备忘录
+        memo[lo][hi] = res;
+
+        return res;
+    &#125;
+&#125;
+</code></pre>
+<hr>
+<h2 id="95-不同的二叉搜索树-II"><a href="#95-不同的二叉搜索树-II" class="headerlink" title="95-不同的二叉搜索树 II"></a>95-不同的二叉搜索树 II</h2><p>那么，如果给一个进阶题目，不止让你计算有几个不同的 BST，而是要你构建出所有合法的 BST，如何实现这个算法呢？</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/unique-binary-search-trees-ii/">https://leetcode-cn.com/problems/unique-binary-search-trees-ii/</a></p>
+<p>给你一个整数 <code>n</code> ，请你生成并返回所有由 <code>n</code> 个节点组成且节点值从 <code>1</code> 到 <code>n</code> 互不相同的不同 <strong>二叉搜索树</strong> 。</p>
+<p>可以按 <strong>任意顺序</strong> 返回答案。</p>
+<img src="/2021/06/01/BinaryTree/image-20211115175508634.png" alt="image-20211115175508634" style="zoom:80%; margin:10px;">
+</blockquote>
+<p><img src="/2021/06/01/BinaryTree/image-20211115175604138.png" alt="image-20211115175604138"></p>
+<p><strong>直接看代码：</strong></p>
+<pre><code class="java">/**
+ * Definition for a binary tree node.
+ * public class TreeNode &#123;
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() &#123;&#125;
+ *     TreeNode(int val) &#123; this.val = val; &#125;
+ *     TreeNode(int val, TreeNode left, TreeNode right) &#123;
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     &#125;
+ * &#125;
+ */
+class Solution &#123;
+    public List&lt;TreeNode&gt; generateTrees(int n) &#123;
+        if (n == 0) &#123;
+            return new LinkedList&lt;&gt;();
+        &#125;
+
+        // 构造闭区间 [1, n] 组成的 BST
+        return build(1, n);
+    &#125;
+    
+    /**
+     * 构造闭区间 [lo, hi] 组成的 BST
+     * */
+    private List&lt;TreeNode&gt; build(int lo, int hi) &#123;
+        List&lt;TreeNode&gt; res = new LinkedList&lt;&gt;();
+
+        // base case
+        if (lo &gt; hi) &#123;
+            res.add(null);
+            return res;
+        &#125;
+
+        // 1 穷举 root 节点的所有可能
+        for (int i = lo; i &lt;= hi; i++) &#123;
+            // 2 递归构造出左右子树的所有合法BST
+            List&lt;TreeNode&gt; leftTree = build(lo, i-1);
+            List&lt;TreeNode&gt; rightTree = build(i+1, hi);
+            // 3 给 root 节点穷举所有左右子树的组合
+            for (TreeNode left : leftTree) &#123;
+                for (TreeNode right : rightTree) &#123;
+                    // i 作为根节点 root 的值
+                    TreeNode root = new TreeNode(i);
+                    root.left = left;
+                    root.right = right;
+                    res.add(root);
+                &#125;
+            &#125;
+        &#125;
+
+        return res;
+    &#125;
+    
+&#125;
+</code></pre>
 <hr>
 
       
