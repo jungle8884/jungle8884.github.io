@@ -1,0 +1,2912 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Linux 与 Shell | blog of Jungle</title>
+  <meta name="keywords" content=" Linux , Shell ">
+  <meta name="description" content="Linux 与 Shell | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#x75;&amp;#110;&amp;#103;&amp;#x6c;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#x75;&amp;#110;&amp;#103;&amp;#x6c;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="leetcode" href="https://leetcode-cn.com/progress/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-leetcode"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(43)</small></div></li>
+    
+        
+            
+            <li><div data-rel="算法"><i class="fold iconfont icon-right"></i>算法<small>(9)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->链表">链表<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->日期">日期<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->树">树<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->双指针">双指针<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(7)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(16)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(6)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="数据库<--->Redis">Redis<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="43">
+<input type="hidden" id="yelog_site_word_count" value="139.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://lavender-z.github.io/">橘子</a></li>
+            
+            <li><a target="_blank" href="https://youngxhui.top/">ISLAND</a></li>
+            
+            <li><a target="_blank" href="https://www.liuchuo.net/about">柳神</a></li>
+            
+            <li><a target="_blank" href="https://programmercarl.com/">K神</a></li>
+            
+            <li><a target="_blank" href="https://labuladong.github.io/algo/">东哥</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_37541097?spm=1001.2014.3001.5509">D神</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_33369905?spm=1001.2014.3001.5509">狂神</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>203</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蔡勒公式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>策略模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查找</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>构建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>观察者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>滑动窗口</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六大原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前缀树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>闰年</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>双指针</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>贪心</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>移除链表元素</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优先队列</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NoSQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OJ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/09/16/Calculate-date/"
+           data-tag="闰年"
+           data-author="" >
+            <span class="post-title" title="Calculate_date">Calculate_date</span>
+            <span class="post-date" title="2021-09-16 21:05:01">2021/09/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatterofStrategy/"
+           data-tag="行为型模式,策略模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2021-09-15 20:58:14">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofObserver/"
+           data-tag="观察者模式,行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2021-09-15 20:41:49">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofProxy/"
+           data-tag="代理模式,结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2021-09-15 20:30:32">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/09/07/PriorityQueue/"
+           data-tag="优先队列,贪心"
+           data-author="" >
+            <span class="post-title" title="PriorityQueue">PriorityQueue</span>
+            <span class="post-date" title="2021-09-07 00:00:00">2021/09/07</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/09/05/LinkedList-203-removeElements/"
+           data-tag="203,移除链表元素"
+           data-author="" >
+            <span class="post-title" title="LinkedList_203_removeElements">LinkedList_203_removeElements</span>
+            <span class="post-date" title="2021-09-05 00:00:00">2021/09/05</span>
+        </a>
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2021/08/31/SearchAndSort/"
+           data-tag="排序,查找"
+           data-author="" >
+            <span class="post-title" title="SearchAndSort">SearchAndSort</span>
+            <span class="post-date" title="2021-08-31 14:27:08">2021/08/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/07/09/Trie/"
+           data-tag="前缀树"
+           data-author="" >
+            <span class="post-title" title="Trie">Trie</span>
+            <span class="post-date" title="2021-07-09 00:00:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 算法 滑动窗口 "
+           href="/2021/07/02/slidingwindow/"
+           data-tag="滑动窗口"
+           data-author="" >
+            <span class="post-title" title="滑动窗口">滑动窗口</span>
+            <span class="post-date" title="2021-07-02 00:00:00">2021/07/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 双指针 "
+           href="/2021/07/01/doublepointers/"
+           data-tag="双指针"
+           data-author="" >
+            <span class="post-title" title="双指针">双指针</span>
+            <span class="post-date" title="2021-07-01 00:00:00">2021/07/01</span>
+        </a>
+        
+        <a  class="全部文章 数据库 Redis "
+           href="/2021/06/29/redis-LearningNote/"
+           data-tag="NoSQL"
+           data-author="" >
+            <span class="post-title" title="redis学习笔记">redis学习笔记</span>
+            <span class="post-date" title="2021-06-29 00:00:00">2021/06/29</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/06/27/Zeller/"
+           data-tag="蔡勒公式,OJ"
+           data-author="" >
+            <span class="post-title" title="Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7">Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7</span>
+            <span class="post-date" title="2021-06-27 00:00:00">2021/06/27</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/06/01/BinaryTree/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树">二叉树</span>
+            <span class="post-date" title="2021-06-01 00:00:00">2021/06/01</span>
+        </a>
+        
+        <a  class="全部文章 运维 "
+           href="/2021/05/27/linuxLearningNote/"
+           data-tag="Linux,Shell"
+           data-author="" >
+            <span class="post-title" title="Linux 与 Shell">Linux 与 Shell</span>
+            <span class="post-date" title="2021-05-27 00:00:00">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式,构建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="构建型模式,单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/09/DesignPatternofSixPrinciples/"
+           data-tag="六大原则"
+           data-author="" >
+            <span class="post-title" title="六大设计原则">六大设计原则</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="构建型模式,原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="Python,爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-linuxLearningNote" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Linux 与 Shell</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="运维">运维</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Linux</a>
+            
+            <a class="color1">Shell</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-11-17 21:49:09'>2021-05-27 00:00</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:10.3k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E8%A1%8C%E7%89%88"><span class="toc-text">发行版</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">文件系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-text">基本命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E5%91%BD%E4%BB%A4"><span class="toc-text">权限命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%E8%AE%BE%E7%BD%AE"><span class="toc-text">自动启动设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-text">用户组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">其他常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C"><span class="toc-text">网络</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E5%89%91%E5%AE%A2%E4%B8%8E%E7%AE%A1%E9%81%93%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">三剑客与管道的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%88%99"><span class="toc-text">正则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E9%81%93"><span class="toc-text">管道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sed"><span class="toc-text">sed</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#awk"><span class="toc-text">awk</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Bash"><span class="toc-text">Bash</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-text">变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5"><span class="toc-text">控制语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#read%E5%91%BD%E4%BB%A4"><span class="toc-text">read命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-text">参数传递</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%BF%90%E7%AE%97"><span class="toc-text">基本运算</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Bash-%E4%B8%8E-linux-%E5%91%BD%E4%BB%A4%E7%BB%93%E5%90%88"><span class="toc-text">Bash 与 linux 命令结合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#read"><span class="toc-text">read</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0"><span class="toc-text">参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E7%AE%97"><span class="toc-text">运算</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>Linux 本质是指 Linux 内核</strong> ： 严格来讲，Linux 这个词本身只表示 Linux 内核，单独的 Linux 内核并不能成为一个可以正常工作的操作系统。所以，就有了各种 Linux 发行版。</p>
+<blockquote>
+<p>内核 : （英语：Kernel，又称核心）在计算机科学中是一个用来管理软件发出的数据 I/O（输入与输出）要求的电脑程序，将这些要求转译为数据处理的指令并交由中央处理器（CPU）及电脑中其他电子组件进行处理，是现代操作系统中最基本的部分。</p>
+<ul>
+<li>它是为众多应用程序提供对计算机硬件的安全访问的一部分软件，这种访问是有限的，并由内核决定一个程序在什么时候对某部分硬件操作多长时间。 </li>
+<li><strong>直接对硬件操作是非常复杂的。所以内核通常提供一种硬件抽象的方法，来完成这些操作。有了这个，通过进程间通信机制及系统调用，应用进程可间接控制所需的硬件资源（特别是处理器及 IO 设备）。</strong></li>
+</ul>
+</blockquote>
+<ol>
+<li><strong>操作系统的内核（Kernel）是操作系统的核心部分，它负责系统的内存管理，硬件设备的管理，文件系统的管理以及应用程序的管理。</strong></li>
+<li><strong>操作系统的内核是连接应用程序和硬件的桥梁，决定着操作系统的性能和稳定性。</strong></li>
+</ol>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://snailclimb.gitee.io/javaguide/#/docs/cs-basics/operating-system/linux?id=_13-%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e7%9a%84%e5%86%85%e6%a0%b8%ef%bc%88kernel%ef%bc%89">内核与CPU的区别</a></p>
+</blockquote>
+<ol>
+<li>操作系统的内核（Kernel）属于操作系统层面，而 CPU 属于硬件。</li>
+<li>CPU 主要提供运算，处理各种指令的能力。内核（Kernel）主要负责系统管理比如内存管理，它屏蔽了对硬件的操作。</li>
+</ol>
+<img src="/2021/05/27/linuxLearningNote/image-20211002201551841.png" alt="image-20211002201551841" style="zoom:67%;">
+
+<blockquote>
+<p><strong>用户态和内核态</strong></p>
+</blockquote>
+<p>根据进程访问资源的特点，我们可以把进程在系统上的运行分为两个级别：</p>
+<ol>
+<li><strong>用户态(user mode)</strong> : 用户态运行的进程或<strong>可以直接读取用户数据</strong>的程序。</li>
+<li><strong>系统态(kernel mode)</strong>: 可以简单的理解系统态运行的进程或程序<strong>几乎可以访问计算机的任何资源，不受限制</strong>。</li>
+</ol>
+<blockquote>
+<p><strong>系统调用</strong></p>
+</blockquote>
+<p>我们运行的程序基本都是运行在用户态，如果我们调用操作系统提供的系统态级别的子功能咋办呢？那就需要系统调用了！</p>
+<p>也就是说在我们运行的用户程序中，凡是<strong>与系统态级别的资源有关的操作</strong>（如文件管理、进程控制、内存管理等)，都<strong>必须通过系统调用方式向操作系统提出服务请求，并由操作系统代为完成</strong>。</p>
+<p>这些系统调用按功能大致可分为如下几类：</p>
+<ul>
+<li><strong>设备管理</strong> ：完成设备的请求或释放，以及<strong>设备启动</strong>等功能。</li>
+<li><strong>文件管理</strong> ：完成<strong>文件的读、写、创建及删除</strong>等功能。</li>
+<li><strong>进程控制</strong> ：完成<strong>进程的创建、撤销、阻塞及唤醒</strong>等功能。</li>
+<li><strong>进程通信</strong> ：完成<strong>进程之间的消息传递或信号传递</strong>等功能。</li>
+<li><strong>内存管理</strong> ：完成<strong>内存的分配、回收</strong>以及获取作业<strong>占用内存区大小及地址</strong>等功能。</li>
+</ul>
+<img src="/2021/05/27/linuxLearningNote/image-20211002202005299.png" alt="image-20211002202005299" style="zoom:67%;">
+
+
+
+<h2 id="发行版"><a href="#发行版" class="headerlink" title="发行版"></a>发行版</h2><blockquote>
+<p>Linux的发行版说简单点就是将Linux内核与应用软件做一个打包。</p>
+<p>一些组织或厂商将 Linux 内核与各种软件和文档包装起来，并提供系统安装界面和系统配置、设定与管理工具，就构成了 Linux 的发行版本。</p>
+<p>内核主要负责系统的内存管理，硬件设备的管理，文件系统的管理以及应用程序的管理。</p>
+</blockquote>
+<p><strong>Linux 的发行版本可以大体分为两类：</strong></p>
+<ul>
+<li>商业公司维护的发行版本，以著名的 Red Hat 为代表，比较典型的有 CentOS 。</li>
+<li>社区组织维护的发行版本，以 Debian 为代表，比较典型的有 Ubuntu、Debian。</li>
+</ul>
+<p>对于初学者学习 Linux ,推荐选择 CentOS 。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/139874681">按包管理器来划分</a></p>
+<p><strong>首先，什么是包管理器呢？</strong></p>
+<p>这么说吧，如果没有包管理器这个东西的存在，那估计仅仅是<code>Linux</code>系统上的软件安装，怕是就要劝退很多用户了，因为很多的<strong>软件依赖处理</strong>会让人抓狂。</p>
+<p>因此简单起见，我们可以将包管理器理解为，用来为<code>Linux</code>系统上的软件<code>安装</code>、<code>卸载</code>、<code>升级</code>、<code>查询</code>提供支持的组件，所以对于用户使用来说，一般是一组工具命令集。</p>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211002172843522.png" alt="image-20211002172843522"></p>
+<blockquote>
+<p>常用工具集: <code>apt, apt-get, yum, dpkg</code></p>
+</blockquote>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211002173932727.png" alt="image-20211002173932727"></p>
+<blockquote>
+<p>常用工具命令</p>
+</blockquote>
+<p><strong>升级</strong></p>
+<p>sudo apt-get upgrade</p>
+<p>sudo yum update</p>
+<p><strong>安装</strong></p>
+<p>sudo apt-get install 包名</p>
+<p>sudo yum install 包名</p>
+<p><strong>本地安装</strong></p>
+<p>sudo apt-get install 包名.deb</p>
+<p>sudo yum install 包名.rpm</p>
+<p><strong>移除</strong></p>
+<p>sudo apt-get remove 包名</p>
+<p>sudo yum remove 包名</p>
+<hr>
+<h2 id="文件系统"><a href="#文件系统" class="headerlink" title="文件系统"></a>文件系统</h2><p><strong>在 Linux 操作系统中，所有被操作系统管理的资源，例如网络接口卡、磁盘驱动器、打印机、输入输出设备、普通文件或是目录都被看作是一个文件。</strong> 也就是说在 Linux 系统中有一个重要的概念：<strong>一切都是文件</strong>。</p>
+<ul>
+<li>硬盘的最小存储单位是扇区(Sector)，块(block)由多个扇区组成。</li>
+<li>文件数据存储在块中。</li>
+<li>块的最常见的大小是 4kb，约为 8 个连续的扇区组成（每个扇区存储 512 字节）。</li>
+<li>一个文件可能会占用多个 block，但是一个块只能存放一个文件。</li>
+</ul>
+<blockquote>
+<p><strong>inode 是 linux/unix 文件系统的基础。那么，inode 是什么?有什么作用呢?</strong></p>
+</blockquote>
+<ul>
+<li>虽然，我们将文件存储在了块(block)中，但是我们还需要一个空间来存储文件的 <strong>元信息 metadata</strong> ：<ul>
+<li>如某个文件被分成几块、每一块在的地址、文件拥有者，创建时间，权限，大小等。</li>
+<li>这种 <strong>存储文件元信息的区域就叫 inode</strong>，译为索引节点：<strong>i（index）+node</strong>。 </li>
+</ul>
+</li>
+<li>每个文件都有一个 inode，存储文件的元信息。</li>
+</ul>
+<p>简单来说：inode 就是用来维护某个文件被分成几块、每一块在的地址、文件拥有者，创建时间，权限，大小等信息。</p>
+<ul>
+<li><strong>inode</strong> ：记录文件的属性信息，可以使用 stat 命令查看 inode 信息。</li>
+<li><strong>block</strong> ：实际文件的内容，如果一个文件大于一个块时候，那么将占用多个 block，但是一个块只能存放一个文件。（因为数据是由 inode 指向的，如果有两个文件的数据存放在同一个块中，就会乱套了）</li>
+</ul>
+<p><img src="/2021/05/27/linuxLearningNote/%E6%96%87%E4%BB%B6inode%E4%BF%A1%E6%81%AF.png" alt="inode"></p>
+<p>实际对比:</p>
+<pre><code class="bash">[root@VM-12-17-centos data]# ll
+total 8
+-rw-r--r-- 1 polkitd lighthouse   0 Apr 16  2021 appendonly.aof
+-rw-r--r-- 1 polkitd lighthouse 175 Apr 16  2021 dump.rdb
+-rw-r--r-- 1 polkitd lighthouse 772 Apr 16  2021 nodes.conf
+[root@VM-12-17-centos data]# stat dump.rdb 
+  File: ‘dump.rdb’
+  Size: 175           Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d    Inode: 3407911     Links: 1
+Access: (0644/-rw-r--r--)  Uid: (  999/ polkitd)   Gid: ( 1000/lighthouse)
+Access: 2021-04-16 19:19:56.555265515 +0800
+Modify: 2021-04-16 19:19:56.454265402 +0800
+Change: 2021-04-16 19:19:56.457265405 +0800
+Birth: -
+</code></pre>
+<blockquote>
+<p>文件类型</p>
+</blockquote>
+<p>Linux 支持很多文件类型，其中非常重要的文件类型有: <strong>普通文件</strong>，<strong>目录文件</strong>，<strong>链接文件</strong>，<strong>设备文件</strong>，<strong>管道文件</strong>，<strong>Socket 套接字文件</strong>等。</p>
+<ul>
+<li><strong>普通文件（-）</strong> ： 用于存储信息和数据， Linux 用户可以根据访问权限对普通文件进行查看、更改和删除。比如：图片、声音、PDF、text、视频、源代码等等。</li>
+<li><strong>目录文件（d，directory file）</strong> ：目录也是文件的一种，用于表示和管理系统中的文件，目录文件中包含一些文件名和子目录名。打开目录事实上就是打开目录文件。</li>
+<li><strong>符号链接文件（l，symbolic link）</strong> ：保留了指向文件的地址而不是文件本身。</li>
+<li><strong>字符设备（c，char）</strong> ：用来访问字符设备比如键盘。</li>
+<li><strong>设备文件（b，block）</strong> ： 用来访问块设备比如硬盘、软盘。</li>
+<li><strong>管道文件(p,pipe)</strong> : 一种特殊类型的文件，用于进程之间的通信。</li>
+<li><strong>套接字(s,socket)</strong> ：用于进程间的网络通信，也可以用于本机之间的非网络通信。</li>
+</ul>
+<blockquote>
+<p>目录树</p>
+</blockquote>
+<p><strong>Linux 的目录结构如下：</strong></p>
+<p>Linux 文件系统的结构层次鲜明，就像一棵倒立的树，最顶层是其根目录：</p>
+<p><img src="/2021/05/27/linuxLearningNote/Linux%E7%9B%AE%E5%BD%95%E6%A0%91.png" alt="目录树"></p>
+<p><strong>常见目录说明：</strong></p>
+<ul>
+<li><strong>/bin：</strong> 存放二进制可执行文件(ls、cat、mkdir 等)，常用命令一般都在这里；</li>
+<li><strong>/etc：</strong> 存放系统管理和配置文件；</li>
+<li><strong>/home：</strong> 存放所有用户文件的根目录，是用户主目录的基点，比如用户 user 的主目录就是/home/user，可以用~user 表示；</li>
+<li><strong>/usr ：</strong> 用于存放系统应用程序；</li>
+<li><strong>/opt：</strong> 额外安装的可选应用程序包所放置的位置。一般情况下，我们可以把 tomcat 等都安装到这里；</li>
+<li><strong>/proc：</strong> 虚拟文件系统目录，是系统内存的映射。可直接访问这个目录来获取系统信息；</li>
+<li><strong>/root：</strong> 超级用户（系统管理员）的主目录（特权阶级^o^）；</li>
+<li><strong>/sbin:</strong> 存放二进制可执行文件，只有 root 才能访问。这里存放的是系统管理员使用的系统级别的管理命令和程序。如 ifconfig 等；</li>
+<li><strong>/dev：</strong> 用于存放设备文件；</li>
+<li><strong>/mnt：</strong> 系统管理员安装临时文件系统的安装点，系统提供这个目录是让用户临时挂载其他的文件系统；</li>
+<li><strong>/boot：</strong> 存放用于系统引导时使用的各种文件；</li>
+<li><strong>/lib ：</strong> 存放着和系统运行相关的库文件 ；</li>
+<li><strong>/tmp：</strong> 用于存放各种临时文件，是公用的临时文件存储点；</li>
+<li><strong>/var：</strong> 用于存放运行时需要改变数据的文件，也是某些大文件的溢出区，比方说各种服务的日志文件（系统启动日志等。）等；</li>
+<li><strong>/lost+found：</strong> 这个目录平时是空的，系统非正常关机而留下“无家可归”的文件（windows 下叫什么.chk）就在这里。</li>
+</ul>
+<hr>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><p><strong>Linux 命令大全</strong>：<a target="_blank" rel="noopener" href="http://man.linuxde.net/">http://man.linuxde.net/</a></p>
+<blockquote>
+<p>cd  目录切换 (测试环境为 Centos)</p>
+</blockquote>
+<p>cd /usr : 切换到usr目录</p>
+<pre><code class="bash">[root@VM-12-17-centos ~]# cd /usr
+[root@VM-12-17-centos usr]# pwd
+/usr
+</code></pre>
+<p>cd ..  : 上一级</p>
+<pre><code class="bash">[root@VM-12-17-centos usr]# cd ..
+[root@VM-12-17-centos /]# pwd
+/
+</code></pre>
+<p>cd / : 系统根目录</p>
+<pre><code class="bash">[root@VM-12-17-centos /]# cd /
+[root@VM-12-17-centos /]# pwd
+/
+</code></pre>
+<p>cd ~ : 用户主目录</p>
+<pre><code class="bash">[root@VM-12-17-centos /]# cd ~
+[root@VM-12-17-centos ~]# pwd
+/root
+</code></pre>
+<p>cd - : 上一个操作所在目录</p>
+<pre><code class="bash">[root@VM-12-17-centos ~]# cd -
+/
+[root@VM-12-17-centos /]# pwd
+/
+</code></pre>
+<p>mkdir 新建目录</p>
+<p>ls 查看目录信息</p>
+<p>ll (ls-l) 查看该目录下所有目录和文件的详细信息</p>
+<pre><code class="bash">[root@VM-12-17-centos usr]# ls
+bin  etc  games  include  lib  lib64  libexec  local  sbin  share  src  tmp
+[root@VM-12-17-centos usr]# ll
+total 128
+dr-xr-xr-x.  2 root root 36864 Sep 16 16:45 bin
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 etc
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 games
+drwxr-xr-x. 59 root root  4096 Sep  2  2020 include
+dr-xr-xr-x. 30 root root  4096 Sep  2  2020 lib
+dr-xr-xr-x. 52 root root 32768 Mar 17  2021 lib64
+drwxr-xr-x. 26 root root  4096 Mar 17  2021 libexec
+drwxr-xr-x. 13 root root  4096 May 28 11:22 local
+dr-xr-xr-x.  2 root root 20480 Sep 28 15:24 sbin
+drwxr-xr-x. 97 root root  4096 Mar 17  2021 share
+drwxr-xr-x.  7 root root  4096 Sep  2  2020 src
+lrwxrwxrwx.  1 root root    10 Mar  7  2019 tmp -&gt; ../var/tmp
+</code></pre>
+<blockquote>
+<p>touch 文件名称</p>
+</blockquote>
+<p>新建文件</p>
+<blockquote>
+<p>find 目录 参数</p>
+</blockquote>
+<p>find .                          列出当前目录及子目录下所有文件和文件夹</p>
+<pre><code class="bash">[root@VM-12-17-centos data]# find .
+.
+./1.jpg
+./resnet50.mar
+./test.txt
+./resNet50.pth
+./2.jpg
+./3.jpg
+</code></pre>
+<p>find /home  -name *.txt      在home目录下查找以.txt 结尾的文件名</p>
+<pre><code class="bash">[root@VM-12-17-centos ~]# find /home -name *.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-28.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-30.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-31.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-07.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-03.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-10.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-05.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-01.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-09.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-06.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-12.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-11.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-29.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-04.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-27.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-08.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-02.txt
+</code></pre>
+<p>忽略大小写: <code>find /home -iname &quot;*.txt&quot;</code></p>
+<pre><code class="bash">[root@VM-12-17-centos ~]# find /home -iname &quot;*.txt&quot;
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-28.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-30.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-31.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-07.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-03.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-10.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-05.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-01.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-09.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-06.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-12.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-11.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-29.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-04.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-03-27.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-08.txt
+/home/jungle/build/tomcat/tomcatlogs/localhost_access_log.2021-04-02.txt
+</code></pre>
+<p>当前目录及子目录下查找所有以.txt 和.pdf 结尾的文件:<code>find . -name &quot;*.txt&quot; -o -name &quot;*.pdf&quot;</code></p>
+<blockquote>
+<p>mv  目录名称 新目录名称</p>
+<p>mv  目录名称 目录的新位置</p>
+</blockquote>
+<p>mv 命令用来对文件或目录重新命名，或者将文件从一个目录移到另一个目录中</p>
+<pre><code class="bash"># mv  目录名称 新目录名称
+[root@VM-12-17-centos home]# ls
+dockerfile  docker-test-volume  ftpuser  jungle  lighthouse  mysql  TestCommand
+[root@VM-12-17-centos home]# mkdir TestCommand2
+[root@VM-12-17-centos home]# ls
+dockerfile  docker-test-volume  ftpuser  jungle  lighthouse  mysql  TestCommand  TestCommand2
+[root@VM-12-17-centos home]# mv TestCommand TestCommand1    # 对目录重新命名
+[root@VM-12-17-centos home]# ls
+dockerfile          ftpuser  lighthouse  TestCommand1
+docker-test-volume  jungle   mysql       TestCommand2
+
+# mv  目录名称... 目录的新位置
+[root@VM-12-17-centos home]# mkdir TestCommand
+[root@VM-12-17-centos home]# ls
+dockerfile          ftpuser  lighthouse  TestCommand   TestCommand2
+docker-test-volume  jungle   mysql       TestCommand1
+[root@VM-12-17-centos home]# mv TestCommand1 TestCommand2 TestCommand    # 将目录整体搬家
+[root@VM-12-17-centos home]# ls
+dockerfile  docker-test-volume  ftpuser  jungle  lighthouse  mysql  TestCommand
+[root@VM-12-17-centos home]# cd TestCommand/
+[root@VM-12-17-centos TestCommand]# ls
+TestCommand1  TestCommand2
+</code></pre>
+<blockquote>
+<p>cp -r 目录名称 目录拷贝的目标位置</p>
+</blockquote>
+<p>拷贝目录（改），-r 代表递归拷贝 。</p>
+<p>注意：cp 命令不仅可以拷贝目录还可以拷贝文件，压缩包等，拷贝文件和压缩包时不 用写-r 递归。</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# cp TestCommand1/test1.txt TestCommand2    # 复制文件到另一个目录
+[root@VM-12-17-centos TestCommand]# ls
+TestCommand1  TestCommand2
+[root@VM-12-17-centos TestCommand]# cd TestCommand2
+[root@VM-12-17-centos TestCommand2]# ls
+test1.txt
+[root@VM-12-17-centos TestCommand2]# mv test1.txt test2.txt        # 给复制文件重命名
+[root@VM-12-17-centos TestCommand2]# ls
+test2.txt
+# 递归拷贝目录及其文件
+[root@VM-12-17-centos home]# cp -r TestCommand /usr
+[root@VM-12-17-centos home]# cd /usr
+[root@VM-12-17-centos usr]# cd TestCommand
+[root@VM-12-17-centos TestCommand]# ll
+total 8
+drwxr-xr-x 2 root root 4096 Oct 24 18:43 TestCommand1
+drwxr-xr-x 2 root root 4096 Oct 24 18:43 TestCommand2
+</code></pre>
+<blockquote>
+<p>rm -rf 目录</p>
+<p><strong><code>rm -rf 文件</code>：</strong> 删除文件（删）。</p>
+</blockquote>
+<p>删除目录 或 文件</p>
+<p>注意：rm 不仅可以删除目录，也可以删除其他文件或压缩包，为了增强大家的记忆， 无论删除任何目录或文件，都直接使用<code>rm -rf</code> 目录/文件/压缩包。</p>
+<blockquote>
+<p><strong><code>cat/more/less/tail 文件名称</code></strong> ：文件的查看（查） </p>
+</blockquote>
+<p>命令 <code>tail -f 文件</code> 可以对某个文件进行动态监控，例如 tomcat 的日志文件， 会随着程序的运行，日志会变化，可以使用 <code>tail -f catalina-2016-11-11.log</code> 监控 文 件的变化 。</p>
+<blockquote>
+<p>vim 文件</p>
+</blockquote>
+<p>修改文件的内容（改）。</p>
+<p>vim 编辑器是 Linux 中的强大组件，是 vi 编辑器的加强版，vim 编辑器的命令和快捷方式有很多，但此处不一一阐述，大家也无需研究的很透彻，使用 vim 编辑修改文件的方式基本会使用就可以了。</p>
+<p>在实际开发中，使用 vim 编辑器主要作用就是修改配置文件，下面是一般步骤： <code>vim 文件------&gt;进入文件-----&gt;命令模式------&gt;按i进入编辑模式-----&gt;编辑文件 -------&gt;按Esc进入底行模式-----&gt;输入：wq/q!</code> （输入 wq 代表写入内容并退出，即保存；输入 q!代表强制退出不保存）。</p>
+<blockquote>
+<p>打包并压缩文件</p>
+</blockquote>
+<p>Linux 中的打包文件一般是以.tar 结尾的，压缩的命令一般是以.gz 结尾的。</p>
+<p>而一般情况下打包和压缩是一起进行的，打包并压缩后的文件的后缀名一般.tar.gz。 </p>
+<p>命令：<code>tar -zcvf 打包压缩后的文件名 要打包压缩的文件</code> ，其中：</p>
+<ul>
+<li>z：调用 gzip 压缩命令进行压缩</li>
+<li>c：打包文件</li>
+<li>v：显示运行过程</li>
+<li>f：指定文件名</li>
+</ul>
+<blockquote>
+<p>解压压缩包</p>
+</blockquote>
+<p>命令：<code>tar [-xvf] 压缩文件</code></p>
+<p>其中：x：代表解压</p>
+<pre><code class="bash">[root@VM-12-17-centos usr]# ls
+a.txt  b.txt  etc    hello.sh  lib    libexec  sbin   src                 tmp
+bin    c.txt  games  include   lib64  local    share  TestCommand.tar.gz
+[root@VM-12-17-centos usr]# tar -xvf TestCommand.tar.gz 
+TestCommand/
+TestCommand/TestCommand2/
+TestCommand/TestCommand2/test2.txt
+TestCommand/TestCommand1/
+TestCommand/TestCommand1/test1.txt
+[root@VM-12-17-centos usr]# ls
+a.txt  b.txt  etc    hello.sh  lib    libexec  sbin   src          TestCommand.tar.gz
+bin    c.txt  games  include   lib64  local    share  TestCommand  tmp
+[root@VM-12-17-centos usr]# ll TestCommand
+total 8
+drwxr-xr-x 2 root root 4096 Oct 24 19:13 TestCommand1
+drwxr-xr-x 2 root root 4096 Oct 24 18:39 TestCommand2
+</code></pre>
+<p>示例：</p>
+<ul>
+<li>将 /test 下的 test.tar.gz 解压到当前目录下可以使用命令：**<code>tar -xvf test.tar.gz</code>**</li>
+<li>将 /test 下的 test.tar.gz 解压到根目录/usr 下:**<code>tar -xvf test.tar.gz -C /usr</code>**（- C 代表指定解压的位置）</li>
+</ul>
+<hr>
+<h2 id="权限命令"><a href="#权限命令" class="headerlink" title="权限命令"></a>权限命令</h2><p>操作系统中每个文件都拥有特定的权限、所属用户和所属组。</p>
+<p>权限是操作系统用来限制资源访问的机制，在 Linux 中权限一般分为读(readable)、写(writable)和执行(excutable)，分为三组。</p>
+<p>分别对应文件的属主(owner)，属组(group)和其他用户(other)，通过这样的机制来限制哪些用户、哪些组可以对特定的文件进行什么样的操作。</p>
+<p>通过 <strong><code>ls -l</code></strong> 命令我们可以 查看某个目录下的文件或目录的权限</p>
+<pre><code class="bash">[root@VM-12-17-centos usr]# ls -l
+total 128
+-rw-r--r--   1 root root     0 Oct  2 19:41 a.txt
+dr-xr-xr-x.  2 root root 36864 Sep 16 16:45 bin
+-rw-r--r--   1 root root     0 Oct  2 19:41 b.txt
+-rw-r--r--   1 root root     0 Oct  2 19:41 c.txt
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 etc
+drwxr-xr-x.  2 root root  4096 Apr 11  2018 games
+drwxr-xr-x. 59 root root  4096 Sep  2  2020 include
+dr-xr-xr-x. 30 root root  4096 Sep  2  2020 lib
+dr-xr-xr-x. 52 root root 32768 Mar 17  2021 lib64
+drwxr-xr-x. 26 root root  4096 Mar 17  2021 libexec
+drwxr-xr-x. 13 root root  4096 May 28 11:22 local
+dr-xr-xr-x.  2 root root 20480 Sep 28 15:24 sbin
+drwxr-xr-x. 97 root root  4096 Mar 17  2021 share
+drwxr-xr-x.  7 root root  4096 Sep  2  2020 src
+lrwxrwxrwx.  1 root root    10 Mar  7  2019 tmp -&gt; ../var/tmp
+</code></pre>
+<blockquote>
+<p>-rw-r–r–   1 root root     0 Oct  2 19:41 a.txt </p>
+</blockquote>
+<p>第一行 解释如下:</p>
+<ul>
+<li><p><code>-</code>  :  代表文件</p>
+</li>
+<li><p>rw- :  属主(owner) 可以读和写</p>
+</li>
+<li><p>r–  :  属组(group)  只能读</p>
+</li>
+<li><p>r–  :  其他用户(other) 只能读</p>
+</li>
+<li><p>root  :  所有者是root</p>
+</li>
+<li><p>root  : 所属root组</p>
+</li>
+<li><p> 0      : 其他组</p>
+</li>
+</ul>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211002195322962.png" alt="image-20211002195322962"></p>
+<p><strong>文件的类型：</strong></p>
+<ul>
+<li>d： 代表目录</li>
+<li>-： 代表文件</li>
+<li>l： 代表软链接（可以认为是 window 中的快捷方式）</li>
+</ul>
+<p><strong>Linux 中权限分为以下几种：</strong></p>
+<ul>
+<li>r：  代表权限是可读，r 也可以用数字 4 表示</li>
+<li>w：代表权限是可写，w 也可以用数字 2 表示</li>
+<li>x：代表权限是可执行，x 也可以用数字 1 表示</li>
+</ul>
+<p><strong>在 linux 中的每个用户必须属于一个组，不能独立于组外。在 linux 中每个文件有所有者、所在组、其它组的概念。</strong></p>
+<ul>
+<li><strong>所有者(u)</strong> ：一般为文件的创建者，谁创建了该文件，就天然的成为该文件的所有者，用 <code>ls ‐ahl</code> 命令可以看到文件的所有者 也可以使用 <strong>chown 用户名 文件名</strong>来修改文件的所有者 。</li>
+<li><strong>文件所在组(g)</strong> ：当某个用户创建了一个文件后，这个文件的所在组就是该用户所在的组用 <code>ls ‐ahl</code>命令可以看到文件的所有组也可以使用 <strong>chgrp 组名 文件名</strong>来修改文件所在的组。</li>
+<li><strong>其它组(o)</strong> ：除开文件的所有者和所在组的用户外，系统的其它用户都是文件的其它组。</li>
+</ul>
+<blockquote>
+<p>chmod </p>
+</blockquote>
+<p><strong>修改文件/目录的权限的命令：<code>chmod</code></strong></p>
+<p>示例：修改 目录 下的 a.txt 的权限为<strong>文件所有者有全部权限</strong>，<strong>文件所有者所在的组有读写权限</strong>，<strong>其他用户只有读的权限</strong>。</p>
+<p><strong><code>chmod u=rwx,g=rw,o=r a.txt</code></strong> 或者 <strong><code>chmod 764 a.txt</code></strong></p>
+<pre><code class="bash">[root@VM-12-17-centos usr]# chmod 764 a.txt
+[root@VM-12-17-centos usr]# ls -l
+total 128
+-rwxrw-r--   1 root root     0 Oct  2 19:41 a.txt
+</code></pre>
+<hr>
+<h2 id="自动启动设置"><a href="#自动启动设置" class="headerlink" title="自动启动设置"></a>自动启动设置</h2><p><strong>补充一个比较常用的东西:</strong></p>
+<p>假如我们装了一个 zookeeper，我们每次开机到要求其自动启动该怎么办？</p>
+<ol>
+<li>新建一个脚本 zookeeper</li>
+<li>为新建的脚本 zookeeper 添加可执行权限，命令是:<code>chmod +x zookeeper</code></li>
+<li>把 zookeeper 这个脚本添加到开机启动项里面，命令是：<code>chkconfig --add zookeeper</code></li>
+<li>如果想看看是否添加成功，命令是：<code>chkconfig --list</code></li>
+</ol>
+<hr>
+<h2 id="用户组"><a href="#用户组" class="headerlink" title="用户组"></a>用户组</h2><p>每个用户都有一个用户组，系统可以对一个用户组中的所有用户进行集中管理。不同 Linux 系统对用户组的规定有所不同，如 Linux 下的用户属于与它同名的用户组，这个用户组在创建用户时同时创建。</p>
+<p>用户组的管理涉及用户组的添加、删除和修改。组的增加、删除和修改实际上就是对<code>/etc/group</code>文件的更新。</p>
+<p><strong>Linux 系统用户组的管理相关命令:</strong></p>
+<ul>
+<li><p><code>groupadd 选项 用户组</code> :增加一个新的用户组</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# groupadd --help
+Usage: groupadd [options] GROUP
+
+Options:
+  -f, --force                   exit successfully if the group already exists,
+                                and cancel -g if the GID is already used
+  -g, --gid GID                 use GID for the new group
+  -h, --help                    display this help message and exit
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -o, --non-unique              allow to create groups with duplicate
+                                (non-unique) GID
+  -p, --password PASSWORD       use this encrypted password for the new group
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       directory prefix
+</code></pre>
+</li>
+<li><p><code>groupdel 用户组</code>:要删除一个已有的用户组</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# groupdel --help
+Usage: groupdel [options] GROUP
+
+Options:
+  -h, --help                    display this help message and exit
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -f, --force                   delete group even if it is the primary group of a user
+</code></pre>
+</li>
+<li><p><code>groupmod 选项 用户组</code> : 修改用户组的属性</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# groupmod --help
+Usage: groupmod [options] GROUP
+
+Options:
+  -g, --gid GID                 change the group ID to GID
+  -h, --help                    display this help message and exit
+  -n, --new-name NEW_GROUP      change the name to NEW_GROUP
+  -o, --non-unique              allow to use a duplicate (non-unique) GID
+  -p, --password PASSWORD       change the password to this (encrypted)
+                                PASSWORD
+  -R, --root CHROOT_DIR         directory to chroot into
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h2><ul>
+<li><p><strong><code>pwd</code>：</strong> 显示当前所在位置</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# pwd
+/usr/TestCommand
+</code></pre>
+</li>
+<li><p><code>sudo + 其他命令</code>：以系统管理者的身份执行指令，也就是说，经由 sudo 所执行的指令就好像是 root 亲自执行。</p>
+</li>
+<li><p><strong><code>grep 要搜索的字符串 要搜索的文件 --color</code>：</strong> 搜索命令，–color 代表高亮显示</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# grep &quot;hello&quot; TestCommand1/test1.txt --color 
+hello world
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>Linux中的<code>ps</code>命令是Process Status的缩写，<code>ps</code>命令用来列出系统中当前运行的那些进程。<code>ps</code>命令可以列出当前进程的运行情况（状态、时间等信息）。</p>
+<p>在Linux系统中，进程有5中状态，在<code>ps</code>命令中分别用5个大写字母表示：</p>
+<ul>
+<li>R (TASK_RUNNING)，可执行状态。  runnable (on run queue)，正在运行或在运行队列中等待的进程 </li>
+<li>S (TASK_INTERRUPTIBLE)，可中断的睡眠状态。  sleeping，处于这个状态的进程因为等待某某事件的发生（比如等待socket连接、等待信号量），而被挂起。</li>
+<li>D (TASK_UNINTERRUPTIBLE)，不可中断的睡眠状态。  uninterruptible sleep (usually IO)，进程处于睡眠状态，但是此刻进程是不可中断的。不可中断，指的并不是CPU不响应外部硬件的中断，而是指进程不响应异步信号。</li>
+<li>T (TASK_STOPPED or TASK_TRACED)，暂停状态或跟踪状态。  traced or stopped，进程处于睡眠状态，但是此刻进程是不可中断的。不可中断，指的并不是CPU不响应外部硬件的中断，而是指进程不响应异步信号。(进程收到SIGSTOP, SIGSTP, SIGTIN, SIGTOU信号后停止运行)。 </li>
+<li>Z (TASK_DEAD - EXIT_ZOMBIE)，退出状态，进程成为僵尸进程。  a defunct process，在这个退出过程中，进程占有的所有资源将被回收，除了task_struct结构（以及少数资源）。</li>
+</ul>
+</blockquote>
+<ul>
+<li><p><strong><code>ps -ef</code>/<code>ps -aux</code>：</strong> 这两个命令都是查看当前系统正在运行进程，两者的区别是展示格式不同</p>
+<ul>
+<li>如果想要查看特定的进程可以使用这样的格式：**<code>ps aux|grep redis</code>** （查看包括 redis 字符串的进程），</li>
+<li>也可使用 <code>pgrep redis -a</code></li>
+</ul>
+<p>注意：如果直接用 ps（（Process Status））命令，会显示所有进程的状态，通常结合 grep 命令查看某进程的状态。</p>
+<pre><code class="bash"># UID 启动进程的用户
+# PID 进程ID
+# PPID 进程的父进程ID
+# C 进程生命周期中的CPU利用率
+# STIME 进程启动时间
+# TTY 运行在哪个终端
+# TIME 进程已用CPU时间
+# CMD 进程的命令
+[root@VM-12-17-centos TestCommand]# ps -ef | grep redis
+UID        PID  PPID  C STIME TTY          TIME CMD
+root     29397   956  0 20:39 pts/0    00:00:00 grep --color=auto redis
+
+# USER      进程所属用户
+# PID          进程ID
+# %CPU     进程占用CPU百分比
+# %MEM    进程占用内存百分比
+# VSZ         虚拟内存占用大小      单位：kb（killobytes）
+# RSS        实际内存占用大小       单位：kb（killobytes）
+# TTY         终端类型
+# STAT      进程状态
+# START   进程启动时刻
+# TIME      进程运行时长
+# COMMAND 启动进程的命令
+[root@VM-12-17-centos TestCommand]# ps -aux | grep redis
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root     29537  0.0  0.0 112812   968 pts/0    R+   20:40   0:00 grep --color=auto redis
+</code></pre>
+<blockquote>
+<p>STAT 进程的状态，（O表示正在运行，S表示休眠，R表示运行，Z代表僵化，T代表停止）</p>
+</blockquote>
+</li>
+<li><p><strong><code>kill -9 进程的pid</code>：</strong> 杀死进程（-9 表示强制终止。）</p>
+<p>先用 ps 查找进程，然后用 kill 杀掉</p>
+</li>
+<li><p><strong>网络通信命令：</strong></p>
+<ul>
+<li>查看当前系统的网卡信息：ifconfig</li>
+<li>查看与某台机器的连接情况：ping</li>
+<li>查看当前系统的端口使用：netstat -an</li>
+</ul>
+</li>
+<li><p><strong><code>shutdown</code>：</strong> <code>shutdown -h now</code>： 指定现在立即关机；<code>shutdown +5 &quot;System will shutdown after 5 minutes&quot;</code>：指定 5 分钟后关机，同时送出警告信息给登入用户。</p>
+</li>
+<li><p><strong><code>reboot</code>：</strong> <strong><code>reboot</code>：</strong> 重开机。**<code>reboot -w</code>：** 做个重开机的模拟（只有纪录并不会真的重开机）。</p>
+</li>
+</ul>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><blockquote>
+<p>netstat -ntlp</p>
+<p>以数字形式显示地址和端口号, 进程号和名字, 列出所有监听端口, 列出所有tcp</p>
+<ul>
+<li>-t 列出所有tcp</li>
+<li>-u 列出所有udp</li>
+<li>-l 列出所有监听端口 （listen）</li>
+<li>-n 以数字形式显示地址和端口号 （number）</li>
+<li>-p 显示进程的pid 和 名字 （process）</li>
+</ul>
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos ~]# netstat -ntlp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN      1044/vsftpd         
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1147/sshd           
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1295/master         
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1295/master         
+</code></pre>
+<p>top 持续监视系统性能</p>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211002203533990.png" alt="image-20211002203533990"></p>
+<hr>
+<h1 id="三剑客与管道的使用"><a href="#三剑客与管道的使用" class="headerlink" title="三剑客与管道的使用"></a>三剑客与管道的使用</h1><h2 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h2><blockquote>
+<p>就是记录文本规则的代码</p>
+<p>学习网址：<a target="_blank" rel="noopener" href="http://tool.chinaz.com/tools/regexgenerate">http://tool.chinaz.com/tools/regexgenerate</a></p>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211024213442194.png" alt="image-20211024213442194"></p>
+</blockquote>
+<p><strong>单词: \b…\b</strong></p>
+<p><code>. </code>任意字符 (除了换行符)</p>
+<p><code>\w</code> 字母, 数字, 下划线, 汉字</p>
+<p><code>\s</code> 任意空白符</p>
+<p><code>\d </code> 数字</p>
+<p><code>\b</code> 匹配单词的开始或结束</p>
+<p><code>^</code> 开始</p>
+<p><code>$</code> 结束</p>
+<p><code>*</code> : {0, } 即 &gt;= 0 次</p>
+<p><code>+</code> : {1, } 即 &gt;= 1 次</p>
+<p><code>?</code> : 0 次 或 1次</p>
+<p><code>&#123;n, m&#125;</code> : &gt;= n 且 m &lt;= 即 n 到 m次</p>
+<p><code>&#123;n&#125;</code> : n 次</p>
+<p><code>&#123;n, &#125;</code> : &gt;= n次</p>
+<blockquote>
+<p>小例子：</p>
+</blockquote>
+<pre><code class="bash"># 中文字符
+[\u4e00-\u9fa5]
+
+# Email
+\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]&#123;2,14&#125;
+
+# 网址
+^((https|http|ftp|rtsp|mms)?:\/\/)[^\s]+
+
+# QQ号
+[1-9]([0-9]&#123;5,11&#125;)
+
+# 邮编
+\d&#123;6&#125;
+</code></pre>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211025092806768.png" alt="image-20211025092806768"></p>
+<h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><blockquote>
+<p>Linux提供管道符”|”将两个命令隔开, 管道符左边命令的输出就会作为管道符右边命令的输入</p>
+</blockquote>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211025093448221.png" alt="image-20211025093448221"></p>
+<pre><code class="bash">[root@VM-12-17-centos ~]# echo &quot;hello1234&quot;|grep &quot;hello&quot;
+hello1234
+</code></pre>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><blockquote>
+<p>grep [OPTIONS] PATTERN [FILE]</p>
+</blockquote>
+<p>-v 显示不配 pattern 匹配到的行 (反转 re-v-erse)</p>
+<p>-i 忽略字符大小写</p>
+<p>-n 显示匹配到的行号</p>
+<p>-c 统计匹配的行数</p>
+<p>-o 仅显示匹配到的字符串</p>
+<p>-E 使用ERE, 相当于 egrep</p>
+<blockquote>
+<p>实战1</p>
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# vim test.txt
+rootboot
+roots
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+
+# 显示匹配到的行号
+[root@VM-12-17-centos TestCommand]# grep -n root test.txt
+1:rootboot
+2:roots
+8:root1234
+9:root666
+
+# 显示不配 pattern 匹配到的行
+[root@VM-12-17-centos TestCommand]# grep -nv root test.txt
+3:hello
+4:1023
+5:1024
+6:james
+7:jungle
+</code></pre>
+<blockquote>
+<p>实战2</p>
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# vim test.txt 
+rootboot
+roots
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+# 查找以s开头的行
+[root@VM-12-17-centos TestCommand]# grep ^s test.txt
+slam
+stupid
+ssr
+s1234n
+sacrfice
+
+# 查找以n结尾的行
+[root@VM-12-17-centos TestCommand]# grep n$ test.txt 
+s1234n
+dsadn
+csdn
+</code></pre>
+<h2 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h2><p><strong>sed 是流编辑器, 一次处理一行内容</strong></p>
+<blockquote>
+<p>sed - stream editor for filtering and transforming text</p>
+</blockquote>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211025095407212.png" alt="image-20211025095407212"></p>
+<blockquote>
+<p><code>sed [-hn] [-e &lt;script&gt;] [-f &lt;script FILE&gt;] [FILE]</code></p>
+</blockquote>
+<p><code>-h</code>  : 显示帮助</p>
+<p><code>-n </code> : 仅显示script处理后的结果</p>
+<p><code>-e &lt;script&gt;</code>  :  以选项中的指定的script来处理输入的文本文件</p>
+<p><code>-f &lt;script FILE&gt;</code> : 以选项中指定的script文件来处理输入的文本文件</p>
+<p><strong>常用动作:</strong></p>
+<p><code>&lt;script&gt;</code></p>
+<ul>
+<li><p>a 新增 : <code>sed -e &#39;2 a newline&#39; [FILE]</code> <strong>在第2行后面新增一行</strong> <code>newline</code></p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# cat test.txt 
+rootboot
+roots
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+[root@VM-12-17-centos TestCommand]# sed -e &#39;2 a newline&#39; test.txt 
+rootboot
+roots
+newline
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+# sed 是将内容存储在模式空间进行处理并送入屏幕, 并没有对源文件进行了修改
+[root@VM-12-17-centos TestCommand]# cat test.txt 
+rootboot
+roots
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+</li>
+<li><p>c 取代 : <code>sed -e &#39;2,5 c No2-5 number&#39; [FILE]</code> 用 c 后的内容 (No2-5 number) 取代 2到5行的内容</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# cat test.txt 
+helloboot hello hello hello hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+[root@VM-12-17-centos TestCommand]# sed -e &#39;2,5 c No2-5 number&#39; test.txt 
+helloboot hello hello hello hello
+No2-5 number
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+</li>
+<li><p>d 删除 : <code>sed -e &#39;2,5d&#39; [FILE]</code>  删除2到5行</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# cat test.txt 
+helloboot hello hello hello hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+[root@VM-12-17-centos TestCommand]# sed -e &#39;2,5d&#39; test.txt 
+helloboot hello hello hello hello
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+</li>
+<li><p>i 插入 : <code>sed -e &#39;2 i newline&#39; [FILE]</code> <strong>在第2行前面插入一行</strong> <code>newline</code></p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# sed -e &#39;2 i newline&#39; test.txt 
+rootboot
+newline
+roots
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+</li>
+<li><p>p 打印 : <code>sed -n &#39;/hello/p&#39; [FILE]</code>  打印sed处理后, 满足正则<code>/root/</code>匹配到的内容 (<code>/.../</code> 表示正则)</p>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# cat test.txt 
+helloboot hello hello hello hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+[root@VM-12-17-centos TestCommand]# sed -n &#39;/hello/p&#39; test.txt 
+helloboot hello hello hello hello
+hellos
+hello
+hello1234
+hello666
+</code></pre>
+</li>
+<li><p>s 取代: <code>sed -e &#39;s/root/hello/g&#39; </code> 用hello取代root   (<code>/.../.../</code> 表示正则, g表示全局)</p>
+<pre><code class="bash"># 只修改第一个匹配到的
+[root@VM-12-17-centos TestCommand]# sed &#39;s/root/hello/&#39; test.txt 
+helloboot root root hello root
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+# 匹配到所有的内容
+[root@VM-12-17-centos TestCommand]# sed &#39;s/root/hello/g&#39; test.txt 
+helloboot hello hello hello hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>慎重选用!</p>
+</blockquote>
+<p><strong>直接修改文件内容: <code>-i</code></strong></p>
+<pre><code class="bash"># 并未修改文件内容
+[root@VM-12-17-centos TestCommand]# cat test.txt 
+rootboot root root hello root
+roots
+hello
+1023
+1024
+james
+jungle
+root1234
+root666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+
+# 如果要直接修改文件内容, 需要加 -i 参数
+[root@VM-12-17-centos TestCommand]# sed -i &#39;s/root/hello/g&#39; test.txt 
+[root@VM-12-17-centos TestCommand]# cat test.txt 
+helloboot hello hello hello hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+<blockquote>
+<p>扩展</p>
+</blockquote>
+<pre><code class="bash"># j 向下翻页, k向上翻页 /输入查找内容,如: /-e
+[root@VM-12-17-centos ~]# man sed
+
+
+SED(1)                                 User Commands                                 SED(1)
+
+NAME
+       sed - stream editor for filtering and transforming text
+
+SYNOPSIS # 概要
+       sed [OPTION]... &#123;script-only-if-no-other-script&#125; [input-file]...
+
+DESCRIPTION
+       Sed  is  a stream editor.  A stream editor is used to perform basic text transforma‐
+       tions on an input stream (a file or input from a pipeline).  While in some ways sim‐
+       ilar  to  an  editor  which permits scripted edits (such as ed), sed works by making
+       only one pass over the input(s), and is consequently  more  efficient.   But  it  is
+       sed&#39;s  ability to filter text in a pipeline which particularly distinguishes it from
+       other types of editors.
+
+ Manual page sed(1) line 1 (press h for help or q to quit)...skipping...
+SED(1)                                 User Commands                                 SED(1)
+
+NAME
+       sed - stream editor for filtering and transforming text
+
+SYNOPSIS
+       sed [OPTION]... &#123;script-only-if-no-other-script&#125; [input-file]...
+
+DESCRIPTION
+       Sed  is  a stream editor.  A stream editor is used to perform basic text transforma‐
+       tions on an input stream (a file or input from a pipeline).  While in some ways sim‐
+       ilar  to  an  editor  which permits scripted edits (such as ed), sed works by making
+       only one pass over the input(s), and is consequently  more  efficient.   But  it  is
+       sed&#39;s  ability to filter text in a pipeline which particularly distinguishes it from
+       other types of editors.
+
+       -n, --quiet, --silent
+
+              suppress automatic printing of pattern space
+
+       -e script, --expression=script
+
+              add the script to the commands to be executed
+
+       -f script-file, --file=script-file
+
+              add the contents of script-file to the commands to be executed
+
+       --follow-symlinks
+
+              follow symlinks when processing in place
+
+       -i[SUFFIX], --in-place[=SUFFIX]
+
+              edit files in place (makes backup if SUFFIX supplied)
+
+       -c, --copy
+
+              use copy instead of rename when shuffling files in -i mode
+
+       -b, --binary
+ 
+ 
+[root@VM-12-17-centos ~]# sed -h
+sed: invalid option -- &#39;h&#39;
+Usage: sed [OPTION]... &#123;script-only-if-no-other-script&#125; [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -c, --copy
+                 use copy instead of rename when shuffling files in -i mode
+  -b, --binary
+                 does nothing; for compatibility with WIN32/CYGWIN/MSDOS/EMX (
+                 open files in binary mode (CR+LFs are not treated specially))
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l&#39; command
+  --posix
+                 disable all GNU extensions.
+  -r, --regexp-extended
+                 use extended regular expressions in the script.
+  -s, --separate
+                 consider files as separate rather than as a single continuous
+                 long stream.
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+  --help
+                 display this help and exit
+  --version
+                 output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+</code></pre>
+<hr>
+<h2 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h2><blockquote>
+<p>把文件逐行的读入, 以空格为默认分隔符将每行切片, 切开的部分再进行后续操作</p>
+</blockquote>
+<p>$0 内置变量, 表示整条记录</p>
+<p>$1 从行切段, 从$1开始, 即当前行的第一个域, … , 以此类推 </p>
+<p><img src="/2021/05/27/linuxLearningNote/image-20211025104500136.png" alt="image-20211025104500136"></p>
+<blockquote>
+<p>awk ‘/pattern/{action}’ [FILE]</p>
+</blockquote>
+<p>FILENAME : 文件名</p>
+<p>BEGIN : 处理文本之前要执行的操作</p>
+<p>END: 处理文本之后要执行的操作</p>
+<p><strong>FS</strong>: 设置<strong>输入域</strong>分隔符, 等价于 <strong>-F 选项</strong> (F: Field-领域)</p>
+<p>RS: <strong>控制记录</strong>分割符</p>
+<p>NF: 浏览记录的域的个数 (<strong>列数</strong>)</p>
+<p>NR: <strong>已读的记录数</strong> (<strong>行数</strong>) (R: Read)</p>
+<p>OFS: <strong>输出域</strong>分隔符 (O: output)</p>
+<p>ORS: 输出记录分隔符</p>
+<pre><code class="bash">[root@VM-12-17-centos usr]# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+polkitd:x:999:998:User for polkitd:/:/sbin/nologin
+libstoragemgmt:x:998:997:daemon account for libstoragemgmt:/var/run/lsm:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+chrony:x:997:995::/var/lib/chrony:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+syslog:x:996:994::/home/syslog:/bin/false
+lighthouse:x:1000:1000::/home/lighthouse:/bin/bash
+ftpuser:x:1001:1001::/home/ftpuser:/bin/bash
+
+# 搜索/etc/passwd有root关键字的所有行, 并显示对应的shell
+[root@VM-12-17-centos usr]# awk -F : &#39;/root/&#123;print $0&#125;&#39; /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+operator:x:11:0:operator:/root:/sbin/nologin
+[root@VM-12-17-centos usr]# awk -F : &#39;/root/&#123;print $7&#125;&#39; /etc/passwd
+/bin/bash
+/sbin/nologin
+
+# 打印/etc/passwd的第二行信息
+[root@VM-12-17-centos usr]# awk -F : &#39;NR==2&#123;print $0&#125;&#39; /etc/passwd
+bin:x:1:1:bin:/bin:/sbin/nologin
+
+# 使用begin加入标题
+[root@VM-12-17-centos usr]# awk &#39;BEGIN &#123;print &quot;BEGIN BEGIN&quot;&#125;&#123;print $1,$2&#125;&#39; /etc/passwd
+BEGIN BEGIN
+root:x:0:0:root:/root:/bin/bash 
+bin:x:1:1:bin:/bin:/sbin/nologin 
+daemon:x:2:2:daemon:/sbin:/sbin/nologin 
+adm:x:3:4:adm:/var/adm:/sbin/nologin 
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin 
+sync:x:5:0:sync:/sbin:/bin/sync 
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown 
+halt:x:7:0:halt:/sbin:/sbin/halt 
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin 
+operator:x:11:0:operator:/root:/sbin/nologin 
+games:x:12:100:games:/usr/games:/sbin/nologin 
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin 
+systemd-network:x:192:192:systemd Network
+dbus:x:81:81:System message
+polkitd:x:999:998:User for
+libstoragemgmt:x:998:997:daemon account
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin 
+abrt:x:173:173::/etc/abrt:/sbin/nologin 
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin 
+chrony:x:997:995::/var/lib/chrony:/sbin/nologin 
+tcpdump:x:72:72::/:/sbin/nologin 
+syslog:x:996:994::/home/syslog:/bin/false 
+lighthouse:x:1000:1000::/home/lighthouse:/bin/bash 
+ftpuser:x:1001:1001::/home/ftpuser:/bin/bash
+
+# 自定义分割符
+[root@VM-12-17-centos usr]# echo &quot;111 222|333 444|555 666&quot; | awk &#39;BEGIN&#123;RS=&quot;|&quot;&#125;&#123;print $0&#125;&#39;
+111 222
+333 444
+555 666
+</code></pre>
+<hr>
+<h1 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote>
+<p><strong>设置只读变量</strong></p>
+</blockquote>
+<p><strong>readonly</strong> variable_name</p>
+<blockquote>
+<p><strong>删除变量</strong></p>
+</blockquote>
+<p><strong>unset</strong> variable_name</p>
+<blockquote>
+<p>变量类型</p>
+</blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117193559732.png" alt="image-20211117193559732" style="zoom:80%; margin:10px;">
+
+
+
+<p><strong>示例1:</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117194108313.png" alt="image-20211117194108313" style="zoom:80%;margin:10px;">
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos ~]# my_array=(A B &quot;C&quot; D)
+[root@VM-12-17-centos ~]# echo $&#123;my_array[0]&#125;
+A
+</code></pre>
+<p><strong>示例2:</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117194741777.png" alt="image-20211117194741777" style="zoom:80%;margin:10px;">
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos ~]# my_array[0]=A
+[root@VM-12-17-centos ~]# my_array[3]=D
+[root@VM-12-17-centos ~]# echo $&#123;my_array[*]&#125;
+A D
+[root@VM-12-17-centos ~]# echo $&#123;my_array[@]&#125;
+A D
+</code></pre>
+<hr>
+<h2 id="控制语句"><a href="#控制语句" class="headerlink" title="控制语句"></a>控制语句</h2><p><strong>if定义</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117195505637.png" alt="image-20211117195505637" style="zoom:80%;margin:10px;">
+
+<ul>
+<li><code>==</code> : <code>-eq</code></li>
+<li><code>&lt;</code> : <code>-lt</code></li>
+<li><code>&gt;</code> : <code>-gt</code> </li>
+</ul>
+</blockquote>
+<p><strong>例子:</strong></p>
+<blockquote>
+<p><code>&gt;</code> 和 <code>&lt;</code> 要两个 <code>[[]]</code></p>
+<p>为了统一使用一个 <code>[]</code>, 使用 <code>-gt</code> 和 <code>-lt</code> 替换!</p>
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos ~]# if [ 2==2 ]; then echo &quot;true&quot;; else echo &quot;false&quot;; fi
+true
+
+[root@VM-12-17-centos ~]# if [[ 2 &gt; 1 ]]; then echo &quot;true&quot;; else echo &quot;false&quot;; fi
+true
+
+[root@VM-12-17-centos ~]# if [ $a -eq $b ]; then echo &quot;equal&quot;; elif [ $a -lt $b ]; then echo &quot;small&quot;; elif [ $a -gt $b ]; then echo &quot;big&quot;; fi
+small
+</code></pre>
+<p><strong>注意: 空格要求很严格!</strong></p>
+<hr>
+<p><strong>for 定义</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117202153563.png" alt="image-20211117202153563" style="zoom:80%;margin:10px;">
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos ~]# for loop in 1 2 3 4 5
+&gt; do
+&gt; echo &quot;hello&quot;
+&gt; done
+hello
+hello
+hello
+hello
+hello
+
+# 循环读取文件内容并输出
+[root@VM-12-17-centos TestCommand]# for line in $(cat test.txt); do echo $line; done
+helloboot
+hello
+hello
+hello
+hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+<hr>
+<p><strong>while定义</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117203013610.png" alt="image-20211117203013610" style="zoom:80%;margin:10px;">
+</blockquote>
+<pre><code class="bash">[root@VM-12-17-centos TestCommand]# int=1
+[root@VM-12-17-centos TestCommand]# while(($int&lt;=5))
+&gt; do
+&gt; echo $int
+&gt; let &quot;int++&quot;
+&gt; done
+1
+2
+3
+4
+5
+
+# 循环读取文件内容并输出
+[root@VM-12-17-centos TestCommand]# while read line; do echo $line; done&lt;test.txt
+helloboot hello hello hello hello
+hellos
+hello
+1023
+1024
+james
+jungle
+hello1234
+hello666
+slam
+stupid
+ssr
+s1234n
+sacrfice
+dsadn
+csdn
+</code></pre>
+<hr>
+<h2 id="read命令"><a href="#read命令" class="headerlink" title="read命令"></a>read命令</h2><p><strong>用途</strong></p>
+<img src="/2021/05/27/linuxLearningNote/image-20211117203915506.png" alt="image-20211117203915506" style="zoom:80%;margin:10px;">
+
+<p><strong>使用</strong></p>
+<img src="/2021/05/27/linuxLearningNote/image-20211117204121603.png" alt="image-20211117204121603" style="zoom:80%;margin:10px;">
+
+<hr>
+<h2 id="参数传递"><a href="#参数传递" class="headerlink" title="参数传递"></a>参数传递</h2><img src="/2021/05/27/linuxLearningNote/image-20211117204422431.png" alt="image-20211117204422431" style="zoom:80%;margin:10px;">
+
+<hr>
+<h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><p><strong>算数运算1</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117204752703.png" alt="image-20211117204752703" style="zoom:80%;margin:10px;">
+</blockquote>
+<p><strong>注意:</strong></p>
+<ul>
+<li>符号 是 ``</li>
+<li>expr 和 变量 和 运算符之间都有 空格</li>
+<li><code>*</code> 乘法有 <code>\</code> 转义字符</li>
+</ul>
+<p><strong>算数运算2</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117205424048.png" alt="image-20211117205424048" style="zoom:80%;margin:10px;">
+</blockquote>
+<p><strong>算数运算3</strong></p>
+<blockquote>
+<img src="/2021/05/27/linuxLearningNote/image-20211117205157579.png" alt="image-20211117205157579" style="zoom:80%;margin:10px;">
+</blockquote>
+<hr>
+<h1 id="Bash-与-linux-命令结合"><a href="#Bash-与-linux-命令结合" class="headerlink" title="Bash 与 linux 命令结合"></a>Bash 与 linux 命令结合</h1><h2 id="read"><a href="#read" class="headerlink" title="read"></a>read</h2><pre><code class="bash">[root@VM-12-17-centos test]# read a
+123
+[root@VM-12-17-centos test]# echo $a
+123
+
+[root@VM-12-17-centos test]# read a b c 
+123 456 789
+[root@VM-12-17-centos test]# echo $a
+123
+[root@VM-12-17-centos test]# echo $b
+456
+[root@VM-12-17-centos test]# echo $c
+789
+
+[root@VM-12-17-centos test]# read 
+456
+[root@VM-12-17-centos test]# echo $REPLY
+456
+</code></pre>
+<hr>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><pre><code class="bash">[root@VM-12-17-centos test]# vim test.sh
+#!/bin/bash
+echo $1,$2,$3
+echo &quot;文件名 &quot;$0
+echo &quot;参数数量 &quot;$#
+echo &quot;all &quot;$*
+echo &quot;return &quot;$? 
+
+[root@VM-12-17-centos test]# bash test.sh 1 2 3
+1,2,3
+文件名 test.sh
+参数数量 3
+all 1 2 3
+return 0
+</code></pre>
+<h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><p><strong>实例1:</strong></p>
+<pre><code class="bash">[root@VM-12-17-centos test]# vim test.sh
+#!/bin/bash
+a=10
+b=20
+echo `expr $a + $b`
+[root@VM-12-17-centos test]# bash test.sh
+30
+
+[root@VM-12-17-centos test]# vim test.sh
+#!/bin/bash
+a=10
+b=20
+echo `expr $a + $b`
+echo `expr $a - $b`
+echo `expr $a \* $b`
+echo `expr $a / $b`
+echo `expr $a % $b`
+[root@VM-12-17-centos test]# bash test.sh
+30
+-10
+200
+0
+10
+</code></pre>
+<p><strong>实例2:</strong></p>
+<pre><code class="bash">[root@VM-12-17-centos test]# vim test.sh
+#!/bin/bash
+a=10
+b=20
+if [ $a -lt $b  ]
+then
+     echo &quot;equal&quot;
+fi
+
+[root@VM-12-17-centos test]# bash test.sh
+equal
+</code></pre>
+<p><strong>实例3:</strong></p>
+<pre><code class="bash">[root@VM-12-17-centos test]# vim test.sh
+#!/bin/bash
+mkdir test
+cd test
+echo &quot;hello&quot; &gt; test.txt
+cat test.txt
+
+[root@VM-12-17-centos test]# bash test.sh
+hello
+</code></pre>
+<hr>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1300287&auto=0&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>
