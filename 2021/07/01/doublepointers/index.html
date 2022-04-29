@@ -6,12 +6,12 @@
   <meta name="keywords" content=" 双指针 ">
   <meta name="description" content="双指针 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#x6e;&amp;#x67;&amp;#x6c;&amp;#x65;&amp;#x38;&amp;#">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#x75;&amp;#110;&amp;#103;&amp;#x6c;&amp;#101;&amp;#56;&amp;#">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人简介">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="blog of Jungle">
-<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#74;&amp;#117;&amp;#x6e;&amp;#x67;&amp;#x6c;&amp;#x65;&amp;#x38;&amp;#">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#x75;&amp;#110;&amp;#103;&amp;#x6c;&amp;#101;&amp;#56;&amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
 <meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
@@ -380,7 +380,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="48">
-<input type="hidden" id="yelog_site_word_count" value="149.1k">
+<input type="hidden" id="yelog_site_word_count" value="149.2k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1168,12 +1168,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2022-04-29 18:22:42'>2021-07-01 00:00</time>
+            发布时间 : <time class="date" title='最后更新: 2022-04-29 18:37:29'>2021-07-01 00:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:2.9k</span>
+        <span>字数:3k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1378,10 +1378,24 @@ public class Solution &#123;
 </code></pre>
 <hr>
 <h3 id="876-链表的中间结点"><a href="#876-链表的中间结点" class="headerlink" title="876-链表的中间结点"></a>876-链表的中间结点</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/middle-of-the-linked-list/">https://leetcode-cn.com/problems/middle-of-the-linked-list/</a></p>
 <p>给定一个头结点为 <code>head</code> 的非空单链表，返回链表的中间结点。</p>
 <p>如果有两个中间结点，则返回第二个中间结点。</p>
-<p><img src="/2021/07/01/doublepointers/image-20211111095301874.png" alt="image-20211111095301874"></p>
+<p><strong>示例 1：</strong></p>
+<pre><code>输入：[1,2,3,4,5]
+输出：此列表中的结点 3 (序列化形式：[3,4,5])
+返回的结点值为 3 。 (测评系统对该结点序列化表述是 [3,4,5])。
+注意，我们返回了一个 ListNode 类型的对象 ans，这样：
+ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next = NULL.
+</code></pre>
+<p><strong>示例 2：</strong></p>
+<pre><code>输入：[1,2,3,4,5,6]
+输出：此列表中的结点 4 (序列化形式：[4,5,6])
+由于该列表有两个中间结点，值分别为 3 和 4，我们返回第二个结点。
+</code></pre>
+<p><strong>提示：</strong></p>
+<ul>
+<li>给定链表的结点数介于 <code>1</code> 和 <code>100</code> 之间。</li>
+</ul>
 </blockquote>
 <p><strong>思路: 可以让快指针一次前进两步，慢指针一次前进一步，当快指针到达链表尽头时，慢指针就处于链表的中间位置。</strong></p>
 <p>当链表的长度是奇数时，<code>slow</code> 恰巧停在中点位置；如果长度是偶数，<code>slow</code> 最终的位置是中间偏右：</p>
@@ -1416,9 +1430,21 @@ class Solution &#123;
 </code></pre>
 <hr>
 <h3 id="19-删除链表的倒数第N个结点"><a href="#19-删除链表的倒数第N个结点" class="headerlink" title="19-删除链表的倒数第N个结点"></a>19-删除链表的倒数第N个结点</h3><blockquote>
-<p>给你一个链表，删除链表的倒数第 <code>n</code> 个结点，并且返回链表的头结点。</p>
-<img src="/2021/07/01/doublepointers/image-20211111100015123.png" alt="image-20211111100015123" style="zoom:80%; margin:50px;">
-
+<ul>
+<li><p>给你一个链表，删除链表的倒数第 <code>n</code> 个结点，并且返回链表的头结点。</p>
+<p><strong>示例 1：</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg" alt="img"></p>
+<pre><code>输入：head = [1,2,3,4,5], n = 2
+输出：[1,2,3,5]
+</code></pre>
+<p><strong>示例 2：</strong></p>
+<pre><code>输入：head = [1], n = 1
+输出：[]
+</code></pre>
+<p><strong>示例 3：</strong></p>
+<pre><code>输入：head = [1,2], n = 1
+输出：[1]
+</code></pre>
 <p><strong>提示：</strong></p>
 <ul>
 <li>链表中结点的数目为 <code>sz</code></li>
@@ -1426,19 +1452,11 @@ class Solution &#123;
 <li><code>0 &lt;= Node.val &lt;= 100</code></li>
 <li><code>1 &lt;= n &lt;= sz</code></li>
 </ul>
+</li>
+</ul>
 </blockquote>
 <p><strong>思路: 还是使用快慢指针，让快指针先走 <code>n</code> 步，然后快慢指针开始同速前进。这样当快指针走到链表末尾 <code>null</code> 时，慢指针所在的位置就是倒数第 <code>n</code> 个链表节点（<code>n</code> 不会超过链表长度）。</strong></p>
-<pre><code class="java">/**
- * Definition for singly-linked list.
- * public class ListNode &#123;
- *     int val;
- *     ListNode next;
- *     ListNode() &#123;&#125;
- *     ListNode(int val) &#123; this.val = val; &#125;
- *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;
- * &#125;
- */
-class Solution &#123;
+<pre><code class="java">class Solution &#123;
     public ListNode removeNthFromEnd(ListNode head, int n) &#123;
         ListNode fast, slow;
         fast = slow = head;
