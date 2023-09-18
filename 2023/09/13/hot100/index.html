@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>hot100 | blog of Jungle</title>
-  <meta name="keywords" content=" 哈希 ">
+  <meta name="keywords" content=" LeetCode ">
   <meta name="description" content="hot100 | blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人介绍Jungle  毕业于CUIT, 目前在sz工作. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 编程 算法 情商 财商     最近什么的干活 面经 + 算法题hot100  提升自我  基础：  集合、反射 JVM linux命令及脚本编程 mysql 、redis、mq 基础知识点及原理   进阶：  多线程高并发【并发编程的艺术】 SSM ：Spring cl">
@@ -267,10 +267,6 @@
     
         
             
-        
-    
-        
-            
             <li><div data-rel="前端">前端<small>(1)</small></div>
                 
             </li>
@@ -307,10 +303,6 @@
                 
                     <ul class="sub hide">
                         
-                        <li><div data-rel="算法<--->哈希">哈希<small>(1)</small></div>
-                            
-                        </li>
-                            
                         <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
                             
                         </li>
@@ -336,6 +328,10 @@
                         </li>
                             
                         <li><div data-rel="算法<--->图">图<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->LeetCode">LeetCode<small>(1)</small></div>
                             
                         </li>
                             
@@ -413,6 +409,10 @@
             
         
     
+        
+            
+        
+    
 </ul>
 <div class="left-bottom">
     <div class="menus">
@@ -424,7 +424,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="58">
-<input type="hidden" id="yelog_site_word_count" value="177.3k">
+<input type="hidden" id="yelog_site_word_count" value="177.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -535,10 +535,6 @@
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>观察者模式</a>
-            </li>
-        
-            <li class="article-tag-list-item">
-                <i class="iconfont icon-tag"></i><a>哈希</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -734,6 +730,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LeetCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>LinkedList</a>
             </li>
         
@@ -824,9 +824,9 @@
             <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
         </a>
         
-        <a  class="全部文章 算法 哈希 "
+        <a  class="全部文章 算法 LeetCode "
            href="/2023/09/13/hot100/"
-           data-tag="哈希"
+           data-tag="LeetCode"
            data-author="" >
             <span class="post-title" title="hot100">hot100</span>
             <span class="post-date" title="2023-09-13 10:17:00">2023/09/13</span>
@@ -1303,7 +1303,7 @@
             
             <a  data-rel="算法">算法</a> > 
             
-            <a  data-rel="算法&lt;---&gt;哈希">哈希</a>
+            <a  data-rel="算法&lt;---&gt;LeetCode">LeetCode</a>
             
         </span>
         
@@ -1311,19 +1311,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">哈希</a>
+            <a class="color4">LeetCode</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-15 01:22:57'>2023-09-13 10:17</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-18 08:44:11'>2023-09-13 10:17</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.9k</span>
+        <span>字数:2.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1711,7 +1711,42 @@ nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。
 <li><code>0 &lt;= height[i] &lt;= 105</code></li>
 </ul>
 </blockquote>
-<pre><code class="java">
+<p>解题思路：维护两个指针 left 和 right，以及两个变量 leftMax 和 rightMax，初始时，left = 0, right = n - 1, leftMax = 0, rightMax = 0。指针left往右移动, 指针right往左移动，再移动的过程中维护两个变量的值。</p>
+<p>当两个指针没有相遇时，进行如下操作：</p>
+<ul>
+<li>使用 height[left] 和 height[right] 更新 leftMax 和 rightMax；</li>
+<li>如果 height[left] &lt; height[right] 则 leftMax &lt; rightMax，此时<ul>
+<li>雨水量 = leftMax - height[left];</li>
+<li>left++;</li>
+</ul>
+</li>
+<li>如果 height[left] &gt;= height[right] 则 leftMax &gt;= rightMax，此时<ul>
+<li>雨水量 = rightMax - height[right];</li>
+<li>right++;</li>
+</ul>
+</li>
+</ul>
+<p>当两个指针相遇时，即可得到能接的雨水总量。</p>
+<pre><code class="java">class Solution &#123;
+    public int trap(int[] height) &#123;
+        int left = 0, right = height.length - 1;
+        int leftMax = 0, rightMax = 0;
+        int sum = 0;
+        while(left &lt; right) &#123;
+            leftMax = Math.max(height[left], leftMax);
+            rightMax = Math.max(height[right], rightMax);
+            if (leftMax &lt; rightMax) &#123;
+                sum += leftMax - height[left];
+                left++;
+            &#125; else &#123;
+                sum += rightMax - height[right];
+                right--;
+            &#125;
+        &#125;
+
+        return sum;
+    &#125;
+&#125;
 </code></pre>
 <h1 id="滑动窗口"><a href="#滑动窗口" class="headerlink" title="滑动窗口"></a>滑动窗口</h1>
       
