@@ -460,7 +460,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="61">
-<input type="hidden" id="yelog_site_word_count" value="180.8k">
+<input type="hidden" id="yelog_site_word_count" value="181.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1394,12 +1394,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-10-09 14:10:05'>2023-10-08 17:20</time>
+            发布时间 : <time class="date" title='最后更新: 2023-10-10 16:43:37'>2023-10-08 17:20</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:87</span>
+        <span>字数:742</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1429,7 +1429,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#51C%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B"><span class="toc-text">51C学习历程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="toc-text">新建工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">数据类型</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#51C%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B"><span class="toc-text">51C学习历程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="toc-text">新建工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#STC89C52"><span class="toc-text">STC89C52</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E7%BD%AE-%E5%AF%B9%E5%BA%94-K1-K4"><span class="toc-text">位置 对应 K1~K4:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%B6%E6%97%B6%E5%87%BD%E6%95%B0%EF%BC%9A"><span class="toc-text">延时函数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%A0%81%E7%AE%A1%EF%BC%9A"><span class="toc-text">数码管：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B6%88%E6%8A%96%EF%BC%9A"><span class="toc-text">消抖：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B6%88%E5%BD%B1%EF%BC%9A"><span class="toc-text">消影：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B%EF%BC%9A"><span class="toc-text">模块化编程：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF"><span class="toc-text">学习路线</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1476,6 +1476,153 @@ void main()
 </ul>
 </blockquote>
 <p><img src="/2023/10/08/51C/image-20231009140714681.png" alt="image-20231009140714681"></p>
+<h2 id="STC89C52"><a href="#STC89C52" class="headerlink" title="STC89C52"></a>STC89C52</h2><h3 id="位置-对应-K1-K4"><a href="#位置-对应-K1-K4" class="headerlink" title="位置 对应 K1~K4:"></a>位置 对应 K1~K4:</h3><pre><code class="c">unsigned char KeyNumber=0;
+if(P3_1==0)&#123;Delay(20);while(P3_1==0);Delay(20);KeyNumber=1;&#125;
+if(P3_0==0)&#123;Delay(20);while(P3_0==0);Delay(20);KeyNumber=2;&#125;
+if(P3_2==0)&#123;Delay(20);while(P3_2==0);Delay(20);KeyNumber=3;&#125;
+if(P3_3==0)&#123;Delay(20);while(P3_3==0);Delay(20);KeyNumber=4;&#125;
+</code></pre>
+<h3 id="延时函数："><a href="#延时函数：" class="headerlink" title="延时函数："></a>延时函数：</h3><pre><code class="c">//延时子函数
+void Delay(unsigned int xms)
+&#123;
+    unsigned char i, j;
+    while(xms--)
+    &#123;
+        i = 2;
+        j = 239;
+        do
+        &#123;
+            while (--j);
+        &#125; while (--i);
+    &#125;
+&#125;
+</code></pre>
+<h3 id="数码管："><a href="#数码管：" class="headerlink" title="数码管："></a>数码管：</h3><pre><code class="c">//数码管段码表
+unsigned char NixieTable[]=&#123;0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F&#125;;
+</code></pre>
+<h3 id="消抖："><a href="#消抖：" class="headerlink" title="消抖："></a>消抖：</h3><blockquote>
+<p> <code>Delay(20);while(P3_0==0);Delay(20);</code></p>
+</blockquote>
+<pre><code class="c">#include &lt;REGX52.H&gt;
+void Delay(unsigned int xms);
+
+unsigned char LEDNum;
+
+void main()
+&#123;
+    P2=~0x01;                //上电默认LED1点亮
+    while(1)
+    &#123;
+        if(P3_1==0)            //如果K1按键按下
+        &#123;
+            Delay(20);
+            while(P3_1==0);
+            Delay(20);
+            
+            LEDNum++;        //LEDNum自增
+            if(LEDNum&gt;=8)    //限制LEDNum自增范围
+                LEDNum=0;
+            P2=~(0x01&lt;&lt;LEDNum);    //LED的第LEDNum位点亮
+        &#125;
+        if(P3_0==0)            //如果K2按键按下
+        &#123;
+            Delay(20);
+            while(P3_0==0);
+            Delay(20);
+            
+            if(LEDNum==0)    //LEDNum减到0后变为7
+                LEDNum=7;
+            else            //LEDNum未减到0，自减
+                LEDNum--;
+            P2=~(0x01&lt;&lt;LEDNum);    //LED的第LEDNum位点亮
+        &#125;
+    &#125;
+&#125;
+
+void Delay(unsigned int xms)
+&#123;
+    unsigned char i, j;
+    while(xms--)
+    &#123;
+        i = 2;
+        j = 239;
+        do
+        &#123;
+            while (--j);
+        &#125; while (--i);
+    &#125;
+&#125;
+</code></pre>
+<h3 id="消影："><a href="#消影：" class="headerlink" title="消影："></a>消影：</h3><blockquote>
+<p><code>Delay(1);P0=0x00;</code></p>
+</blockquote>
+<pre><code class="c">#include &lt;REGX52.H&gt;
+
+//数码管段码表
+unsigned char NixieTable[]=&#123;0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F&#125;;
+
+//延时子函数
+void Delay(unsigned int xms)
+&#123;
+    unsigned char i, j;
+    while(xms--)
+    &#123;
+        i = 2;
+        j = 239;
+        do
+        &#123;
+            while (--j);
+        &#125; while (--i);
+    &#125;
+&#125;
+
+//数码管显示子函数
+void Nixie(unsigned char Location,Number)
+&#123;
+    switch(Location)        //位码输出
+    &#123;
+        case 1:P2_4=1;P2_3=1;P2_2=1;break;
+        case 2:P2_4=1;P2_3=1;P2_2=0;break;
+        case 3:P2_4=1;P2_3=0;P2_2=1;break;
+        case 4:P2_4=1;P2_3=0;P2_2=0;break;
+        case 5:P2_4=0;P2_3=1;P2_2=1;break;
+        case 6:P2_4=0;P2_3=1;P2_2=0;break;
+        case 7:P2_4=0;P2_3=0;P2_2=1;break;
+        case 8:P2_4=0;P2_3=0;P2_2=0;break;
+    &#125;
+    P0=NixieTable[Number];    //段码输出
+    Delay(1);                //显示一段时间
+    P0=0x00;                //段码清0，消影
+&#125;
+
+void main()
+&#123;
+    while(1)
+    &#123;
+        Nixie(1,1);        //在数码管的第1位置显示1
+//        Delay(20);
+        Nixie(2,2);        //在数码管的第2位置显示2
+//        Delay(20);
+        Nixie(3,3);        //在数码管的第3位置显示3
+//        Delay(20);
+    &#125;
+&#125;
+</code></pre>
+<h3 id="模块化编程："><a href="#模块化编程：" class="headerlink" title="模块化编程："></a>模块化编程：</h3><p><img src="/2023/10/08/51C/image-20231010112855375.png" alt="image-20231010112855375"></p>
+<p><strong>注意事项：</strong></p>
+<ul>
+<li>.c文件：函数、变量的<strong>定义</strong></li>
+<li>.h文件：可被外部调用的函数、变量的<strong>声明</strong></li>
+<li>任何自定义的变量、函数<strong>在调用前必须有定义或声明</strong>（同一个.c）</li>
+<li>使用到的自定义函数的.c文件必须添加到工程参与编译</li>
+<li>使用到的.h文件必须要放在编译器可寻找到的地方（工程文件夹根目录、安装目录、自定义）</li>
+</ul>
+<p><img src="/2023/10/08/51C/image-20231010113314946.png" alt="image-20231010113314946"></p>
+<p>预编译：</p>
+<p><img src="/2023/10/08/51C/image-20231010113634643.png" alt="image-20231010113634643"></p>
+<hr>
+<h2 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h2><p><img src="/2023/10/08/51C/v2-768cfd789a3c255ff5f0ec8b95d31f88_r.jpg" alt="img"></p>
+<hr>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
