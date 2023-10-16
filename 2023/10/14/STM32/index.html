@@ -500,7 +500,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="63">
-<input type="hidden" id="yelog_site_word_count" value="187.4k">
+<input type="hidden" id="yelog_site_word_count" value="188.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1462,12 +1462,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-10-16 11:21:33'>2023-10-14 08:59</time>
+            发布时间 : <time class="date" title='最后更新: 2023-10-17 01:36:50'>2023-10-14 08:59</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:386</span>
+        <span>字数:1.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1497,7 +1497,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STM32"><span class="toc-text">STM32</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GPIO"><span class="toc-text">GPIO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SPI%E9%80%9A%E4%BF%A1"><span class="toc-text">SPI通信</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#W25Q64%E5%AD%98%E5%82%A8"><span class="toc-text">W25Q64存储</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STM32"><span class="toc-text">STM32</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GPIO"><span class="toc-text">GPIO</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E7%BB%93%E6%9E%84"><span class="toc-text">位结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E6%8A%A4%E4%BA%8C%E6%9E%81%E7%AE%A1%EF%BC%9A"><span class="toc-text">保护二极管：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GPIO%E6%A8%A1%E5%BC%8F"><span class="toc-text">GPIO模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%AE%E7%A9%BA-%E4%B8%8A%E6%8B%89-%E4%B8%8B%E6%8B%89"><span class="toc-text">浮空&#x2F;上拉&#x2F;下拉</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F%E8%BE%93%E5%85%A5"><span class="toc-text">模拟输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-text">寄存器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E6%8C%BD-%E5%BC%80%E6%BC%8F-%E5%85%B3%E9%97%AD"><span class="toc-text">推挽&#x2F;开漏&#x2F;关闭</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E7%94%A8%E5%BC%80%E6%BC%8F-%E6%8E%A8%E6%8C%BD"><span class="toc-text">复用开漏&#x2F;推挽</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SPI%E9%80%9A%E4%BF%A1"><span class="toc-text">SPI通信</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#W25Q64%E5%AD%98%E5%82%A8"><span class="toc-text">W25Q64存储</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1519,10 +1519,7 @@
 <p>STM32功能强大、性能优异、片上资源丰富、功耗低，是一款经典的嵌入式微控制器</p>
 </blockquote>
 <p><img src="/2023/10/14/STM32/image-20231014090208561.png" alt="image-20231014090208561"></p>
-<h2 id="GPIO"><a href="#GPIO" class="headerlink" title="GPIO"></a>GPIO</h2><blockquote>
-<p>简介</p>
-</blockquote>
-<p>GPIO: General Purpose Input outPut 即通用输入输出口</p>
+<h2 id="GPIO"><a href="#GPIO" class="headerlink" title="GPIO"></a>GPIO</h2><h3 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h3><p>GPIO: General Purpose Input outPut 即通用输入输出口</p>
 <ul>
 <li>可配置为8种输入输出模式</li>
 <li>引脚电平：3.3V</li>
@@ -1532,18 +1529,82 @@
 <p>基本结构：GPIOA、GPIOB、GPIOC …</p>
 <p>每个GPIO外设分为 [0-15] 16 个引脚</p>
 <p><img src="/2023/10/14/STM32/image-20231016103454560.png" alt="image-20231016103454560"></p>
-<p>位结构：</p>
-<p>保护二极管：</p>
-<ul>
+<h3 id="位结构"><a href="#位结构" class="headerlink" title="位结构"></a><strong>位结构</strong></h3><p><img src="/2023/10/14/STM32/image-20231015111119403.png" alt="image-20231015111119403"></p>
+<h3 id="保护二极管："><a href="#保护二极管：" class="headerlink" title="保护二极管："></a>保护二极管：</h3><ul>
 <li>大于3.3V不会进入内部电路，电流会流向【上方的保护二极管】，避免过高电压对内部产生伤害。</li>
 <li>相对于【下方的保护二极管】比0V还要低的电压，电流会直接从【下方的保护二极管】回到【I/O引脚】。</li>
 </ul>
-<p><img src="/2023/10/14/STM32/image-20231015111119403.png" alt="image-20231015111119403"></p>
-<p>GPIO模式：</p>
-<p>浮空输入：</p>
-<p>上拉输入：</p>
-<p>下拉输入：</p>
-<p><img src="/2023/10/14/STM32/image-20231015111156338.png" alt="image-20231015111156338"></p>
+<p>【文中翻译错误】施密特触发器【电压整形】：当输入电压大于某一阈值时，输出就会瞬间升为高电平；当输入电压小于某一阈值时，输出就会瞬间降为低电平。</p>
+<p><img src="/2023/10/14/STM32/image-20231017002606428.png" alt="image-20231017002606428"></p>
+<h3 id="GPIO模式"><a href="#GPIO模式" class="headerlink" title="GPIO模式"></a><strong>GPIO模式</strong></h3><p><img src="/2023/10/14/STM32/image-20231015111156338.png" alt="image-20231015111156338"></p>
+<h3 id="浮空-上拉-下拉"><a href="#浮空-上拉-下拉" class="headerlink" title="浮空/上拉/下拉"></a>浮空/上拉/下拉</h3><p><strong>IN_FLOATING</strong>-浮空输入：【两个开关都断开】</p>
+<p><strong>IPU</strong>-上拉输入：【上拉开关导通，下拉断开】</p>
+<p><strong>IPD</strong>-下拉输入：【上拉断开，下拉开关导通】</p>
+<p><strong>PS:</strong> </p>
+<ul>
+<li>上拉和下拉输入的作用在于提供一个默认的电平；【上拉输入默认高电平输入模式，下拉输入默认低电平输入模式】</li>
+<li>上拉和下拉的电阻较大，是一种弱上拉和弱下拉，目的是尽量不影响正常的输入操作。</li>
+<li>而啥都不接，则处于一个浮空的状态，引脚的电平极易受到外界干扰而改变。</li>
+</ul>
+<p><img src="/2023/10/14/STM32/image-20231017012045965.png" alt="image-20231017012045965"></p>
+<h3 id="模拟输入"><a href="#模拟输入" class="headerlink" title="模拟输入"></a>模拟输入</h3><p><strong>AIN</strong>-模拟输入：连接到ADC，因为ADC需要输入模拟量【模拟量就是连续的，不需要整形】，所以它的线是接到施密特触发器前面的。</p>
+<p><img src="/2023/10/14/STM32/image-20231017012226717.png" alt="image-20231017012226717"></p>
+<p><img src="/2023/10/14/STM32/image-20231017012302443.png" alt="image-20231017012302443"></p>
+<h3 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h3><p>【复用功能输入】：连接到其他需要读取端口的外设上的，比如串口的输入引脚等，这根线接收的是数字量，所以接在施密特触发器后面。</p>
+<p>【输出数据寄存器】：普通IO输出</p>
+<p>【位设置/清除寄存器】：单独操作输出数据寄存器的某一位，而不影响其他位。因为这个【输出数据寄存器】同时控制16个端口，并且只能同时整体读写，所以如果想单独控制其中某一端口而不影响其他端口的话，需要一些特殊的方式。</p>
+<ul>
+<li>第一种：先读这个寄存器，然后用【按位与 <code>&amp;=</code>】和【按位或 <code>|=</code>】的方式更改某一位。</li>
+<li>第二种：通过设置这个【位设置/清除寄存器】，操作见下图：</li>
+</ul>
+<p>【位设置操作】：</p>
+<p><img src="/2023/10/14/STM32/image-20231017004404715.png" alt="image-20231017004404715"></p>
+<p><img src="/2023/10/14/STM32/image-20231017004434461.png" alt="image-20231017004434461"></p>
+<p>【位清除操作】：</p>
+<p><img src="/2023/10/14/STM32/image-20231017004547947.png" alt="image-20231017004547947"></p>
+<p><img src="/2023/10/14/STM32/image-20231017004647160.png" alt="image-20231017004647160"></p>
+<h3 id="推挽-开漏-关闭"><a href="#推挽-开漏-关闭" class="headerlink" title="推挽/开漏/关闭"></a>推挽/开漏/关闭</h3><p><strong>Out_PP</strong>-推挽输出：</p>
+<p><img src="/2023/10/14/STM32/image-20231017005028016.png" alt="image-20231017005028016"></p>
+<blockquote>
+<p>在<strong>Out_PP</strong>-<strong>推挽输出模式</strong>下，【MOS前虽然有取反标志，但是可能还有取反器，所以负负得正？待求证】</p>
+<ul>
+<li><p><strong>数据寄存器为1时</strong>，上管导通，下管断开，输出直接接到VDD，就是<strong>输出高电平</strong>；</p>
+</li>
+<li><p><strong>数据寄存器为0时</strong>，下管导通，上管断开，输出直接接到VSS，就是<strong>输出低电平</strong>。</p>
+</li>
+</ul>
+<p>这种模式下，高低电平均有较强的驱动能力，所以推挽输出模式也可以叫强推输出模式。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017010040194.png" alt="image-20231017010040194"></p>
+<p><strong>Out_DD</strong>-开漏模式：</p>
+<p><img src="/2023/10/14/STM32/image-20231017010137401.png" alt="image-20231017010137401"></p>
+<blockquote>
+<p>数据寄存器为1时，下管断开，高阻模式；数据寄存器为0时，下官导通，输出低电平。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017011122412.png" alt="image-20231017011122412"></p>
+<p><strong>作用：这个开漏模式可以作为通信协议的驱动方式。</strong></p>
+<p><img src="/2023/10/14/STM32/image-20231017011346205.png" alt="image-20231017011346205"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011451541.png" alt="image-20231017011451541"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011524623.png" alt="image-20231017011524623"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011622784.png" alt="image-20231017011622784"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011643341.png" alt="image-20231017011643341"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011723932.png" alt="image-20231017011723932"></p>
+<p>关闭：</p>
+<p><img src="/2023/10/14/STM32/image-20231017011809180.png" alt="image-20231017011809180"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011828508.png" alt="image-20231017011828508"></p>
+<p><strong>小结：</strong></p>
+<p><img src="/2023/10/14/STM32/image-20231017012541734.png" alt="image-20231017012541734"></p>
+<p><img src="/2023/10/14/STM32/image-20231017012616759.png" alt="image-20231017012616759"></p>
+<p><img src="/2023/10/14/STM32/image-20231017012635298.png" alt="image-20231017012635298"></p>
+<p>从一个端口输入是为了读取输入，如果同时输出，那么输入就被遮盖了，但是输出时可以输入，目的就是为了查看处理输出的信息</p>
+<p><img src="/2023/10/14/STM32/image-20231017012918111.png" alt="image-20231017012918111"></p>
+<h3 id="复用开漏-推挽"><a href="#复用开漏-推挽" class="headerlink" title="复用开漏/推挽"></a>复用开漏/推挽</h3><p>【AF_OD 复用开漏】 和 【AF_PP 推挽输出】</p>
+<p><img src="/2023/10/14/STM32/image-20231017013032673.png" alt="image-20231017013032673"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013138410.png" alt="image-20231017013138410"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013206677.png" alt="image-20231017013206677"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013236372.png" alt="image-20231017013236372"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013319192.png" alt="image-20231017013319192"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013354798.png" alt="image-20231017013354798"></p>
 <hr>
 <h2 id="SPI通信"><a href="#SPI通信" class="headerlink" title="SPI通信"></a>SPI通信</h2><blockquote>
 <p>Master: 主机</p>
