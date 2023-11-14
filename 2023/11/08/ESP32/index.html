@@ -492,7 +492,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="65">
-<input type="hidden" id="yelog_site_word_count" value="194.2k">
+<input type="hidden" id="yelog_site_word_count" value="195.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1478,12 +1478,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-11-08 19:01:21'>2023-11-08 18:02</time>
+            发布时间 : <time class="date" title='最后更新: 2023-11-13 14:49:09'>2023-11-08 18:02</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:623</span>
+        <span>字数:1.8k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1513,7 +1513,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ESP32%E7%89%A9%E8%81%94%E7%BD%91%E5%BC%80%E5%8F%91"><span class="toc-text">ESP32物联网开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B"><span class="toc-text">Python网络编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5WIFI"><span class="toc-text">链接WIFI</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ESP32%E7%89%A9%E8%81%94%E7%BD%91%E5%BC%80%E5%8F%91"><span class="toc-text">ESP32物联网开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B"><span class="toc-text">Python网络编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5WIFI%E3%80%90%E7%83%AD%E7%82%B9%E3%80%91"><span class="toc-text">连接WIFI【热点】</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%82%B9%E4%BA%AELED"><span class="toc-text">远程点亮LED</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%A0%81%E7%AE%A1"><span class="toc-text">数码管</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E7%BA%BF"><span class="toc-text">接线</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1576,12 +1576,222 @@
 <li><p>lsof -i [tcp/udp]:2425</p>
 </li>
 </ul>
-<p>UDP:</p>
+<p><strong>套接字:</strong></p>
 <p>socket(简称 <code>套接字</code>) 是进程（就是运行中的程序）间通信的一种方式，它与其他进程间通信的一个主要不同是：</p>
 <p>它能实现不同主机间的进程间通信，我们网络上各种各样的服务大多都是基于 socket 来完成通信的</p>
-<p>TCP:</p>
+<p>创建套接字：</p>
+<pre><code class="python">import socket
+socket.socket(AddressFamily, Type)
+</code></pre>
+<p>函数 socket.socket 创建一个套接字，该函数带有两个参数：</p>
+<ul>
+<li><code>Address Family</code>：可以选择 <code>AF_INET</code>（用于 Internet 进程间通信） 或者 <code>AF_UNIX</code>（用于同一台机器进程间通信）,实际工作中常用<code>AF_INET</code></li>
+<li><code>Type</code>：套接字类型，可以是 <code>SOCK_STREAM</code>（流式套接字，主要用于 TCP 协议）或者 <code>SOCK_DGRAM</code>（数据报套接字，主要用于 UDP 协议</li>
+</ul>
+<p><strong>套接字使用流程 与 文件的使用流程很类似</strong></p>
+<ol>
+<li>创建套接字</li>
+<li>使用套接字收/发数据</li>
+<li>关闭套接字</li>
+</ol>
 <hr>
-<h2 id="链接WIFI"><a href="#链接WIFI" class="headerlink" title="链接WIFI"></a>链接WIFI</h2><hr>
+<p><strong>UDP:</strong></p>
+<pre><code class="python">import socket
+
+# 创建udp的套接字
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+# ...这里是使用套接字的功能（省略）...
+
+# 不用的时候，关闭套接字
+s.close()
+</code></pre>
+<p>端口绑定：</p>
+<blockquote>
+<ul>
+<li>每重新运行一次网络程序，上图中红圈中的数字，不一样的原因在于，这个数字标识这个网络程序，当重新运行时，如果没有确定到底用哪个，系统默认会随机分配</li>
+<li>记住一点：网络程序在运行的过程中，通过端口能够标识这个程序，所以如果其他电脑上的网络程序如果想要向此程序发送数据，那么就需要向这个数字（即端口）标识的程序发送即可</li>
+</ul>
+</blockquote>
+<pre><code class="python"># coding=utf-8
+
+from socket import *
+
+# 1. 创建套接字
+udp_socket = socket(AF_INET, SOCK_DGRAM)
+
+# 2. 绑定本地的相关信息，如果一个网络程序不绑定，则系统会随机分配
+local_addr = (&#39;&#39;, 7788)  # ip地址和端口号，ip一般不用写，表示本机的任何一个ip
+udp_socket.bind(local_addr)
+
+# 3. 等待接收对方发送的数据
+recv_data = udp_socket.recvfrom(1024) #  1024表示本次接收的最大字节数
+
+# 4. 显示接收到的数据
+print(recv_data[0].decode(&#39;gbk&#39;))
+
+# 5. 关闭套接字
+udp_socket.close()
+</code></pre>
+<hr>
+<p><strong>TCP:</strong></p>
+<p>创建TCP套接字</p>
+<pre><code class="python">import socket
+
+# 创建tcp的套接字
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# ...这里是使用套接字的功能（省略）...
+
+# 不用的时候，关闭套接字
+s.close()
+</code></pre>
+<hr>
+<h2 id="连接WIFI【热点】"><a href="#连接WIFI【热点】" class="headerlink" title="连接WIFI【热点】"></a>连接WIFI【热点】</h2><blockquote>
+<p>要点：</p>
+<ul>
+<li>ESP32和PC要连接到同一热点，由于ESP32不支持5G热点，所以要改成2.4GHZ的热点。</li>
+<li>网络调试助手–&gt;Server</li>
+<li>ESP32程序–&gt;Client</li>
+</ul>
+</blockquote>
+<p><img src="/2023/11/08/ESP32/image-20231113101741806.png" alt="image-20231113101741806"></p>
+<p><strong>测试代码1-发送数据：</strong></p>
+<pre><code class="python">import socket
+
+# 创建UDP socket
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+# 服务器地址和端口
+server_address = (&#39;192.168.0.173&#39;, 12345)
+
+# 发送数据到服务器
+message = &quot;Hello, server!&quot;
+client_socket.sendto(message.encode(&#39;utf-8&#39;), server_address)
+
+# 接收服务器响应
+response, server_address = client_socket.recvfrom(1024)
+print(f&quot;Received response from server: &#123;response.decode(&#39;utf-8&#39;)&#125;&quot;)
+
+# 关闭socket
+client_socket.close()
+</code></pre>
+<p><strong>测试代码2-收发数据：</strong></p>
+<blockquote>
+<p>Server收到数据后会显示Client的地址和端口号，可以用它在Server端发送数据到Client</p>
+</blockquote>
+<p><strong>Server:</strong></p>
+<p><img src="/2023/11/08/ESP32/image-20231113104331244.png" alt="image-20231113104331244"></p>
+<p><strong>Client:</strong></p>
+<p><img src="/2023/11/08/ESP32/image-20231113104224635.png" alt="image-20231113104224635"></p>
+<pre><code class="python">import socket
+
+# 创建UDP socket
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+# 服务器地址和端口
+server_address = (&#39;192.168.0.173&#39;, 123456)
+
+# 发送数据到服务器
+message = input(&quot;请输入要发送的信息:&quot;)
+client_socket.sendto(message.encode(&#39;utf-8&#39;), server_address)
+
+# 接收服务器响应
+response, server_address = client_socket.recvfrom(1024)
+print(f&quot;Received response from server: &#123;response.decode(&#39;utf-8&#39;)&#125;&quot;)
+
+# 关闭socket
+client_socket.close()
+</code></pre>
+<hr>
+<h2 id="远程点亮LED"><a href="#远程点亮LED" class="headerlink" title="远程点亮LED"></a>远程点亮LED</h2><blockquote>
+<p>无线路由器由手机热点代替</p>
+</blockquote>
+<p><img src="/2023/11/08/ESP32/1653096403700.png" alt="1653096403700"></p>
+<pre><code class="python">import network
+import time
+import socket
+import machine
+
+
+def do_connect():
+    &quot;&quot;&quot;
+    连接WIFI网络
+    &quot;&quot;&quot;
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    if not wlan.isconnected():
+        print(&quot;conneting to network...&quot;)
+        wlan.connect(&#39;热点名称&#39;, &#39;热点密码&#39;)
+        i = 1
+        while not wlan.isconnected():
+            # pass # do nothing
+            print(&quot;try connect the network...&#123;&#125;&quot;.format(i))
+            i += 1
+            time.sleep(1)
+    print(&#39;network config:&#39;, wlan.ifconfig())
+    print(&#39;mac:&#39;, wlan.config(&#39;mac&#39;))
+
+
+def create_udp_socket():
+    udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # 绑定一个固定的端口
+    udp_socket.bind((&quot;0.0.0.0&quot;, 7788))
+    
+    return udp_socket
+    
+
+def main():
+    # 1 ESP32l连接WIFI，让其又有IP地址
+    do_connect()
+    # 2 创建UDP socket
+    udp_socket = create_udp_socket()
+    # 创建GPIO引脚对象 led即Pin2
+    led = machine.Pin(2, machine.Pin.OUT)
+    # 3 接收UDP数据
+    while True:
+        recv_data, sender_info = udp_socket.recvfrom(1024)
+        print(&quot;&#123;&#125;发送的数据: &#123;&#125;&quot;.format(sender_info, recv_data))
+        # 解码接受数据
+        recv_data_str = recv_data.decode(&quot;utf-8&quot;)
+        try:
+            print(recv_data_str)
+        except Exception as ret:
+            print(&quot;error:&quot;, ret)
+        # 4 根据接收到的UDP数据控制LED灯的亮灭
+        if recv_data_str == &quot;light on&quot;:
+            print(&quot;这里是要灯亮的代码...&quot;)
+            led.value(1)
+        elif recv_data_str == &quot;light off&quot;:
+            print(&quot;这里是要灯灭的代码...&quot;)
+            led.value(0)
+    
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<p><strong>说明：</strong></p>
+<p>网络调试助手向ESP32发送命令，控制LED的点亮和关闭。</p>
+<p>此处：</p>
+<ul>
+<li>网络调试助手 IP+端口号：192.168.0.173：8088【它不接收数据，所以不是重点】</li>
+<li>ESP32 IP+端口号：192.168.0.105 :7788 【接收命令，控制LED】</li>
+</ul>
+<p><strong>注</strong>：<code>udp_socket.bind((&quot;0.0.0.0&quot;, 7788))</code> 将ESP32绑定一个固定的端口.</p>
+<p><img src="/2023/11/08/ESP32/image-20231113141818639.png" alt="image-20231113141818639"></p>
+<p><strong>点亮：</strong></p>
+<p><img src="/2023/11/08/ESP32/0810e139703e0d6e981536ac68f3cd0.jpg" alt="0810e139703e0d6e981536ac68f3cd0"></p>
+<p><strong>灯灭：</strong></p>
+<p><img src="/2023/11/08/ESP32/876479b396fdcb1a3b72786d6fa3aa4.jpg" alt="876479b396fdcb1a3b72786d6fa3aa4"></p>
+<hr>
+<h2 id="数码管"><a href="#数码管" class="headerlink" title="数码管"></a>数码管</h2><h3 id="接线"><a href="#接线" class="headerlink" title="接线"></a>接线</h3><p><img src="/2023/11/08/ESP32/ESP32.png" alt="ESP32"></p>
+<blockquote>
+<p>a     b     c     d     e     f     g     h       【数码管】</p>
+<p>3     4     5     6     7     8     9     10    【Pin】</p>
+<p>13       12      14        27      26      25    33       32    【GPIO】</p>
+</blockquote>
+<p><img src="/2023/11/08/ESP32/image-20231113144530710.png" alt="image-20231113144530710"></p>
+<p>最后，GND接pin2。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
