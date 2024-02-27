@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Java-io | blog of Jungle</title>
-  <meta name="keywords" content=" IO ">
-  <meta name="description" content="Java-io | blog of Jungle">
+  <title>blog of Jungle</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="blog of Jungle">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人介绍Jungle  毕业于CUIT, 目前在sz工作. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 编程 算法 情商 财商     最近什么的干活 面经 + 算法题hot100  提升自我  基础：  集合、反射 JVM linux命令及脚本编程 mysql 、redis、mq 基础知识点及原理   进阶：  多线程高并发【并发编程的艺术】 SSM ：Spring cl">
 <meta property="og:type" content="website">
@@ -1581,41 +1581,22 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Java-io" class="article article-type-post" itemscope itemprop="blogPost">
-    
-        <h1 class="article-title">Java-io</h1>
+        <article id="post-ESP32ATLog" class="article article-type-post" itemscope itemprop="blogPost">
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="后端">后端</a> > 
-            
-            <a  data-rel="后端&lt;---&gt;Java">Java</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color3">IO</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-02-09 12:30:57'>2023-02-09 12:27</time>
+            发布时间 : <time class="date" title='最后更新: 2023-11-07 09:35:47'>2023-11-07 09:27</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:165</span>
+        <span>字数:317</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1645,7 +1626,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IO"><span class="toc-text">IO</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%92%8C%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6"><span class="toc-text">读取文件和写入文件</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ESP32AT%E6%8C%87%E4%BB%A4%E9%9B%86%E6%8E%A2%E7%B4%A2"><span class="toc-text">ESP32AT指令集探索</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4"><span class="toc-text">基本指令</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1661,32 +1642,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h1><h2 id="读取文件和写入文件"><a href="#读取文件和写入文件" class="headerlink" title="读取文件和写入文件"></a>读取文件和写入文件</h2><blockquote>
-<p>它读取源文件的内容，并将其写入到目标文件：</p>
+        <h1 id="ESP32AT指令集探索"><a href="#ESP32AT指令集探索" class="headerlink" title="ESP32AT指令集探索"></a>ESP32AT指令集探索</h1><h2 id="基本指令"><a href="#基本指令" class="headerlink" title="基本指令"></a>基本指令</h2><blockquote>
+<p>官网：<a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html">基础 AT 命令集 - ESP32 - — ESP-AT 用户指南 latest 文档 (espressif.com)</a></p>
 </blockquote>
-<pre><code class="java">import java.io.*;
-
-public class ReadAndWriteFile &#123;
-    public static void main(String[] args) &#123;
-        String sourceFileName = &quot;source.txt&quot;;
-        String targetFileName = &quot;target.txt&quot;;
-        String line;
-
-        try (BufferedReader br = new BufferedReader(new FileReader(sourceFileName));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(targetFileName))) &#123;
-            while ((line = br.readLine()) != null) &#123;
-                bw.write(line);
-                bw.newLine();
-            &#125;
-        &#125; catch (IOException e) &#123;
-            e.printStackTrace();
-        &#125;
-    &#125;
-&#125;
-</code></pre>
-<blockquote>
-<p>在这个代码中，使用了 <code>BufferedReader</code> 类和 <code>FileReader</code> 类读取源文件的内容，并使用 <code>BufferedWriter</code> 类和 <code>FileWriter</code> 类写入目标文件。同样，如果你要读取和写入其他文件，请更改源文件名和目标文件名的字符串变量。</p>
-</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-at">AT</a>：测试 AT 启动</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-rst">AT+RST</a>：重启模块</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-gmr">AT+GMR</a>：查看版本信息</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-cmd">AT+CMD</a>：查询当前固件支持的所有命令及命令类型</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-gslp">AT+GSLP</a>：进⼊ Deep-sleep 模式</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-ate">ATE</a>：开启或关闭 AT 回显功能</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-restore">AT+RESTORE</a>：恢复出厂设置</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-savet">AT+SAVETRANSLINK</a>：设置开机 <a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/index_of_abbreviations.html#term-6">透传模式</a> 信息</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-transintvl">AT+TRANSINTVL</a>：设置 <a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/index_of_abbreviations.html#term-6">透传模式</a> 模式下的数据发送间隔</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-uartc">AT+UART_CUR</a>：设置 UART 当前临时配置，不保存到 flash</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-uartd">AT+UART_DEF</a>：设置 UART 默认配置, 保存到 flash</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sleep">AT+SLEEP</a>：设置 sleep 模式</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysram">AT+SYSRAM</a>：查询当前剩余堆空间和最小堆空间</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysmsg">AT+SYSMSG</a>：查询/设置系统提示信息</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysmsgfilter">AT+SYSMSGFILTER</a>：启用或禁用 <a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/index_of_abbreviations.html#term-8">系统消息</a> 过滤</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysmsgfiltercfg">AT+SYSMSGFILTERCFG</a>：查询/配置 <a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/index_of_abbreviations.html#term-8">系统消息</a> 的过滤器</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysflash">AT+SYSFLASH</a>：查询或读写 flash 用户分区</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysmfg">AT+SYSMFG</a>：查询或读写 <a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/index_of_abbreviations.html#term-manufacturing-nvs">manufacturing nvs</a> 用户分区</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-rfpower">AT+RFPOWER</a>：查询/设置 RF TX Power</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysrollback">AT+SYSROLLBACK</a>：回滚到以前的固件</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-settime">AT+SYSTIMESTAMP</a>：查询/设置本地时间戳</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-syslog">AT+SYSLOG</a>：启用或禁用 AT 错误代码提示</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-wkcfg">AT+SLEEPWKCFG</a>：设置 Light-sleep 唤醒源和唤醒 GPIO</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysstore">AT+SYSSTORE</a>：设置参数存储模式</li>
+<li><a target="_blank" rel="noopener" href="https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/AT_Command_Set/Basic_AT_Commands.html#cmd-sysreg">AT+SYSREG</a>：读写寄存器</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
