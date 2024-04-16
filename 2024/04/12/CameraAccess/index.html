@@ -1438,7 +1438,7 @@
         
         <a  class="全部文章 后端 设计模式 "
            href="/2021/04/14/DesignPatternofBuilder/"
-           data-tag="建造者模式,构建型模式"
+           data-tag="构建型模式,建造者模式"
            data-author="" >
             <span class="post-title" title="建造者模式">建造者模式</span>
             <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
@@ -1478,7 +1478,7 @@
         
         <a  class="全部文章 后端 设计模式 "
            href="/2021/04/02/DesignPatternofPrototype/"
-           data-tag="构建型模式,原型模式"
+           data-tag="原型模式,构建型模式"
            data-author="" >
             <span class="post-title" title="原型模式">原型模式</span>
             <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
@@ -1634,7 +1634,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-04-15 16:21:27'>2024-04-12 16:48</time>
+            发布时间 : <time class="date" title='最后更新: 2024-04-16 13:57:32'>2024-04-12 16:48</time>
         
     </div>
     <div class="article-meta">
@@ -1688,16 +1688,16 @@
         <h1 id="FleetBee摄像头接入"><a href="#FleetBee摄像头接入" class="headerlink" title="FleetBee摄像头接入"></a>FleetBee摄像头接入</h1><blockquote>
 <p>参考文档：<a target="_blank" rel="noopener" href="https://fastbee.cn/doc/pages/video_device/">监控设备接入 | FastBee文档</a></p>
 </blockquote>
-<p><img src="/2024/04/12/CameraAccess/video01.b03b9751.png" alt="监控平台整体架构"></p>
+<p><img src="/2024/04/12/CameraAccess/1.png" alt="监控平台整体架构"></p>
 <h2 id="产品设置"><a href="#产品设置" class="headerlink" title="产品设置"></a>产品设置</h2><blockquote>
 <p>设备管理-》产品管理-》新增产品</p>
 </blockquote>
-<h3 id="新增产品"><a href="#新增产品" class="headerlink" title="新增产品"></a>新增产品</h3><p><img src="/2024/04/12/CameraAccess/video02.311ec8e8.png" alt="img"></p>
-<p><img src="/2024/04/12/CameraAccess/image-20240415160626539.png" alt="image-20240415160626539"></p>
+<h3 id="新增产品"><a href="#新增产品" class="headerlink" title="新增产品"></a>新增产品</h3><p><img src="/2024/04/12/CameraAccess/2.png" alt="新增产品"></p>
+<p><img src="/2024/04/12/CameraAccess/3.png" alt="新增产品"></p>
 <h3 id="新增SIP配置"><a href="#新增SIP配置" class="headerlink" title="新增SIP配置"></a>新增SIP配置</h3><blockquote>
 <p>注意！！！sip配置不支持修改，会同步java中application-prod.yml中的配置。</p>
 </blockquote>
-<p><img src="/2024/04/12/CameraAccess/video04.72dc4b2d.png" alt="img"></p>
+<p><img src="/2024/04/12/CameraAccess/4.png" alt="SIP配置"></p>
 <p>同步后的配置信息如下：</p>
 <ul>
 <li>服务器ID = SIP服务器ID（海康） = SIP服务器编号（大华）<br>34020000002000000001</li>
@@ -1706,7 +1706,7 @@
 <li>服务器端口 = SIP服务器端口（海康） = SIP服务器端口（大华）<br>5061</li>
 <li>认证密码 = 密码（海康） = 注册密码（大华）<br>12345678</li>
 </ul>
-<p><img src="/2024/04/12/CameraAccess/image-20240412164113196.png" alt="image-20240412164113196"></p>
+<p><img src="/2024/04/12/CameraAccess/5.png" alt="配置信息"></p>
 <h2 id="配置管理"><a href="#配置管理" class="headerlink" title="配置管理"></a>配置管理</h2><ul>
 <li>服务器IP：修改流媒体服务器IP为部署服务器公网IP，默认为http播放协议，</li>
 <li>服务器秘钥：http api鉴权秘钥，需与zlmedia/conf/config.ini中api-&gt;secret和hook-&gt;admin_params保持一致</li>
@@ -1714,7 +1714,7 @@
 <li>HOOK URL：修改HOOK URL为java服务api接口，默认为：java:8080,可根据自己的部署情况修改</li>
 </ul>
 <p><strong>参考配置：</strong></p>
-<p><img src="/2024/04/12/CameraAccess/video05.6d9b4a39.png" alt="img"></p>
+<p><img src="/2024/04/12/CameraAccess/6.png" alt="参考配置"></p>
 <p><strong>实际配置：</strong></p>
 <blockquote>
 <p>说明：</p>
@@ -1734,12 +1734,12 @@
 <li>NVR+IPC：设备类型为”NVR”，通道类型为”IPC”</li>
 <li>DVR+IPC：设备类型为”DVR”，通道类型为”IPC”</li>
 </ul>
-<p><img src="/2024/04/12/CameraAccess/image-20240415160707260.png" alt="image-20240415160707260"></p>
-<p><img src="/2024/04/12/CameraAccess/image-20240415160727585.png" alt="image-20240415160727585"></p>
+<p><img src="/2024/04/12/CameraAccess/7.png" alt="image-20240415160707260"></p>
+<p><img src="/2024/04/12/CameraAccess/8.png" alt="image-20240415160727585"></p>
 <h2 id="摄像头设置"><a href="#摄像头设置" class="headerlink" title="摄像头设置"></a>摄像头设置</h2><h3 id="发现设备"><a href="#发现设备" class="headerlink" title="发现设备"></a>发现设备</h3><blockquote>
 <p>本次采用海康威视摄像头接入测试，需要将电脑和摄像头通过路由器处于同一局域网下，再通过海康威视提供的【设备网络搜索】软件找到该设备，进入设置页面进行相关操作。</p>
 </blockquote>
-<p><img src="/2024/04/12/CameraAccess/image-20240415161100340.png" alt="image-20240415161100340"></p>
+<p><img src="/2024/04/12/CameraAccess/9.png" alt="image-20240415161100340"></p>
 <p><strong>注意：千万不用选择DHCP，否则ip地址会发生变化，对后续操作会带来一定的困扰！！！</strong></p>
 <hr>
 <h3 id="进入设置页面"><a href="#进入设置页面" class="headerlink" title="进入设置页面"></a>进入设置页面</h3><blockquote>
@@ -1748,23 +1748,23 @@
 <p>部署服务器公网IP = SIP服务器地址（海康） = SIP服务器IP（大华）<br>【<strong>java容器所在服务器的公网IP</strong>】<br>服务器端口 = SIP服务器端口（海康） = SIP服务器端口（大华）<br>5061<br>认证密码 = 密码（海康） = 注册密码（大华）<br>12345678</p>
 <p>设备ID = SIP用户名（海康） = SIP用户认证ID（海康） = 设备编号（大华）<br>44030900001320000003<br>通道ID = 视频通道编号ID（海康） = 通道编号（大华）<br>44030900001320000003</p>
 </blockquote>
-<p><img src="/2024/04/12/CameraAccess/image-20240415161257783.png" alt="image-20240415161257783"></p>
+<p><img src="/2024/04/12/CameraAccess/10.png" alt="image-20240415161257783"></p>
 <h3 id="画面设置"><a href="#画面设置" class="headerlink" title="画面设置"></a>画面设置</h3><blockquote>
 <p>若遇到视频卡顿，可以参考如下配置</p>
 <p>【摄像头流媒体格式建议为：视频：h264 音频：aac】</p>
 </blockquote>
 <p>参考配置：</p>
-<p><img src="/2024/04/12/CameraAccess/video10.3c2ca55a.png" alt="img"></p>
+<p><img src="/2024/04/12/CameraAccess/11.png" alt="img"></p>
 <p>我的配置：</p>
-<p><img src="/2024/04/12/CameraAccess/image-20240415161344133.png" alt="image-20240415161344133"></p>
-<h2 id="完成效果"><a href="#完成效果" class="headerlink" title="完成效果"></a>完成效果</h2><p><img src="/2024/04/12/CameraAccess/image-20240415161440296.png" alt="image-20240415161440296"></p>
+<p><img src="/2024/04/12/CameraAccess/12.png" alt="image-20240415161344133"></p>
+<h2 id="完成效果"><a href="#完成效果" class="headerlink" title="完成效果"></a>完成效果</h2><p><img src="/2024/04/12/CameraAccess/13.png" alt="image-20240415161440296"></p>
 <blockquote>
 <p>测试页面用纸巾遮住了</p>
 </blockquote>
-<p><img src="/2024/04/12/CameraAccess/image-20240415161856839.png" alt="image-20240415161856839"></p>
-<p><img src="/2024/04/12/CameraAccess/image-20240415162011908.png" alt="image-20240415162011908"></p>
-<p><img src="/2024/04/12/CameraAccess/image-20240415162121310.png" alt="image-20240415162121310"></p>
-<p><img src="/2024/04/12/CameraAccess/image-20240415162030401.png" alt="image-20240415162030401"></p>
+<p><img src="/2024/04/12/CameraAccess/14.png" alt="image-20240415161856839"></p>
+<p><img src="/2024/04/12/CameraAccess/15.png" alt="image-20240415162011908"></p>
+<p><img src="/2024/04/12/CameraAccess/16.png" alt="image-20240415162121310"></p>
+<p><img src="/2024/04/12/CameraAccess/17.png" alt="image-20240415162030401"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
