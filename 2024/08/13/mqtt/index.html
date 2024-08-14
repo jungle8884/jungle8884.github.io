@@ -540,7 +540,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="79">
-<input type="hidden" id="yelog_site_word_count" value="231.6k">
+<input type="hidden" id="yelog_site_word_count" value="233.8k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1690,12 +1690,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2024-08-13 16:13:14'>2024-08-13 15:45</time>
+            发布时间 : <time class="date" title='最后更新: 2024-08-14 10:08:03'>2024-08-13 15:45</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:0</span>
+        <span>字数:2.2k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1725,7 +1725,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MQTT%E5%AE%9E%E7%8E%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0"><span class="toc-text">MQTT实现文件上传</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0"><span class="toc-text">文件上传</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF"><span class="toc-text">实现思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E7%AB%AF"><span class="toc-text">设备端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0%E7%AB%AF"><span class="toc-text">物联网平台端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#reportFile"><span class="toc-text">reportFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getAbsoluteFile"><span class="toc-text">getAbsoluteFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#createFileIfNotExists"><span class="toc-text">createFileIfNotExists</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#saveContentAsImg"><span class="toc-text">saveContentAsImg</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#saveContentToFile"><span class="toc-text">saveContentToFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#replaceBytes"><span class="toc-text">replaceBytes</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD"><span class="toc-text">文件下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#handleDownload"><span class="toc-text">handleDownload</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%9D%E8%B5%96%E4%BB%A3%E7%A0%81"><span class="toc-text">依赖代码</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1741,7 +1741,367 @@
     
     <div class="article-entry" itemprop="articleBody">
       
+        <h1 id="MQTT实现文件上传"><a href="#MQTT实现文件上传" class="headerlink" title="MQTT实现文件上传"></a>MQTT实现文件上传</h1><h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h2><p>目前已经实现文本文件和图像文件</p>
+<h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><blockquote>
+<p>自定义文件传输协议【前32字节：文件名；接着8字节：起始地址；后续是文件传输内容。】</p>
+</blockquote>
+<ul>
+<li>读取图像数据为二进制数据</li>
+<li>进行base64加密【base64字符串】后通过byte流上传</li>
+<li>物联网平台接收byte数据，得到base64字符串</li>
+<li>base64解码并写入文件</li>
+</ul>
+<h3 id="设备端"><a href="#设备端" class="headerlink" title="设备端"></a>设备端</h3><p>python脚本模拟设备实现文件上传：</p>
+<pre><code class="python">import paho.mqtt.client as mqtt
+import base64
+import os
+
+def mqtt_transmit(image_path, broker=&quot;localhost&quot;, port=1883, username=None, password=None, topic=&quot;/146/D1163P0R9PA7/file/post&quot;):
+    &quot;&quot;&quot;
+    此函数用于通过 MQTT 协议传输指定路径的图像文件
+
+    参数:
+    image_path (str): 待传输图像文件的路径
+    broker (str): MQTT 代理地址
+    port (int): MQTT 代理端口
+    username (str): MQTT 用户名
+    password (str): MQTT 密码
+    topic (str): 要发布的主题
+    &quot;&quot;&quot;
+    try:
+        # 提取文件名，转换为二进制并填充
+        file_name = os.path.basename(image_path)
+        file_name_bin = file_name.encode(&#39;utf-8&#39;)
+        file_name_padded = file_name_bin.ljust(32)
         
+        # 设定起始位置为 0 并转换为二进制
+        start_position = &quot;0&quot;
+        start_position_padded = start_position.ljust(8)
+        start_position_bin = bytes(start_position_padded, encoding=&#39;utf-8&#39;)
+        
+        # 读取并编码图像文件内容
+        with open(image_path, &quot;rb&quot;) as image_file:
+            binary_data = image_file.read()
+            binary_data_encoded = base64.b64encode(binary_data).decode(&#39;utf-8&#39;)
+            binary_data_encoded_bytes = binary_data_encoded.encode(&#39;utf-8&#39;)
+        
+        # 构建传输数据
+        data_to_transmit = file_name_padded + start_position_bin + binary_data_encoded_bytes
+        # print(data_to_transmit)
+        
+        # 配置并连接 MQTT 客户端
+        client = mqtt.Client()
+        if username and password:
+            client.username_pw_set(username=username, password=password)
+        client.connect(broker, port)
+        
+        # 发布数据
+        client.publish(topic, data_to_transmit)
+        
+        # 断开连接
+        client.disconnect()
+
+    except Exception as e:
+        print(f&quot;Error: &#123;e&#125;&quot;)
+
+# 使用示例
+image_path = &#39;logo.png&#39;
+mqtt_transmit(image_path, broker=&quot;mqtt服务器地址&quot;, port=1883, username=&quot;用户名&quot;, password=&quot;密码&quot;, topic=&quot;主题&quot;)
+</code></pre>
+<h3 id="物联网平台端"><a href="#物联网平台端" class="headerlink" title="物联网平台端"></a>物联网平台端</h3><h4 id="reportFile"><a href="#reportFile" class="headerlink" title="reportFile"></a>reportFile</h4><pre><code class="java">/**
+ * 上报文件信息
+ * 约定格式：
+ *      前32个字节 -&gt; 文件名    【字符串】- 文件名.后缀名 UTF_8
+ *      接着8个字节 -&gt; 起始地址 【字符串数字：如&quot;00001234&quot; -&gt; 得到&quot;1234&quot;】 UTF_8
+ *      后续是文件内容
+ */
+@Override
+public void reportFile(ReportFileDataBo bo) &#123;
+    try &#123;
+        byte[] data = bo.getData();
+        if (data.length &gt; 0) &#123;
+            // 1 前32个字节是 &quot;文件名.后缀名&quot;
+            byte[] bFileName = Arrays.copyOfRange(data, 0, 32);
+            String sFileName = new String(bFileName, StandardCharsets.UTF_8).trim();
+            String pre_sFileName = sFileName.split(&quot;\\.&quot;)[0];
+            String sub_sFileName = sFileName.split(&quot;\\.&quot;)[1];
+            String baseDir = RuoYiConfig.getUploadPath();
+            String fileName = getAbsoluteFile(baseDir, sFileName).getAbsolutePath();
+
+            log.info(&quot;文件全名: &quot; + fileName);
+            createFileIfNotExists(fileName);
+
+            // 2 接着8个字节是起始位置 &quot;pos&quot;
+            byte[] pos = Arrays.copyOfRange(data, 32, 40);
+            // 先转换为数字字符串
+            String sPosition = new String(pos, StandardCharsets.UTF_8).trim();
+            // 再转化为数字
+            int position = Integer.parseInt(sPosition);
+            log.info(&quot;文件起始位置: &quot; + position);
+
+            // 3 后面是内容
+            byte[] content = Arrays.copyOfRange(data, 40, data.length);
+            String contentStr = new String(content, StandardCharsets.UTF_8).trim();
+            int len = contentStr.length();
+            log.info(&quot;文件内容: &quot; + contentStr.substring(0, 8) + &quot;...&quot; + contentStr.substring(len - 8, len) + &quot; 文件len: &quot; + len);
+            List&lt;String&gt; FileTypeList = Arrays.asList(&quot;jpg&quot;, &quot;png&quot;, &quot;jpeg&quot;, &quot;gif&quot;, &quot;bmp&quot;, &quot;svg&quot;);
+            if (FileTypeList.contains(sub_sFileName)) &#123;
+                // 图片文件
+                saveContentAsImg(fileName, position, contentStr);
+            &#125; else &#123;
+                // 默认文本文件
+                saveContentToFile(fileName, position, contentStr);
+            &#125;
+
+            // 4 写入表, 并在前端页面提供下载功能
+            DeviceFile deviceFile = new DeviceFile();
+            deviceFile.setProductId(bo.getProductId());
+            deviceFile.setSerialNumber(bo.getSerialNumber());
+            long size = new File(fileName).length();
+            deviceFile.setFileSize(size + &quot; Byte&quot;);
+
+            // 文件内容预览
+            deviceFile.setFileContent(contentStr.substring(0, 8) + &quot;...&quot; + contentStr.substring(len - 8, len));
+
+            // 5 remark存放文件路径
+            deviceFile.setRemark(fileName);
+            deviceFileService.insertDeviceFileLog(deviceFile);
+
+        &#125;
+    &#125; catch (Exception e) &#123;
+        log.error(&quot;接收属性数据，解析数据时异常 message=&#123;&#125;,e=&#123;&#125;&quot;, e.getMessage(),e);
+    &#125;
+&#125;
+</code></pre>
+<h4 id="getAbsoluteFile"><a href="#getAbsoluteFile" class="headerlink" title="getAbsoluteFile"></a>getAbsoluteFile</h4><pre><code class="java">public static final File getAbsoluteFile(String uploadDir, String fileName) throws IOException
+&#123;
+    File desc = new File(uploadDir + File.separator + fileName);
+
+    if (!desc.exists())
+    &#123;
+        if (!desc.getParentFile().exists())
+        &#123;
+            desc.getParentFile().mkdirs();
+        &#125;
+    &#125;
+    return desc;
+&#125;
+</code></pre>
+<h4 id="createFileIfNotExists"><a href="#createFileIfNotExists" class="headerlink" title="createFileIfNotExists"></a>createFileIfNotExists</h4><pre><code class="java">/**
+ * 根据名称创建文件，如果已经存在，则跳过。
+ */
+private void createFileIfNotExists(String fileName) &#123;
+    File file = new File(fileName);
+    if (!file.exists()) &#123;
+        try &#123;
+            if (file.createNewFile()) &#123;
+                log.info(&quot;文件 &#123;&#125; 创建成功&quot;, fileName);
+            &#125; else &#123;
+                log.error(&quot;文件 &#123;&#125; 创建失败&quot;, fileName);
+            &#125;
+        &#125; catch (IOException e) &#123;
+            log.error(&quot;创建文件 &#123;&#125; 时出现异常&quot;, fileName, e);
+        &#125;
+    &#125; else &#123;
+        log.info(&quot;文件 &#123;&#125; 已经存在，跳过创建&quot;, fileName);
+    &#125;
+&#125;
+</code></pre>
+<h4 id="saveContentAsImg"><a href="#saveContentAsImg" class="headerlink" title="saveContentAsImg"></a>saveContentAsImg</h4><pre><code class="java">private void saveContentAsImg(String fileName, int position, String content) &#123;
+    byte[] writeBytes;
+    try &#123;
+        // 找到文件位置
+        File file = new File(fileName);
+        if (!file.exists()) &#123;
+            log.error(&quot;文件 &#123;&#125; 不存在，无法写入内容&quot;, fileName);
+        &#125;
+
+        if (position &lt; 0) &#123;
+            log.error(&quot;插入到文件 &#123;&#125; 的起始位置 &#123;&#125; 不能为负数&quot;, fileName, position);
+        &#125;
+
+        // 找到写入位置
+        final Path path = Paths.get(fileName);
+        byte[] fileBytes = Files.readAllBytes(path);
+
+        // base64解码并写入文件
+        byte[] imageBytes = Base64.getDecoder().decode(content);
+        writeBytes = replaceBytes(fileBytes, imageBytes, position);
+        saveImageFile(fileName, writeBytes);
+    &#125; catch (IOException e) &#123;
+        log.error(&quot;写入文件 &#123;&#125; 时出现异常&quot;, fileName, e);
+    &#125;
+&#125;
+
+private static void saveImageFile(String fileName, byte[] imageBytes)
+&#123;
+    try (FileOutputStream fos = new FileOutputStream(fileName)) &#123;
+        fos.write(imageBytes);
+        System.out.println(&quot;Saved image to &quot; + fileName);
+    &#125; catch (IOException e) &#123;
+        e.printStackTrace();
+    &#125;
+&#125;
+</code></pre>
+<h4 id="saveContentToFile"><a href="#saveContentToFile" class="headerlink" title="saveContentToFile"></a>saveContentToFile</h4><pre><code class="java">/**
+ * 根据文件名称和起始位置存入内容。
+ * @return 返回插入后的文件内容
+ */
+private void saveContentToFile(String fileName, int position, String content) &#123;
+    byte[] writeBytes;
+    try &#123;
+        File file = new File(fileName);
+        if (!file.exists()) &#123;
+            log.error(&quot;文件 &#123;&#125; 不存在，无法写入内容&quot;, fileName);
+        &#125;
+
+        if (position &lt; 0) &#123;
+            log.error(&quot;插入到文件 &#123;&#125; 的起始位置 &#123;&#125; 不能为负数&quot;, fileName, position);
+        &#125;
+
+        // 读取文件内容
+        final Path path = Paths.get(fileName);
+        byte[] fileBytes = Files.readAllBytes(path);
+
+        // 将 content 转换为字节数组
+        byte[] contentBytes = content.getBytes();
+        // 使用替换方法，并接受可能的新数组
+        writeBytes = replaceBytes(fileBytes, contentBytes, position);
+
+        // 写入文件
+        Files.write(path, writeBytes, StandardOpenOption.WRITE);
+        log.info(&quot;内容已经成功写入文件 &#123;&#125;&quot;, fileName);
+    &#125; catch (IOException e) &#123;
+        log.error(&quot;写入文件 &#123;&#125; 时出现异常&quot;, fileName, e);
+    &#125;
+&#125;
+</code></pre>
+<h4 id="replaceBytes"><a href="#replaceBytes" class="headerlink" title="replaceBytes"></a>replaceBytes</h4><pre><code class="java">/**
+ * todo：将 contentBytes 从 position开始，长度 contentBytes.length 的内容替换 fileBytes处的内容
+ * todo：特殊情况，当 插入的内容 大于 原内容长度时，处理逻辑如下：
+ *          1，[0, position) -&gt; result;
+ *          2, [position, position+contentBytes.length) -&gt; reslut;
+ *          3, result.length = position+contentBytes.length.
+ */
+public byte[] replaceBytes(byte[] fileBytes, byte[] contentBytes, int position) &#123;
+    // 如果指定位置大于原数组长度，那么从原数组末尾插入
+    if (position &gt;= fileBytes.length) &#123;
+        // 创建一个新的数组，长度为原数组长度加上内容长度
+        byte[] result = Arrays.copyOf(fileBytes, fileBytes.length + contentBytes.length);
+        // 复制内容到新数组的末端
+        System.arraycopy(contentBytes, 0, result, fileBytes.length, contentBytes.length);
+        return result;
+    &#125; else if (contentBytes.length + position &gt; fileBytes.length) &#123;
+        // 如果超出，则按照特殊情况处理逻辑，创建一个新的数组
+        byte[] result = new byte[position + contentBytes.length];
+
+        // 复制原数组的[0, position)部分到新数组
+        System.arraycopy(fileBytes, 0, result, 0, position);
+
+        // 插入contentBytes到新数组中的[position, position + contentBytes.length)部分
+        System.arraycopy(contentBytes, 0, result, position, contentBytes.length);
+
+        // 返回新数组，后面不需要的部分会自动用0填充，符合Java数组初始化特性
+        return result;
+    &#125; else &#123;
+        // 如果不超出原数组长度，则在原来的数组上操作
+        System.arraycopy(contentBytes, 0, fileBytes, position, contentBytes.length);
+
+        // 返回原数组，因为我们在原地进行了修改
+        return fileBytes;
+    &#125;
+&#125;
+</code></pre>
+<hr>
+<h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><h3 id="handleDownload"><a href="#handleDownload" class="headerlink" title="handleDownload"></a>handleDownload</h3><pre><code class="js">async handleDownload(row) &#123;
+  try &#123;
+    const fileId = row.fileId || this.ids;
+    const responseText = await downloadDeviceUploadFile(fileId);
+    let fileContent = responseText;
+    var filePath = row.remark;
+
+    console.log(&#39;文件内容:&#39;, fileContent);
+    console.log(&#39;文件大小:&#39;, fileContent.length);
+
+    const parts = filePath.split(/[\\\/]/); 
+    const fileNameWithExtension = parts[parts.length - 1];
+    const fileNameParts = fileNameWithExtension.split(&#39;.&#39;);
+    const fileName = fileNameParts.slice(0, -1).join(&#39;.&#39;);
+    const extension = fileNameParts[fileNameParts.length - 1];
+
+    console.log(&#39;文件名:&#39;, fileName); // 输出文件名
+    console.log(&#39;后缀名:&#39;, extension); // 输出后缀名
+
+    if (isImage(extension)) &#123;
+        const base64Data = fileContent.includes(&quot;,&quot;) ? fileContent.split(&quot;,&quot;)[1] : fileContent;
+        if (base64Data) &#123;
+          const contentType = `image/$&#123;extension&#125;`; // 设定MIME类型
+          const blob = base64ToBlob(base64Data, contentType); // base64字符串转换为Blob对象
+          const link = document.createElement(&#39;a&#39;);
+          const timestamp = new Date().getTime();
+          const name = `$&#123;fileName&#125;_$&#123;timestamp&#125;.$&#123;extension&#125;`;
+
+          link.href = URL.createObjectURL(blob);
+          link.download = name;
+
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        &#125; else &#123;
+          console.log(&quot;无效的Base64数据&quot;);
+        &#125;        
+    &#125; else &#123;
+      // 如果不是图像文件，处理为普通Blob
+      const blob = new Blob([fileContent]);
+      const link = document.createElement(&#39;a&#39;);
+
+      const timestamp = new Date().getTime();
+      const name = fileName + `_$&#123;timestamp&#125;.$&#123;extension&#125;`;
+
+      link.href = URL.createObjectURL(blob);
+      link.download = name;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    &#125;
+  &#125; catch (error) &#123;
+    console.error(error);
+  &#125;
+&#125;
+</code></pre>
+<h3 id="依赖代码"><a href="#依赖代码" class="headerlink" title="依赖代码"></a>依赖代码</h3><pre><code class="js">// 下载设备上传文件
+export function downloadDeviceUploadFile(fileId) &#123;
+  return request(&#123;
+    url: &#39;/iotData/deviceUploadFile/download?fileId=&#39; + fileId,
+    method: &#39;get&#39;
+  &#125;)
+&#125;
+
+export function isImage(extension) &#123;
+  const imageExtensions = [&#39;jpg&#39;, &#39;jpeg&#39;, &#39;png&#39;, &#39;gif&#39;, &#39;bmp&#39;, &#39;svg&#39;];
+  return imageExtensions.includes(extension.toLowerCase());
+&#125;
+
+export function base64ToBlob(base64, contentType = &#39;&#39;) &#123;
+  // 确保字符串有效并进行必要处理
+  let cleanedBase64Data = base64.trim().replace(/-/g, &#39;+&#39;).replace(/_/g, &#39;/&#39;);
+  const padding = &#39;=&#39;.repeat((4 - cleanedBase64Data.length % 4) % 4);
+  cleanedBase64Data += padding;
+
+  // Base64解码
+  const binaryString = Buffer.from(cleanedBase64Data, &#39;base64&#39;).toString(&#39;binary&#39;); // 使用 Buffer 解码
+  const len = binaryString.length;
+  const bytes = new Uint8Array(len);
+
+  // 将每个字符转换为字节
+  for (let i = 0; i &lt; len; i++) &#123;
+      bytes[i] = binaryString.charCodeAt(i);
+  &#125;
+
+  return new Blob([bytes], &#123; type: contentType &#125;);
+&#125;
+</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
     </div>
