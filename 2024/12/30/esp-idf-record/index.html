@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>esp-idf-record | blog of Jungle</title>
+  <meta name="keywords" content=" esp-idf ">
+  <meta name="description" content="esp-idf-record | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍Jungle  毕业于CUIT, 目前在sz工作. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 编程 算法 情商 财商     最近什么的干活 面经 + 算法题hot100  提升自我  基础：  集合、反射 JVM linux命令及脚本编程 mysql 、redis、mq 基础知识点及原理   进阶：  多线程高并发【并发编程的艺术】 SSM ：Spring cl">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍Jungle  毕业于CUIT, 目前在sz工作. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 编程 算法 情商 财商     最近什么的干活 面经 + 算法题hot100  提升自我  基础：  集合、反射 JVM linux命令及脚本编程 mysql 、redis、mq 基础知识点及原理   进阶：  多线程高并发【并发编程的艺术】 SSM ：Spring cl">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2023-09-14T17:15:02.611Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:jungle8884@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=983123369&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(83)</small></div></li>
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(4)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(11)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->插件">插件<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->audio">audio<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->ChatGPT">ChatGPT<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(21)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(11)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="数据库<--->Redis">Redis<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(4)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="运维<--->kubernetes">kubernetes<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="运维<--->linux">linux<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="算法"><i class="fold iconfont icon-right"></i>算法<small>(17)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->面试题">面试题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->日期">日期<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->树">树<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数学">数学<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数组">数组<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->双指针">双指针<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->图">图<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->LeetCode">LeetCode<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="物联网"><i class="fold iconfont icon-right"></i>物联网<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="物联网<--->乐鑫">乐鑫<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->设备端">设备端<small>(7)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->物联网平台">物联网平台<small>(6)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="项目"><i class="fold iconfont icon-right"></i>项目<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="项目<--->ruoyi">ruoyi<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="项目<--->SpringBoot">SpringBoot<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="C++"><i class="fold iconfont icon-right"></i>C++<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="C++<--->zlmediakit">zlmediakit<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Docker">Docker<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="GUI"><i class="fold iconfont icon-right"></i>GUI<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="GUI<--->教程">教程<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="83">
+<input type="hidden" id="yelog_site_word_count" value="240.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>51C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蔡勒公式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>策略模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查找</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>构建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>观察者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>滑动窗口</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>快速平方根</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六大原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前缀树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>闰年</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>社会的本质</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数组</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>双指针</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>贪心</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优先队列</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>油猴</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>audio</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>device</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP Rainmaker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>esp-idf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32C3</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FleetBee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>GUI</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Job</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>k3s</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LeetCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MircroPython</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mqtt上传文件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N的阶乘</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NoSQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OJ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STM32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Stream</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Utils</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>video</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>WebGIS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>zlmediakit</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/30/esp-idf-record/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-record">esp-idf-record</span>
+            <span class="post-date" title="2024-12-30 10:46:49">2024/12/30</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/27/esp-idf-cmd/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-cmd">esp-idf-cmd</span>
+            <span class="post-date" title="2024-12-27 16:41:01">2024/12/27</span>
+        </a>
+        
+        <a  class="全部文章 GUI 教程 "
+           href="/2024/09/06/pyGUI/"
+           data-tag="python,GUI"
+           data-author="" >
+            <span class="post-title" title="pyGUI">pyGUI</span>
+            <span class="post-date" title="2024-09-06 14:41:16">2024/09/06</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/08/26/basic-Arduino/"
+           data-tag="C"
+           data-author="" >
+            <span class="post-title" title="basic_Arduino">basic_Arduino</span>
+            <span class="post-date" title="2024-08-26 17:47:27">2024/08/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/08/13/mqtt/"
+           data-tag="mqtt上传文件"
+           data-author="" >
+            <span class="post-title" title="MQTT">MQTT</span>
+            <span class="post-date" title="2024-08-13 15:45:34">2024/08/13</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/06/07/IntelligenLEDStrip/"
+           data-tag="ESP Rainmaker"
+           data-author="" >
+            <span class="post-title" title="智能灯带">智能灯带</span>
+            <span class="post-date" title="2024-06-07 10:15:00">2024/06/07</span>
+        </a>
+        
+        <a  class="全部文章 运维 linux "
+           href="/2024/05/28/linux-note/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux_note">linux_note</span>
+            <span class="post-date" title="2024-05-28 09:22:34">2024/05/28</span>
+        </a>
+        
+        <a  class="全部文章 C++ zlmediakit "
+           href="/2024/05/28/zlm-learning/"
+           data-tag="zlmediakit"
+           data-author="" >
+            <span class="post-title" title="zlm_learning">zlm_learning</span>
+            <span class="post-date" title="2024-05-28 08:32:12">2024/05/28</span>
+        </a>
+        
+        <a  class="全部文章 运维 kubernetes "
+           href="/2024/05/14/k3s%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/"
+           data-tag="k3s"
+           data-author="" >
+            <span class="post-title" title="k3s">k3s</span>
+            <span class="post-date" title="2024-05-14 16:36:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/05/14/local_deploy/"
+           data-tag="video"
+           data-author="" >
+            <span class="post-title" title="物联网平台本地部署并接入摄像头">物联网平台本地部署并接入摄像头</span>
+            <span class="post-date" title="2024-05-14 16:31:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/04/12/CameraAccess/"
+           data-tag="FleetBee"
+           data-author="" >
+            <span class="post-title" title="摄像头接入">摄像头接入</span>
+            <span class="post-date" title="2024-04-12 16:48:52">2024/04/12</span>
+        </a>
+        
+        <a  class="全部文章 项目 ruoyi "
+           href="/2024/01/09/ruoyi_2Dev/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi-二次开发">ruoyi-二次开发</span>
+            <span class="post-date" title="2024-01-09 11:20:00">2024/01/09</span>
+        </a>
+        
+        <a  class="全部文章 项目 ruoyi "
+           href="/2024/01/06/ruoyi/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi">ruoyi</span>
+            <span class="post-date" title="2024-01-06 15:20:00">2024/01/06</span>
+        </a>
+        
+        <a  class="全部文章 项目 SpringBoot "
+           href="/2024/01/05/SpringBoor_Vue/"
+           data-tag="SpringBoot,Vue"
+           data-author="" >
+            <span class="post-title" title="SpringBoot_Vue">SpringBoot_Vue</span>
+            <span class="post-date" title="2024-01-05 11:20:01">2024/01/05</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/27/wumei_DeepIn/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceDeepIn">wumei-deviceDeepIn</span>
+            <span class="post-date" title="2023-12-27 10:23:00">2023/12/27</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/26/wumei_deviceInto/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceInto">wumei-deviceInto</span>
+            <span class="post-date" title="2023-12-26 11:20:00">2023/12/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/12/12/ESP32-C3/"
+           data-tag="ESP32C3"
+           data-author="" >
+            <span class="post-title" title="ESP32C3">ESP32C3</span>
+            <span class="post-date" title="2023-12-12 15:43:52">2023/12/12</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/11/wumei/"
+           data-tag="Fastbee"
+           data-author="" >
+            <span class="post-title" title="wumei">wumei</span>
+            <span class="post-date" title="2023-12-11 09:48:52">2023/12/11</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/11/08/ESP32/"
+           data-tag="MircroPython"
+           data-author="" >
+            <span class="post-title" title="MircroPython">MircroPython</span>
+            <span class="post-date" title="2023-11-08 18:02:31">2023/11/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 数学 "
+           href="/2023/11/01/Q-rsqrt/"
+           data-tag="快速平方根"
+           data-author="" >
+            <span class="post-title" title="Q_rsqrt">Q_rsqrt</span>
+            <span class="post-date" title="2023-11-01 08:52:08">2023/11/01</span>
+        </a>
+        
+        <a  class="全部文章 工具 audio "
+           href="/2023/10/16/audioConvert/"
+           data-tag="python,audio"
+           data-author="" >
+            <span class="post-title" title="audioConvert">audioConvert</span>
+            <span class="post-date" title="2023-10-16 19:34:43">2023/10/16</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/14/STM32/"
+           data-tag="STM32"
+           data-author="" >
+            <span class="post-title" title="STM32">STM32</span>
+            <span class="post-date" title="2023-10-14 08:59:19">2023/10/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/08/51C/"
+           data-tag="51C"
+           data-author="" >
+            <span class="post-title" title="51C">51C</span>
+            <span class="post-date" title="2023-10-08 17:20:10">2023/10/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 面试题 "
+           href="/2023/09/18/JobInterview/"
+           data-tag="N的阶乘"
+           data-author="" >
+            <span class="post-title" title="JobInterview">JobInterview</span>
+            <span class="post-date" title="2023-09-18 21:55:19">2023/09/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 LeetCode "
+           href="/2023/09/13/hot100/"
+           data-tag="LeetCode"
+           data-author="" >
+            <span class="post-title" title="hot100">hot100</span>
+            <span class="post-date" title="2023-09-13 10:17:00">2023/09/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/09/05/4Job/"
+           data-tag="Job,WebGIS,Shell"
+           data-author="" >
+            <span class="post-title" title="Javaer&#39;s development">Javaer&#39;s development</span>
+            <span class="post-date" title="2023-09-05 00:00:00">2023/09/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/03/24/Stream/"
+           data-tag="Stream"
+           data-author="" >
+            <span class="post-title" title="Stream">Stream</span>
+            <span class="post-date" title="2023-03-24 09:42:49">2023/03/24</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/03/08/ESP32ATLog/"
+           data-tag="ESP32,AT"
+           data-author="" >
+            <span class="post-title" title="ESP32AT指令集探索">ESP32AT指令集探索</span>
+            <span class="post-date" title="2023-03-08 14:52:56">2023/03/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/02/09/AddOn4SpeedPlay/"
+           data-tag="video"
+           data-author="" >
+            <span class="post-title" title="AddOn4SpeedPlay">AddOn4SpeedPlay</span>
+            <span class="post-date" title="2023-02-09 13:05:26">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 ChatGPT "
+           href="/2023/02/09/ChatGPT/"
+           data-tag="ChatGPT"
+           data-author="" >
+            <span class="post-title" title="Usage of ChatGPT">Usage of ChatGPT</span>
+            <span class="post-date" title="2023-02-09 12:34:54">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/02/09/Java-io/"
+           data-tag="IO"
+           data-author="" >
+            <span class="post-title" title="Java-io">Java-io</span>
+            <span class="post-date" title="2023-02-09 12:27:55">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/01/17/Freedom/"
+           data-tag="油猴"
+           data-author="" >
+            <span class="post-title" title="Videos">Videos</span>
+            <span class="post-date" title="2023-01-17 21:43:30">2023/01/17</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/12/04/DevConcludes/"
+           data-tag="开发"
+           data-author="" >
+            <span class="post-title" title="DevConcludes">DevConcludes</span>
+            <span class="post-date" title="2022-12-04 22:16:46">2022/12/04</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/10/16/Java-Utils/"
+           data-tag="Utils"
+           data-author="" >
+            <span class="post-title" title="Java-Utils">Java-Utils</span>
+            <span class="post-date" title="2022-10-16 16:15:29">2022/10/16</span>
+        </a>
+        
+        <a  class="全部文章 算法 数组 "
+           href="/2022/05/02/Array/"
+           data-tag="数组"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2022-05-02 00:00:00">2022/05/02</span>
+        </a>
+        
+        <a  class="全部文章 读书 "
+           href="/2022/03/12/natureOfSociety/"
+           data-tag="社会的本质"
+           data-author="" >
+            <span class="post-title" title="natureOfSociety">natureOfSociety</span>
+            <span class="post-date" title="2022-03-12 18:39:19">2022/03/12</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2022/01/23/TopologicalSorting/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2022-01-23 00:00:00">2022/01/23</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2021/12/31/Graph-DataStructure/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="图的数据结构">图的数据结构</span>
+            <span class="post-date" title="2021-12-31 10:41:29">2021/12/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/12/30/DesignPatternofSixPrinciples/"
+           data-tag="六大原则"
+           data-author="" >
+            <span class="post-title" title="六大设计原则">六大设计原则</span>
+            <span class="post-date" title="2021-12-30 15:11:05">2021/12/30</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/12/13/BinaryTree-traverse/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历框架">二叉树的遍历框架</span>
+            <span class="post-date" title="2021-12-13 10:50:34">2021/12/13</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/12/08/Trie-341-NestedIterator/"
+           data-tag="前缀树,N叉树,迭代器"
+           data-author="" >
+            <span class="post-title" title="扁平化嵌套列表迭代器">扁平化嵌套列表迭代器</span>
+            <span class="post-date" title="2021-12-08 16:38:11">2021/12/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/11/26/BinaryTree-297-SerializeAndDeserialize/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的序列化和反序列化">二叉树的序列化和反序列化</span>
+            <span class="post-date" title="2021-11-26 17:32:54">2021/11/26</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/09/16/Calculate-date/"
+           data-tag="闰年"
+           data-author="" >
+            <span class="post-title" title="Calculate_date">Calculate_date</span>
+            <span class="post-date" title="2021-09-16 21:05:01">2021/09/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatterofStrategy/"
+           data-tag="行为型模式,策略模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2021-09-15 20:58:14">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofObserver/"
+           data-tag="观察者模式,行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2021-09-15 20:41:49">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofProxy/"
+           data-tag="代理模式,结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2021-09-15 20:30:32">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/09/07/PriorityQueue/"
+           data-tag="优先队列,贪心"
+           data-author="" >
+            <span class="post-title" title="PriorityQueue">PriorityQueue</span>
+            <span class="post-date" title="2021-09-07 00:00:00">2021/09/07</span>
+        </a>
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2021/08/31/SearchAndSort/"
+           data-tag="排序,查找"
+           data-author="" >
+            <span class="post-title" title="SearchAndSort">SearchAndSort</span>
+            <span class="post-date" title="2021-08-31 14:27:08">2021/08/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/07/09/Trie/"
+           data-tag="前缀树,N叉树"
+           data-author="" >
+            <span class="post-title" title="过滤敏感词">过滤敏感词</span>
+            <span class="post-date" title="2021-07-09 00:00:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 算法 滑动窗口 "
+           href="/2021/07/02/slidingwindow/"
+           data-tag="滑动窗口"
+           data-author="" >
+            <span class="post-title" title="滑动窗口">滑动窗口</span>
+            <span class="post-date" title="2021-07-02 00:00:00">2021/07/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 双指针 "
+           href="/2021/07/01/doublepointers/"
+           data-tag="双指针"
+           data-author="" >
+            <span class="post-title" title="双指针">双指针</span>
+            <span class="post-date" title="2021-07-01 00:00:00">2021/07/01</span>
+        </a>
+        
+        <a  class="全部文章 数据库 Redis "
+           href="/2021/06/29/redis-LearningNote/"
+           data-tag="NoSQL"
+           data-author="" >
+            <span class="post-title" title="redis学习笔记">redis学习笔记</span>
+            <span class="post-date" title="2021-06-29 00:00:00">2021/06/29</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/06/27/Zeller/"
+           data-tag="蔡勒公式,OJ"
+           data-author="" >
+            <span class="post-title" title="Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7">Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7</span>
+            <span class="post-date" title="2021-06-27 00:00:00">2021/06/27</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/06/01/BinaryTree/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树">二叉树</span>
+            <span class="post-date" title="2021-06-01 00:00:00">2021/06/01</span>
+        </a>
+        
+        <a  class="全部文章 运维 linux "
+           href="/2021/05/27/linuxLearningNote/"
+           data-tag="Shell,Linux"
+           data-author="" >
+            <span class="post-title" title="Linux 与 Shell">Linux 与 Shell</span>
+            <span class="post-date" title="2021-05-27 00:00:00">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式,构建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="构建型模式,单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 DL Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="构建型模式,原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="爬虫,Python"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-esp-idf-record" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">esp-idf-record</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="物联网">物联网</a> > 
+            
+            <a  data-rel="物联网&lt;---&gt;乐鑫">乐鑫</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">esp-idf</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-12-30 17:52:49'>2024-12-30 10:46</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:2.8k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#WS2812"><span class="toc-text">WS2812</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#RMT%E6%8E%A7%E5%88%B6"><span class="toc-text">RMT控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E4%BB%A3%E7%A0%81"><span class="toc-text">核心代码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DHT11"><span class="toc-text">DHT11</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ADC-%E7%83%AD%E6%95%8F%E7%94%B5%E9%98%BB"><span class="toc-text">ADC-热敏电阻</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HC-SR04%E8%B6%85%E5%A3%B0%E6%B3%A2%E4%BC%A0%E6%84%9F%E5%99%A8"><span class="toc-text">HC-SR04超声波传感器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SD-sdmmc"><span class="toc-text">SD-sdmmc</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="WS2812"><a href="#WS2812" class="headerlink" title="WS2812"></a>WS2812</h1><h2 id="RMT控制"><a href="#RMT控制" class="headerlink" title="RMT控制"></a>RMT控制</h2><p><img src="/2024/12/30/esp-idf-record/image-20241230110406838.png" alt="image-20241230110406838"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230110449396.png" alt="image-20241230110449396"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230110640812.png" alt="image-20241230110640812"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230104747866.png" alt="image-20241230104747866"></p>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><pre><code class="c">//WS2812驱动的描述符
+struct ws2812_strip_t
+&#123;
+    rmt_channel_handle_t led_chan;          //rmt通道
+    rmt_encoder_handle_t led_encoder;       //rmt编码器
+    uint8_t *led_buffer;                    //rgb数据
+    int led_num;                            //led个数
+&#125;;
+
+/** 初始化WS2812外设
+ * @param gpio 控制WS2812的管脚
+ * @param maxled 控制WS2812的个数
+ * @param led_handle 返回的控制句柄
+ * @return ESP_OK or ESP_FAIL
+*/
+esp_err_t ws2812_init(gpio_num_t gpio,int maxled,ws2812_strip_handle_t* handle)
+&#123;
+    struct ws2812_strip_t* led_handle = NULL;
+    //新增一个WS2812驱动描述: 1-需要分配的内存块数量；sizeof(struct ws2812_strip_t)-需要分配的内存块大小。
+    led_handle = calloc(1, sizeof(struct ws2812_strip_t));
+    assert(led_handle);
+    //按照led个数来分配RGB缓存数据
+    led_handle-&gt;led_buffer = calloc(1,maxled*3);
+    assert(led_handle-&gt;led_buffer);
+    //设置LED个数
+    led_handle-&gt;led_num = maxled;
+
+    //定义一个RMT发送通道配置
+    rmt_tx_channel_config_t tx_chan_config = &#123;
+        .clk_src = RMT_CLK_SRC_DEFAULT,         //默认时钟源
+        .gpio_num = gpio,                       //GPIO管脚
+        .mem_block_symbols = 64,                //内存块大小，即 64 * 4 = 256 字节
+        .resolution_hz = LED_STRIP_RESOLUTION_HZ,   //RMT通道的分辨率10000000hz=0.1us，也就是可以控制的最小时间单元
+        .trans_queue_depth = 4,                 //底层后台发送的队列深度
+    &#125;;
+
+    //创建一个RMT发送通道
+    ESP_ERROR_CHECK(rmt_new_tx_channel(&amp;tx_chan_config, &amp;led_handle-&gt;led_chan));
+
+    //创建自定义编码器（重点函数），所谓编码，就是发射红外时加入我们的时序控制
+    ESP_ERROR_CHECK(rmt_new_led_strip_encoder(&amp;led_handle-&gt;led_encoder));
+
+    //使能RMT通道
+    ESP_ERROR_CHECK(rmt_enable(led_handle-&gt;led_chan));
+
+    //返回WS2812操作句柄
+    *handle = led_handle;
+
+    return ESP_OK;
+&#125;
+
+
+/** 创建一个基于WS2812时序的编码器
+ * @param ret_encoder 返回的编码器，这个编码器在使用rmt_transmit函数传输时会用到
+ * @return ESP_OK or ESP_FAIL
+*/
+esp_err_t rmt_new_led_strip_encoder(rmt_encoder_handle_t *ret_encoder)
+&#123;
+    esp_err_t ret = ESP_OK;
+
+    //创建一个自定义的编码器结构体，用于控制发送编码的流程
+    rmt_led_strip_encoder_t *led_encoder = NULL;
+    led_encoder = calloc(1, sizeof(rmt_led_strip_encoder_t));
+    ESP_GOTO_ON_FALSE(led_encoder, ESP_ERR_NO_MEM, err, TAG, &quot;no mem for led strip encoder&quot;);
+    led_encoder-&gt;base.encode = rmt_encode_led_strip;    //这个函数会在rmt发送数据的时候被调用，我们可以在这个函数增加额外代码进行控制
+    led_encoder-&gt;base.del = rmt_del_led_strip_encoder;  //这个函数在卸载rmt时被调用
+    led_encoder-&gt;base.reset = rmt_led_strip_encoder_reset;  //这个函数在复位rmt时被调用
+
+    //新建一个编码器配置(0,1位持续时间，参考芯片手册)
+    rmt_bytes_encoder_config_t bytes_encoder_config = &#123;
+        .bit0 = &#123;
+            .level0 = 1,
+            .duration0 = 0.3 * LED_STRIP_RESOLUTION_HZ / 1000000, // T0H=0.3us
+            .level1 = 0,
+            .duration1 = 0.9 * LED_STRIP_RESOLUTION_HZ / 1000000, // T0L=0.9us
+        &#125;,
+        .bit1 = &#123;
+            .level0 = 1,
+            .duration0 = 0.9 * LED_STRIP_RESOLUTION_HZ / 1000000, // T1H=0.9us
+            .level1 = 0,
+            .duration1 = 0.3 * LED_STRIP_RESOLUTION_HZ / 1000000, // T1L=0.3us
+        &#125;,
+        .flags.msb_first = 1 //高位先传输
+    &#125;;
+    //传入编码器配置，获得数据编码器操作句柄
+    rmt_new_bytes_encoder(&amp;bytes_encoder_config, &amp;led_encoder-&gt;bytes_encoder);
+
+    //新建一个拷贝编码器配置，拷贝编码器一般用于传输恒定的字符数据，比如说结束位
+    rmt_copy_encoder_config_t copy_encoder_config = &#123;&#125;;
+    rmt_new_copy_encoder(&amp;copy_encoder_config, &amp;led_encoder-&gt;copy_encoder);
+
+    //设定结束位时序
+    uint32_t reset_ticks = LED_STRIP_RESOLUTION_HZ / 1000000 * 50 / 2; //分辨率/1M=每个ticks所需的us，然后乘以50就得出50us所需的ticks
+    led_encoder-&gt;reset_code = (rmt_symbol_word_t) &#123;
+        .level0 = 0,
+        .duration0 = reset_ticks,
+        .level1 = 0,
+        .duration1 = reset_ticks,
+    &#125;;
+
+    //返回编码器
+    *ret_encoder = &amp;led_encoder-&gt;base;
+    return ESP_OK;
+err:
+    if (led_encoder) &#123;
+        if (led_encoder-&gt;bytes_encoder) &#123;
+            rmt_del_encoder(led_encoder-&gt;bytes_encoder);
+        &#125;
+        if (led_encoder-&gt;copy_encoder) &#123;
+            rmt_del_encoder(led_encoder-&gt;copy_encoder);
+        &#125;
+        free(led_encoder);
+    &#125;
+    return ret;
+&#125;
+</code></pre>
+<h1 id="DHT11"><a href="#DHT11" class="headerlink" title="DHT11"></a>DHT11</h1><p><img src="/2024/12/30/esp-idf-record/image-20241230144624134.png" alt="image-20241230144624134"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230144724108.png" alt="image-20241230144724108"></p>
+<pre><code class="c">// DHT11 初始化
+void DHT11_Init(uint8_t dht11_pin)
+&#123;
+    DHT11_PIN = dht11_pin;
+    
+    rmt_rx_channel_config_t rx_chan_config = &#123;
+        .clk_src = RMT_CLK_SRC_DEFAULT,   // 选择时钟源
+        .resolution_hz = 1000 * 1000,       // 1 MHz 滴答分辨率，即 1 滴答 = 1 µs
+        .mem_block_symbols = 64,          // 内存块大小，即 64 * 4 = 256 字节
+        .gpio_num = dht11_pin,            // GPIO 编号
+        .flags.invert_in = false,         // 不反转输入信号
+        .flags.with_dma = false,          // 不需要 DMA 后端
+    &#125;;
+    //创建rmt接收通道
+    ESP_ERROR_CHECK(rmt_new_rx_channel(&amp;rx_chan_config, &amp;rx_chan_handle));
+ 
+    //新建接收数据队列
+    rx_receive_queue = xQueueCreate(20, sizeof(rmt_rx_done_event_data_t));
+    assert(rx_receive_queue);
+
+    //注册接收完成回调函数
+     ESP_LOGI(TAG, &quot;register RX done callback&quot;);
+    rmt_rx_event_callbacks_t cbs = &#123;
+        .on_recv_done = example_rmt_rx_done_callback,
+    &#125;;
+    ESP_ERROR_CHECK(rmt_rx_register_event_callbacks(rx_chan_handle, &amp;cbs, rx_receive_queue));
+
+    //使能RMT接收通道
+    ESP_ERROR_CHECK(rmt_enable(rx_chan_handle));
+&#125;
+</code></pre>
+<h1 id="ADC-热敏电阻"><a href="#ADC-热敏电阻" class="headerlink" title="ADC-热敏电阻"></a>ADC-热敏电阻</h1><p><img src="/2024/12/30/esp-idf-record/image-20241230152606658.png" alt="image-20241230152606658"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230152918154.png" alt="image-20241230152918154"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230153126380.png" alt="image-20241230153126380"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230153445973.png" alt="image-20241230153445973"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230161429368.png" alt="image-20241230161429368"></p>
+<pre><code class="c">/**
+ * 温度检测初始化
+ * @param 无
+ * @return 无
+*/
+void temp_ntc_init(void)
+&#123;
+    adc_oneshot_unit_init_cfg_t init_config1 = &#123;
+        .unit_id = ADC_UNIT_1,  //WIFI和ADC2无法同时启用，这里选择ADC1
+    &#125;;
+
+    //启用单次转换模式
+    ESP_ERROR_CHECK(adc_oneshot_new_unit(&amp;init_config1, &amp;s_adc_handle));
+
+    //-------------ADC1 Config---------------//
+    adc_oneshot_chan_cfg_t config = &#123;
+        .bitwidth = ADC_BITWIDTH_12,       //分辨率
+        .atten = ADC_ATTEN_DB_12,          
+        //衰减倍数，ESP32设计的ADC参考电压为1100mV,只能测量0-1100mV之间的电压，如果要测量更大范围的电压
+        //需要设置衰减倍数
+        /*以下是对应可测量范围
+        ADC_ATTEN_DB_0        100 mV ~ 950 mV
+        ADC_ATTEN_DB_2_5    100 mV ~ 1250 mV
+        ADC_ATTEN_DB_6        150 mV ~ 1750 mV
+        ADC_ATTEN_DB_12        150 mV ~ 2450 mV
+        */
+    &#125;;
+    ESP_ERROR_CHECK(adc_oneshot_config_channel(s_adc_handle, TEMP_ADC_CHANNEL, &amp;config));
+    //-------------ADC1 Calibration Init---------------//
+    do_calibration1 = example_adc_calibration_init(ADC_UNIT_1, ADC_ATTEN_DB_12, &amp;adc1_cali_handle);
+
+    //新建一个任务，不断地进行ADC和温度计算
+    xTaskCreatePinnedToCore(temp_adc_task, &quot;adc_task&quot;, 2048, NULL,2, NULL, 1);
+&#125;
+</code></pre>
+<h1 id="HC-SR04超声波传感器"><a href="#HC-SR04超声波传感器" class="headerlink" title="HC-SR04超声波传感器"></a>HC-SR04超声波传感器</h1><p><img src="/2024/12/30/esp-idf-record/image-20241230161725256.png" alt="image-20241230161725256"></p>
+<pre><code class="c">/*
+ * SPDX-FileCopyrightText: 2021-2022 Espressif Systems (Shanghai) CO LTD
+ *
+ * SPDX-License-Identifier: Unlicense OR CC0-1.0
+ */
+
+#include &quot;freertos/FreeRTOS.h&quot;
+#include &quot;freertos/task.h&quot;
+#include &quot;esp_log.h&quot;
+#include &quot;esp_private/esp_clk.h&quot;
+#include &quot;driver/mcpwm_cap.h&quot;
+#include &quot;driver/gpio.h&quot;
+
+const static char *TAG = &quot;example&quot;;
+
+//TRIG和ECHO对应的GPIO
+#define HC_SR04_TRIG_GPIO  GPIO_NUM_32
+#define HC_SR04_ECHO_GPIO  GPIO_NUM_33
+
+static bool hc_sr04_echo_callback(mcpwm_cap_channel_handle_t cap_chan, const mcpwm_capture_event_data_t *edata, void *user_data)
+&#123;
+    static uint32_t cap_val_begin_of_sample = 0;
+    static uint32_t cap_val_end_of_sample = 0;
+    TaskHandle_t task_to_notify = (TaskHandle_t)user_data;
+    BaseType_t high_task_wakeup = pdFALSE;
+
+    //判断边沿，上升沿记录捕获的计数值
+    if (edata-&gt;cap_edge == MCPWM_CAP_EDGE_POS) &#123;
+        // store the timestamp when pos edge is detected
+        cap_val_begin_of_sample = edata-&gt;cap_value;
+        cap_val_end_of_sample = cap_val_begin_of_sample;
+    &#125; else &#123;
+        //如果是下降沿，也记录捕获的计数值
+        cap_val_end_of_sample = edata-&gt;cap_value;
+
+        //两个计数值的差值，就是脉宽长度
+        uint32_t tof_ticks = cap_val_end_of_sample - cap_val_begin_of_sample;
+
+        // 通知任务计数差值
+        xTaskNotifyFromISR(task_to_notify, tof_ticks, eSetValueWithOverwrite, &amp;high_task_wakeup);
+    &#125;
+
+    return high_task_wakeup == pdTRUE;
+&#125;
+
+/**
+ * @brief generate single pulse on Trig pin to start a new sample
+ */
+static void gen_trig_output(void)
+&#123;
+    gpio_set_level(HC_SR04_TRIG_GPIO, 1); // set high
+    esp_rom_delay_us(10);
+    gpio_set_level(HC_SR04_TRIG_GPIO, 0); // set low
+&#125;
+
+void app_main(void)
+&#123;
+    ESP_LOGI(TAG, &quot;Install capture timer&quot;);
+
+    //新建一个捕获定时器，使用默认的时钟源
+    mcpwm_cap_timer_handle_t cap_timer = NULL;
+    mcpwm_capture_timer_config_t cap_conf = &#123;
+        .clk_src = MCPWM_CAPTURE_CLK_SRC_DEFAULT,
+        .group_id = 0,
+    &#125;;
+    ESP_ERROR_CHECK(mcpwm_new_capture_timer(&amp;cap_conf, &amp;cap_timer));
+
+    //新建一个捕获通道，把捕获定时器与捕获通道绑定起来，采取双边捕获的策略
+    ESP_LOGI(TAG, &quot;Install capture channel&quot;);
+    mcpwm_cap_channel_handle_t cap_chan = NULL;
+    mcpwm_capture_channel_config_t cap_ch_conf = &#123;
+        .gpio_num = HC_SR04_ECHO_GPIO,
+        .prescale = 1,
+        // capture on both edge
+        .flags.neg_edge = true,
+        .flags.pos_edge = true,
+        // pull up internally
+        .flags.pull_up = true,
+    &#125;;
+    ESP_ERROR_CHECK(mcpwm_new_capture_channel(cap_timer, &amp;cap_ch_conf, &amp;cap_chan));
+
+    //新建一个捕获事件回调函数，当捕获到相关的边沿，则调用这个回调函数
+    ESP_LOGI(TAG, &quot;Register capture callback&quot;);
+    TaskHandle_t cur_task = xTaskGetCurrentTaskHandle();
+    mcpwm_capture_event_callbacks_t cbs = &#123;
+        .on_cap = hc_sr04_echo_callback,
+    &#125;;
+    ESP_ERROR_CHECK(mcpwm_capture_channel_register_event_callbacks(cap_chan, &amp;cbs, cur_task));
+
+    //使能捕获通道
+    ESP_LOGI(TAG, &quot;Enable capture channel&quot;);
+    ESP_ERROR_CHECK(mcpwm_capture_channel_enable(cap_chan));
+
+    //初始化Trig引脚，设置为输出
+    ESP_LOGI(TAG, &quot;Configure Trig pin&quot;);
+    gpio_config_t io_conf = &#123;
+        .mode = GPIO_MODE_OUTPUT,
+        .pin_bit_mask = 1ULL &lt;&lt; HC_SR04_TRIG_GPIO,
+    &#125;;
+    ESP_ERROR_CHECK(gpio_config(&amp;io_conf));
+    ESP_ERROR_CHECK(gpio_set_level(HC_SR04_TRIG_GPIO, 0));
+
+    //使能捕获定时器
+    ESP_LOGI(TAG, &quot;Enable and start capture timer&quot;);
+    ESP_ERROR_CHECK(mcpwm_capture_timer_enable(cap_timer));
+    ESP_ERROR_CHECK(mcpwm_capture_timer_start(cap_timer));
+
+    uint32_t tof_ticks;
+    while (1) &#123;
+        //产生一个Trig
+        gen_trig_output();
+
+        // 等待捕获完成信号，
+        if (xTaskNotifyWait(0x00, ULONG_MAX, &amp;tof_ticks, pdMS_TO_TICKS(1000)) == pdTRUE) &#123;
+            //计算脉宽时间长度，从任务通知获取到的tof_ticks是计数，我们需要计算出对应的时间
+            /*
+            tof_ticks:计数
+            esp_clk_apb_freq():计数时钟频率
+            1/esp_clk_apb_freq():计数时钟周期，也就是1个tof_ticks时间是多少秒
+            1000000/esp_clk_apb_freq():一个tof_ticks时间是多少us
+            因此tof_ticks * (1000000.0 / esp_clk_apb_freq())就是总的脉宽时长
+            */
+            float pulse_width_us = tof_ticks * (1000000.0 / esp_clk_apb_freq());
+            if (pulse_width_us &gt; 35000) &#123;
+                // 脉宽太长，超出了SR04的计算范围
+                continue;
+            &#125;
+            
+
+            /*
+            计算公式如下：
+            距离D=音速V*T/2;(T是上述的脉宽时间，因为是来回时间，所以要除以2才是单程时间)
+            D(单位cm)=340m/s*Tus;
+            D=34000cm/s*(10^-6)Ts/2;(1us=(10^-6)s)
+            D=17000*(10^-6)*T
+            D=0.017*T
+            D=T/58
+            所以下面这个公式/58是这样来的
+            */
+            float distance = (float) pulse_width_us / 58;
+            ESP_LOGI(TAG, &quot;Measured distance: %.2fcm&quot;, distance);
+        &#125;
+        vTaskDelay(pdMS_TO_TICKS(500));
+    &#125;
+&#125;
+</code></pre>
+<h1 id="SD-sdmmc"><a href="#SD-sdmmc" class="headerlink" title="SD-sdmmc"></a>SD-sdmmc</h1><p><img src="/2024/12/30/esp-idf-record/image-20241230172625922.png" alt="image-20241230172625922"></p>
+<p><img src="/2024/12/30/esp-idf-record/image-20241230173528541.png" alt="image-20241230173528541"></p>
+<pre><code class="c">/* SD card and FAT filesystem example.
+   This example code is in the Public Domain (or CC0 licensed, at your option.)
+
+   Unless required by applicable law or agreed to in writing, this
+   software is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR
+   CONDITIONS OF ANY KIND, either express or implied.
+*/
+
+// This example uses SDMMC peripheral to communicate with SD card.
+
+#include &lt;string.h&gt;
+#include &lt;sys/unistd.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &quot;esp_vfs_fat.h&quot;
+#include &quot;sdmmc_cmd.h&quot;
+#include &quot;driver/sdmmc_host.h&quot;
+
+#define EXAMPLE_MAX_CHAR_SIZE    64
+
+static const char *TAG = &quot;example&quot;;
+
+#define MOUNT_POINT &quot;/sdcard&quot;   //挂载点名称
+
+
+/**
+ * @brief 向指定路径的文件中写入数据
+ *
+ * 将给定的数据写入到指定路径的文件中。
+ *
+ * @param path 文件路径
+ * @param data 要写入的数据
+ *
+ * @return esp_err_t 错误码，ESP_OK 表示成功，ESP_FAIL 表示失败
+ */
+static esp_err_t s_example_write_file(const char *path, char *data)
+&#123;
+    // 记录日志，表示正在打开文件
+    ESP_LOGI(TAG, &quot;Opening file %s&quot;, path);
+    // 以写入模式打开文件
+    FILE *f = fopen(path, &quot;w&quot;);
+    // 判断文件是否成功打开
+    if (f == NULL) &#123;
+        // 如果文件打开失败，记录错误日志
+        ESP_LOGE(TAG, &quot;Failed to open file for writing&quot;);
+        // 返回打开文件失败的状态
+        return ESP_FAIL;
+    &#125;
+    // 将数据写入文件
+    // fprintf(f, data);
+    fputs(data, f);
+    // 关闭文件
+    fclose(f);
+    // 记录日志，表示文件写入完成
+    ESP_LOGI(TAG, &quot;File written&quot;);
+
+    // 返回文件写入成功的状态
+    return ESP_OK;
+&#125;
+
+/**
+ * @brief 从指定路径读取文件内容
+ *
+ * 从给定的文件路径中读取一行内容，并打印出来。
+ *
+ * @param path 文件路径
+ *
+ * @return 返回 ESP_OK 表示成功，返回 ESP_FAIL 表示失败
+ */
+static esp_err_t s_example_read_file(const char *path)
+&#123;
+    // 打印读取文件的日志信息
+    ESP_LOGI(TAG, &quot;Reading file %s&quot;, path);
+
+    // 尝试以只读模式打开文件
+    FILE *f = fopen(path, &quot;r&quot;);
+
+    // 检查文件是否成功打开
+    if (f == NULL) &#123;
+        // 如果文件打开失败，打印错误日志并返回失败错误码
+        ESP_LOGE(TAG, &quot;Failed to open file for reading&quot;);
+        return ESP_FAIL;
+    &#125;
+
+    // 定义一个字符数组用于存储文件内容
+    char line[EXAMPLE_MAX_CHAR_SIZE];
+
+    // 从文件中读取一行内容
+    fgets(line, sizeof(line), f);
+
+    // 关闭文件
+    fclose(f);
+
+    // 去除换行符
+    // strip newline
+    char *pos = strchr(line, &#39;\n&#39;); // 用于在字符串中查找第一次出现的指定字符
+    if (pos) &#123;
+        *pos = &#39;\0&#39;;
+    &#125;
+
+    // 打印从文件中读取的内容
+    ESP_LOGI(TAG, &quot;Read from file: &#39;%s&#39;&quot;, line);
+
+    // 返回成功错误码
+    return ESP_OK;
+&#125;
+
+void app_main(void)
+&#123;
+    esp_err_t ret;
+    esp_vfs_fat_sdmmc_mount_config_t mount_config = &#123;
+        .format_if_mount_failed = true,     //挂载失败是否执行格式化
+        .max_files = 5,                     //最大可打开文件数
+        .allocation_unit_size = 4 * 1024   //执行格式化时的分配单元大小（分配单元越大，读写越快）
+    &#125;;
+    sdmmc_card_t *card;
+    const char mount_point[] = MOUNT_POINT;
+    ESP_LOGI(TAG, &quot;Initializing SD card&quot;);
+
+    ESP_LOGI(TAG, &quot;Using SDMMC peripheral&quot;);
+
+    //默认配置，速度20MHz,使用卡槽1
+    sdmmc_host_t host = SDMMC_HOST_DEFAULT();
+
+    //默认的IO管脚配置，
+    sdmmc_slot_config_t slot_config = SDMMC_SLOT_CONFIG_DEFAULT();
+
+    //4位数据
+    slot_config.width = 4;
+
+    //管脚启用内部上拉
+    slot_config.flags |= SDMMC_SLOT_FLAG_INTERNAL_PULLUP;
+
+    ESP_LOGI(TAG, &quot;Mounting filesystem&quot;);
+    ret = esp_vfs_fat_sdmmc_mount(mount_point, &amp;host, &amp;slot_config, &amp;mount_config, &amp;card);
+
+    if (ret != ESP_OK) &#123;
+        if (ret == ESP_FAIL) &#123;
+            ESP_LOGE(TAG, &quot;Failed to mount filesystem. &quot;);
+        &#125; else &#123;
+            ESP_LOGE(TAG, &quot;Failed to initialize the card (%s). &quot;
+                     &quot;Make sure SD card lines have pull-up resistors in place.&quot;, esp_err_to_name(ret));
+        &#125;
+        return;
+    &#125;
+    ESP_LOGI(TAG, &quot;Filesystem mounted&quot;);
+
+    // Card has been initialized, print its properties
+    sdmmc_card_print_info(stdout, card);
+
+    // Use POSIX and C standard library functions to work with files:
+
+    // First create a file.
+    const char *file_hello = MOUNT_POINT&quot;/hello.txt&quot;;
+    char data[EXAMPLE_MAX_CHAR_SIZE];
+    snprintf(data, EXAMPLE_MAX_CHAR_SIZE, &quot;%s %s!\n&quot;, &quot;Hello&quot;, card-&gt;cid.name);
+    ret = s_example_write_file(file_hello, data);
+    if (ret != ESP_OK) &#123;
+        return;
+    &#125;
+
+    const char *file_foo = MOUNT_POINT&quot;/foo.txt&quot;;
+    // Check if destination file exists before renaming
+    struct stat st;
+    if (stat(file_foo, &amp;st) == 0) &#123;
+        // Delete it if it exists
+        unlink(file_foo);
+    &#125;
+
+    // Rename original file
+    ESP_LOGI(TAG, &quot;Renaming file %s to %s&quot;, file_hello, file_foo);
+    if (rename(file_hello, file_foo) != 0) &#123;
+        ESP_LOGE(TAG, &quot;Rename failed&quot;);
+        return;
+    &#125;
+
+    ret = s_example_read_file(file_foo);
+    if (ret != ESP_OK) &#123;
+        return;
+    &#125;
+
+    // Format FATFS
+    #if 0
+    ret = esp_vfs_fat_sdcard_format(mount_point, card);
+    if (ret != ESP_OK) &#123;
+        ESP_LOGE(TAG, &quot;Failed to format FATFS (%s)&quot;, esp_err_to_name(ret));
+        return;
+    &#125;
+
+    if (stat(file_foo, &amp;st) == 0) &#123;
+        ESP_LOGI(TAG, &quot;file still exists&quot;);
+        return;
+    &#125; else &#123;
+        ESP_LOGI(TAG, &quot;file doesnt exist, format done&quot;);
+    &#125;
+    #endif
+    const char *file_nihao = MOUNT_POINT&quot;/nihao.txt&quot;;
+    memset(data, 0, EXAMPLE_MAX_CHAR_SIZE);
+    snprintf(data, EXAMPLE_MAX_CHAR_SIZE, &quot;%s %s!\n&quot;, &quot;Nihao&quot;, card-&gt;cid.name);
+    ret = s_example_write_file(file_nihao, data);
+    if (ret != ESP_OK) &#123;
+        return;
+    &#125;
+
+    //Open file for reading
+    ret = s_example_read_file(file_nihao);
+    if (ret != ESP_OK) &#123;
+        return;
+    &#125;
+
+    // All done, unmount partition and disable SDMMC peripheral
+    esp_vfs_fat_sdcard_unmount(mount_point, card);
+    ESP_LOGI(TAG, &quot;Card unmounted&quot;);
+&#125;
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2019-2022 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
