@@ -584,7 +584,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="90">
-<input type="hidden" id="yelog_site_word_count" value="276.6k">
+<input type="hidden" id="yelog_site_word_count" value="276.7k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1846,7 +1846,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2025-09-19 16:25:30'>2025-09-19 10:22</time>
+            发布时间 : <time class="date" title='最后更新: 2025-09-23 11:40:29'>2025-09-19 10:22</time>
         
     </div>
     <div class="article-meta">
@@ -2057,6 +2057,9 @@ services:
 <pre><code class="dockerfile">docker run \
 --name nginx \
 --volume /var/data/nginx/vue:/usr/share/nginx/html \
+--volume /var/data/nginx:/usr/share/nginx \
+--volume /var/data/nginx/nginx.conf:/etc/nginx/nginx.conf \
+--volume /var/data/nginx/log:/var/log/nginx \
 --publish 80:80 \
 --publish 443:443 \
 --network fastbee-bridge \
@@ -2114,6 +2117,8 @@ redis:7.0.0 \
 --env MYSQL_DATABASE=&quot;数据库名&quot; \
 --env MYSQL_ROOT_PASSWORD=密码\
 --volume /var/data/mysql/mysql:/var/lib/mysql \
+--volume /var/data/mysql/mysql.cnf:/etc/mysql/conf.d/mysql.cnf \
+--volume /var/data/mysql/initdb:/docker-entrypoint-initdb.d \
 --network fastbee-bridge \
 --restart unless-stopped \
 --detach \
