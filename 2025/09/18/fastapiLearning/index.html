@@ -552,7 +552,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="91">
-<input type="hidden" id="yelog_site_word_count" value="277.6k">
+<input type="hidden" id="yelog_site_word_count" value="279.3k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1824,12 +1824,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2025-09-30 08:58:13'>2025-09-18 15:42</time>
+            发布时间 : <time class="date" title='最后更新: 2025-09-30 11:47:30'>2025-09-18 15:42</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:219</span>
+        <span>字数:332</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1859,7 +1859,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#fastapi-%E6%95%99%E7%A8%8B"><span class="toc-text">fastapi 教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">python基本知识</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#fastapi-%E6%95%99%E7%A8%8B"><span class="toc-text">fastapi 教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#python%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-text">python基本知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fastapi%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">fastapi环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fastapi%E5%9F%BA%E6%9C%AC%E6%B5%8B%E8%AF%95"><span class="toc-text">fastapi基本测试</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1923,6 +1923,41 @@ print(&quot;你好,&quot;, user_input)
 num = int(input(&quot;请输入一个数字：&quot;))
 print(num + 10)
 </code></pre>
+<hr>
+<h2 id="fastapi环境搭建"><a href="#fastapi环境搭建" class="headerlink" title="fastapi环境搭建"></a>fastapi环境搭建</h2><pre><code class="shell"># 创建
+conda create -n fastapi_env python=3.11.11
+# 激活
+conda activate fastapi_env
+# 退出
+conda deactivate
+
+# 安装Fastapi
+pip install &quot;fastapi[standard]&quot;
+
+# 指定版本
+pip install fastapi==0.115.12
+pip install uvicorn==0.34.2
+</code></pre>
+<hr>
+<h2 id="fastapi基本测试"><a href="#fastapi基本测试" class="headerlink" title="fastapi基本测试"></a>fastapi基本测试</h2><blockquote>
+<p>fastapi dev main.py</p>
+</blockquote>
+<pre><code class="python">from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get(&quot;/&quot;)
+async def root():
+    return &#123;&quot;message&quot;: &quot;Hello World&quot;&#125;
+</code></pre>
+<p>打开浏览器访问 <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a>。</p>
+<p><img src="/2025/09/18/fastapiLearning/image-20250930103549157.png" alt="image-20250930103549157"></p>
+<p>跳转到 <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/docs%E3%80%82">http://127.0.0.1:8000/docs。</a></p>
+<p><img src="/2025/09/18/fastapiLearning/image-20250930103617199.png" alt="image-20250930103617199"></p>
+<p>前往 <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/redoc%E3%80%82">http://127.0.0.1:8000/redoc。</a></p>
+<p><img src="/2025/09/18/fastapiLearning/image-20250930103736208.png" alt="image-20250930103736208"></p>
+<hr>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
