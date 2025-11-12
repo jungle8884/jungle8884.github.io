@@ -548,7 +548,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="96">
-<input type="hidden" id="yelog_site_word_count" value="301.2k">
+<input type="hidden" id="yelog_site_word_count" value="303.7k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1878,12 +1878,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2025-10-21 22:20:37'>2025-10-21 22:02</time>
+            发布时间 : <time class="date" title='最后更新: 2025-11-12 10:03:15'>2025-10-21 22:02</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.3k</span>
+        <span>字数:3.8k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -1913,7 +1913,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot"><span class="toc-text">SpringBoot</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%B6%E5%B7%A5%E7%A8%8B%E4%BE%9D%E8%B5%96"><span class="toc-text">父工程依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%B5%B7%E6%AD%A5%E4%BE%9D%E8%B5%96"><span class="toc-text">常用起步依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E4%BE%9D%E8%B5%96"><span class="toc-text">第三方依赖</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot"><span class="toc-text">SpringBoot</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%B6%E5%B7%A5%E7%A8%8B%E4%BE%9D%E8%B5%96"><span class="toc-text">父工程依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%B5%B7%E6%AD%A5%E4%BE%9D%E8%B5%96"><span class="toc-text">常用起步依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%96%B9%E4%BE%9D%E8%B5%96"><span class="toc-text">第三方依赖</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ES%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">ES的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-text">基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5"><span class="toc-text">数据导入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%90%9C%E7%B4%A2"><span class="toc-text">基本搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%90%9C%E7%B4%A2"><span class="toc-text">条件搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E5%90%88%E6%90%9C%E7%B4%A2"><span class="toc-text">组合搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E6%BB%A4%E6%90%9C%E7%B4%A2"><span class="toc-text">过滤搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E8%81%9A%E5%90%88"><span class="toc-text">搜索聚合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B4%E5%90%88%E5%88%B0Spring"><span class="toc-text">整合到Spring</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -2094,6 +2094,539 @@
     &lt;/dependency&gt;        
 &lt;/dependencies&gt;
 </code></pre>
+<hr>
+<h1 id="ES的使用"><a href="#ES的使用" class="headerlink" title="ES的使用"></a>ES的使用</h1><h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><blockquote>
+<p>索引-类型-文档-字段</p>
+</blockquote>
+<ul>
+<li><p>Near Realtime（近实时）：Elasticsearch是一个近乎实时的搜索平台，这意味着从索引文档到可搜索文档之间只有一个轻微的延迟(通常是一秒钟)。</p>
+</li>
+<li><p>Cluster（集群）：群集是一个或多个节点的集合，它们一起保存整个数据，并提供跨所有节点的联合索引和搜索功能。每个集群都有自己的唯一集群名称，节点通过名称加入集群。</p>
+</li>
+<li><p>Node（节点）：节点是指属于集群的单个Elasticsearch实例，存储数据并参与集群的索引和搜索功能。可以将节点配置为按集群名称加入特定集群，默认情况下，每个节点都设置为加入一个名为<code>elasticsearch</code>的群集。</p>
+</li>
+<li><p>Index（索引）：索引是一些具有相似特征的文档集合，类似于MySql中数据库的概念。</p>
+</li>
+<li><p>Type（类型）：类型是索引的逻辑类别分区，通常，为具有一组公共字段的文档类型，类似MySql中表的概念。<code>注意</code>：在Elasticsearch 6.0.0及更高的版本中，一个索引只能包含一个类型。</p>
+</li>
+<li><p>Document（文档）：文档是可被索引的基本信息单位，以JSON形式表示，类似于MySql中行记录的概念。</p>
+</li>
+<li><p>Shards（分片）：当索引存储大量数据时，可能会超出单个节点的硬件限制，为了解决这个问题，Elasticsearch提供了将索引细分为分片的概念。分片机制赋予了索引水平扩容的能力、并允许跨分片分发和并行化操作，从而提高性能和吞吐量。</p>
+</li>
+<li><p>Replicas（副本）：在可能出现故障的网络环境中，需要有一个故障切换机制，Elasticsearch提供了将索引的分片复制为一个或多个副本的功能，副本在某些节点失效的情况下提供高可用性。</p>
+</li>
+<li><p>通过Kibana的<code>Dev Tools</code>功能，我们可以操作Elasticsearch；</p>
+<pre><code class="bash"># 查看集群健康状态
+GET /_cat/health?v
+
+# 查看节点状态
+GET /_cat/nodes?v
+
+# 索引操作
+# 查看所有索引信息
+GET /_cat/indices?v
+# 创建索引并查看
+PUT /customer
+GET /_cat/indices?v
+# 删除索引并查看
+DELETE /customer
+GET /_cat/indices?v
+
+# 类型操作
+# 查看文档的类型，需要完成数据搜索部分的导入才可以查看
+GET /bank/_mapping
+
+# 文档操作
+# 在索引中添加文档；
+PUT /customer/doc/1
+&#123;
+  &quot;name&quot;: &quot;John Doe&quot;
+&#125;
+# 查看索引中的文档
+GET /customer/doc/1
+#
+&#123;
+  &quot;_index&quot; : &quot;customer&quot;,
+  &quot;_type&quot; : &quot;doc&quot;,
+  &quot;_id&quot; : &quot;1&quot;,
+  &quot;_version&quot; : 1,
+  &quot;_seq_no&quot; : 0,
+  &quot;_primary_term&quot; : 1,
+  &quot;found&quot; : true,
+  &quot;_source&quot; : &#123;
+    &quot;name&quot; : &quot;John Doe&quot;
+  &#125;
+&#125;
+# 修改索引中的文档
+POST /customer/doc/1/_update
+&#123;
+  &quot;doc&quot;: &#123; &quot;name&quot;: &quot;Jane Doe&quot; &#125;
+&#125;
+#
+&#123;
+  &quot;_index&quot;: &quot;customer&quot;,
+  &quot;_type&quot;: &quot;doc&quot;,
+  &quot;_id&quot;: &quot;1&quot;,
+  &quot;_version&quot;: 2,
+  &quot;result&quot;: &quot;updated&quot;,
+  &quot;_shards&quot;: &#123;
+    &quot;total&quot;: 2,
+    &quot;successful&quot;: 1,
+    &quot;failed&quot;: 0
+  &#125;,
+  &quot;_seq_no&quot;: 4,
+  &quot;_primary_term&quot;: 1
+&#125;
+
+# 删除索引中的文档
+DELETE /customer/doc/1
+#
+&#123;
+  &quot;_index&quot; : &quot;customer&quot;,
+  &quot;_type&quot; : &quot;doc&quot;,
+  &quot;_id&quot; : &quot;1&quot;,
+  &quot;_version&quot; : 2,
+  &quot;result&quot; : &quot;deleted&quot;,
+  &quot;_shards&quot; : &#123;
+    &quot;total&quot; : 2,
+    &quot;successful&quot; : 1,
+    &quot;failed&quot; : 0
+  &#125;,
+  &quot;_seq_no&quot; : 1,
+  &quot;_primary_term&quot; : 1
+&#125;
+
+# 对索引中的文档执行批量操作
+POST /customer/doc/_bulk
+&#123;&quot;index&quot;:&#123;&quot;_id&quot;:&quot;1&quot;&#125;&#125;
+&#123;&quot;name&quot;: &quot;John Doe&quot; &#125;
+&#123;&quot;index&quot;:&#123;&quot;_id&quot;:&quot;2&quot;&#125;&#125;
+&#123;&quot;name&quot;: &quot;Jane Doe&quot; &#125;
+#
+&#123;
+  &quot;took&quot; : 9,
+  &quot;errors&quot; : false,
+  &quot;items&quot; : [
+    &#123;
+      &quot;index&quot; : &#123;
+        &quot;_index&quot; : &quot;customer&quot;,
+        &quot;_type&quot; : &quot;doc&quot;,
+        &quot;_id&quot; : &quot;1&quot;,
+        &quot;_version&quot; : 3,
+        &quot;result&quot; : &quot;created&quot;,
+        &quot;_shards&quot; : &#123;
+          &quot;total&quot; : 2,
+          &quot;successful&quot; : 1,
+          &quot;failed&quot; : 0
+        &#125;,
+        &quot;_seq_no&quot; : 2,
+        &quot;_primary_term&quot; : 1,
+        &quot;status&quot; : 201
+      &#125;
+    &#125;,
+    &#123;
+      &quot;index&quot; : &#123;
+        &quot;_index&quot; : &quot;customer&quot;,
+        &quot;_type&quot; : &quot;doc&quot;,
+        &quot;_id&quot; : &quot;2&quot;,
+        &quot;_version&quot; : 1,
+        &quot;result&quot; : &quot;created&quot;,
+        &quot;_shards&quot; : &#123;
+          &quot;total&quot; : 2,
+          &quot;successful&quot; : 1,
+          &quot;failed&quot; : 0
+        &#125;,
+        &quot;_seq_no&quot; : 3,
+        &quot;_primary_term&quot; : 1,
+        &quot;status&quot; : 201
+      &#125;
+    &#125;
+  ]
+&#125;
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="数据导入"><a href="#数据导入" class="headerlink" title="数据导入"></a>数据导入</h2><p>首先我们需要导入一定量的数据用于搜索，使用的是银行账户表的例子，数据结构如下：</p>
+<pre><code class="json">&#123;
+    &quot;account_number&quot;: 0,
+    &quot;balance&quot;: 16623,
+    &quot;firstname&quot;: &quot;Bradshaw&quot;,
+    &quot;lastname&quot;: &quot;Mckenzie&quot;,
+    &quot;age&quot;: 29,
+    &quot;gender&quot;: &quot;F&quot;,
+    &quot;address&quot;: &quot;244 Columbus Place&quot;,
+    &quot;employer&quot;: &quot;Euron&quot;,
+    &quot;email&quot;: &quot;bradshawmckenzie@euron.com&quot;,
+    &quot;city&quot;: &quot;Hobucken&quot;,
+    &quot;state&quot;: &quot;CO&quot;
+&#125;
+</code></pre>
+<blockquote>
+<p>我们先复制下需要导入的数据，数据地址： <a target="_blank" rel="noopener" href="https://github.com/macrozheng/mall-learning/blob/teach/document/json/accounts.json">https://github.com/macrozheng/mall-learning/blob/teach/document/json/accounts.json</a> 。</p>
+<p>然后直接使用批量操作来导入数据，注意本文所有操作都在Kibana的<code>Dev Tools</code>中进行。</p>
+</blockquote>
+<pre><code class="bash">POST /bank/account/_bulk
+&#123;
+  &quot;index&quot;: &#123;
+    &quot;_id&quot;: &quot;1&quot;
+  &#125;
+&#125;
+&#123;
+  &quot;account_number&quot;: 1,
+  &quot;balance&quot;: 39225,
+  &quot;firstname&quot;: &quot;Amber&quot;,
+  &quot;lastname&quot;: &quot;Duke&quot;,
+  &quot;age&quot;: 32,
+  &quot;gender&quot;: &quot;M&quot;,
+  &quot;address&quot;: &quot;880 Holmes Lane&quot;,
+  &quot;employer&quot;: &quot;Pyrami&quot;,
+  &quot;email&quot;: &quot;amberduke@pyrami.com&quot;,
+  &quot;city&quot;: &quot;Brogan&quot;,
+  &quot;state&quot;: &quot;IL&quot;
+&#125;
+......省略若干条数据
+</code></pre>
+<blockquote>
+<p>导入完成后查看索引信息，可以发现<code>bank</code>索引中已经创建了1000条文档。</p>
+</blockquote>
+<pre><code class="bash">GET /_cat/indices?v
+
+health status index                           uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   bank                            ycOSgiWjQomwzdygGwqOrQ   1   1       1000            0    374.5kb        374.5kb
+</code></pre>
+<hr>
+<h2 id="基本搜索"><a href="#基本搜索" class="headerlink" title="基本搜索"></a>基本搜索</h2><blockquote>
+<p>match_all</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123; &quot;match_all&quot;: &#123;&#125; &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112094602193.png" alt="image-20251112094602193" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>分页搜索，<code>from</code>表示偏移量，从0开始，<code>size</code>表示每页显示的数量</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123; &quot;match_all&quot;: &#123;&#125; &#125;,
+  &quot;from&quot;: 0,
+  &quot;size&quot;: 10
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112094640335.png" alt="image-20251112094640335" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>搜索排序，使用<code>sort</code>表示，例如按<code>balance</code>字段降序排列</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123; &quot;match_all&quot;: &#123;&#125; &#125;,
+  &quot;sort&quot;: &#123; &quot;balance&quot;: &#123; &quot;order&quot;: &quot;desc&quot; &#125; &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112094727364.png" alt="image-20251112094727364" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>搜索并返回指定字段内容，使用_source表示，例如只返回account_number和balance两个字段内容：</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123; &quot;match_all&quot;: &#123;&#125; &#125;,
+  &quot;_source&quot;: [&quot;account_number&quot;, &quot;balance&quot;]
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112094818571.png" alt="image-20251112094818571" style="zoom:80%;">
+
+<hr>
+<h2 id="条件搜索"><a href="#条件搜索" class="headerlink" title="条件搜索"></a>条件搜索</h2><blockquote>
+<p>条件搜索，使用<code>match</code>表示匹配条件，例如搜索出<code>account_number</code>为<code>20</code>的文档：</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;match&quot;: &#123;
+      &quot;account_number&quot;: 20
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112094904397.png" alt="image-20251112094904397" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>文本类型字段的条件搜索，例如搜索<code>address</code>字段中包含<code>mill</code>的文档，对比上一条搜索可以发现，对于数值类型<code>match</code>操作使用的是精确匹配，对于文本类型使用的是模糊匹配；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;match&quot;: &#123;
+      &quot;address&quot;: &quot;mill&quot;
+    &#125;
+  &#125;,
+  &quot;_source&quot;: [
+    &quot;address&quot;,
+    &quot;account_number&quot;
+  ]
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112094953836.png" alt="image-20251112094953836" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>短语匹配搜索，使用<code>match_phrase</code>表示，例如搜索<code>address</code>字段中同时包含<code>mill</code>和<code>lane</code>的文档：</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;match_phrase&quot;: &#123;
+      &quot;address&quot;: &quot;mill lane&quot;
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095056795.png" alt="image-20251112095056795" style="zoom:80%;">
+
+
+
+<hr>
+<h2 id="组合搜索"><a href="#组合搜索" class="headerlink" title="组合搜索"></a>组合搜索</h2><blockquote>
+<p>组合搜索，使用<code>bool</code>来进行组合，<code>must</code>表示同时满足，例如搜索<code>address</code>字段中同时包含<code>mill</code>和<code>lane</code>的文档；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;bool&quot;: &#123;
+      &quot;must&quot;: [
+        &#123; &quot;match&quot;: &#123; &quot;address&quot;: &quot;mill&quot; &#125; &#125;,
+        &#123; &quot;match&quot;: &#123; &quot;address&quot;: &quot;lane&quot; &#125; &#125;
+      ]
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095124881.png" alt="image-20251112095124881" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>组合搜索，<code>should</code>表示满足其中任意一个，搜索<code>address</code>字段中包含<code>mill</code>或者<code>lane</code>的文档；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;bool&quot;: &#123;
+      &quot;should&quot;: [
+        &#123; &quot;match&quot;: &#123; &quot;address&quot;: &quot;mill&quot; &#125; &#125;,
+        &#123; &quot;match&quot;: &#123; &quot;address&quot;: &quot;lane&quot; &#125; &#125;
+      ]
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095357271.png" alt="image-20251112095357271" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>组合搜索，<code>must_not</code>表示同时不满足，例如搜索<code>address</code>字段中不包含<code>mill</code>且不包含<code>lane</code>的文档；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;bool&quot;: &#123;
+      &quot;must_not&quot;: [
+        &#123; &quot;match&quot;: &#123; &quot;address&quot;: &quot;mill&quot; &#125; &#125;,
+        &#123; &quot;match&quot;: &#123; &quot;address&quot;: &quot;lane&quot; &#125; &#125;
+      ]
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095428733.png" alt="image-20251112095428733" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>组合搜索，组合<code>must</code>和<code>must_not</code>，例如搜索<code>age</code>字段等于<code>40</code>且<code>state</code>字段不包含<code>ID</code>的文档；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;bool&quot;: &#123;
+      &quot;must&quot;: [
+        &#123; &quot;match&quot;: &#123; &quot;age&quot;: &quot;40&quot; &#125; &#125;
+      ],
+      &quot;must_not&quot;: [
+        &#123; &quot;match&quot;: &#123; &quot;state&quot;: &quot;ID&quot; &#125; &#125;
+      ]
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095505152.png" alt="image-20251112095505152" style="zoom:80%;">
+
+
+
+<hr>
+<h2 id="过滤搜索"><a href="#过滤搜索" class="headerlink" title="过滤搜索"></a>过滤搜索</h2><blockquote>
+<p>搜索过滤，使用<code>filter</code>来表示，例如过滤出<code>balance</code>字段在<code>20000~30000</code>的文档；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;query&quot;: &#123;
+    &quot;bool&quot;: &#123;
+      &quot;must&quot;: &#123; &quot;match_all&quot;: &#123;&#125; &#125;,
+      &quot;filter&quot;: &#123;
+        &quot;range&quot;: &#123;
+          &quot;balance&quot;: &#123;
+            &quot;gte&quot;: 20000,
+            &quot;lte&quot;: 30000
+          &#125;
+        &#125;
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095630742.png" alt="image-20251112095630742" style="zoom:80%;">
+
+<hr>
+<h2 id="搜索聚合"><a href="#搜索聚合" class="headerlink" title="搜索聚合"></a>搜索聚合</h2><blockquote>
+<p>对搜索结果进行聚合，使用<code>aggs</code>来表示，类似于MySql中的<code>group by</code>，例如对<code>state</code>字段进行聚合，统计出相同<code>state</code>的文档数量；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: &#123;
+    &quot;group_by_state&quot;: &#123;
+      &quot;terms&quot;: &#123;
+        &quot;field&quot;: &quot;state.keyword&quot;
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095707015.png" alt="image-20251112095707015" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>嵌套聚合，例如对<code>state</code>字段进行聚合，统计出相同<code>state</code>的文档数量，再统计出<code>balance</code>的平均值</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: &#123;
+    &quot;group_by_state&quot;: &#123;
+      &quot;terms&quot;: &#123;
+        &quot;field&quot;: &quot;state.keyword&quot;
+      &#125;,
+      &quot;aggs&quot;: &#123;
+        &quot;average_balance&quot;: &#123;
+          &quot;avg&quot;: &#123;
+            &quot;field&quot;: &quot;balance&quot;
+          &#125;
+        &#125;
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112095955269.png" alt="image-20251112095955269" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>对聚合搜索的结果进行排序，例如按<code>balance</code>的平均值降序排列；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: &#123;
+    &quot;group_by_state&quot;: &#123;
+      &quot;terms&quot;: &#123;
+        &quot;field&quot;: &quot;state.keyword&quot;,
+        &quot;order&quot;: &#123;
+          &quot;average_balance&quot;: &quot;desc&quot;
+        &#125;
+      &#125;,
+      &quot;aggs&quot;: &#123;
+        &quot;average_balance&quot;: &#123;
+          &quot;avg&quot;: &#123;
+            &quot;field&quot;: &quot;balance&quot;
+          &#125;
+        &#125;
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112100211805.png" alt="image-20251112100211805" style="zoom:80%;">
+
+
+
+<blockquote>
+<p>按字段值的范围进行分段聚合，例如分段范围为<code>age</code>字段的<code>[20,30]</code> <code>[30,40]</code> <code>[40,50]</code>，之后按<code>gender</code>统计文档个数和<code>balance</code>的平均值；</p>
+</blockquote>
+<pre><code class="bash">GET /bank/_search
+&#123;
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: &#123;
+    &quot;group_by_age&quot;: &#123;
+      &quot;range&quot;: &#123;
+        &quot;field&quot;: &quot;age&quot;,
+        &quot;ranges&quot;: [
+          &#123;
+            &quot;from&quot;: 20,
+            &quot;to&quot;: 30
+          &#125;,
+          &#123;
+            &quot;from&quot;: 30,
+            &quot;to&quot;: 40
+          &#125;,
+          &#123;
+            &quot;from&quot;: 40,
+            &quot;to&quot;: 50
+          &#125;
+        ]
+      &#125;,
+      &quot;aggs&quot;: &#123;
+        &quot;group_by_gender&quot;: &#123;
+          &quot;terms&quot;: &#123;
+            &quot;field&quot;: &quot;gender.keyword&quot;
+          &#125;,
+          &quot;aggs&quot;: &#123;
+            &quot;average_balance&quot;: &#123;
+              &quot;avg&quot;: &#123;
+                &quot;field&quot;: &quot;balance&quot;
+              &#125;
+            &#125;
+          &#125;
+        &#125;
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre>
+<img src="/2025/10/21/mall/image-20251112100308567.png" alt="image-20251112100308567" style="zoom:80%;">
+
+
+
+<hr>
+<h2 id="整合到Spring"><a href="#整合到Spring" class="headerlink" title="整合到Spring"></a>整合到Spring</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.elastic.co/docs/reference/elasticsearch/clients/java/getting-started">Getting started with the Elasticsearch Java client | Java</a></p>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
