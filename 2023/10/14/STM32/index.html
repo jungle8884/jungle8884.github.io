@@ -1,0 +1,3940 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>STM32 | blog of Jungle</title>
+  <meta name="keywords" content=" STM32 ">
+  <meta name="description" content="STM32 | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="leetcode" href="https://leetcode-cn.com/progress/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-leetcode"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(106)</small></div></li>
+    
+        
+            
+            <li><div data-rel="算法"><i class="fold iconfont icon-right"></i>算法<small>(25)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->链表">链表<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->面试题">面试题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->日期">日期<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->树">树<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数学">数学<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数组">数组<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->双指针">双指针<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->图">图<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->LeetCode">LeetCode<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(11)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->插件">插件<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->audio">audio<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->ChatGPT">ChatGPT<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(27)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->java">java<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(14)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->SpringBoot">SpringBoot<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="数据库<--->Redis">Redis<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="沉淀一下"><i class="fold iconfont icon-right"></i>沉淀一下<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="沉淀一下<--->场景题">场景题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="物联网"><i class="fold iconfont icon-right"></i>物联网<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="物联网<--->乐鑫">乐鑫<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->设备端">设备端<small>(7)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->物联网平台">物联网平台<small>(5)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="docker"><i class="fold iconfont icon-right"></i>docker<small>(6)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="docker<--->fastbee">fastbee<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="docker<--->ruoyi">ruoyi<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="java"><i class="fold iconfont icon-right"></i>java<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="java<--->mq">mq<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="linux"><i class="fold iconfont icon-right"></i>linux<small>(4)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="linux<--->基本使用">基本使用<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->shell">shell<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->wls">wls<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Python">Python<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="106">
+<input type="hidden" id="yelog_site_word_count" value="308.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://lavender-z.github.io/">橘子</a></li>
+            
+            <li><a target="_blank" href="https://youngxhui.top/">ISLAND</a></li>
+            
+            <li><a target="_blank" href="https://www.liuchuo.net/about">柳神</a></li>
+            
+            <li><a target="_blank" href="https://programmercarl.com/">K神</a></li>
+            
+            <li><a target="_blank" href="https://labuladong.github.io/algo/">东哥</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_37541097?spm=1001.2014.3001.5509">D神</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_33369905?spm=1001.2014.3001.5509">狂神</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>160</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>19</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>203</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>21</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>23</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>234</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>25</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>51C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>92</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蔡勒公式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>策略模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查找</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>递归</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>构建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>观察者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>滑动窗口</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>快速平方根</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>乐鑫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>链表</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六大原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前缀树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>闰年</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数组</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>双指针</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>贪心</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>移除链表元素</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优先队列</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>油猴</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>audio</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>device</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker-desktop</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP Rainmaker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>esp-idf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32C3</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastapi</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FleetBee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hutool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Job</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jwt</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>k3s</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LeetCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mall</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MircroPython</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mqtt上传文件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N的阶乘</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NoSQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OJ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pyside</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rabbitmq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STM32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Stream</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>swagger</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tkinter</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Utils</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>video</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>WebGIS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>work</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/12/04/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2025-12-04 09:09:30">2025/12/04</span>
+        </a>
+        
+        <a  class="全部文章 沉淀一下 场景题 "
+           href="/2025/11/06/goodjob/"
+           data-tag="work"
+           data-author="" >
+            <span class="post-title" title="goodjob">goodjob</span>
+            <span class="post-date" title="2025-11-06 23:23:29">2025/11/06</span>
+        </a>
+        
+        <a  class="全部文章 java mq "
+           href="/2025/10/28/java-rabbitmq/"
+           data-tag="rabbitmq"
+           data-author="" >
+            <span class="post-title" title="java_rabbitmq">java_rabbitmq</span>
+            <span class="post-date" title="2025-10-28 17:12:04">2025/10/28</span>
+        </a>
+        
+        <a  class="全部文章 后端 java "
+           href="/2025/10/23/java-security/"
+           data-tag="jwt"
+           data-author="" >
+            <span class="post-title" title="java_security">java_security</span>
+            <span class="post-date" title="2025-10-23 17:40:33">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-swagger/"
+           data-tag="swagger"
+           data-author="" >
+            <span class="post-title" title="java_swagger">java_swagger</span>
+            <span class="post-date" title="2025-10-23 17:16:02">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-hutool/"
+           data-tag="hutool"
+           data-author="" >
+            <span class="post-title" title="java_hutool">java_hutool</span>
+            <span class="post-date" title="2025-10-23 16:34:49">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/21/mall/"
+           data-tag="mall"
+           data-author="" >
+            <span class="post-title" title="mall">mall</span>
+            <span class="post-date" title="2025-10-21 22:02:56">2025/10/21</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2025/10/11/docker-destop/"
+           data-tag="docker-desktop"
+           data-author="" >
+            <span class="post-title" title="docker_destop">docker_destop</span>
+            <span class="post-date" title="2025-10-11 09:52:56">2025/10/11</span>
+        </a>
+        
+        <a  class="全部文章 后端 "
+           href="/2025/10/10/java-mark/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java要点小结">java要点小结</span>
+            <span class="post-date" title="2025-10-10 17:28:57">2025/10/10</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/29/pysideRecord/"
+           data-tag="pyside"
+           data-author="" >
+            <span class="post-title" title="pysideRecord">pysideRecord</span>
+            <span class="post-date" title="2025-09-29 20:46:51">2025/09/29</span>
+        </a>
+        
+        <a  class="全部文章 docker fastbee "
+           href="/2025/09/19/dockerDeploy/"
+           data-tag="iot"
+           data-author="" >
+            <span class="post-title" title="fastbee项目部署">fastbee项目部署</span>
+            <span class="post-date" title="2025-09-19 10:22:51">2025/09/19</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/18/fastapiLearning/"
+           data-tag="fastapi"
+           data-author="" >
+            <span class="post-title" title="fastapiNote">fastapiNote</span>
+            <span class="post-date" title="2025-09-18 15:42:57">2025/09/18</span>
+        </a>
+        
+        <a  class="全部文章 linux "
+           href="/2025/07/21/Ubuntu/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux">Linux</span>
+            <span class="post-date" title="2025-07-21 09:57:43">2025/07/21</span>
+        </a>
+        
+        <a  class="全部文章 物联网 "
+           href="/2025/03/06/esp32-ubuntun-start/"
+           data-tag="乐鑫"
+           data-author="" >
+            <span class="post-title" title="esp32_ubuntun_start">esp32_ubuntun_start</span>
+            <span class="post-date" title="2025-03-06 15:02:56">2025/03/06</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/01/18/vim-use/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="vim-use">vim-use</span>
+            <span class="post-date" title="2025-01-18 09:35:04">2025/01/18</span>
+        </a>
+        
+        <a  class="全部文章 linux shell "
+           href="/2025/01/15/shell-programming/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="shell_programming">shell_programming</span>
+            <span class="post-date" title="2025-01-15 15:40:40">2025/01/15</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/30/esp-idf-record/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-record">esp-idf-record</span>
+            <span class="post-date" title="2024-12-30 10:46:49">2024/12/30</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/27/esp-idf-cmd/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-cmd">esp-idf-cmd</span>
+            <span class="post-date" title="2024-12-27 16:41:01">2024/12/27</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2024/09/06/pyGUI/"
+           data-tag="tkinter"
+           data-author="" >
+            <span class="post-title" title="tkinterecord">tkinterecord</span>
+            <span class="post-date" title="2024-09-06 14:41:16">2024/09/06</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/08/26/basic-Arduino/"
+           data-tag="C"
+           data-author="" >
+            <span class="post-title" title="basic_Arduino">basic_Arduino</span>
+            <span class="post-date" title="2024-08-26 17:47:27">2024/08/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/08/13/mqtt/"
+           data-tag="mqtt上传文件"
+           data-author="" >
+            <span class="post-title" title="MQTT">MQTT</span>
+            <span class="post-date" title="2024-08-13 15:45:34">2024/08/13</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/06/07/IntelligenLEDStrip/"
+           data-tag="ESP Rainmaker"
+           data-author="" >
+            <span class="post-title" title="智能灯带">智能灯带</span>
+            <span class="post-date" title="2024-06-07 10:15:00">2024/06/07</span>
+        </a>
+        
+        <a  class="全部文章 linux wls "
+           href="/2024/05/28/linux-note/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux_note">linux_note</span>
+            <span class="post-date" title="2024-05-28 09:22:34">2024/05/28</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/k3s%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/"
+           data-tag="k3s"
+           data-author="" >
+            <span class="post-title" title="k3s">k3s</span>
+            <span class="post-date" title="2024-05-14 16:36:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/local_deploy/"
+           data-tag="fastbee"
+           data-author="" >
+            <span class="post-title" title="物联网平台本地部署并接入摄像头">物联网平台本地部署并接入摄像头</span>
+            <span class="post-date" title="2024-05-14 16:31:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/04/12/CameraAccess/"
+           data-tag="FleetBee"
+           data-author="" >
+            <span class="post-title" title="摄像头接入">摄像头接入</span>
+            <span class="post-date" title="2024-04-12 16:48:52">2024/04/12</span>
+        </a>
+        
+        <a  class="全部文章 linux 基本使用 "
+           href="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux的基本使用">linux的基本使用</span>
+            <span class="post-date" title="2024-03-31 17:40:34">2024/03/31</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/09/ruoyi_2Dev/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi-二次开发">ruoyi-二次开发</span>
+            <span class="post-date" title="2024-01-09 11:20:00">2024/01/09</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/06/ruoyi/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi">ruoyi</span>
+            <span class="post-date" title="2024-01-06 15:20:00">2024/01/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 SpringBoot "
+           href="/2024/01/05/SpringBoor_Vue/"
+           data-tag="SpringBoot,Vue"
+           data-author="" >
+            <span class="post-title" title="SpringBoot_Vue">SpringBoot_Vue</span>
+            <span class="post-date" title="2024-01-05 11:20:01">2024/01/05</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/27/wumei_DeepIn/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceDeepIn">wumei-deviceDeepIn</span>
+            <span class="post-date" title="2023-12-27 10:23:00">2023/12/27</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/26/wumei_deviceInto/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceInto">wumei-deviceInto</span>
+            <span class="post-date" title="2023-12-26 11:20:00">2023/12/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/12/12/ESP32-C3/"
+           data-tag="ESP32C3"
+           data-author="" >
+            <span class="post-title" title="ESP32C3">ESP32C3</span>
+            <span class="post-date" title="2023-12-12 15:43:52">2023/12/12</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/11/wumei/"
+           data-tag="Fastbee"
+           data-author="" >
+            <span class="post-title" title="wumei">wumei</span>
+            <span class="post-date" title="2023-12-11 09:48:52">2023/12/11</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/11/08/ESP32/"
+           data-tag="MircroPython"
+           data-author="" >
+            <span class="post-title" title="MircroPython">MircroPython</span>
+            <span class="post-date" title="2023-11-08 18:02:31">2023/11/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 数学 "
+           href="/2023/11/01/Q-rsqrt/"
+           data-tag="快速平方根"
+           data-author="" >
+            <span class="post-title" title="Q_rsqrt">Q_rsqrt</span>
+            <span class="post-date" title="2023-11-01 08:52:08">2023/11/01</span>
+        </a>
+        
+        <a  class="全部文章 工具 audio "
+           href="/2023/10/16/audioConvert/"
+           data-tag="python,audio"
+           data-author="" >
+            <span class="post-title" title="audioConvert">audioConvert</span>
+            <span class="post-date" title="2023-10-16 19:34:43">2023/10/16</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/14/STM32/"
+           data-tag="STM32"
+           data-author="" >
+            <span class="post-title" title="STM32">STM32</span>
+            <span class="post-date" title="2023-10-14 08:59:19">2023/10/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/08/51C/"
+           data-tag="51C"
+           data-author="" >
+            <span class="post-title" title="51C">51C</span>
+            <span class="post-date" title="2023-10-08 17:20:10">2023/10/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 面试题 "
+           href="/2023/09/18/JobInterview/"
+           data-tag="N的阶乘"
+           data-author="" >
+            <span class="post-title" title="JobInterview">JobInterview</span>
+            <span class="post-date" title="2023-09-18 21:55:19">2023/09/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 LeetCode "
+           href="/2023/09/13/hot100/"
+           data-tag="LeetCode"
+           data-author="" >
+            <span class="post-title" title="hot100">hot100</span>
+            <span class="post-date" title="2023-09-13 10:17:00">2023/09/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/09/05/4Job/"
+           data-tag="Shell,Job,WebGIS"
+           data-author="" >
+            <span class="post-title" title="Javaer&#39;s development">Javaer&#39;s development</span>
+            <span class="post-date" title="2023-09-05 00:00:00">2023/09/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/03/24/Stream/"
+           data-tag="Stream"
+           data-author="" >
+            <span class="post-title" title="Stream">Stream</span>
+            <span class="post-date" title="2023-03-24 09:42:49">2023/03/24</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/03/08/ESP32ATLog/"
+           data-tag="ESP32,AT"
+           data-author="" >
+            <span class="post-title" title="ESP32AT指令集探索">ESP32AT指令集探索</span>
+            <span class="post-date" title="2023-03-08 14:52:56">2023/03/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/02/09/AddOn4SpeedPlay/"
+           data-tag="video"
+           data-author="" >
+            <span class="post-title" title="AddOn4SpeedPlay">AddOn4SpeedPlay</span>
+            <span class="post-date" title="2023-02-09 13:05:26">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 ChatGPT "
+           href="/2023/02/09/ChatGPT/"
+           data-tag="ChatGPT"
+           data-author="" >
+            <span class="post-title" title="Usage of ChatGPT">Usage of ChatGPT</span>
+            <span class="post-date" title="2023-02-09 12:34:54">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/02/09/Java-io/"
+           data-tag="IO"
+           data-author="" >
+            <span class="post-title" title="Java-io">Java-io</span>
+            <span class="post-date" title="2023-02-09 12:27:55">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/01/17/Freedom/"
+           data-tag="油猴"
+           data-author="" >
+            <span class="post-title" title="Videos">Videos</span>
+            <span class="post-date" title="2023-01-17 21:43:30">2023/01/17</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/12/04/DevConcludes/"
+           data-tag="开发"
+           data-author="" >
+            <span class="post-title" title="DevConcludes">DevConcludes</span>
+            <span class="post-date" title="2022-12-04 22:16:46">2022/12/04</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/10/16/Java-Utils/"
+           data-tag="Utils"
+           data-author="" >
+            <span class="post-title" title="Java-Utils">Java-Utils</span>
+            <span class="post-date" title="2022-10-16 16:15:29">2022/10/16</span>
+        </a>
+        
+        <a  class="全部文章 算法 数组 "
+           href="/2022/05/02/Array/"
+           data-tag="数组"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2022-05-02 00:00:00">2022/05/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2022/01/23/TopologicalSorting/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2022-01-23 00:00:00">2022/01/23</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2021/12/31/Graph-DataStructure/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="图的数据结构">图的数据结构</span>
+            <span class="post-date" title="2021-12-31 10:41:29">2021/12/31</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/12/13/BinaryTree-traverse/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历框架">二叉树的遍历框架</span>
+            <span class="post-date" title="2021-12-13 10:50:34">2021/12/13</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/12/08/Trie-341-NestedIterator/"
+           data-tag="前缀树,N叉树,迭代器"
+           data-author="" >
+            <span class="post-title" title="扁平化嵌套列表迭代器">扁平化嵌套列表迭代器</span>
+            <span class="post-date" title="2021-12-08 16:38:11">2021/12/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/11/26/BinaryTree-297-SerializeAndDeserialize/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的序列化和反序列化">二叉树的序列化和反序列化</span>
+            <span class="post-date" title="2021-11-26 17:32:54">2021/11/26</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-160-getIntersectionNode/"
+           data-tag="160,链表"
+           data-author="" >
+            <span class="post-title" title="两个链表是否相交">两个链表是否相交</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-19-removeNthFromEnd/"
+           data-tag="链表,19"
+           data-author="" >
+            <span class="post-title" title="单链表的倒数第K个节点">单链表的倒数第K个节点</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-23-mergeKLists/"
+           data-tag="链表,23"
+           data-author="" >
+            <span class="post-title" title="合并K个有序链表">合并K个有序链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-234-isPalindrome/"
+           data-tag="链表,234"
+           data-author="" >
+            <span class="post-title" title="回文链表">回文链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-25-reverseKGroup/"
+           data-tag="链表,25,迭代"
+           data-author="" >
+            <span class="post-title" title="K个一组反转链表">K个一组反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-92-reverseBetween/"
+           data-tag="链表,92,递归"
+           data-author="" >
+            <span class="post-title" title="反转链表">反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/18/LinkedList-21-mergeTwoLists/"
+           data-tag="链表,21"
+           data-author="" >
+            <span class="post-title" title="合并两个有序链表">合并两个有序链表</span>
+            <span class="post-date" title="2021-11-18 00:00:00">2021/11/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/09/16/Calculate-date/"
+           data-tag="闰年"
+           data-author="" >
+            <span class="post-title" title="Calculate_date">Calculate_date</span>
+            <span class="post-date" title="2021-09-16 21:05:01">2021/09/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatterofStrategy/"
+           data-tag="行为型模式,策略模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2021-09-15 20:58:14">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofObserver/"
+           data-tag="观察者模式,行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2021-09-15 20:41:49">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofProxy/"
+           data-tag="代理模式,结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2021-09-15 20:30:32">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/09/07/PriorityQueue/"
+           data-tag="优先队列,贪心"
+           data-author="" >
+            <span class="post-title" title="PriorityQueue">PriorityQueue</span>
+            <span class="post-date" title="2021-09-07 00:00:00">2021/09/07</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/09/05/LinkedList-203-removeElements/"
+           data-tag="203,移除链表元素"
+           data-author="" >
+            <span class="post-title" title="移除链表元素">移除链表元素</span>
+            <span class="post-date" title="2021-09-05 00:00:00">2021/09/05</span>
+        </a>
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2021/08/31/SearchAndSort/"
+           data-tag="排序,查找"
+           data-author="" >
+            <span class="post-title" title="SearchAndSort">SearchAndSort</span>
+            <span class="post-date" title="2021-08-31 14:27:08">2021/08/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/07/09/Trie/"
+           data-tag="前缀树,N叉树"
+           data-author="" >
+            <span class="post-title" title="过滤敏感词">过滤敏感词</span>
+            <span class="post-date" title="2021-07-09 00:00:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 算法 滑动窗口 "
+           href="/2021/07/02/slidingwindow/"
+           data-tag="滑动窗口"
+           data-author="" >
+            <span class="post-title" title="滑动窗口">滑动窗口</span>
+            <span class="post-date" title="2021-07-02 00:00:00">2021/07/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 双指针 "
+           href="/2021/07/01/doublepointers/"
+           data-tag="双指针"
+           data-author="" >
+            <span class="post-title" title="双指针">双指针</span>
+            <span class="post-date" title="2021-07-01 00:00:00">2021/07/01</span>
+        </a>
+        
+        <a  class="全部文章 数据库 Redis "
+           href="/2021/06/29/redis-LearningNote/"
+           data-tag="NoSQL"
+           data-author="" >
+            <span class="post-title" title="redis学习笔记">redis学习笔记</span>
+            <span class="post-date" title="2021-06-29 00:00:00">2021/06/29</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/06/27/Zeller/"
+           data-tag="蔡勒公式,OJ"
+           data-author="" >
+            <span class="post-title" title="Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7">Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7</span>
+            <span class="post-date" title="2021-06-27 00:00:00">2021/06/27</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/06/01/BinaryTree/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树">二叉树</span>
+            <span class="post-date" title="2021-06-01 00:00:00">2021/06/01</span>
+        </a>
+        
+        <a  class="全部文章 运维 "
+           href="/2021/05/27/linuxLearningNote/"
+           data-tag="Linux,Shell"
+           data-author="" >
+            <span class="post-title" title="Linux 与 Shell">Linux 与 Shell</span>
+            <span class="post-date" title="2021-05-27 00:00:00">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式,构建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="构建型模式,单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/09/DesignPatternofSixPrinciples/"
+           data-tag="六大原则"
+           data-author="" >
+            <span class="post-title" title="六大设计原则">六大设计原则</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="构建型模式,原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="Python,爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-STM32" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">STM32</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="物联网">物联网</a> > 
+            
+            <a  data-rel="物联网&lt;---&gt;设备端">设备端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">STM32</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-08-13 15:59:50'>2023-10-14 08:59</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:5.7k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STM32"><span class="toc-text">STM32</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%82%B9%E7%81%AF"><span class="toc-text">点灯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%81%AF"><span class="toc-text">流水灯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%9C%82%E9%B8%A3%E5%99%A8"><span class="toc-text">蜂鸣器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%89%E9%94%AE%E6%8E%A7%E5%88%B6-LED"><span class="toc-text">按键控制-LED</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%89%E6%95%8F%E4%BC%A0%E6%84%9F%E5%99%A8%E6%8E%A7%E5%88%B6%E8%9C%82%E9%B8%A3%E5%99%A8"><span class="toc-text">光敏传感器控制蜂鸣器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD"><span class="toc-text">中断</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#EXIT-%E6%A6%82%E5%BF%B5"><span class="toc-text">EXIT 概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#EXIT-%E5%AE%9E%E4%BE%8B"><span class="toc-text">EXIT 实例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%B0%84%E5%BC%8F%E7%BA%A2%E5%A4%96%E4%BC%A0%E6%84%9F%E5%99%A8%E8%AE%A1%E6%AC%A1"><span class="toc-text">对射式红外传感器计次</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%8B%E8%BD%AC%E7%BC%96%E7%A0%81%E5%99%A8"><span class="toc-text">旋转编码器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E6%97%B6%E5%99%A8"><span class="toc-text">定时器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GPIO"><span class="toc-text">GPIO</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E7%BB%93%E6%9E%84"><span class="toc-text">位结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E6%8A%A4%E4%BA%8C%E6%9E%81%E7%AE%A1%EF%BC%9A"><span class="toc-text">保护二极管：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GPIO%E6%A8%A1%E5%BC%8F"><span class="toc-text">GPIO模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%AE%E7%A9%BA-%E4%B8%8A%E6%8B%89-%E4%B8%8B%E6%8B%89"><span class="toc-text">浮空&#x2F;上拉&#x2F;下拉</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F%E8%BE%93%E5%85%A5"><span class="toc-text">模拟输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-text">寄存器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E6%8C%BD-%E5%BC%80%E6%BC%8F-%E5%85%B3%E9%97%AD"><span class="toc-text">推挽&#x2F;开漏&#x2F;关闭</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E7%94%A8%E5%BC%80%E6%BC%8F-%E6%8E%A8%E6%8C%BD"><span class="toc-text">复用开漏&#x2F;推挽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GPIO%E9%A9%B1%E5%8A%A8LED"><span class="toc-text">GPIO驱动LED</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%9C%82%E9%B8%A3%E5%99%A8%E7%94%B5%E8%B7%AF"><span class="toc-text">蜂鸣器电路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E8%AF%B4%E6%98%8E"><span class="toc-text">函数说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E4%BF%A1%E6%8E%A5%E5%8F%A3"><span class="toc-text">通信接口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1"><span class="toc-text">串口通信</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-2"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A2%E7%89%B9%E7%8E%87"><span class="toc-text">波特率</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B5%B7%E5%A7%8B%E4%BD%8D"><span class="toc-text">起始位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2%E4%BD%8D"><span class="toc-text">停止位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2%E4%BD%8D-1"><span class="toc-text">停止位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E4%BD%8D"><span class="toc-text">数据位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%A1%E9%AA%8C%E4%BD%8D"><span class="toc-text">校验位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E6%B3%A2%E5%99%A8%E5%AE%9E%E6%B5%8B%E6%B3%A2%E5%BD%A2"><span class="toc-text">示波器实测波形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%B2%E5%8F%A3%E5%A4%96%E8%AE%BE-USART"><span class="toc-text">串口外设-USART</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#STM32F103C8T6-%E5%BC%95%E8%84%9A%E5%AE%9A%E4%B9%89"><span class="toc-text">STM32F103C8T6-引脚定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#USB-%E8%BD%AC%E4%B8%B2%E5%8F%A3%E6%A8%A1%E5%BC%8F%E5%9B%BE"><span class="toc-text">USB-转串口模式图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-text">串口通信代码实现</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%94%B6%E5%8F%91%E4%B8%80%E4%B8%AA%E5%AD%97%E8%8A%82"><span class="toc-text">收发一个字节</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%94%B6%E5%8F%91%E6%95%B0%E6%8D%AE%E5%8C%85"><span class="toc-text">收发数据包</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DMA"><span class="toc-text">DMA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#I2C%E9%80%9A%E4%BF%A1"><span class="toc-text">I2C通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SPI%E9%80%9A%E4%BF%A1"><span class="toc-text">SPI通信</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#W25Q64%E5%AD%98%E5%82%A8"><span class="toc-text">W25Q64存储</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="STM32"><a href="#STM32" class="headerlink" title="STM32"></a>STM32</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>STM32是ST公司基于ARM Cortex-M内核开发的32位微控制器</p>
+<p>STM32常应用在嵌入式领域，如智能车、无人机、机器人、无线通信、物联网、工业控制、娱乐电子产品等</p>
+<p>STM32功能强大、性能优异、片上资源丰富、功耗低，是一款经典的嵌入式微控制器</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231014090208561.png" alt="image-20231014090208561"></p>
+<p><img src="/2023/10/14/STM32/image-20231110114611173.png" alt="image-20231110114611173"></p>
+<hr>
+<h2 id="点灯"><a href="#点灯" class="headerlink" title="点灯"></a>点灯</h2><blockquote>
+<p>采用PA0端口</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231110114547957.png" alt="image-20231110114547957"></p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+
+int main(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+    while (1)
+    &#123;
+        GPIO_ResetBits(GPIOA, GPIO_Pin_0);
+        Delay_ms(500);
+        GPIO_SetBits(GPIOA, GPIO_Pin_0);
+        Delay_ms(500);
+        
+        GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_RESET);
+        Delay_ms(500);
+        GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_SET);
+        Delay_ms(500);
+        
+        GPIO_WriteBit(GPIOA, GPIO_Pin_0, (BitAction)0);
+        Delay_ms(500);
+        GPIO_WriteBit(GPIOA, GPIO_Pin_0, (BitAction)1);
+        Delay_ms(500);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="流水灯"><a href="#流水灯" class="headerlink" title="流水灯"></a>流水灯</h2><blockquote>
+<p>PA端口 0-7</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231110114530465.png" alt="image-20231110114530465"></p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+
+int main(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_All;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+    while (1)
+    &#123;
+        GPIO_Write(GPIOA, ~0x0001);    //0000 0000 0000 0001
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0002);    //0000 0000 0000 0010
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0004);    //0000 0000 0000 0100
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0008);    //0000 0000 0000 1000
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0010);    //0000 0000 0001 0000
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0020);    //0000 0000 0010 0000
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0040);    //0000 0000 0100 0000
+        Delay_ms(100);
+        GPIO_Write(GPIOA, ~0x0080);    //0000 0000 1000 0000
+        Delay_ms(100);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="蜂鸣器"><a href="#蜂鸣器" class="headerlink" title="蜂鸣器"></a>蜂鸣器</h2><blockquote>
+<p>GPIO-B-12端口    低电平有效</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231110114514564.png" alt="image-20231110114514564"></p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+
+int main(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+    
+    while (1)
+    &#123;
+        GPIO_ResetBits(GPIOB, GPIO_Pin_12);
+        Delay_ms(100);
+        GPIO_SetBits(GPIOB, GPIO_Pin_12);
+        Delay_ms(100);
+        GPIO_ResetBits(GPIOB, GPIO_Pin_12);
+        Delay_ms(100);
+        GPIO_SetBits(GPIOB, GPIO_Pin_12);
+        Delay_ms(700);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="按键控制-LED"><a href="#按键控制-LED" class="headerlink" title="按键控制-LED"></a>按键控制-LED</h2><blockquote>
+<p>重要函数：</p>
+<ul>
+<li>uint8_t GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin); 【读取输入寄存器某一位】</li>
+<li>uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx);【读取输入寄存器】</li>
+<li>uint8_t GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin); 【读取输出寄存器某一位】</li>
+<li>uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx);【读取输出寄存器】</li>
+</ul>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231110114456276.png" alt="image-20231110114456276"></p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;LED.h&quot;
+#include &quot;Key.h&quot;
+
+uint8_t KeyNum;
+
+int main(void)
+&#123;
+    LED_Init();
+    Key_Init();
+    
+    while (1)
+    &#123;
+        KeyNum = Key_GetNum();
+        if (KeyNum == 1)
+        &#123;
+            LED1_Turn();
+        &#125;
+        if (KeyNum == 2)
+        &#123;
+            LED2_Turn();
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<p>LED.c</p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+
+void LED_Init(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+    GPIO_SetBits(GPIOA, GPIO_Pin_1 | GPIO_Pin_2);
+&#125;
+
+void LED1_ON(void)
+&#123;
+    GPIO_ResetBits(GPIOA, GPIO_Pin_1); // 低电平点亮
+&#125;
+
+void LED1_OFF(void)
+&#123;
+    GPIO_SetBits(GPIOA, GPIO_Pin_1);
+&#125;
+
+void LED1_Turn(void)
+&#123;
+    if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_1) == 0) //如果是亮的，就熄灭
+    &#123;
+        GPIO_SetBits(GPIOA, GPIO_Pin_1);
+    &#125;
+    else // 如果是熄灭的，就点亮
+    &#123;
+        GPIO_ResetBits(GPIOA, GPIO_Pin_1); 
+    &#125;
+&#125;
+
+void LED2_ON(void)
+&#123;
+    GPIO_ResetBits(GPIOA, GPIO_Pin_2);
+&#125;
+
+void LED2_OFF(void)
+&#123;
+    GPIO_SetBits(GPIOA, GPIO_Pin_2);
+&#125;
+
+void LED2_Turn(void)
+&#123;
+    if (GPIO_ReadOutputDataBit(GPIOA, GPIO_Pin_2) == 0) //如果是亮的，就熄灭
+    &#123;
+        GPIO_SetBits(GPIOA, GPIO_Pin_2);
+    &#125;
+    else // 如果是熄灭的，就点亮
+    &#123;
+        GPIO_ResetBits(GPIOA, GPIO_Pin_2);
+    &#125;
+&#125;
+</code></pre>
+<p>LED.h</p>
+<pre><code class="C">#ifndef __LED_H
+#define __LED_H
+
+void LED_Init(void);
+void LED1_ON(void);
+void LED1_OFF(void);
+void LED1_Turn(void);
+void LED2_ON(void);
+void LED2_OFF(void);
+void LED2_Turn(void);
+
+#endif
+</code></pre>
+<p>Key.c</p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+
+void Key_Init(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //默认高电平，有输入是0，无输入则是默认1
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_11;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+&#125;
+
+uint8_t Key_GetNum(void)
+&#123;
+    uint8_t KeyNum = 0;
+    // 按键检测
+    if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0) //按键按下
+    &#123;
+        Delay_ms(20); //消抖-按下
+        while (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0); //检测松手
+        Delay_ms(20); //消抖-松手
+        KeyNum = 1;
+    &#125;
+    if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11) == 0)
+    &#123;
+        Delay_ms(20);
+        while (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11) == 0);
+        Delay_ms(20);
+        KeyNum = 2;
+    &#125;
+    
+    return KeyNum;
+&#125;
+</code></pre>
+<p>Key.h</p>
+<pre><code class="C">#ifndef __KEY_H
+#define __KEY_H
+
+void Key_Init(void);
+uint8_t Key_GetNum(void);
+
+#endif
+</code></pre>
+<h2 id="光敏传感器控制蜂鸣器"><a href="#光敏传感器控制蜂鸣器" class="headerlink" title="光敏传感器控制蜂鸣器"></a>光敏传感器控制蜂鸣器</h2><p><img src="/2023/10/14/STM32/image-20231110135449265.png" alt="image-20231110135449265"></p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;Buzzer.h&quot;
+#include &quot;LightSensor.h&quot;
+
+int main(void)
+&#123;
+    Buzzer_Init();
+    LightSensor_Init();
+    
+    while (1)
+    &#123;
+        if (LightSensor_Get() == 1) // 光线比较暗--遮住光敏传感器
+        &#123;
+            Buzzer_ON(); //响
+        &#125;
+        else // 光线比较亮--用手电筒照光明传感器
+        &#123;
+            Buzzer_OFF();
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<p>Buzzer.c</p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+
+void Buzzer_Init(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    // B-12
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12; 
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+    
+    GPIO_SetBits(GPIOB, GPIO_Pin_12);
+&#125;
+
+void Buzzer_ON(void)
+&#123;
+    GPIO_ResetBits(GPIOB, GPIO_Pin_12); //低电平有效
+&#125;
+
+void Buzzer_OFF(void)
+&#123;
+    GPIO_SetBits(GPIOB, GPIO_Pin_12);
+&#125;
+
+void Buzzer_Turn(void)
+&#123;
+    if (GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_12) == 0) //如果是打开，就关闭
+    &#123;
+        GPIO_SetBits(GPIOB, GPIO_Pin_12); //off
+    &#125;
+    else
+    &#123;
+        GPIO_ResetBits(GPIOB, GPIO_Pin_12); //on
+    &#125;
+&#125;
+</code></pre>
+<p>Buzzer.h</p>
+<pre><code class="C">#ifndef __BUZZER_H
+#define __BUZZER_H
+
+void Buzzer_Init(void);
+void Buzzer_ON(void);
+void Buzzer_OFF(void);
+void Buzzer_Turn(void);
+
+#endif
+</code></pre>
+<p>LightSensor.c</p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+
+void LightSensor_Init(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    // B-13
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //默认高电平，有输入是0，无输入则是默认1
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+&#125;
+
+uint8_t LightSensor_Get(void)
+&#123;
+    return GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_13); 
+&#125;
+</code></pre>
+<p>LightSensor.h</p>
+<pre><code class="C">#ifndef __LIGHT_SENSOR_H
+#define __LIGHT_SENSOR_H
+
+void LightSensor_Init(void);
+uint8_t LightSensor_Get(void);
+
+#endif
+</code></pre>
+<hr>
+<h2 id="中断"><a href="#中断" class="headerlink" title="中断"></a>中断</h2><blockquote>
+<p>中断就像“闹钟”，处理完“闹钟”接着“睡觉”。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231025082550883.png" alt="image-20231025082550883"></p>
+<p>中断分类：</p>
+<ul>
+<li>EXIT</li>
+<li>TIM</li>
+<li>ADC</li>
+<li>I2C</li>
+<li>SPI</li>
+<li>USART</li>
+<li>CAN</li>
+</ul>
+<p>NVIC:嵌套中断向量控制器【统一分配中断优先级和管理中断的】</p>
+<blockquote>
+<p>可以理解为医院的叫号系统，根据优先级来。</p>
+<ul>
+<li>正常排队</li>
+<li>紧急病人插队：响应优先级 【插队优先级】</li>
+<li>更加紧急的病人插队 ：嵌套中断【抢占优先级】</li>
+</ul>
+<p>即：抢占优先级高的可以中断嵌套，响应优先级高的可以优先排队，抢占优先级和响应优先级均相同的按中断号排队</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231025083348571.png" alt="image-20231025083348571"></p>
+<p><img src="/2023/10/14/STM32/image-20231025084058374.png" alt="image-20231025084058374"></p>
+<h3 id="EXIT-概念"><a href="#EXIT-概念" class="headerlink" title="EXIT 概念"></a>EXIT 概念</h3><p><img src="/2023/10/14/STM32/image-20231025084233059.png" alt="image-20231025084233059"></p>
+<p><img src="/2023/10/14/STM32/image-20231101093008776.png" alt="image-20231101093008776"></p>
+<hr>
+<h3 id="EXIT-实例"><a href="#EXIT-实例" class="headerlink" title="EXIT 实例"></a>EXIT 实例</h3><h4 id="对射式红外传感器计次"><a href="#对射式红外传感器计次" class="headerlink" title="对射式红外传感器计次"></a>对射式红外传感器计次</h4><p>OLED调式工具接线图：</p>
+<p><img src="/2023/10/14/STM32/image-20231110141306239.png" alt="image-20231110141306239"></p>
+<p><img src="/2023/10/14/STM32/image-20231110144511786.png" alt="image-20231110144511786"></p>
+<p>中断初始化理解：</p>
+<pre><code class="C">//GPIO -&gt; AFIO -&gt; EXIT -&gt; NVIC -&gt; CPU
+void CountSensor_Init(void)
+&#123;
+    // 1 配置时钟 GPIOB AFIO [RCC_APB2...函数 要和RCC_APB2...参数 对应起来]
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+    // NVIC 是内核外设，内核外设不需要开启时钟
+    
+    // 2 配置GPIO,输入模式
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //上拉输入,默认为高电平输入
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14; // DO 接STM32 PB14
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+    
+    //3 配置AFIO[中断引脚选择]，选择使用的GPIO: DO 接STM32 PB14 -&gt; EXIT14
+    // 调用此函数以配置AFIO的数据选择器，选择自定义的中断引脚
+    // 它实际上是AFIO的函数，放置在GPIO里
+    GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource14);
+    
+    //4 配置EXIT,选择边沿触发方式
+    EXTI_InitTypeDef EXTI_InitStructure;
+    EXTI_InitStructure.EXTI_Line = EXTI_Line14; //PB14的14线路
+    EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+    EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt; //中断响应
+    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿触发
+    EXTI_Init(&amp;EXTI_InitStructure);
+    
+    //5 NVIC 设置优先级
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    // 初始化
+    NVIC_InitTypeDef NVIC_InitStructure;
+    // 中断通断 10-15
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI15_10_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+    NVIC_Init(&amp;NVIC_InitStructure);
+&#125;
+</code></pre>
+<p>注意：</p>
+<ul>
+<li><p>初始化：</p>
+<pre><code class="c">void EXTI_DeInit(void);
+void EXTI_Init(EXTI_InitTypeDef* EXTI_InitStruct);
+void EXTI_StructInit(EXTI_InitTypeDef* EXTI_InitStruct);
+</code></pre>
+</li>
+<li><p>软件触发中断函数: void EXTI_GenerateSWInterrupt(uint32_t EXTI_Line);</p>
+</li>
+<li><p>主程序使用：</p>
+<pre><code class="c">FlagStatus EXTI_GetFlagStatus(uint32_t EXTI_Line);
+void EXTI_ClearFlag(uint32_t EXTI_Line);
+</code></pre>
+</li>
+<li><p>中断程序使用：</p>
+<pre><code class="c">ITStatus EXTI_GetITStatus(uint32_t EXTI_Line);
+void EXTI_ClearITPendingBit(uint32_t EXTI_Line);
+</code></pre>
+</li>
+</ul>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;OLED.h&quot;
+#include &quot;CountSensor.h&quot;
+
+int main(void)
+&#123;
+    OLED_Init();
+    CountSensor_Init();
+    
+    OLED_ShowString(1, 1, &quot;Count:&quot;);
+    
+    while (1)
+    &#123;
+        OLED_ShowNum(1, 7, CountSensor_Get(), 5);
+    &#125;
+&#125;
+</code></pre>
+<p>CountSensor.h</p>
+<pre><code class="C">#ifndef __COUNT_SENSOR_H
+#define __COUNT_SENSOR_H
+
+void CountSensor_Init(void);
+uint16_t CountSensor_Get(void);
+
+#endif
+</code></pre>
+<p>CountSensor.c</p>
+<pre><code class="c">#include &quot;stm32f10x.h&quot;                  // Device header
+
+uint16_t CountSensor_Count;
+
+//GPIO -&gt; AFIO -&gt; EXIT -&gt; NVIC -&gt; CPU
+void CountSensor_Init(void)
+&#123;
+    // 1 配置时钟 GPIOB AFIO [RCC_APB2...函数 要和RCC_APB2...参数 对应起来]
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+    // NVIC 是内核外设，内核外设不需要开启时钟
+    
+    // 2 配置GPIO,输入模式
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //上拉输入,默认为高电平输入
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14; // DO 接STM32 PB14
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+    
+    //3 配置AFIO[中断引脚选择]，选择使用的GPIO: DO 接STM32 PB14 -&gt; EXIT
+    // 调用此函数以配置AFIO的数据选择器，选择自定义的中断引脚
+    // 它实际上是AFIO的函数，放置在GPIO里
+    GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource14);
+    
+    //4 配置EXIT,选择边沿触发方式
+    EXTI_InitTypeDef EXTI_InitStructure;
+    EXTI_InitStructure.EXTI_Line = EXTI_Line14; //PB14的14线路
+    EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+    EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt; //中断响应
+    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //下降沿触发
+    EXTI_Init(&amp;EXTI_InitStructure);
+    
+    //5 NVIC 设置优先级 【两位抢占，两位响应】
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    // 初始化
+    NVIC_InitTypeDef NVIC_InitStructure;
+    // 中断通断 10-15
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI15_10_IRQn; //指定通断
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    // NVIC_PriorityGroup_2：都是0-3
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1; //只有一个就设置成1 【抢占优先级】
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1; //只有一个就设置成1 【响应优先级】
+    NVIC_Init(&amp;NVIC_InitStructure);
+&#125;
+
+uint16_t CountSensor_Get(void)
+&#123;
+    return CountSensor_Count;
+&#125;
+
+// 中断函数，名称固定【中断函数-不需要调用，自动执行】
+void EXTI15_10_IRQHandler(void) //EXTI_Line10-15都可以进来
+&#123;
+    if (EXTI_GetITStatus(EXTI_Line14) == SET) //查看中断标志是否为1
+    &#123;
+        /*如果出现数据乱跳的现象，可再次判断引脚电平，以避免抖动*/
+        if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_14) == 0)
+        &#123;
+            CountSensor_Count ++; //触发一次就++
+        &#125;
+        EXTI_ClearITPendingBit(EXTI_Line14); //清除中断标志位
+    &#125;
+&#125;
+</code></pre>
+<h4 id="旋转编码器"><a href="#旋转编码器" class="headerlink" title="旋转编码器"></a>旋转编码器</h4><p><img src="/2023/10/14/STM32/image-20231110160217062.png" alt="image-20231110160217062"></p>
+<blockquote>
+<p>正向【顺时针】旋转，数字增加，反之减少。</p>
+</blockquote>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;OLED.h&quot;
+#include &quot;Encoder.h&quot;
+
+int16_t Num;
+
+int main(void)
+&#123;
+    OLED_Init();
+    Encoder_Init();
+    
+    OLED_ShowString(1, 1, &quot;Num:&quot;);
+    
+    while (1)
+    &#123;
+        Num += Encoder_Get();
+        OLED_ShowSignedNum(1, 5, Num, 5);
+    &#125;
+&#125;
+</code></pre>
+<p>如何判断旋转方向：</p>
+<ul>
+<li>正向：B下降沿时，A低电平 –&gt; 当B是低电平时【刚刚变化】，A已经是低电平了。</li>
+<li>反转：A下降沿时，B低电平 –&gt; 当A是低电平时【刚刚变化】，B已经是低电平了。</li>
+</ul>
+<img src="/2023/10/14/STM32/bd14479cedc16dc619757ef24b15e38.jpg" alt="bd14479cedc16dc619757ef24b15e38" style="zoom: 25%;">
+
+<p>Encoder.h</p>
+<pre><code class="C">#ifndef __ENCODER_H
+#define __ENCODER_H
+
+void Encoder_Init(void);
+int16_t Encoder_Get(void);
+
+#endif
+</code></pre>
+<p>Encoder.c</p>
+<pre><code class="c">#include &quot;stm32f10x.h&quot;                  // Device header
+
+int16_t Encoder_Count;
+
+void Encoder_Init(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &amp;GPIO_InitStructure);
+    // PB0 PB1
+    GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource0);
+    GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource1);
+    // 下降沿触发
+    EXTI_InitTypeDef EXTI_InitStructure;
+    EXTI_InitStructure.EXTI_Line = EXTI_Line0 | EXTI_Line1; // PB0 PB1
+    EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+    EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling;
+    EXTI_Init(&amp;EXTI_InitStructure);
+    // 中断分组
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    //中断0
+    NVIC_InitTypeDef NVIC_InitStructure;
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn; //中断0
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1; //抢占优先级
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1; //响应优先级
+    NVIC_Init(&amp;NVIC_InitStructure);
+    //中断1
+    NVIC_InitStructure.NVIC_IRQChannel = EXTI1_IRQn; //中断1
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1; //抢占优先级
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2; //响应优先级
+    NVIC_Init(&amp;NVIC_InitStructure);
+&#125;
+
+int16_t Encoder_Get(void)
+&#123;
+    int16_t Temp;
+    Temp = Encoder_Count; //返回Count用于外部加减，返回后进行清零
+    Encoder_Count = 0;
+    return Temp;
+&#125;
+
+
+//中断0 1 分别是两个函数；而9-5只用一个函数
+void EXTI0_IRQHandler(void)
+&#123;
+    // 反向旋转【B0对应A,B1对应B.】
+    if (EXTI_GetITStatus(EXTI_Line0) == SET)
+    &#123;
+        /*如果出现数据乱跳的现象，可再次判断引脚电平，以避免抖动*/
+        if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_0) == 0) 
+        &#123;
+            //反转：A下降沿时，B低电平 --&gt; 当A是低电平时【刚刚变化】，B已经是低电平了。
+            //向左转，数字减少
+            if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0) 
+            &#123;
+                Encoder_Count --;
+            &#125;
+        &#125;
+        EXTI_ClearITPendingBit(EXTI_Line0);
+    &#125;
+&#125;
+//中断0 1 分别是两个函数；而9-5只用一个函数
+void EXTI1_IRQHandler(void)
+&#123;
+    // 正向旋转 【B0对应A,B1对应B.】
+    if (EXTI_GetITStatus(EXTI_Line1) == SET)
+    &#123;
+        /*如果出现数据乱跳的现象，可再次判断引脚电平，以避免抖动*/
+        if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0) 
+        &#123;
+            //正向：B下降沿时，A低电平 --&gt; 当B是低电平时【刚刚变化】，A已经是低电平了。
+            //向右转，数字增加
+            if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_0) == 0)
+            &#123;
+                Encoder_Count ++;
+            &#125;
+        &#125;
+        EXTI_ClearITPendingBit(EXTI_Line1);
+    &#125;
+&#125;
+</code></pre>
+<p>注意：在中断里操作标志位，中断返回时对这个变量进行显示和操作。这样既能保证中断函数的简短快速，又能保证不产生冲突的硬件操作。</p>
+<hr>
+<h2 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h2><p>定时器：定时触发中断</p>
+<p><img src="/2023/10/14/STM32/image-20231110170242619.png" alt="image-20231110170242619"></p>
+<p><strong>主要学习通用定时器：</strong> 【TIM2、TIM3、TIM4、TIM5】</p>
+<p><img src="/2023/10/14/STM32/image-20231110171615018.png" alt="image-20231110171615018"></p>
+<p>基本定时器：</p>
+<p><img src="/2023/10/14/STM32/image-20231110171538814.png" alt="image-20231110171538814"></p>
+<p><img src="/2023/10/14/STM32/image-20231110172245023.png" alt="image-20231110172245023"></p>
+<p><img src="/2023/10/14/STM32/image-20231110172311540.png" alt="image-20231110172311540"></p>
+<p><strong>通用定时器：</strong></p>
+<img src="/2023/10/14/STM32/image-20231110182649800.png" alt="image-20231110182649800" style="zoom: 80%;">
+
+<p><img src="/2023/10/14/STM32/image-20231110181755277.png" alt="image-20231110181755277"></p>
+<p><img src="/2023/10/14/STM32/image-20231110181838885.png" alt="image-20231110181838885"></p>
+<p>ARR: 自动重装寄存器 </p>
+<p><img src="/2023/10/14/STM32/image-20231110182120019.png" alt="image-20231110182120019"></p>
+<blockquote>
+<p>定时器-内部中断实现方式</p>
+</blockquote>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;OLED.h&quot;
+#include &quot;Timer.h&quot;
+
+uint16_t Num;
+
+int main(void)
+&#123;
+    OLED_Init();
+    Timer_Init();
+    
+    OLED_ShowString(1, 1, &quot;Num:&quot;);
+    
+    while (1)
+    &#123;
+        OLED_ShowNum(1, 5, Num, 5);
+    &#125;
+&#125;
+
+void TIM2_IRQHandler(void)
+&#123;
+    if (TIM_GetITStatus(TIM2, TIM_IT_Update) == SET)
+    &#123;
+        Num ++;
+        TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+    &#125;
+&#125;
+</code></pre>
+<p>Timer.c</p>
+<pre><code class="C">#include &quot;stm32f10x.h&quot;                  // Device header
+
+void Timer_Init(void)
+&#123;
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    
+    TIM_InternalClockConfig(TIM2);
+    
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+    TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
+    TIM_TimeBaseInitStructure.TIM_Period = 10000 - 1;
+    TIM_TimeBaseInitStructure.TIM_Prescaler = 7200 - 1;
+    TIM_TimeBaseInitStructure.TIM_RepetitionCounter = 0;
+    TIM_TimeBaseInit(TIM2, &amp;TIM_TimeBaseInitStructure);
+    // 手动清除更新中断标志位
+    TIM_ClearFlag(TIM2, TIM_FLAG_Update);//避免刚开始完就进中断
+    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+    
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    
+    NVIC_InitTypeDef NVIC_InitStructure;
+    NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+    NVIC_Init(&amp;NVIC_InitStructure);
+    
+    TIM_Cmd(TIM2, ENABLE);
+&#125;
+
+/*
+void TIM2_IRQHandler(void)
+&#123;
+    if (TIM_GetITStatus(TIM2, TIM_IT_Update) == SET)
+    &#123;
+        
+        TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+    &#125;
+&#125;
+*/
+</code></pre>
+<p>Timer.h</p>
+<pre><code class="C">#ifndef __TIMER_H
+#define __TIMER_H
+
+void Timer_Init(void);
+
+#endif
+</code></pre>
+<hr>
+<h2 id="GPIO"><a href="#GPIO" class="headerlink" title="GPIO"></a>GPIO</h2><h3 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h3><p>GPIO: General Purpose Input outPut 即通用输入输出口</p>
+<ul>
+<li>可配置为8种输入输出模式</li>
+<li>引脚电平：3.3V</li>
+<li>输出模式下可控制端口输出高低电平，用以驱动LED、控制蜂鸣器、模拟通信协议输出时序等</li>
+<li>输入模式下可读取端口的高低电平或电压，用于读取按键输入、外界模块电平信号输入、ADC电压采集、模拟通信协议接收数据等</li>
+</ul>
+<p>基本结构：GPIOA、GPIOB、GPIOC …</p>
+<p>每个GPIO外设分为 [0-15] 16 个引脚</p>
+<p><img src="/2023/10/14/STM32/image-20231016103454560.png" alt="image-20231016103454560"></p>
+<h3 id="位结构"><a href="#位结构" class="headerlink" title="位结构"></a><strong>位结构</strong></h3><p><img src="/2023/10/14/STM32/image-20231015111119403.png" alt="image-20231015111119403"></p>
+<h3 id="保护二极管："><a href="#保护二极管：" class="headerlink" title="保护二极管："></a>保护二极管：</h3><ul>
+<li>大于3.3V不会进入内部电路，电流会流向【上方的保护二极管】，避免过高电压对内部产生伤害。</li>
+<li>相对于【下方的保护二极管】比0V还要低的电压，电流会直接从【下方的保护二极管】回到【I/O引脚】。</li>
+</ul>
+<p>【文中翻译错误】施密特触发器【电压整形】：当输入电压大于某一阈值时，输出就会瞬间升为高电平；当输入电压小于某一阈值时，输出就会瞬间降为低电平。</p>
+<p><img src="/2023/10/14/STM32/image-20231017002606428.png" alt="image-20231017002606428"></p>
+<h3 id="GPIO模式"><a href="#GPIO模式" class="headerlink" title="GPIO模式"></a><strong>GPIO模式</strong></h3><p><img src="/2023/10/14/STM32/image-20231015111156338.png" alt="image-20231015111156338"></p>
+<h3 id="浮空-上拉-下拉"><a href="#浮空-上拉-下拉" class="headerlink" title="浮空/上拉/下拉"></a>浮空/上拉/下拉</h3><p><strong>IN_FLOATING</strong>-浮空输入：【两个开关都断开】</p>
+<p><strong>IPU</strong>-上拉输入：【上拉开关导通，下拉断开】</p>
+<p><strong>IPD</strong>-下拉输入：【上拉断开，下拉开关导通】</p>
+<p><strong>PS:</strong> </p>
+<ul>
+<li>上拉和下拉输入的作用在于提供一个默认的电平；【上拉输入默认高电平输入模式，下拉输入默认低电平输入模式】</li>
+<li>上拉和下拉的电阻较大，是一种弱上拉和弱下拉，目的是尽量不影响正常的输入操作。</li>
+<li>而啥都不接，则处于一个浮空的状态，引脚的电平极易受到外界干扰而改变。</li>
+</ul>
+<p><img src="/2023/10/14/STM32/image-20231017012045965.png" alt="image-20231017012045965"></p>
+<h3 id="模拟输入"><a href="#模拟输入" class="headerlink" title="模拟输入"></a>模拟输入</h3><p><strong>AIN</strong>-模拟输入：连接到ADC，因为ADC需要输入模拟量【模拟量就是连续的，不需要整形】，所以它的线是接到施密特触发器前面的。</p>
+<p><img src="/2023/10/14/STM32/image-20231017012226717.png" alt="image-20231017012226717"></p>
+<p><img src="/2023/10/14/STM32/image-20231017012302443.png" alt="image-20231017012302443"></p>
+<h3 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h3><p>【复用功能输入】：连接到其他需要读取端口的外设上的，比如串口的输入引脚等，这根线接收的是数字量，所以接在施密特触发器后面。</p>
+<p>【输出数据寄存器】：普通IO输出</p>
+<p>【位设置/清除寄存器】：单独操作输出数据寄存器的某一位，而不影响其他位。因为这个【输出数据寄存器】同时控制16个端口，并且只能同时整体读写，所以如果想单独控制其中某一端口而不影响其他端口的话，需要一些特殊的方式。</p>
+<ul>
+<li>第一种：先读这个寄存器，然后用【按位与 <code>&amp;=</code>】和【按位或 <code>|=</code>】的方式更改某一位。</li>
+<li>第二种：通过设置这个【位设置/清除寄存器】，操作见下图：</li>
+</ul>
+<p>【位设置操作】：</p>
+<p><img src="/2023/10/14/STM32/image-20231017004404715.png" alt="image-20231017004404715"></p>
+<p><img src="/2023/10/14/STM32/image-20231017004434461.png" alt="image-20231017004434461"></p>
+<p>【位清除操作】：</p>
+<p><img src="/2023/10/14/STM32/image-20231017004547947.png" alt="image-20231017004547947"></p>
+<p><img src="/2023/10/14/STM32/image-20231017004647160.png" alt="image-20231017004647160"></p>
+<h3 id="推挽-开漏-关闭"><a href="#推挽-开漏-关闭" class="headerlink" title="推挽/开漏/关闭"></a>推挽/开漏/关闭</h3><p><strong>Out_PP</strong>-推挽输出：</p>
+<p><img src="/2023/10/14/STM32/image-20231017005028016.png" alt="image-20231017005028016"></p>
+<blockquote>
+<p>在<strong>Out_PP</strong>-<strong>推挽输出模式</strong>下，【MOS前虽然有取反标志，但是可能还有取反器，所以负负得正？待求证】</p>
+<ul>
+<li><p><strong>数据寄存器为1时</strong>，上管导通，下管断开，输出直接接到VDD，就是<strong>输出高电平</strong>；</p>
+</li>
+<li><p><strong>数据寄存器为0时</strong>，下管导通，上管断开，输出直接接到VSS，就是<strong>输出低电平</strong>。</p>
+</li>
+</ul>
+<p>这种模式下，高低电平均有较强的驱动能力，所以推挽输出模式也可以叫强推输出模式。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017010040194.png" alt="image-20231017010040194"></p>
+<p><strong>Out_DD</strong>-开漏模式：</p>
+<p><img src="/2023/10/14/STM32/image-20231017010137401.png" alt="image-20231017010137401"></p>
+<blockquote>
+<p>数据寄存器为1时，下管断开，高阻模式；数据寄存器为0时，下官导通，输出低电平。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017011122412.png" alt="image-20231017011122412"></p>
+<p><strong>作用：这个开漏模式可以作为通信协议的驱动方式。</strong></p>
+<p><img src="/2023/10/14/STM32/image-20231017011346205.png" alt="image-20231017011346205"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011451541.png" alt="image-20231017011451541"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011524623.png" alt="image-20231017011524623"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011622784.png" alt="image-20231017011622784"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011643341.png" alt="image-20231017011643341"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011723932.png" alt="image-20231017011723932"></p>
+<p>关闭：</p>
+<p><img src="/2023/10/14/STM32/image-20231017011809180.png" alt="image-20231017011809180"></p>
+<p><img src="/2023/10/14/STM32/image-20231017011828508.png" alt="image-20231017011828508"></p>
+<p><strong>小结：</strong></p>
+<p><img src="/2023/10/14/STM32/image-20231017012541734.png" alt="image-20231017012541734"></p>
+<p><img src="/2023/10/14/STM32/image-20231017012616759.png" alt="image-20231017012616759"></p>
+<p><img src="/2023/10/14/STM32/image-20231017012635298.png" alt="image-20231017012635298"></p>
+<p>从一个端口输入是为了读取输入，如果同时输出，那么输入就被遮盖了，但是输出时可以输入，目的就是为了查看处理输出的信息</p>
+<p><img src="/2023/10/14/STM32/image-20231017012918111.png" alt="image-20231017012918111"></p>
+<h3 id="复用开漏-推挽"><a href="#复用开漏-推挽" class="headerlink" title="复用开漏/推挽"></a>复用开漏/推挽</h3><p>【AF_OD 复用开漏】 和 【AF_PP 推挽输出】</p>
+<p><img src="/2023/10/14/STM32/image-20231017013032673.png" alt="image-20231017013032673"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013138410.png" alt="image-20231017013138410"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013206677.png" alt="image-20231017013206677"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013236372.png" alt="image-20231017013236372"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013319192.png" alt="image-20231017013319192"></p>
+<p><img src="/2023/10/14/STM32/image-20231017013354798.png" alt="image-20231017013354798"></p>
+<h3 id="GPIO驱动LED"><a href="#GPIO驱动LED" class="headerlink" title="GPIO驱动LED"></a>GPIO驱动LED</h3><blockquote>
+<p>上面是低电平驱动；下面是高电平驱动。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017085039743.png" alt="image-20231017085039743"></p>
+<p><img src="/2023/10/14/STM32/image-20231017085259735.png" alt="image-20231017085259735"></p>
+<p><img src="/2023/10/14/STM32/image-20231017085335790.png" alt="image-20231017085335790"></p>
+<p><img src="/2023/10/14/STM32/image-20231017085411138.png" alt="image-20231017085411138"></p>
+<p> <img src="/2023/10/14/STM32/image-20231017085431439.png" alt="image-20231017085431439"></p>
+<h3 id="蜂鸣器电路"><a href="#蜂鸣器电路" class="headerlink" title="蜂鸣器电路"></a>蜂鸣器电路</h3><p><img src="/2023/10/14/STM32/image-20231017085458533.png" alt="image-20231017085458533"></p>
+<p><img src="/2023/10/14/STM32/image-20231017085537382.png" alt="image-20231017085537382"></p>
+<p><img src="/2023/10/14/STM32/image-20231017085555920.png" alt="image-20231017085555920"></p>
+<blockquote>
+<p>上面的给低电平，就会导通</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017085647535.png" alt="image-20231017085647535"></p>
+<p><img src="/2023/10/14/STM32/image-20231017085714384.png" alt="image-20231017085714384"></p>
+<blockquote>
+<p>下面这个是给高电平导通，低电平断开。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017090738465.png" alt="image-20231017090738465"></p>
+<p><img src="/2023/10/14/STM32/image-20231017090906475.png" alt="image-20231017090906475"></p>
+<p><img src="/2023/10/14/STM32/image-20231017091026079.png" alt="image-20231017091026079"></p>
+<p>PS: 带箭头的是发射集！</p>
+<p><img src="/2023/10/14/STM32/image-20231017091215514.png" alt="image-20231017091215514"></p>
+<h3 id="函数说明"><a href="#函数说明" class="headerlink" title="函数说明"></a>函数说明</h3><ul>
+<li><p>GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)    设置为高电平</p>
+</li>
+<li><p>GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)    设置为低电平</p>
+</li>
+<li><p>GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal)    </p>
+<p>BitAction BitVal: 根据第三个参数的值设置指定的端口</p>
+<pre><code class="c">  * @param  BitVal: specifies the value to be written to the selected bit.
+  *   This parameter can be one of the BitAction enum values:
+  *     @arg Bit_RESET: to clear the port pin : 0
+  *     @arg Bit_SET: to set the port pin       : 1
+</code></pre>
+</li>
+<li><p>GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)    可以对十六个端口写入</p>
+</li>
+</ul>
+<hr>
+<h2 id="通信接口"><a href="#通信接口" class="headerlink" title="通信接口"></a>通信接口</h2><p><img src="/2023/10/14/STM32/image-20231017093222066.png" alt="image-20231017093222066"></p>
+<h3 id="串口通信"><a href="#串口通信" class="headerlink" title="串口通信"></a>串口通信</h3><h4 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h4><p><img src="/2023/10/14/STM32/image-20231017093754391.png" alt="image-20231017093754391"></p>
+<p><img src="/2023/10/14/STM32/image-20231017093821376.png" alt="image-20231017093821376"></p>
+<p><img src="/2023/10/14/STM32/image-20231017094227663.png" alt="image-20231017094227663"></p>
+<h4 id="波特率"><a href="#波特率" class="headerlink" title="波特率"></a>波特率</h4><blockquote>
+<p>串口通信的速率</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017100111247.png" alt="image-20231017100111247"></p>
+<p><img src="/2023/10/14/STM32/image-20231017095918175.png" alt="image-20231017095918175"></p>
+<p><img src="/2023/10/14/STM32/image-20231017095932286.png" alt="image-20231017095932286"></p>
+<h4 id="起始位"><a href="#起始位" class="headerlink" title="起始位"></a>起始位</h4><blockquote>
+<p>标志一个数据帧的开始，固定为低电平</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017100010324.png" alt="image-20231017100010324"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100019605.png" alt="image-20231017100019605"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100030211.png" alt="image-20231017100030211"></p>
+<p><img src="/2023/10/14/STM32/image-20231017095652576.png" alt="image-20231017095652576"></p>
+<p><img src="/2023/10/14/STM32/image-20231017095716294.png" alt="image-20231017095716294"></p>
+<p><img src="/2023/10/14/STM32/image-20231017095755332.png" alt="image-20231017095755332"></p>
+<p><img src="/2023/10/14/STM32/image-20231017095823477.png" alt="image-20231017095823477"></p>
+<h4 id="停止位"><a href="#停止位" class="headerlink" title="停止位"></a>停止位</h4><blockquote>
+<p>用于数据帧间隔，固定位高电平</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017095846873.png" alt="image-20231017095846873"></p>
+<h4 id="停止位-1"><a href="#停止位-1" class="headerlink" title="停止位"></a>停止位</h4><blockquote>
+<p>用于数据帧间隔，固定为高电平</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017100440048.png" alt="image-20231017100440048"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100459503.png" alt="image-20231017100459503"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100642886.png" alt="image-20231017100642886"></p>
+<p>PS: 起始位和停止位的作用。</p>
+<p><img src="/2023/10/14/STM32/image-20231017100742396.png" alt="image-20231017100742396"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100802654.png" alt="image-20231017100802654"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100814421.png" alt="image-20231017100814421"></p>
+<p><img src="/2023/10/14/STM32/image-20231017100828188.png" alt="image-20231017100828188"></p>
+<h4 id="数据位"><a href="#数据位" class="headerlink" title="数据位"></a>数据位</h4><blockquote>
+<p>数据帧的有效载荷，1为高电平，0为低电平，低位先行</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017100952969.png" alt="image-20231017100952969"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101027411.png" alt="image-20231017101027411"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101052786.png" alt="image-20231017101052786"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101111546.png" alt="image-20231017101111546"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101142485.png" alt="image-20231017101142485"></p>
+<h4 id="校验位"><a href="#校验位" class="headerlink" title="校验位"></a>校验位</h4><blockquote>
+<p>用于数据验证，根据数据位计算得来</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017101224793.png" alt="image-20231017101224793"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101300866.png" alt="image-20231017101300866"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101316136.png" alt="image-20231017101316136"></p>
+<p>校验方式：</p>
+<ul>
+<li>无校验</li>
+<li>奇校验</li>
+<li>偶校验</li>
+</ul>
+<p><img src="/2023/10/14/STM32/image-20231017101401371.png" alt="image-20231017101401371"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101537721.png" alt="image-20231017101537721"></p>
+<p><img src="/2023/10/14/STM32/image-20231017101553292.png" alt="image-20231017101553292"></p>
+<h4 id="示波器实测波形"><a href="#示波器实测波形" class="headerlink" title="示波器实测波形"></a>示波器实测波形</h4><p><img src="/2023/10/14/STM32/image-20231017102021749.png" alt="image-20231017102021749"></p>
+<p><img src="/2023/10/14/STM32/image-20231017102153308.png" alt="image-20231017102153308"></p>
+<blockquote>
+<p>0x55: 0101 0101</p>
+<p>由于低位先行，从右往左读，所以是1010 1010.</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231017102231487.png" alt="image-20231017102231487"></p>
+<p><img src="/2023/10/14/STM32/image-20231017103347502.png" alt="image-20231017103347502"></p>
+<p><img src="/2023/10/14/STM32/image-20231017103407878.png" alt="image-20231017103407878"></p>
+<p><img src="/2023/10/14/STM32/image-20231017103809911.png" alt="image-20231017103809911"></p>
+<p>​    <img src="/2023/10/14/STM32/image-20231017103825294.png" alt="image-20231017103825294"></p>
+<h4 id="串口外设-USART"><a href="#串口外设-USART" class="headerlink" title="串口外设-USART"></a>串口外设-USART</h4><p><img src="/2023/10/14/STM32/image-20231017104525661.png" alt="image-20231017104525661"></p>
+<p><img src="/2023/10/14/STM32/image-20231017104703430.png" alt="image-20231017104703430"></p>
+<p><strong>注意：TXE/RXNE</strong></p>
+<p><img src="/2023/10/14/STM32/image-20231017105626623.png" alt="image-20231017105626623"></p>
+<p><img src="/2023/10/14/STM32/image-20231017105712935.png" alt="image-20231017105712935"></p>
+<p><img src="/2023/10/14/STM32/image-20231017105817043.png" alt="image-20231017105817043"></p>
+<p><img src="/2023/10/14/STM32/image-20231017105831666.png" alt="image-20231017105831666"></p>
+<p><img src="/2023/10/14/STM32/image-20231017105846606.png" alt="image-20231017105846606"></p>
+<p><img src="/2023/10/14/STM32/image-20231017105921392.png" alt="image-20231017105921392"></p>
+<p><img src="/2023/10/14/STM32/image-20231017105947529.png" alt="image-20231017105947529"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110120989.png" alt="image-20231017110120989"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110155645.png" alt="image-20231017110155645"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110208144.png" alt="image-20231017110208144"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110251229.png" alt="image-20231017110251229"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110308551.png" alt="image-20231017110308551"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110328141.png" alt="image-20231017110328141"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110347533.png" alt="image-20231017110347533"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110400923.png" alt="image-20231017110400923"></p>
+<p><img src="/2023/10/14/STM32/image-20231017110420421.png" alt="image-20231017110420421"></p>
+<h4 id="STM32F103C8T6-引脚定义"><a href="#STM32F103C8T6-引脚定义" class="headerlink" title="STM32F103C8T6-引脚定义"></a>STM32F103C8T6-引脚定义</h4><p><img src="/2023/10/14/STM32/STM32F103C8T6%E5%BC%95%E8%84%9A%E5%AE%9A%E4%B9%89.png" alt="STM32F103C8T6引脚定义"></p>
+<h4 id="USB-转串口模式图"><a href="#USB-转串口模式图" class="headerlink" title="USB-转串口模式图"></a>USB-转串口模式图</h4><p><img src="/2023/10/14/STM32/image-20231017112325729.png" alt="image-20231017112325729"></p>
+<h4 id="串口通信代码实现"><a href="#串口通信代码实现" class="headerlink" title="串口通信代码实现"></a>串口通信代码实现</h4><p>初始化：</p>
+<ul>
+<li>第一步：开启时钟，把需要用到的USART和GPIO的时钟打开</li>
+<li>第二部：GPIO初始化，把TX配置成复用输出，RX配置成输入</li>
+<li>第三步：配置USART，直接使用一个结构体，把所有的参数配置好</li>
+<li>第四步：如果只需要发送的功能，就直接开启USART，初始化就结束了；如果还需要接收的功能，可能还需要配置中断。</li>
+</ul>
+<p><img src="/2023/10/14/STM32/image-20231017113509338.png" alt="image-20231017113509338"></p>
+<h5 id="收发一个字节"><a href="#收发一个字节" class="headerlink" title="收发一个字节"></a>收发一个字节</h5><blockquote>
+<p>serial.h</p>
+</blockquote>
+<pre><code class="c">#ifndef __SERIAL_H
+#define __SERIAL_H
+
+#include &lt;stdio.h&gt;
+
+void Serial_Init(void);
+void Serial_SendByte(uint8_t Byte);
+void Serial_SendArray(uint8_t *Array, uint16_t Length);
+void Serial_SendString(char *String);
+void Serial_SendNumber(uint32_t Number, uint8_t Length);
+void Serial_Printf(char *format, ...);
+
+uint8_t Serial_GetRxFlag(void);
+uint8_t Serial_GetRxData(void);
+
+#endif
+</code></pre>
+<blockquote>
+<p>serial.c</p>
+</blockquote>
+<pre><code class="c">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &lt;stdio.h&gt;
+#include &lt;stdarg.h&gt;
+
+uint8_t Serial_RxData;
+uint8_t Serial_RxFlag;
+
+void Serial_Init(void)
+&#123;
+    // 使用PA9 PA10引脚
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    // TX引脚是USART外设控制的输出脚，所以要选复用推挽输出
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    // 一般RX都配 浮空输入 或 上拉输入，因为串口波形空闲状态是高电平，所以不使用下拉输入
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+     // 结构体
+    USART_InitTypeDef USART_InitStructure;
+    USART_InitStructure.USART_BaudRate = 9600; //波特率
+    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None; //硬件流控制
+    USART_InitStructure.USART_Mode = USART_Mode_Tx | USART_Mode_Rx; //发送模式：即发送又接收
+    USART_InitStructure.USART_Parity = USART_Parity_No; //校验模式：无校验
+    USART_InitStructure.USART_StopBits = USART_StopBits_1; //停止位：1位
+    USART_InitStructure.USART_WordLength = USART_WordLength_8b; //数据位：8位
+    USART_Init(USART1, &amp;USART_InitStructure);
+    
+    // 开启中断
+    USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+    // USART_IT_RXNE 一旦置1就会向NVIC申请中断
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    
+    NVIC_InitTypeDef NVIC_InitStructure;
+    NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+    NVIC_Init(&amp;NVIC_InitStructure);
+    
+    // 开启
+    USART_Cmd(USART1, ENABLE);
+&#125;
+
+void Serial_SendByte(uint8_t Byte)
+&#123;
+    USART_SendData(USART1, Byte);
+    // 写操作需要清零，也就是说写的过程这一致为0，写完了为1
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET); 
+&#125;
+
+void Serial_SendArray(uint8_t *Array, uint16_t Length)
+&#123;
+    uint16_t i;
+    for (i = 0; i &lt; Length; i ++)
+    &#123;
+        Serial_SendByte(Array[i]);
+    &#125;
+&#125;
+
+void Serial_SendString(char *String)
+&#123;
+    uint8_t i;
+    for (i = 0; String[i] != &#39;\0&#39;; i ++)
+    &#123;
+        Serial_SendByte(String[i]);
+    &#125;
+&#125;
+
+uint32_t Serial_Pow(uint32_t X, uint32_t Y)
+&#123;
+    uint32_t Result = 1;
+    while (Y --)
+    &#123;
+        Result *= X;
+    &#125;
+    return Result;
+&#125;
+
+void Serial_SendNumber(uint32_t Number, uint8_t Length)
+&#123;
+    uint8_t i;
+    for (i = 0; i &lt; Length; i ++)
+    &#123;
+        // 取某一位：(Num/10^x) %10 : (12345/10^3)%10 == 3【从右往左的第3位，索引:4 3 2 1 0】【10是基数，x是位数】
+        Serial_SendByte(Number / Serial_Pow(10, Length - i - 1) % 10 + &#39;0&#39;);
+    &#125;
+&#125;
+
+// printf【fputc是printf的底层函数】输出重定向到串口
+int fputc(int ch, FILE *f)
+&#123;
+    Serial_SendByte(ch);
+    return ch;
+&#125;
+
+// printf 的可以参数写法
+void Serial_Printf(char *format, ...)
+&#123;
+    char String[100];
+    va_list arg;
+    va_start(arg, format);
+    vsprintf(String, format, arg);
+    va_end(arg);
+    Serial_SendString(String);
+&#125;
+
+// 配合自动清零
+uint8_t Serial_GetRxFlag(void)
+&#123;
+    if (Serial_RxFlag == 1)
+    &#123;
+        Serial_RxFlag = 0;
+        return 1;
+    &#125;
+    return 0;
+&#125;
+
+uint8_t Serial_GetRxData(void)
+&#123;
+    return Serial_RxData;
+&#125;
+
+// 中断启动
+void USART1_IRQHandler(void)
+&#123;
+    if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
+    &#123;
+        Serial_RxData = USART_ReceiveData(USART1);
+        Serial_RxFlag = 1;
+        USART_ClearITPendingBit(USART1, USART_IT_RXNE); //清零
+    &#125;
+&#125;
+</code></pre>
+<blockquote>
+<p>main.c</p>
+</blockquote>
+<pre><code class="c">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;OLED.h&quot;
+#include &quot;Serial.h&quot;
+
+uint8_t RxData;
+
+int main(void)
+&#123;
+    OLED_Init();
+    OLED_ShowString(1, 1, &quot;RxData:&quot;);
+    
+    Serial_Init();
+    
+    while (1)
+    &#123;
+        if (Serial_GetRxFlag() == 1)
+        &#123;
+            // 接收数据
+            RxData = Serial_GetRxData();
+            // 接收到的数据回传电脑
+            Serial_SendByte(RxData);
+            // OLED显示接收数据
+            OLED_ShowHexNum(1, 8, RxData, 2);
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<h5 id="收发数据包"><a href="#收发数据包" class="headerlink" title="收发数据包"></a>收发数据包</h5><blockquote>
+<p>main.c</p>
+</blockquote>
+<pre><code class="c">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &quot;Delay.h&quot;
+#include &quot;OLED.h&quot;
+#include &quot;Serial.h&quot;
+#include &quot;Key.h&quot;
+
+uint8_t KeyNum;
+
+int main(void)
+&#123;
+    OLED_Init();
+    Key_Init();
+    Serial_Init();
+    
+    // FF 11 22 33 44 FE
+    OLED_ShowString(1, 1, &quot;TxPacket&quot;);
+    
+    // 
+    OLED_ShowString(3, 1, &quot;RxPacket&quot;);
+    
+    Serial_TxPacket[0] = 0x01;
+    Serial_TxPacket[1] = 0x02;
+    Serial_TxPacket[2] = 0x03;
+    Serial_TxPacket[3] = 0x04;
+    
+    while (1)
+    &#123;
+        KeyNum = Key_GetNum();
+        if (KeyNum == 1)
+        &#123;
+            Serial_TxPacket[0] ++;
+            Serial_TxPacket[1] ++;
+            Serial_TxPacket[2] ++;
+            Serial_TxPacket[3] ++;
+            
+            Serial_SendPacket();
+            
+            OLED_ShowHexNum(2, 1, Serial_TxPacket[0], 2);
+            OLED_ShowHexNum(2, 4, Serial_TxPacket[1], 2);
+            OLED_ShowHexNum(2, 7, Serial_TxPacket[2], 2);
+            OLED_ShowHexNum(2, 10, Serial_TxPacket[3], 2);
+        &#125;
+        
+        if (Serial_GetRxFlag() == 1)
+        &#123;
+            OLED_ShowHexNum(4, 1, Serial_RxPacket[0], 2);
+            OLED_ShowHexNum(4, 4, Serial_RxPacket[1], 2);
+            OLED_ShowHexNum(4, 7, Serial_RxPacket[2], 2);
+            OLED_ShowHexNum(4, 10, Serial_RxPacket[3], 2);
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<blockquote>
+<p>serial.h</p>
+</blockquote>
+<pre><code class="c">#ifndef __SERIAL_H
+#define __SERIAL_H
+
+#include &lt;stdio.h&gt;
+
+extern uint8_t Serial_TxPacket[];
+extern uint8_t Serial_RxPacket[];
+
+void Serial_Init(void);
+void Serial_SendByte(uint8_t Byte);
+void Serial_SendArray(uint8_t *Array, uint16_t Length);
+void Serial_SendString(char *String);
+void Serial_SendNumber(uint32_t Number, uint8_t Length);
+void Serial_Printf(char *format, ...);
+
+void Serial_SendPacket(void);
+uint8_t Serial_GetRxFlag(void);
+
+#endif
+</code></pre>
+<blockquote>
+<p>serial.c</p>
+</blockquote>
+<pre><code class="c">#include &quot;stm32f10x.h&quot;                  // Device header
+#include &lt;stdio.h&gt;
+#include &lt;stdarg.h&gt;
+
+uint8_t Serial_TxPacket[4];                //FF 01 02 03 04 FE
+uint8_t Serial_RxPacket[4];
+uint8_t Serial_RxFlag;
+
+void Serial_Init(void)
+&#123;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+    
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA, &amp;GPIO_InitStructure);
+    
+    USART_InitTypeDef USART_InitStructure;
+    USART_InitStructure.USART_BaudRate = 9600;
+    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+    USART_InitStructure.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;
+    USART_InitStructure.USART_Parity = USART_Parity_No;
+    USART_InitStructure.USART_StopBits = USART_StopBits_1;
+    USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    USART_Init(USART1, &amp;USART_InitStructure);
+    
+    USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+    
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    
+    NVIC_InitTypeDef NVIC_InitStructure;
+    NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+    NVIC_Init(&amp;NVIC_InitStructure);
+    
+    USART_Cmd(USART1, ENABLE);
+&#125;
+
+void Serial_SendByte(uint8_t Byte)
+&#123;
+    USART_SendData(USART1, Byte);
+    while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET);
+&#125;
+
+void Serial_SendArray(uint8_t *Array, uint16_t Length)
+&#123;
+    uint16_t i;
+    for (i = 0; i &lt; Length; i ++)
+    &#123;
+        Serial_SendByte(Array[i]);
+    &#125;
+&#125;
+
+void Serial_SendString(char *String)
+&#123;
+    uint8_t i;
+    for (i = 0; String[i] != &#39;\0&#39;; i ++)
+    &#123;
+        Serial_SendByte(String[i]);
+    &#125;
+&#125;
+
+uint32_t Serial_Pow(uint32_t X, uint32_t Y)
+&#123;
+    uint32_t Result = 1;
+    while (Y --)
+    &#123;
+        Result *= X;
+    &#125;
+    return Result;
+&#125;
+
+void Serial_SendNumber(uint32_t Number, uint8_t Length)
+&#123;
+    uint8_t i;
+    for (i = 0; i &lt; Length; i ++)
+    &#123;
+        Serial_SendByte(Number / Serial_Pow(10, Length - i - 1) % 10 + &#39;0&#39;);
+    &#125;
+&#125;
+
+int fputc(int ch, FILE *f)
+&#123;
+    Serial_SendByte(ch);
+    return ch;
+&#125;
+
+void Serial_Printf(char *format, ...)
+&#123;
+    char String[100];
+    va_list arg;
+    va_start(arg, format);
+    vsprintf(String, format, arg);
+    va_end(arg);
+    Serial_SendString(String);
+&#125;
+
+
+void Serial_SendPacket(void)
+&#123;
+    Serial_SendByte(0xFF);
+    Serial_SendArray(Serial_TxPacket, 4);
+    Serial_SendByte(0xFE);
+&#125;
+
+uint8_t Serial_GetRxFlag(void)
+&#123;
+    if (Serial_RxFlag == 1)
+    &#123;
+        Serial_RxFlag = 0;
+        return 1;
+    &#125;
+    return 0;
+&#125;
+
+void USART1_IRQHandler(void)
+&#123;
+    // static 只能在本函数使用
+    static uint8_t RxState = 0;
+    static uint8_t pRxPacket = 0;
+    if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
+    &#123;
+        uint8_t RxData = USART_ReceiveData(USART1);
+        
+        if (RxState == 0)
+        &#123;
+            if (RxData == 0xFF)
+            &#123;
+                RxState = 1;
+                pRxPacket = 0;
+            &#125;
+        &#125;
+        else if (RxState == 1)
+        &#123;
+            Serial_RxPacket[pRxPacket] = RxData;
+            pRxPacket ++;
+            if (pRxPacket &gt;= 4)
+            &#123;
+                RxState = 2;
+            &#125;
+        &#125;
+        else if (RxState == 2)
+        &#123;
+            if (RxData == 0xFE)
+            &#123;
+                RxState = 0;
+                Serial_RxFlag = 1;
+            &#125;
+        &#125;
+        
+        USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+    &#125;
+&#125;
+</code></pre>
+<hr>
+<h3 id="DMA"><a href="#DMA" class="headerlink" title="DMA"></a>DMA</h3><blockquote>
+<p>存储器 –&gt; 存储器的数据转运，一般使用软件触发；</p>
+<p>外设 –&gt; 存储器的数据转运，一般使用硬件触发。</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231108120319364.png" alt="image-20231108120319364"></p>
+<p>ROM【只读存储器】：非易失性、掉电不丢失的存储器；</p>
+<p>RAM【随机存储器】：易失性、掉电丢失的存储器。</p>
+<p><img src="/2023/10/14/STM32/image-20231108134600494.png" alt="image-20231108134600494"></p>
+<p>0x0800 0000 : 主闪存地址 【Flash】</p>
+<p>0x4000 0000：外设寄存器【SRAM】</p>
+<p><img src="/2023/10/14/STM32/image-20231108135907528.png" alt="image-20231108135907528"></p>
+<p><img src="/2023/10/14/STM32/image-20231108145526210.png" alt="image-20231108145526210"></p>
+<hr>
+<h3 id="I2C通信"><a href="#I2C通信" class="headerlink" title="I2C通信"></a>I2C通信</h3><blockquote>
+<p>Inter IC BUS ： </p>
+<ul>
+<li>SCL：串行时钟</li>
+<li>SDA:  串行数据</li>
+<li>同步，半双工</li>
+<li>带数据应答</li>
+</ul>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231107175213474.png" alt="image-20231107175213474"></p>
+<hr>
+<h3 id="SPI通信"><a href="#SPI通信" class="headerlink" title="SPI通信"></a>SPI通信</h3><blockquote>
+<p>Master: 主机</p>
+<p>Slave: 从机</p>
+<p>SCK、CLK: 时钟</p>
+<p>MOSI: 主机输出从机输入</p>
+<p>MISO: 主机输入从机输出</p>
+<p>DI: 数据输入</p>
+<p>DO: 数据输出</p>
+<p>CS、SS: 从机选择</p>
+</blockquote>
+<p><img src="/2023/10/14/STM32/image-20231014103643945.png" alt="image-20231014103643945"></p>
+<p><img src="/2023/10/14/STM32/image-20231014111034850.png" alt="image-20231014111034850"></p>
+<p><img src="/2023/10/14/STM32/image-20231014111048374.png" alt="image-20231014111048374"></p>
+<p><img src="/2023/10/14/STM32/image-20231014112606855.png" alt="image-20231014112606855"></p>
+<p><img src="/2023/10/14/STM32/image-20231014112622264.png" alt="image-20231014112622264"></p>
+<p><img src="/2023/10/14/STM32/image-20231014112644569.png" alt="image-20231014112644569"></p>
+<p><img src="/2023/10/14/STM32/image-20231014112703081.png" alt="image-20231014112703081"></p>
+<p><img src="/2023/10/14/STM32/image-20231014112717898.png" alt="image-20231014112717898"></p>
+<p><img src="/2023/10/14/STM32/image-20231014114049515.png" alt="image-20231014114049515"></p>
+<p><img src="/2023/10/14/STM32/image-20231014114117273.png" alt="image-20231014114117273"></p>
+<p><img src="/2023/10/14/STM32/image-20231014114219053.png" alt="image-20231014114219053"></p>
+<hr>
+<h2 id="W25Q64存储"><a href="#W25Q64存储" class="headerlink" title="W25Q64存储"></a>W25Q64存储</h2><p><img src="/2023/10/14/STM32/image-20231014102447576.png" alt="image-20231014102447576"></p>
+<p><img src="/2023/10/14/STM32/image-20231014102512748.png" alt="image-20231014102512748"></p>
+<p><strong>W25Q64框图：</strong></p>
+<p><img src="/2023/10/14/STM32/image-20231014145537445.png" alt="image-20231014145537445"></p>
+<p><img src="/2023/10/14/STM32/image-20231014144737885.png" alt="image-20231014144737885"></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1894278325&auto=1&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>

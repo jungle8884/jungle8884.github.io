@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>java_security | blog of Jungle</title>
+  <meta name="keywords" content=" jwt ">
+  <meta name="description" content="java_security | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="leetcode" href="https://leetcode-cn.com/progress/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-leetcode"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(106)</small></div></li>
+    
+        
+            
+            <li><div data-rel="算法"><i class="fold iconfont icon-right"></i>算法<small>(25)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->链表">链表<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->面试题">面试题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->日期">日期<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->树">树<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数学">数学<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数组">数组<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->双指针">双指针<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->图">图<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->LeetCode">LeetCode<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(11)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->插件">插件<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->audio">audio<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->ChatGPT">ChatGPT<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(27)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->java">java<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(14)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->SpringBoot">SpringBoot<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="数据库<--->Redis">Redis<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="沉淀一下"><i class="fold iconfont icon-right"></i>沉淀一下<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="沉淀一下<--->场景题">场景题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="物联网"><i class="fold iconfont icon-right"></i>物联网<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="物联网<--->乐鑫">乐鑫<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->设备端">设备端<small>(7)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->物联网平台">物联网平台<small>(5)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="docker"><i class="fold iconfont icon-right"></i>docker<small>(6)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="docker<--->fastbee">fastbee<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="docker<--->ruoyi">ruoyi<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="java"><i class="fold iconfont icon-right"></i>java<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="java<--->mq">mq<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="linux"><i class="fold iconfont icon-right"></i>linux<small>(4)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="linux<--->基本使用">基本使用<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->shell">shell<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->wls">wls<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Python">Python<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="106">
+<input type="hidden" id="yelog_site_word_count" value="308.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://lavender-z.github.io/">橘子</a></li>
+            
+            <li><a target="_blank" href="https://youngxhui.top/">ISLAND</a></li>
+            
+            <li><a target="_blank" href="https://www.liuchuo.net/about">柳神</a></li>
+            
+            <li><a target="_blank" href="https://programmercarl.com/">K神</a></li>
+            
+            <li><a target="_blank" href="https://labuladong.github.io/algo/">东哥</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_37541097?spm=1001.2014.3001.5509">D神</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_33369905?spm=1001.2014.3001.5509">狂神</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>160</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>19</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>203</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>21</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>23</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>234</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>25</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>51C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>92</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蔡勒公式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>策略模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查找</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>递归</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>构建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>观察者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>滑动窗口</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>快速平方根</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>乐鑫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>链表</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六大原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前缀树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>闰年</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数组</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>双指针</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>贪心</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>移除链表元素</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优先队列</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>油猴</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>audio</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>device</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker-desktop</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP Rainmaker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>esp-idf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32C3</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastapi</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FleetBee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hutool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Job</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jwt</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>k3s</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LeetCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mall</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MircroPython</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mqtt上传文件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N的阶乘</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NoSQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OJ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pyside</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rabbitmq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STM32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Stream</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>swagger</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tkinter</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Utils</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>video</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>WebGIS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>work</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/12/04/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2025-12-04 09:09:30">2025/12/04</span>
+        </a>
+        
+        <a  class="全部文章 沉淀一下 场景题 "
+           href="/2025/11/06/goodjob/"
+           data-tag="work"
+           data-author="" >
+            <span class="post-title" title="goodjob">goodjob</span>
+            <span class="post-date" title="2025-11-06 23:23:29">2025/11/06</span>
+        </a>
+        
+        <a  class="全部文章 java mq "
+           href="/2025/10/28/java-rabbitmq/"
+           data-tag="rabbitmq"
+           data-author="" >
+            <span class="post-title" title="java_rabbitmq">java_rabbitmq</span>
+            <span class="post-date" title="2025-10-28 17:12:04">2025/10/28</span>
+        </a>
+        
+        <a  class="全部文章 后端 java "
+           href="/2025/10/23/java-security/"
+           data-tag="jwt"
+           data-author="" >
+            <span class="post-title" title="java_security">java_security</span>
+            <span class="post-date" title="2025-10-23 17:40:33">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-swagger/"
+           data-tag="swagger"
+           data-author="" >
+            <span class="post-title" title="java_swagger">java_swagger</span>
+            <span class="post-date" title="2025-10-23 17:16:02">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-hutool/"
+           data-tag="hutool"
+           data-author="" >
+            <span class="post-title" title="java_hutool">java_hutool</span>
+            <span class="post-date" title="2025-10-23 16:34:49">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/21/mall/"
+           data-tag="mall"
+           data-author="" >
+            <span class="post-title" title="mall">mall</span>
+            <span class="post-date" title="2025-10-21 22:02:56">2025/10/21</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2025/10/11/docker-destop/"
+           data-tag="docker-desktop"
+           data-author="" >
+            <span class="post-title" title="docker_destop">docker_destop</span>
+            <span class="post-date" title="2025-10-11 09:52:56">2025/10/11</span>
+        </a>
+        
+        <a  class="全部文章 后端 "
+           href="/2025/10/10/java-mark/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java要点小结">java要点小结</span>
+            <span class="post-date" title="2025-10-10 17:28:57">2025/10/10</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/29/pysideRecord/"
+           data-tag="pyside"
+           data-author="" >
+            <span class="post-title" title="pysideRecord">pysideRecord</span>
+            <span class="post-date" title="2025-09-29 20:46:51">2025/09/29</span>
+        </a>
+        
+        <a  class="全部文章 docker fastbee "
+           href="/2025/09/19/dockerDeploy/"
+           data-tag="iot"
+           data-author="" >
+            <span class="post-title" title="fastbee项目部署">fastbee项目部署</span>
+            <span class="post-date" title="2025-09-19 10:22:51">2025/09/19</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/18/fastapiLearning/"
+           data-tag="fastapi"
+           data-author="" >
+            <span class="post-title" title="fastapiNote">fastapiNote</span>
+            <span class="post-date" title="2025-09-18 15:42:57">2025/09/18</span>
+        </a>
+        
+        <a  class="全部文章 linux "
+           href="/2025/07/21/Ubuntu/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux">Linux</span>
+            <span class="post-date" title="2025-07-21 09:57:43">2025/07/21</span>
+        </a>
+        
+        <a  class="全部文章 物联网 "
+           href="/2025/03/06/esp32-ubuntun-start/"
+           data-tag="乐鑫"
+           data-author="" >
+            <span class="post-title" title="esp32_ubuntun_start">esp32_ubuntun_start</span>
+            <span class="post-date" title="2025-03-06 15:02:56">2025/03/06</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/01/18/vim-use/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="vim-use">vim-use</span>
+            <span class="post-date" title="2025-01-18 09:35:04">2025/01/18</span>
+        </a>
+        
+        <a  class="全部文章 linux shell "
+           href="/2025/01/15/shell-programming/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="shell_programming">shell_programming</span>
+            <span class="post-date" title="2025-01-15 15:40:40">2025/01/15</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/30/esp-idf-record/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-record">esp-idf-record</span>
+            <span class="post-date" title="2024-12-30 10:46:49">2024/12/30</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/27/esp-idf-cmd/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-cmd">esp-idf-cmd</span>
+            <span class="post-date" title="2024-12-27 16:41:01">2024/12/27</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2024/09/06/pyGUI/"
+           data-tag="tkinter"
+           data-author="" >
+            <span class="post-title" title="tkinterecord">tkinterecord</span>
+            <span class="post-date" title="2024-09-06 14:41:16">2024/09/06</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/08/26/basic-Arduino/"
+           data-tag="C"
+           data-author="" >
+            <span class="post-title" title="basic_Arduino">basic_Arduino</span>
+            <span class="post-date" title="2024-08-26 17:47:27">2024/08/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/08/13/mqtt/"
+           data-tag="mqtt上传文件"
+           data-author="" >
+            <span class="post-title" title="MQTT">MQTT</span>
+            <span class="post-date" title="2024-08-13 15:45:34">2024/08/13</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/06/07/IntelligenLEDStrip/"
+           data-tag="ESP Rainmaker"
+           data-author="" >
+            <span class="post-title" title="智能灯带">智能灯带</span>
+            <span class="post-date" title="2024-06-07 10:15:00">2024/06/07</span>
+        </a>
+        
+        <a  class="全部文章 linux wls "
+           href="/2024/05/28/linux-note/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux_note">linux_note</span>
+            <span class="post-date" title="2024-05-28 09:22:34">2024/05/28</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/k3s%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/"
+           data-tag="k3s"
+           data-author="" >
+            <span class="post-title" title="k3s">k3s</span>
+            <span class="post-date" title="2024-05-14 16:36:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/local_deploy/"
+           data-tag="fastbee"
+           data-author="" >
+            <span class="post-title" title="物联网平台本地部署并接入摄像头">物联网平台本地部署并接入摄像头</span>
+            <span class="post-date" title="2024-05-14 16:31:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/04/12/CameraAccess/"
+           data-tag="FleetBee"
+           data-author="" >
+            <span class="post-title" title="摄像头接入">摄像头接入</span>
+            <span class="post-date" title="2024-04-12 16:48:52">2024/04/12</span>
+        </a>
+        
+        <a  class="全部文章 linux 基本使用 "
+           href="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux的基本使用">linux的基本使用</span>
+            <span class="post-date" title="2024-03-31 17:40:34">2024/03/31</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/09/ruoyi_2Dev/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi-二次开发">ruoyi-二次开发</span>
+            <span class="post-date" title="2024-01-09 11:20:00">2024/01/09</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/06/ruoyi/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi">ruoyi</span>
+            <span class="post-date" title="2024-01-06 15:20:00">2024/01/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 SpringBoot "
+           href="/2024/01/05/SpringBoor_Vue/"
+           data-tag="SpringBoot,Vue"
+           data-author="" >
+            <span class="post-title" title="SpringBoot_Vue">SpringBoot_Vue</span>
+            <span class="post-date" title="2024-01-05 11:20:01">2024/01/05</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/27/wumei_DeepIn/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceDeepIn">wumei-deviceDeepIn</span>
+            <span class="post-date" title="2023-12-27 10:23:00">2023/12/27</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/26/wumei_deviceInto/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceInto">wumei-deviceInto</span>
+            <span class="post-date" title="2023-12-26 11:20:00">2023/12/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/12/12/ESP32-C3/"
+           data-tag="ESP32C3"
+           data-author="" >
+            <span class="post-title" title="ESP32C3">ESP32C3</span>
+            <span class="post-date" title="2023-12-12 15:43:52">2023/12/12</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/11/wumei/"
+           data-tag="Fastbee"
+           data-author="" >
+            <span class="post-title" title="wumei">wumei</span>
+            <span class="post-date" title="2023-12-11 09:48:52">2023/12/11</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/11/08/ESP32/"
+           data-tag="MircroPython"
+           data-author="" >
+            <span class="post-title" title="MircroPython">MircroPython</span>
+            <span class="post-date" title="2023-11-08 18:02:31">2023/11/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 数学 "
+           href="/2023/11/01/Q-rsqrt/"
+           data-tag="快速平方根"
+           data-author="" >
+            <span class="post-title" title="Q_rsqrt">Q_rsqrt</span>
+            <span class="post-date" title="2023-11-01 08:52:08">2023/11/01</span>
+        </a>
+        
+        <a  class="全部文章 工具 audio "
+           href="/2023/10/16/audioConvert/"
+           data-tag="python,audio"
+           data-author="" >
+            <span class="post-title" title="audioConvert">audioConvert</span>
+            <span class="post-date" title="2023-10-16 19:34:43">2023/10/16</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/14/STM32/"
+           data-tag="STM32"
+           data-author="" >
+            <span class="post-title" title="STM32">STM32</span>
+            <span class="post-date" title="2023-10-14 08:59:19">2023/10/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/08/51C/"
+           data-tag="51C"
+           data-author="" >
+            <span class="post-title" title="51C">51C</span>
+            <span class="post-date" title="2023-10-08 17:20:10">2023/10/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 面试题 "
+           href="/2023/09/18/JobInterview/"
+           data-tag="N的阶乘"
+           data-author="" >
+            <span class="post-title" title="JobInterview">JobInterview</span>
+            <span class="post-date" title="2023-09-18 21:55:19">2023/09/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 LeetCode "
+           href="/2023/09/13/hot100/"
+           data-tag="LeetCode"
+           data-author="" >
+            <span class="post-title" title="hot100">hot100</span>
+            <span class="post-date" title="2023-09-13 10:17:00">2023/09/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/09/05/4Job/"
+           data-tag="Shell,Job,WebGIS"
+           data-author="" >
+            <span class="post-title" title="Javaer&#39;s development">Javaer&#39;s development</span>
+            <span class="post-date" title="2023-09-05 00:00:00">2023/09/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/03/24/Stream/"
+           data-tag="Stream"
+           data-author="" >
+            <span class="post-title" title="Stream">Stream</span>
+            <span class="post-date" title="2023-03-24 09:42:49">2023/03/24</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/03/08/ESP32ATLog/"
+           data-tag="ESP32,AT"
+           data-author="" >
+            <span class="post-title" title="ESP32AT指令集探索">ESP32AT指令集探索</span>
+            <span class="post-date" title="2023-03-08 14:52:56">2023/03/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/02/09/AddOn4SpeedPlay/"
+           data-tag="video"
+           data-author="" >
+            <span class="post-title" title="AddOn4SpeedPlay">AddOn4SpeedPlay</span>
+            <span class="post-date" title="2023-02-09 13:05:26">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 ChatGPT "
+           href="/2023/02/09/ChatGPT/"
+           data-tag="ChatGPT"
+           data-author="" >
+            <span class="post-title" title="Usage of ChatGPT">Usage of ChatGPT</span>
+            <span class="post-date" title="2023-02-09 12:34:54">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/02/09/Java-io/"
+           data-tag="IO"
+           data-author="" >
+            <span class="post-title" title="Java-io">Java-io</span>
+            <span class="post-date" title="2023-02-09 12:27:55">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/01/17/Freedom/"
+           data-tag="油猴"
+           data-author="" >
+            <span class="post-title" title="Videos">Videos</span>
+            <span class="post-date" title="2023-01-17 21:43:30">2023/01/17</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/12/04/DevConcludes/"
+           data-tag="开发"
+           data-author="" >
+            <span class="post-title" title="DevConcludes">DevConcludes</span>
+            <span class="post-date" title="2022-12-04 22:16:46">2022/12/04</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/10/16/Java-Utils/"
+           data-tag="Utils"
+           data-author="" >
+            <span class="post-title" title="Java-Utils">Java-Utils</span>
+            <span class="post-date" title="2022-10-16 16:15:29">2022/10/16</span>
+        </a>
+        
+        <a  class="全部文章 算法 数组 "
+           href="/2022/05/02/Array/"
+           data-tag="数组"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2022-05-02 00:00:00">2022/05/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2022/01/23/TopologicalSorting/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2022-01-23 00:00:00">2022/01/23</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2021/12/31/Graph-DataStructure/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="图的数据结构">图的数据结构</span>
+            <span class="post-date" title="2021-12-31 10:41:29">2021/12/31</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/12/13/BinaryTree-traverse/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历框架">二叉树的遍历框架</span>
+            <span class="post-date" title="2021-12-13 10:50:34">2021/12/13</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/12/08/Trie-341-NestedIterator/"
+           data-tag="前缀树,N叉树,迭代器"
+           data-author="" >
+            <span class="post-title" title="扁平化嵌套列表迭代器">扁平化嵌套列表迭代器</span>
+            <span class="post-date" title="2021-12-08 16:38:11">2021/12/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/11/26/BinaryTree-297-SerializeAndDeserialize/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的序列化和反序列化">二叉树的序列化和反序列化</span>
+            <span class="post-date" title="2021-11-26 17:32:54">2021/11/26</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-160-getIntersectionNode/"
+           data-tag="160,链表"
+           data-author="" >
+            <span class="post-title" title="两个链表是否相交">两个链表是否相交</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-19-removeNthFromEnd/"
+           data-tag="链表,19"
+           data-author="" >
+            <span class="post-title" title="单链表的倒数第K个节点">单链表的倒数第K个节点</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-23-mergeKLists/"
+           data-tag="链表,23"
+           data-author="" >
+            <span class="post-title" title="合并K个有序链表">合并K个有序链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-234-isPalindrome/"
+           data-tag="链表,234"
+           data-author="" >
+            <span class="post-title" title="回文链表">回文链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-25-reverseKGroup/"
+           data-tag="链表,25,迭代"
+           data-author="" >
+            <span class="post-title" title="K个一组反转链表">K个一组反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-92-reverseBetween/"
+           data-tag="链表,92,递归"
+           data-author="" >
+            <span class="post-title" title="反转链表">反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/18/LinkedList-21-mergeTwoLists/"
+           data-tag="链表,21"
+           data-author="" >
+            <span class="post-title" title="合并两个有序链表">合并两个有序链表</span>
+            <span class="post-date" title="2021-11-18 00:00:00">2021/11/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/09/16/Calculate-date/"
+           data-tag="闰年"
+           data-author="" >
+            <span class="post-title" title="Calculate_date">Calculate_date</span>
+            <span class="post-date" title="2021-09-16 21:05:01">2021/09/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatterofStrategy/"
+           data-tag="行为型模式,策略模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2021-09-15 20:58:14">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofObserver/"
+           data-tag="观察者模式,行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2021-09-15 20:41:49">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofProxy/"
+           data-tag="代理模式,结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2021-09-15 20:30:32">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/09/07/PriorityQueue/"
+           data-tag="优先队列,贪心"
+           data-author="" >
+            <span class="post-title" title="PriorityQueue">PriorityQueue</span>
+            <span class="post-date" title="2021-09-07 00:00:00">2021/09/07</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/09/05/LinkedList-203-removeElements/"
+           data-tag="203,移除链表元素"
+           data-author="" >
+            <span class="post-title" title="移除链表元素">移除链表元素</span>
+            <span class="post-date" title="2021-09-05 00:00:00">2021/09/05</span>
+        </a>
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2021/08/31/SearchAndSort/"
+           data-tag="排序,查找"
+           data-author="" >
+            <span class="post-title" title="SearchAndSort">SearchAndSort</span>
+            <span class="post-date" title="2021-08-31 14:27:08">2021/08/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/07/09/Trie/"
+           data-tag="前缀树,N叉树"
+           data-author="" >
+            <span class="post-title" title="过滤敏感词">过滤敏感词</span>
+            <span class="post-date" title="2021-07-09 00:00:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 算法 滑动窗口 "
+           href="/2021/07/02/slidingwindow/"
+           data-tag="滑动窗口"
+           data-author="" >
+            <span class="post-title" title="滑动窗口">滑动窗口</span>
+            <span class="post-date" title="2021-07-02 00:00:00">2021/07/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 双指针 "
+           href="/2021/07/01/doublepointers/"
+           data-tag="双指针"
+           data-author="" >
+            <span class="post-title" title="双指针">双指针</span>
+            <span class="post-date" title="2021-07-01 00:00:00">2021/07/01</span>
+        </a>
+        
+        <a  class="全部文章 数据库 Redis "
+           href="/2021/06/29/redis-LearningNote/"
+           data-tag="NoSQL"
+           data-author="" >
+            <span class="post-title" title="redis学习笔记">redis学习笔记</span>
+            <span class="post-date" title="2021-06-29 00:00:00">2021/06/29</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/06/27/Zeller/"
+           data-tag="蔡勒公式,OJ"
+           data-author="" >
+            <span class="post-title" title="Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7">Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7</span>
+            <span class="post-date" title="2021-06-27 00:00:00">2021/06/27</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/06/01/BinaryTree/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树">二叉树</span>
+            <span class="post-date" title="2021-06-01 00:00:00">2021/06/01</span>
+        </a>
+        
+        <a  class="全部文章 运维 "
+           href="/2021/05/27/linuxLearningNote/"
+           data-tag="Linux,Shell"
+           data-author="" >
+            <span class="post-title" title="Linux 与 Shell">Linux 与 Shell</span>
+            <span class="post-date" title="2021-05-27 00:00:00">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式,构建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="构建型模式,单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/09/DesignPatternofSixPrinciples/"
+           data-tag="六大原则"
+           data-author="" >
+            <span class="post-title" title="六大设计原则">六大设计原则</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="构建型模式,原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="Python,爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-java-security" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">java_security</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="后端">后端</a> > 
+            
+            <a  data-rel="后端&lt;---&gt;java">java</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">jwt</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2025-10-27 18:54:40'>2025-10-23 17:40</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:4.7k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JWT"><span class="toc-text">JWT</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E6%88%90"><span class="toc-text">组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-text">实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%83%E5%8E%9F%E7%90%86"><span class="toc-text">认证和授权原理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B4%E5%90%88SpringSecurity%E5%92%8CJWT%E5%AE%9E%E7%8E%B0%E8%AE%A4%E8%AF%81%E5%92%8C%E6%8E%88%E6%9D%83"><span class="toc-text">整合SpringSecurity和JWT实现认证和授权</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96"><span class="toc-text">添加依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%B7%A5%E5%85%B7%E7%B1%BB"><span class="toc-text">添加工具类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#application-yml"><span class="toc-text">application.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IgnoreUrlsConfig"><span class="toc-text">IgnoreUrlsConfig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UserDetailsService"><span class="toc-text">UserDetailsService</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AdminUserDetails"><span class="toc-text">AdminUserDetails</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UmsAdminService"><span class="toc-text">UmsAdminService</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MallSecurityConfig"><span class="toc-text">MallSecurityConfig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JwtAuthenticationTokenFilter"><span class="toc-text">JwtAuthenticationTokenFilter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RestfulAccessDeniedHandler"><span class="toc-text">RestfulAccessDeniedHandler</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RestAuthenticationEntryPoint"><span class="toc-text">RestAuthenticationEntryPoint</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SecurityConfig"><span class="toc-text">SecurityConfig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CommonResult"><span class="toc-text">CommonResult</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UmsAdminController"><span class="toc-text">UmsAdminController</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Swagger2Config"><span class="toc-text">Swagger2Config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PmsBrandController"><span class="toc-text">PmsBrandController</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PmsBrandService"><span class="toc-text">PmsBrandService</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PmsBrandServiceImpl"><span class="toc-text">PmsBrandServiceImpl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PmsBrandMapper"><span class="toc-text">PmsBrandMapper</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JWT"><a href="#JWT" class="headerlink" title="JWT"></a>JWT</h1><blockquote>
+<p>JWT是JSON WEB TOKEN的缩写，它是基于 RFC 7519 标准定义的一种可以安全传输的的JSON对象，由于使用了数字签名，所以是可信任和安全的。</p>
+</blockquote>
+<h2 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h2><ul>
+<li><p>JWT token的格式：<code>header.payload.signature</code></p>
+</li>
+<li><p>header中用于存放签名的生成算法</p>
+<pre><code class="json">&#123;&quot;alg&quot;: &quot;HS512&quot;&#125;
+</code></pre>
+</li>
+<li><p>payload中用于存放用户名、token的生成时间和过期时间</p>
+<pre><code class="json">&#123;&quot;sub&quot;:&quot;admin&quot;,&quot;created&quot;:1489079981393,&quot;exp&quot;:1489684781&#125;
+</code></pre>
+</li>
+<li><p>signature为以header和payload生成的签名，一旦header和payload被篡改，验证将失败</p>
+<pre><code class="json">//secret为加密算法的密钥
+String signature = HMACSHA512(base64UrlEncode(header) + &quot;.&quot; +base64UrlEncode(payload), secret)
+</code></pre>
+</li>
+</ul>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>JWT字符串：<code>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZWQiOjE1NTY3NzkxMjUzMDksImV4cCI6MTU1NzM4MzkyNX0.d-iki0193X0bBOETf2UN3r3PotNIEAV7mzIxxeI5IxFyzzkOZxS0PGfF_SK6wxCv2K8S0cZjMkv6b5bCqc0VBw</code></p>
+<p>解析：<code>https://jwt.io/</code></p>
+<p><img src="/2025/10/23/java-security/arch_screen_13-DwS6t1h4.png" alt="img"></p>
+<h2 id="认证和授权原理"><a href="#认证和授权原理" class="headerlink" title="认证和授权原理"></a>认证和授权原理</h2><ul>
+<li>用户调用登录接口，登录成功后获取到JWT的token；</li>
+<li>之后用户每次调用接口都在http的header中添加一个叫Authorization的头，值为JWT的token；</li>
+<li>后台程序通过对Authorization头中信息的解码及数字签名校验来获取其中的用户信息，从而实现认证和授权</li>
+</ul>
+<hr>
+<h1 id="整合SpringSecurity和JWT实现认证和授权"><a href="#整合SpringSecurity和JWT实现认证和授权" class="headerlink" title="整合SpringSecurity和JWT实现认证和授权"></a>整合SpringSecurity和JWT实现认证和授权</h1><h2 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h2><pre><code class="xml">&lt;!--SpringSecurity依赖配置--&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;!--Hutool Java工具包--&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;cn.hutool&lt;/groupId&gt;
+    &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;
+    &lt;version&gt;4.5.7&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!--JWT(Json Web Token)登录支持--&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;io.jsonwebtoken&lt;/groupId&gt;
+    &lt;artifactId&gt;jjwt&lt;/artifactId&gt;
+    &lt;version&gt;0.9.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h2 id="添加工具类"><a href="#添加工具类" class="headerlink" title="添加工具类"></a>添加工具类</h2><blockquote>
+<p>用于生成和解析JWT token的工具类</p>
+</blockquote>
+<p>方法说明：</p>
+<ul>
+<li>generateToken(UserDetails userDetails) :用于根据登录用户信息生成token</li>
+<li>getUserNameFromToken(String token)：从token中获取登录用户的信息</li>
+<li>validateToken(String token, UserDetails userDetails)：判断token是否还有效</li>
+</ul>
+<pre><code class="java">/**
+ * @description JwtToken生成的工具类
+ * JWT token的格式：header.payload.signature
+ * header的格式（算法、token的类型）：
+ * &#123;&quot;alg&quot;: &quot;HS512&quot;,&quot;typ&quot;: &quot;JWT&quot;&#125;
+ * payload的格式（用户名、创建时间、过期时间）：
+ * &#123;&quot;sub&quot;:&quot;wang&quot;,&quot;created&quot;:1489079981393,&quot;exp&quot;:1489684781&#125;
+ * signature的生成算法：
+ * HMACSHA512(base64UrlEncode(header) + &quot;.&quot; +base64UrlEncode(payload), secret)
+ */
+@Component
+public class JwtTokenUtil &#123;
+    private static final Logger LOGGER = LoggerFactory.getLogger(JwtTokenUtil.class);
+    private static final String CLAIM_KEY_USERNAME = &quot;sub&quot;;
+    private static final String CLAIM_KEY_CREATED = &quot;created&quot;;
+    @Value(&quot;$&#123;jwt.secret&#125;&quot;)
+    private String secret;
+    @Value(&quot;$&#123;jwt.expiration&#125;&quot;)
+    private Long expiration;
+
+    /**
+     * 根据负载生成JWT的token
+     */
+    private String generateToken(Map&lt;String, Object&gt; claims) &#123;
+        return Jwts.builder()
+                .setClaims(claims)
+                .setExpiration(generateExpirationDate())
+                .signWith(SignatureAlgorithm.HS512, secret)
+                .compact();
+    &#125;
+
+    /**
+     * 从token中获取JWT中的负载
+     */
+    private Claims getClaimsFromToken(String token) &#123;
+        Claims claims = null;
+        try &#123;
+            claims = Jwts.parser()
+                    .setSigningKey(secret)
+                    .parseClaimsJws(token)
+                    .getBody();
+        &#125; catch (Exception e) &#123;
+            LOGGER.info(&quot;JWT格式验证失败:&#123;&#125;&quot;,token);
+        &#125;
+        return claims;
+    &#125;
+
+    /**
+     * 生成token的过期时间
+     */
+    private Date generateExpirationDate() &#123;
+        return new Date(System.currentTimeMillis() + expiration * 1000);
+    &#125;
+
+    /**
+     * 从token中获取登录用户名
+     */
+    public String getUserNameFromToken(String token) &#123;
+        String username;
+        try &#123;
+            Claims claims = getClaimsFromToken(token);
+            username =  claims.getSubject();
+        &#125; catch (Exception e) &#123;
+            username = null;
+        &#125;
+        return username;
+    &#125;
+
+    /**
+     * 验证token是否还有效
+     *
+     * @param token       客户端传入的token
+     * @param userDetails 从数据库中查询出来的用户信息
+     */
+    public boolean validateToken(String token, UserDetails userDetails) &#123;
+        String username = getUserNameFromToken(token);
+        return username.equals(userDetails.getUsername()) &amp;&amp; !isTokenExpired(token);
+    &#125;
+
+    /**
+     * 判断token是否已经失效
+     */
+    private boolean isTokenExpired(String token) &#123;
+        Date expiredDate = getExpiredDateFromToken(token);
+        return expiredDate.before(new Date());
+    &#125;
+
+    /**
+     * 从token中获取过期时间
+     * 如果过期时间早于当前时间，则返回true表示token已失效。
+     */
+    private Date getExpiredDateFromToken(String token) &#123;
+        Claims claims = getClaimsFromToken(token);
+        return claims.getExpiration();
+    &#125;
+
+    /**
+     * 根据用户信息生成token
+     */
+    public String generateToken(UserDetails userDetails) &#123;
+        Map&lt;String, Object&gt; claims = new HashMap&lt;&gt;();
+        claims.put(CLAIM_KEY_USERNAME, userDetails.getUsername());
+        claims.put(CLAIM_KEY_CREATED, new Date());
+        return generateToken(claims);
+    &#125;
+
+    /**
+     * 判断token是否可以被刷新
+     */
+    public boolean canRefresh(String token) &#123;
+        return !isTokenExpired(token);
+    &#125;
+
+    /**
+     * 刷新token
+     */
+    public String refreshToken(String token) &#123;
+        Claims claims = getClaimsFromToken(token);
+        claims.put(CLAIM_KEY_CREATED, new Date());
+        return generateToken(claims);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="application-yml"><a href="#application-yml" class="headerlink" title="application.yml"></a>application.yml</h2><pre><code class="xml"># 自定义jwt key
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mySecret #JWT加解密使用的密钥
+  expiration: 604800 #JWT的超期限时间(60*60*24)
+  tokenHead: Bearer  #JWT负载中拿到开头
+
+secure:
+  ignored:
+    urls: #安全路径白名单
+      - /swagger-ui/
+      - /swagger-resources/**
+      - /**/v2/api-docs
+      - /**/*.html
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /favicon.ico
+      - /actuator/**
+      - /druid/**
+      - /admin/**
+</code></pre>
+<h2 id="IgnoreUrlsConfig"><a href="#IgnoreUrlsConfig" class="headerlink" title="IgnoreUrlsConfig"></a>IgnoreUrlsConfig</h2><blockquote>
+<p>配置文件中的白名单</p>
+</blockquote>
+<pre><code class="java">@Getter
+@Setter
+@Configuration
+@ConfigurationProperties(prefix = &quot;secure.ignored&quot;)
+public class IgnoreUrlsConfig &#123;
+
+    private List&lt;String&gt; urls = new ArrayList&lt;&gt;();
+
+&#125;
+</code></pre>
+<h2 id="UserDetailsService"><a href="#UserDetailsService" class="headerlink" title="UserDetailsService"></a>UserDetailsService</h2><pre><code class="java">public interface UserDetailsService &#123;
+    UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
+&#125;
+</code></pre>
+<h2 id="AdminUserDetails"><a href="#AdminUserDetails" class="headerlink" title="AdminUserDetails"></a>AdminUserDetails</h2><pre><code class="java">@Data
+@EqualsAndHashCode(callSuper = false)
+@Builder
+public class AdminUserDetails implements UserDetails &#123; // SpringSecurity用户信息封装类
+    private String username;
+    private String password;
+    private List&lt;String&gt; authorityList; // 用户权限列表，存储字符串形式的权限标识
+    
+    /**
+    # 这段代码的执行过程：
+        this.authorityList.stream() - 将 authorityList 转换为流
+        .map(SimpleGrantedAuthority::new) - 对流中每个字符串权限，调用 SimpleGrantedAuthority 的构造函数创建对象
+        .collect(Collectors.toList()) - 收集结果为List集合
+   # .map(SimpleGrantedAuthority::new)  等价写法：
+        // 方法引用写法（简洁）
+        .map(SimpleGrantedAuthority::new)
+
+        // Lambda表达式写法
+        .map(authority -&gt; new SimpleGrantedAuthority(authority))
+
+        // 传统写法
+        List&lt;SimpleGrantedAuthority&gt; authorities = new ArrayList&lt;&gt;();
+        for(String authority : this.authorityList) &#123;
+            authorities.add(new SimpleGrantedAuthority(authority));
+        &#125;
+      # map : 转换操作：将流中的每个元素从一种形式转换为另一种形式
+           # 输入：List&lt;String&gt; - 字符串权限列表，如 [&quot;ROLE_ADMIN&quot;, &quot;ROLE_USER&quot;]
+          # 转换：通过 map 操作将每个字符串包装成 SimpleGrantedAuthority 对象
+          # 输出：List&lt;SimpleGrantedAuthority&gt; - Spring Security 认证框架所需的权限对象列表
+    */
+    @Override
+    public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() &#123;
+        return this.authorityList.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList());
+    &#125; 
+
+    @Override
+    public String getPassword() &#123;
+        return this.password;
+    &#125;
+
+    @Override
+    public String getUsername() &#123;
+        return this.username;
+    &#125;
+
+    @Override
+    public boolean isAccountNonExpired() &#123;
+        return true;
+    &#125;
+
+    @Override
+    public boolean isAccountNonLocked() &#123;
+        return true;
+    &#125;
+
+    @Override
+    public boolean isCredentialsNonExpired() &#123;
+        return true;
+    &#125;
+
+    @Override
+    public boolean isEnabled() &#123;
+        return true;
+    &#125;
+&#125;
+</code></pre>
+<h2 id="UmsAdminService"><a href="#UmsAdminService" class="headerlink" title="UmsAdminService"></a>UmsAdminService</h2><pre><code class="java">public interface UmsAdminService &#123;
+    /**
+     * 根据用户名获取用户信息
+     */
+    AdminUserDetails getAdminByUsername(String username);
+
+    /**
+     * 获取所以权限列表
+     */
+    List&lt;UmsResource&gt; getResourceList();
+
+    /**
+     * 用户名密码登录
+     */
+    String login(String username, String password);
+&#125;
+
+
+@Slf4j
+@Service
+public class UmsAdminServiceImpl implements UmsAdminService &#123;
+    /**
+     * 存放默认用户信息
+     */
+    private List&lt;AdminUserDetails&gt; adminUserDetailsList = new ArrayList&lt;&gt;();
+    /**
+     * 存放默认资源信息
+     */
+    private List&lt;UmsResource&gt; resourceList = new ArrayList&lt;&gt;();
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @PostConstruct
+    private void init()&#123;
+        adminUserDetailsList.add(AdminUserDetails.builder()
+                .username(&quot;admin&quot;)
+                .password(passwordEncoder.encode(&quot;123456&quot;))
+                .authorityList(CollUtil.toList(&quot;brand:create&quot;,&quot;brand:update&quot;,&quot;brand:delete&quot;,&quot;brand:list&quot;,&quot;brand:listAll&quot;))
+                .build());
+        adminUserDetailsList.add(AdminUserDetails.builder()
+                .username(&quot;macro&quot;)
+                .password(passwordEncoder.encode(&quot;123456&quot;))
+                .authorityList(CollUtil.toList(&quot;brand:listAll&quot;))
+                .build());
+        resourceList.add(UmsResource.builder()
+                .id(1L)
+                .name(&quot;brand:create&quot;)
+                .url(&quot;/brand/create&quot;)
+                .build());
+        resourceList.add(UmsResource.builder()
+                .id(2L)
+                .name(&quot;brand:update&quot;)
+                .url(&quot;/brand/update/**&quot;)
+                .build());
+        resourceList.add(UmsResource.builder()
+                .id(3L)
+                .name(&quot;brand:delete&quot;)
+                .url(&quot;/brand/delete/**&quot;)
+                .build());
+        resourceList.add(UmsResource.builder()
+                .id(4L)
+                .name(&quot;brand:list&quot;)
+                .url(&quot;/brand/list&quot;)
+                .build());
+        resourceList.add(UmsResource.builder()
+                .id(5L)
+                .name(&quot;brand:listAll&quot;)
+                .url(&quot;/brand/listAll&quot;)
+                .build());
+    &#125;
+    @Override
+    public AdminUserDetails getAdminByUsername(String username) &#123;
+        List&lt;AdminUserDetails&gt; findList = adminUserDetailsList.stream().filter(item -&gt; item.getUsername().equals(username)).collect(Collectors.toList());
+        if(CollUtil.isNotEmpty(findList))&#123;
+            return findList.get(0);
+        &#125;
+        return null;
+    &#125;
+
+    @Override
+    public List&lt;UmsResource&gt; getResourceList() &#123;
+        return resourceList;
+    &#125;
+
+    @Override
+    public String login(String username, String password) &#123;
+        String token = null;
+        try &#123;
+            UserDetails userDetails = getAdminByUsername(username);
+            if(userDetails==null)&#123;
+                return token;
+            &#125;
+            if (!passwordEncoder.matches(password, userDetails.getPassword())) &#123;
+                throw new BadCredentialsException(&quot;密码不正确&quot;);
+            &#125;
+            UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+            token = jwtTokenUtil.generateToken(userDetails);
+        &#125; catch (AuthenticationException e) &#123;
+            log.warn(&quot;登录异常:&#123;&#125;&quot;, e.getMessage());
+        &#125;
+        return token;
+    &#125;
+&#125;
+</code></pre>
+<h2 id="MallSecurityConfig"><a href="#MallSecurityConfig" class="headerlink" title="MallSecurityConfig"></a>MallSecurityConfig</h2><blockquote>
+<p>自定义配置，用于配置如何获取用户信息</p>
+</blockquote>
+<pre><code class="java">@Configuration
+public class MallSecurityConfig &#123;
+
+    @Autowired
+    private UmsAdminService adminService;
+
+    @Bean
+    public UserDetailsService userDetailsService() &#123;
+        //获取登录用户信息
+        return username -&gt; &#123;
+            AdminUserDetails admin = adminService.getAdminByUsername(username);
+            if (admin != null) &#123;
+                return admin;
+            &#125;
+            throw new UsernameNotFoundException(&quot;用户名或密码错误&quot;);
+        &#125;;
+    &#125;
+&#125;
+</code></pre>
+<h2 id="JwtAuthenticationTokenFilter"><a href="#JwtAuthenticationTokenFilter" class="headerlink" title="JwtAuthenticationTokenFilter"></a>JwtAuthenticationTokenFilter</h2><p>登录授权过滤器: 在用户名和密码校验前添加的过滤器，如果请求中有jwt的token且有效，会取出token中的用户名，然后调用SpringSecurity的API进行登录操作。</p>
+<blockquote>
+<p>这段代码是JWT登录授权过滤器，功能如下：</p>
+<ol>
+<li>从请求头获取JWT令牌；</li>
+<li>解析令牌获取用户名；</li>
+<li>若用户名存在且未认证，则加载用户详情并验证令牌有效性；</li>
+<li>验证通过则设置Spring Security的认证信息；</li>
+<li>继续执行后续过滤器链。</li>
+</ol>
+</blockquote>
+<pre><code class="java">public class JwtAuthenticationTokenFilter extends OncePerRequestFilter &#123;
+    private static final Logger LOGGER = LoggerFactory.getLogger(JwtAuthenticationTokenFilter.class);
+    @Autowired
+    private UserDetailsService userDetailsService;
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
+    @Value(&quot;$&#123;jwt.tokenHeader&#125;&quot;)
+    private String tokenHeader;
+    @Value(&quot;$&#123;jwt.tokenHead&#125;&quot;)
+    private String tokenHead;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request,
+                                    HttpServletResponse response,
+                                    FilterChain chain) throws ServletException, IOException &#123;
+        String authHeader = request.getHeader(this.tokenHeader);
+        if (authHeader != null &amp;&amp; authHeader.startsWith(this.tokenHead)) &#123;
+            String authToken = authHeader.substring(this.tokenHead.length());// The part after &quot;Bearer &quot;
+            String username = jwtTokenUtil.getUserNameFromToken(authToken);
+            LOGGER.info(&quot;checking username:&#123;&#125;&quot;, username);
+            if (username != null &amp;&amp; SecurityContextHolder.getContext().getAuthentication() == null) &#123;
+                UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
+                if (jwtTokenUtil.validateToken(authToken, userDetails)) &#123;
+                    UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+                    authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                    LOGGER.info(&quot;authenticated user:&#123;&#125;&quot;, username);
+                    SecurityContextHolder.getContext().setAuthentication(authentication);
+                &#125;
+            &#125;
+        &#125;
+        chain.doFilter(request, response);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="RestfulAccessDeniedHandler"><a href="#RestfulAccessDeniedHandler" class="headerlink" title="RestfulAccessDeniedHandler"></a>RestfulAccessDeniedHandler</h2><blockquote>
+<p>当访问接口没有权限时，自定义的返回结果</p>
+</blockquote>
+<pre><code class="java">@Component
+public class RestfulAccessDeniedHandler implements AccessDeniedHandler&#123;
+    @Override
+    public void handle(HttpServletRequest request,
+                       HttpServletResponse response,
+                       AccessDeniedException e) throws IOException, ServletException &#123;
+        response.setCharacterEncoding(&quot;UTF-8&quot;);
+        response.setContentType(&quot;application/json&quot;);
+        response.getWriter().println(JSONUtil.parse(CommonResult.forbidden(e.getMessage())));
+        response.getWriter().flush();
+    &#125;
+&#125;
+</code></pre>
+<h2 id="RestAuthenticationEntryPoint"><a href="#RestAuthenticationEntryPoint" class="headerlink" title="RestAuthenticationEntryPoint"></a>RestAuthenticationEntryPoint</h2><blockquote>
+<p>当未登录或者token失效访问接口时，自定义的返回结果</p>
+</blockquote>
+<pre><code class="java">@Component
+public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint &#123;
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException &#123;
+        response.setCharacterEncoding(&quot;UTF-8&quot;);
+        response.setContentType(&quot;application/json&quot;);
+        response.getWriter().println(JSONUtil.parse(CommonResult.unauthorized(authException.getMessage())));
+        response.getWriter().flush();
+    &#125;
+&#125;
+</code></pre>
+<hr>
+<h2 id="SecurityConfig"><a href="#SecurityConfig" class="headerlink" title="SecurityConfig"></a>SecurityConfig</h2><blockquote>
+<p>配置注解和类声明：<br>@Configuration - 标识这是一个配置类<br>@EnableWebSecurity - 启用Spring Security的Web安全支持<br>@EnableGlobalMethodSecurity(prePostEnabled=true) - 启用基于方法的安全控制，支持@PreAuthorize和@PostAuthorize注解</p>
+</blockquote>
+<ul>
+<li>configure(HttpSecurity httpSecurity)：用于配置需要拦截的url路径、jwt过滤器及出异常后的处理器；</li>
+<li>configure(AuthenticationManagerBuilder auth)：用于配置UserDetailsService及PasswordEncoder；</li>
+<li>RestfulAccessDeniedHandler：当用户没有访问权限时的处理器，用于返回JSON格式的处理结果；</li>
+<li>RestAuthenticationEntryPoint：当未登录或token失效时，返回JSON格式的结果；</li>
+<li>UserDetailsService:SpringSecurity定义的核心接口，用于根据用户名获取用户信息，需要自行实现；</li>
+<li>UserDetails：SpringSecurity定义用于封装用户信息的类（主要是用户信息和权限），需要自行实现；</li>
+<li>PasswordEncoder：SpringSecurity定义的用于对密码进行编码及比对的接口，目前使用的是BCryptPasswordEncoder；</li>
+<li>JwtAuthenticationTokenFilter：在用户名和密码校验前添加的过滤器，如果有jwt的token，会自行根据token信息进行登录。</li>
+</ul>
+<pre><code class="java">@Configuration
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled=true)
+public class SecurityConfig &#123;
+    @Autowired
+    private RestfulAccessDeniedHandler restfulAccessDeniedHandler; // 自定义权限拒绝处理器
+    @Autowired
+    private RestAuthenticationEntryPoint restAuthenticationEntryPoint; // 自定义认证入口点
+    @Autowired
+    private IgnoreUrlsConfig ignoreUrlsConfig; // 配置不需要安全验证的URL列表
+
+    @Bean
+    SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception &#123; // 通过 SecurityFilterChain bean配置HTTP安全策略
+        ExpressionUrlAuthorizationConfigurer&lt;HttpSecurity&gt;.ExpressionInterceptUrlRegistry registry = httpSecurity
+                .authorizeRequests();
+        //不需要保护的资源路径允许访问
+        for (String url : ignoreUrlsConfig.getUrls()) &#123;
+            registry.antMatchers(url).permitAll();
+        &#125;
+        //允许跨域请求的OPTIONS请求
+        registry.antMatchers(HttpMethod.OPTIONS)
+                .permitAll();
+        httpSecurity.csrf() // 由于使用的是JWT，我们这里不需要csrf
+                .disable() // 禁用CSRF保护（JWT场景下不需要）
+                .sessionManagement()// 基于token，所以不需要session
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // 设置Session策略为无状态(STATELESS)
+                .and()
+                .authorizeRequests()
+                .anyRequest()// 除上面外的所有请求全部需要鉴权认证
+                .authenticated(); // 所有未明确允许的请求都需要认证
+        // 禁用缓存
+        httpSecurity.headers().cacheControl();
+        // 添加JWT filter
+        httpSecurity.addFilterBefore(jwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+        //添加自定义未授权和未登录结果返回
+        httpSecurity.exceptionHandling()
+                .accessDeniedHandler(restfulAccessDeniedHandler)
+                .authenticationEntryPoint(restAuthenticationEntryPoint);
+        return httpSecurity.build();
+    &#125;
+
+    @Bean
+    public PasswordEncoder passwordEncoder() &#123;
+        return new BCryptPasswordEncoder();
+    &#125;
+
+    @Bean
+    public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter()&#123;
+        return new JwtAuthenticationTokenFilter();
+    &#125;
+
+&#125;
+</code></pre>
+<p><strong>OPTION说明：</strong></p>
+<p>当浏览器发起跨域请求时，会先发送一个OPTIONS预检请求来确认：</p>
+<ul>
+<li>服务器是否允许跨域访问</li>
+<li>允许的请求方法有哪些</li>
+<li>允许的请求头有哪些</li>
+<li>其他跨域相关的限制条件</li>
+</ul>
+<pre><code class="java">registry.antMatchers(HttpMethod.OPTIONS)
+        .permitAll();
+</code></pre>
+<p>这行代码的作用是：<br>允许所有OPTIONS请求：不对OPTIONS请求进行身份验证检查<br>支持跨域请求：确保浏览器的CORS预检请求能够正常通过<br>提高性能：避免对预检请求进行不必要的安全检查<br>这是使用JWT进行前后端分离开发时的标准配置，确保跨域请求能够正常工作。</p>
+<hr>
+<h2 id="CommonResult"><a href="#CommonResult" class="headerlink" title="CommonResult"></a>CommonResult</h2><blockquote>
+<p>通用返回对象</p>
+</blockquote>
+<pre><code class="java">public class CommonResult&lt;T&gt; &#123;
+    private long code;
+    private String message;
+    private T data;
+
+    protected CommonResult() &#123;
+    &#125;
+
+    protected CommonResult(long code, String message, T data) &#123;
+        this.code = code;
+        this.message = message;
+        this.data = data;
+    &#125;
+
+    /**
+     * 成功返回结果
+     *
+     * @param data 获取的数据
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; success(T data) &#123;
+        return new CommonResult&lt;T&gt;(ResultCode.SUCCESS.getCode(), ResultCode.SUCCESS.getMessage(), data);
+    &#125;
+
+    /**
+     * 成功返回结果
+     *
+     * @param data 获取的数据
+     * @param  message 提示信息
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; success(T data, String message) &#123;
+        return new CommonResult&lt;T&gt;(ResultCode.SUCCESS.getCode(), message, data);
+    &#125;
+
+    /**
+     * 失败返回结果
+     * @param errorCode 错误码
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; failed(IErrorCode errorCode) &#123;
+        return new CommonResult&lt;T&gt;(errorCode.getCode(), errorCode.getMessage(), null);
+    &#125;
+
+    /**
+     * 失败返回结果
+     * @param message 提示信息
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; failed(String message) &#123;
+        return new CommonResult&lt;T&gt;(ResultCode.FAILED.getCode(), message, null);
+    &#125;
+
+    /**
+     * 失败返回结果
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; failed() &#123;
+        return failed(ResultCode.FAILED);
+    &#125;
+
+    /**
+     * 参数验证失败返回结果
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; validateFailed() &#123;
+        return failed(ResultCode.VALIDATE_FAILED);
+    &#125;
+
+    /**
+     * 参数验证失败返回结果
+     * @param message 提示信息
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; validateFailed(String message) &#123;
+        return new CommonResult&lt;T&gt;(ResultCode.VALIDATE_FAILED.getCode(), message, null);
+    &#125;
+
+    /**
+     * 未登录返回结果
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; unauthorized(T data) &#123;
+        return new CommonResult&lt;T&gt;(ResultCode.UNAUTHORIZED.getCode(), ResultCode.UNAUTHORIZED.getMessage(), data);
+    &#125;
+
+    /**
+     * 未授权返回结果
+     */
+    public static &lt;T&gt; CommonResult&lt;T&gt; forbidden(T data) &#123;
+        return new CommonResult&lt;T&gt;(ResultCode.FORBIDDEN.getCode(), ResultCode.FORBIDDEN.getMessage(), data);
+    &#125;
+
+    public long getCode() &#123;
+        return code;
+    &#125;
+
+    public void setCode(long code) &#123;
+        this.code = code;
+    &#125;
+
+    public String getMessage() &#123;
+        return message;
+    &#125;
+
+    public void setMessage(String message) &#123;
+        this.message = message;
+    &#125;
+
+    public T getData() &#123;
+        return data;
+    &#125;
+
+    public void setData(T data) &#123;
+        this.data = data;
+    &#125;
+&#125;
+</code></pre>
+<h2 id="UmsAdminController"><a href="#UmsAdminController" class="headerlink" title="UmsAdminController"></a>UmsAdminController</h2><blockquote>
+<p>实现了后台用户登录、获取权限的接口</p>
+</blockquote>
+<pre><code class="java">@Controller
+@Api(tags = &quot;UmsAdminController&quot;)
+@Tag(name = &quot;UmsAdminController&quot;, description = &quot;后台用户管理&quot;)
+@RequestMapping(&quot;/admin&quot;)
+public class UmsAdminController &#123;
+    @Autowired
+    private UmsAdminService adminService;
+    @Value(&quot;$&#123;jwt.tokenHeader&#125;&quot;)
+    private String tokenHeader;
+    @Value(&quot;$&#123;jwt.tokenHead&#125;&quot;)
+    private String tokenHead;
+
+
+    @ApiOperation(value = &quot;登录以后返回token&quot;)
+    @RequestMapping(value = &quot;/login&quot;, method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult login(@RequestParam String username, @RequestParam String password) &#123;
+        String token = adminService.login(username, password);
+        if (token == null) &#123;
+            return CommonResult.validateFailed(&quot;用户名或密码错误&quot;);
+        &#125;
+        Map&lt;String, String&gt; tokenMap = new HashMap&lt;&gt;();
+        tokenMap.put(&quot;token&quot;, token);
+        tokenMap.put(&quot;tokenHead&quot;, tokenHead);
+        return CommonResult.success(tokenMap);
+    &#125;
+
+    @ApiOperation(value = &quot;登录以后返回token&quot;)
+    @RequestMapping(value = &quot;/resourceList&quot;, method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult&lt;List&lt;UmsResource&gt;&gt; resourceList() &#123;
+        List&lt;UmsResource&gt; resourceList = adminService.getResourceList();
+        return CommonResult.success(resourceList);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="Swagger2Config"><a href="#Swagger2Config" class="headerlink" title="Swagger2Config"></a>Swagger2Config</h2><blockquote>
+<p>通过修改配置实现调用接口自带Authorization头，这样就可以访问需要登录的接口了。</p>
+</blockquote>
+<pre><code class="java">@Configuration
+public class Swagger2Config &#123;
+    @Bean
+    public Docket createRestApi() &#123;
+        return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage(&quot;com.macro.mall.tiny.controller&quot;))
+                .paths(PathSelectors.any())
+                .build()
+                //添加登录认证
+                .securitySchemes(securitySchemes())
+                .securityContexts(securityContexts());
+    &#125;
+
+    private ApiInfo apiInfo() &#123;
+        return new ApiInfoBuilder()
+                .title(&quot;SwaggerUI演示&quot;)
+                .description(&quot;mall-tiny&quot;)
+                .contact(new Contact(&quot;macro&quot;, null, null))
+                .version(&quot;1.0&quot;)
+                .build();
+    &#125;
+
+    private List&lt;SecurityScheme&gt; securitySchemes() &#123;
+        //设置请求头信息
+        List&lt;SecurityScheme&gt; result = new ArrayList&lt;&gt;();
+        ApiKey apiKey = new ApiKey(&quot;Authorization&quot;, &quot;Authorization&quot;, &quot;header&quot;);
+        result.add(apiKey);
+        return result;
+    &#125;
+
+    private List&lt;SecurityContext&gt; securityContexts() &#123;
+        //设置需要登录认证的路径
+        List&lt;SecurityContext&gt; result = new ArrayList&lt;&gt;();
+        result.add(getContextByPath(&quot;/brand/.*&quot;));
+        return result;
+    &#125;
+
+    private SecurityContext getContextByPath(String pathRegex) &#123;
+        return SecurityContext.builder()
+                .securityReferences(defaultAuth())
+                .forPaths(PathSelectors.regex(pathRegex))
+                .build();
+    &#125;
+
+    private List&lt;SecurityReference&gt; defaultAuth() &#123;
+        List&lt;SecurityReference&gt; result = new ArrayList&lt;&gt;();
+        AuthorizationScope authorizationScope = new AuthorizationScope(&quot;global&quot;, &quot;accessEverything&quot;);
+        AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
+        authorizationScopes[0] = authorizationScope;
+        result.add(new SecurityReference(&quot;Authorization&quot;, authorizationScopes));
+        return result;
+    &#125;
+
+    @Bean
+    public BeanPostProcessor generateBeanPostProcessor()&#123;
+        return new BeanPostProcessor() &#123;
+
+            @Override
+            public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException &#123;
+                if (bean instanceof WebMvcRequestHandlerProvider || bean instanceof WebFluxRequestHandlerProvider) &#123;
+                    customizeSpringfoxHandlerMappings(getHandlerMappings(bean));
+                &#125;
+                return bean;
+            &#125;
+
+            private &lt;T extends RequestMappingInfoHandlerMapping&gt; void customizeSpringfoxHandlerMappings(List&lt;T&gt; mappings) &#123;
+                List&lt;T&gt; copy = mappings.stream()
+                        .filter(mapping -&gt; mapping.getPatternParser() == null)
+                        .collect(Collectors.toList());
+                mappings.clear();
+                mappings.addAll(copy);
+            &#125;
+
+            @SuppressWarnings(&quot;unchecked&quot;)
+            private List&lt;RequestMappingInfoHandlerMapping&gt; getHandlerMappings(Object bean) &#123;
+                try &#123;
+                    Field field = ReflectionUtils.findField(bean.getClass(), &quot;handlerMappings&quot;);
+                    field.setAccessible(true);
+                    return (List&lt;RequestMappingInfoHandlerMapping&gt;) field.get(bean);
+                &#125; catch (IllegalArgumentException | IllegalAccessException e) &#123;
+                    throw new IllegalStateException(e);
+                &#125;
+            &#125;
+        &#125;;
+    &#125;
+&#125;
+</code></pre>
+<h2 id="PmsBrandController"><a href="#PmsBrandController" class="headerlink" title="PmsBrandController"></a>PmsBrandController</h2><blockquote>
+<p>给PmsBrandController接口中的方法添加访问权限</p>
+<ul>
+<li>给查询接口添加pms:brand:read权限</li>
+<li>给修改接口添加pms:brand:update权限</li>
+<li>给删除接口添加pms:brand:delete权限</li>
+<li>给添加接口添加pms:brand:create权限</li>
+</ul>
+</blockquote>
+<p>@PreAuthorize</p>
+<pre><code class="java">@Controller
+@Api(tags = &quot;PmsBrandController&quot;)
+@Tag(name = &quot;PmsBrandController&quot;, description = &quot;商品品牌管理&quot;)
+@RequestMapping(&quot;/brand&quot;)
+public class PmsBrandController &#123;
+    @Autowired
+    private PmsBrandService brandService;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PmsBrandController.class);
+
+    @ApiOperation(&quot;获取所有品牌列表&quot;)
+    @RequestMapping(value = &quot;listAll&quot;, method = RequestMethod.GET)
+    @ResponseBody
+    @PreAuthorize(&quot;hasAuthority(&#39;brand:listAll&#39;)&quot;)
+    public CommonResult&lt;List&lt;PmsBrand&gt;&gt; getBrandList() &#123;
+        return CommonResult.success(brandService.listAllBrand());
+    &#125;
+
+    @ApiOperation(&quot;添加品牌&quot;)
+    @RequestMapping(value = &quot;/create&quot;, method = RequestMethod.POST)
+    @ResponseBody
+    @PreAuthorize(&quot;hasAuthority(&#39;brand:create&#39;)&quot;)
+    public CommonResult createBrand(@RequestBody PmsBrand pmsBrand) &#123;
+        CommonResult commonResult;
+        int count = brandService.createBrand(pmsBrand);
+        if (count == 1) &#123;
+            commonResult = CommonResult.success(pmsBrand);
+            LOGGER.debug(&quot;createBrand success:&#123;&#125;&quot;, pmsBrand);
+        &#125; else &#123;
+            commonResult = CommonResult.failed(&quot;操作失败&quot;);
+            LOGGER.debug(&quot;createBrand failed:&#123;&#125;&quot;, pmsBrand);
+        &#125;
+        return commonResult;
+    &#125;
+
+    @ApiOperation(&quot;更新指定id品牌信息&quot;)
+    @RequestMapping(value = &quot;/update/&#123;id&#125;&quot;, method = RequestMethod.POST)
+    @ResponseBody
+    @PreAuthorize(&quot;hasAuthority(&#39;brand:update&#39;)&quot;)
+    public CommonResult updateBrand(@PathVariable(&quot;id&quot;) Long id, @RequestBody PmsBrand pmsBrandDto, BindingResult result) &#123;
+        CommonResult commonResult;
+        int count = brandService.updateBrand(id, pmsBrandDto);
+        if (count == 1) &#123;
+            commonResult = CommonResult.success(pmsBrandDto);
+            LOGGER.debug(&quot;updateBrand success:&#123;&#125;&quot;, pmsBrandDto);
+        &#125; else &#123;
+            commonResult = CommonResult.failed(&quot;操作失败&quot;);
+            LOGGER.debug(&quot;updateBrand failed:&#123;&#125;&quot;, pmsBrandDto);
+        &#125;
+        return commonResult;
+    &#125;
+
+    @ApiOperation(&quot;删除指定id的品牌&quot;)
+    @RequestMapping(value = &quot;/delete/&#123;id&#125;&quot;, method = RequestMethod.GET)
+    @ResponseBody
+    @PreAuthorize(&quot;hasAuthority(&#39;brand:delete&#39;)&quot;)
+    public CommonResult deleteBrand(@PathVariable(&quot;id&quot;) Long id) &#123;
+        int count = brandService.deleteBrand(id);
+        if (count == 1) &#123;
+            LOGGER.debug(&quot;deleteBrand success :id=&#123;&#125;&quot;, id);
+            return CommonResult.success(null);
+        &#125; else &#123;
+            LOGGER.debug(&quot;deleteBrand failed :id=&#123;&#125;&quot;, id);
+            return CommonResult.failed(&quot;操作失败&quot;);
+        &#125;
+    &#125;
+
+    @ApiOperation(&quot;分页查询品牌列表&quot;)
+    @RequestMapping(value = &quot;/list&quot;, method = RequestMethod.GET)
+    @ResponseBody
+    @PreAuthorize(&quot;hasAuthority(&#39;brand:list&#39;)&quot;)
+    public CommonResult&lt;CommonPage&lt;PmsBrand&gt;&gt; listBrand(@RequestParam(value = &quot;pageNum&quot;, defaultValue = &quot;1&quot;)
+                                                        @ApiParam(&quot;页码&quot;) Integer pageNum,
+                                                        @RequestParam(value = &quot;pageSize&quot;, defaultValue = &quot;3&quot;)
+                                                        @ApiParam(&quot;每页数量&quot;) Integer pageSize) &#123;
+        List&lt;PmsBrand&gt; brandList = brandService.listBrand(pageNum, pageSize);
+        return CommonResult.success(CommonPage.restPage(brandList));
+    &#125;
+
+    @ApiOperation(&quot;获取指定id的品牌详情&quot;)
+    @RequestMapping(value = &quot;/&#123;id&#125;&quot;, method = RequestMethod.GET)
+    @ResponseBody
+    public CommonResult&lt;PmsBrand&gt; brand(@PathVariable(&quot;id&quot;) Long id) &#123;
+        return CommonResult.success(brandService.getBrand(id));
+    &#125;
+&#125;
+</code></pre>
+<h2 id="PmsBrandService"><a href="#PmsBrandService" class="headerlink" title="PmsBrandService"></a>PmsBrandService</h2><pre><code class="java">public interface PmsBrandService &#123;
+    List&lt;PmsBrand&gt; listAllBrand();
+
+    int createBrand(PmsBrand brand);
+
+    int updateBrand(Long id, PmsBrand brand);
+
+    int deleteBrand(Long id);
+
+    List&lt;PmsBrand&gt; listBrand(int pageNum, int pageSize);
+
+    PmsBrand getBrand(Long id);
+&#125;
+</code></pre>
+<h2 id="PmsBrandServiceImpl"><a href="#PmsBrandServiceImpl" class="headerlink" title="PmsBrandServiceImpl"></a>PmsBrandServiceImpl</h2><pre><code class="java">@Service
+public class PmsBrandServiceImpl implements PmsBrandService &#123;
+    @Autowired
+    private PmsBrandMapper brandMapper;
+
+    @Override
+    public List&lt;PmsBrand&gt; listAllBrand() &#123;
+        return brandMapper.selectByExample(new PmsBrandExample());
+    &#125;
+
+    @Override
+    public int createBrand(PmsBrand brand) &#123;
+        return brandMapper.insertSelective(brand);
+    &#125;
+
+    @Override
+    public int updateBrand(Long id, PmsBrand brand) &#123;
+        brand.setId(id);
+        return brandMapper.updateByPrimaryKeySelective(brand);
+    &#125;
+
+    @Override
+    public int deleteBrand(Long id) &#123;
+        return brandMapper.deleteByPrimaryKey(id);
+    &#125;
+
+    @Override
+    public List&lt;PmsBrand&gt; listBrand(int pageNum, int pageSize) &#123;
+        PageHelper.startPage(pageNum, pageSize);
+        return brandMapper.selectByExample(new PmsBrandExample());
+    &#125;
+
+    @Override
+    public PmsBrand getBrand(Long id) &#123;
+        return brandMapper.selectByPrimaryKey(id);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="PmsBrandMapper"><a href="#PmsBrandMapper" class="headerlink" title="PmsBrandMapper"></a>PmsBrandMapper</h2><pre><code class="java">public interface PmsBrandMapper &#123;
+    int countByExample(PmsBrandExample example);
+
+    int deleteByExample(PmsBrandExample example);
+
+    int deleteByPrimaryKey(Long id);
+
+    int insert(PmsBrand record);
+
+    int insertSelective(PmsBrand record);
+
+    List&lt;PmsBrand&gt; selectByExampleWithBLOBs(PmsBrandExample example);
+
+    List&lt;PmsBrand&gt; selectByExample(PmsBrandExample example);
+
+    PmsBrand selectByPrimaryKey(Long id);
+
+    int updateByExampleSelective(@Param(&quot;record&quot;) PmsBrand record, @Param(&quot;example&quot;) PmsBrandExample example);
+
+    int updateByExampleWithBLOBs(@Param(&quot;record&quot;) PmsBrand record, @Param(&quot;example&quot;) PmsBrandExample example);
+
+    int updateByExample(@Param(&quot;record&quot;) PmsBrand record, @Param(&quot;example&quot;) PmsBrandExample example);
+
+    int updateByPrimaryKeySelective(PmsBrand record);
+
+    int updateByPrimaryKeyWithBLOBs(PmsBrand record);
+
+    int updateByPrimaryKey(PmsBrand record);
+&#125;
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1894278325&auto=1&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>

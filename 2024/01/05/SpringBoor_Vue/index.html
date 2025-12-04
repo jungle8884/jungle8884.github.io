@@ -1,0 +1,4215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SpringBoot_Vue | blog of Jungle</title>
+  <meta name="keywords" content=" SpringBoot , Vue ">
+  <meta name="description" content="SpringBoot_Vue | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="leetcode" href="https://leetcode-cn.com/progress/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-leetcode"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(106)</small></div></li>
+    
+        
+            
+            <li><div data-rel="算法"><i class="fold iconfont icon-right"></i>算法<small>(25)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->链表">链表<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->面试题">面试题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->日期">日期<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->树">树<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数学">数学<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数组">数组<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->双指针">双指针<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->图">图<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->LeetCode">LeetCode<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(11)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->插件">插件<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->audio">audio<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->ChatGPT">ChatGPT<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(27)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->java">java<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(14)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->SpringBoot">SpringBoot<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="数据库<--->Redis">Redis<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="沉淀一下"><i class="fold iconfont icon-right"></i>沉淀一下<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="沉淀一下<--->场景题">场景题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="物联网"><i class="fold iconfont icon-right"></i>物联网<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="物联网<--->乐鑫">乐鑫<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->设备端">设备端<small>(7)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->物联网平台">物联网平台<small>(5)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="docker"><i class="fold iconfont icon-right"></i>docker<small>(6)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="docker<--->fastbee">fastbee<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="docker<--->ruoyi">ruoyi<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="java"><i class="fold iconfont icon-right"></i>java<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="java<--->mq">mq<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="linux"><i class="fold iconfont icon-right"></i>linux<small>(4)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="linux<--->基本使用">基本使用<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->shell">shell<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->wls">wls<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Python">Python<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="106">
+<input type="hidden" id="yelog_site_word_count" value="308.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://lavender-z.github.io/">橘子</a></li>
+            
+            <li><a target="_blank" href="https://youngxhui.top/">ISLAND</a></li>
+            
+            <li><a target="_blank" href="https://www.liuchuo.net/about">柳神</a></li>
+            
+            <li><a target="_blank" href="https://programmercarl.com/">K神</a></li>
+            
+            <li><a target="_blank" href="https://labuladong.github.io/algo/">东哥</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_37541097?spm=1001.2014.3001.5509">D神</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_33369905?spm=1001.2014.3001.5509">狂神</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>160</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>19</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>203</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>21</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>23</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>234</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>25</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>51C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>92</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蔡勒公式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>策略模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查找</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>递归</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>构建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>观察者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>滑动窗口</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>快速平方根</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>乐鑫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>链表</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六大原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前缀树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>闰年</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数组</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>双指针</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>贪心</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>移除链表元素</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优先队列</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>油猴</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>audio</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>device</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker-desktop</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP Rainmaker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>esp-idf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32C3</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastapi</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FleetBee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hutool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Job</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jwt</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>k3s</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LeetCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mall</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MircroPython</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mqtt上传文件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N的阶乘</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NoSQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OJ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pyside</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rabbitmq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STM32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Stream</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>swagger</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tkinter</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Utils</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>video</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>WebGIS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>work</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/12/04/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2025-12-04 09:09:30">2025/12/04</span>
+        </a>
+        
+        <a  class="全部文章 沉淀一下 场景题 "
+           href="/2025/11/06/goodjob/"
+           data-tag="work"
+           data-author="" >
+            <span class="post-title" title="goodjob">goodjob</span>
+            <span class="post-date" title="2025-11-06 23:23:29">2025/11/06</span>
+        </a>
+        
+        <a  class="全部文章 java mq "
+           href="/2025/10/28/java-rabbitmq/"
+           data-tag="rabbitmq"
+           data-author="" >
+            <span class="post-title" title="java_rabbitmq">java_rabbitmq</span>
+            <span class="post-date" title="2025-10-28 17:12:04">2025/10/28</span>
+        </a>
+        
+        <a  class="全部文章 后端 java "
+           href="/2025/10/23/java-security/"
+           data-tag="jwt"
+           data-author="" >
+            <span class="post-title" title="java_security">java_security</span>
+            <span class="post-date" title="2025-10-23 17:40:33">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-swagger/"
+           data-tag="swagger"
+           data-author="" >
+            <span class="post-title" title="java_swagger">java_swagger</span>
+            <span class="post-date" title="2025-10-23 17:16:02">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-hutool/"
+           data-tag="hutool"
+           data-author="" >
+            <span class="post-title" title="java_hutool">java_hutool</span>
+            <span class="post-date" title="2025-10-23 16:34:49">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/21/mall/"
+           data-tag="mall"
+           data-author="" >
+            <span class="post-title" title="mall">mall</span>
+            <span class="post-date" title="2025-10-21 22:02:56">2025/10/21</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2025/10/11/docker-destop/"
+           data-tag="docker-desktop"
+           data-author="" >
+            <span class="post-title" title="docker_destop">docker_destop</span>
+            <span class="post-date" title="2025-10-11 09:52:56">2025/10/11</span>
+        </a>
+        
+        <a  class="全部文章 后端 "
+           href="/2025/10/10/java-mark/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java要点小结">java要点小结</span>
+            <span class="post-date" title="2025-10-10 17:28:57">2025/10/10</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/29/pysideRecord/"
+           data-tag="pyside"
+           data-author="" >
+            <span class="post-title" title="pysideRecord">pysideRecord</span>
+            <span class="post-date" title="2025-09-29 20:46:51">2025/09/29</span>
+        </a>
+        
+        <a  class="全部文章 docker fastbee "
+           href="/2025/09/19/dockerDeploy/"
+           data-tag="iot"
+           data-author="" >
+            <span class="post-title" title="fastbee项目部署">fastbee项目部署</span>
+            <span class="post-date" title="2025-09-19 10:22:51">2025/09/19</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/18/fastapiLearning/"
+           data-tag="fastapi"
+           data-author="" >
+            <span class="post-title" title="fastapiNote">fastapiNote</span>
+            <span class="post-date" title="2025-09-18 15:42:57">2025/09/18</span>
+        </a>
+        
+        <a  class="全部文章 linux "
+           href="/2025/07/21/Ubuntu/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux">Linux</span>
+            <span class="post-date" title="2025-07-21 09:57:43">2025/07/21</span>
+        </a>
+        
+        <a  class="全部文章 物联网 "
+           href="/2025/03/06/esp32-ubuntun-start/"
+           data-tag="乐鑫"
+           data-author="" >
+            <span class="post-title" title="esp32_ubuntun_start">esp32_ubuntun_start</span>
+            <span class="post-date" title="2025-03-06 15:02:56">2025/03/06</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/01/18/vim-use/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="vim-use">vim-use</span>
+            <span class="post-date" title="2025-01-18 09:35:04">2025/01/18</span>
+        </a>
+        
+        <a  class="全部文章 linux shell "
+           href="/2025/01/15/shell-programming/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="shell_programming">shell_programming</span>
+            <span class="post-date" title="2025-01-15 15:40:40">2025/01/15</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/30/esp-idf-record/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-record">esp-idf-record</span>
+            <span class="post-date" title="2024-12-30 10:46:49">2024/12/30</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/27/esp-idf-cmd/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-cmd">esp-idf-cmd</span>
+            <span class="post-date" title="2024-12-27 16:41:01">2024/12/27</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2024/09/06/pyGUI/"
+           data-tag="tkinter"
+           data-author="" >
+            <span class="post-title" title="tkinterecord">tkinterecord</span>
+            <span class="post-date" title="2024-09-06 14:41:16">2024/09/06</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/08/26/basic-Arduino/"
+           data-tag="C"
+           data-author="" >
+            <span class="post-title" title="basic_Arduino">basic_Arduino</span>
+            <span class="post-date" title="2024-08-26 17:47:27">2024/08/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/08/13/mqtt/"
+           data-tag="mqtt上传文件"
+           data-author="" >
+            <span class="post-title" title="MQTT">MQTT</span>
+            <span class="post-date" title="2024-08-13 15:45:34">2024/08/13</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/06/07/IntelligenLEDStrip/"
+           data-tag="ESP Rainmaker"
+           data-author="" >
+            <span class="post-title" title="智能灯带">智能灯带</span>
+            <span class="post-date" title="2024-06-07 10:15:00">2024/06/07</span>
+        </a>
+        
+        <a  class="全部文章 linux wls "
+           href="/2024/05/28/linux-note/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux_note">linux_note</span>
+            <span class="post-date" title="2024-05-28 09:22:34">2024/05/28</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/k3s%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/"
+           data-tag="k3s"
+           data-author="" >
+            <span class="post-title" title="k3s">k3s</span>
+            <span class="post-date" title="2024-05-14 16:36:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/local_deploy/"
+           data-tag="fastbee"
+           data-author="" >
+            <span class="post-title" title="物联网平台本地部署并接入摄像头">物联网平台本地部署并接入摄像头</span>
+            <span class="post-date" title="2024-05-14 16:31:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/04/12/CameraAccess/"
+           data-tag="FleetBee"
+           data-author="" >
+            <span class="post-title" title="摄像头接入">摄像头接入</span>
+            <span class="post-date" title="2024-04-12 16:48:52">2024/04/12</span>
+        </a>
+        
+        <a  class="全部文章 linux 基本使用 "
+           href="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux的基本使用">linux的基本使用</span>
+            <span class="post-date" title="2024-03-31 17:40:34">2024/03/31</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/09/ruoyi_2Dev/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi-二次开发">ruoyi-二次开发</span>
+            <span class="post-date" title="2024-01-09 11:20:00">2024/01/09</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/06/ruoyi/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi">ruoyi</span>
+            <span class="post-date" title="2024-01-06 15:20:00">2024/01/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 SpringBoot "
+           href="/2024/01/05/SpringBoor_Vue/"
+           data-tag="SpringBoot,Vue"
+           data-author="" >
+            <span class="post-title" title="SpringBoot_Vue">SpringBoot_Vue</span>
+            <span class="post-date" title="2024-01-05 11:20:01">2024/01/05</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/27/wumei_DeepIn/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceDeepIn">wumei-deviceDeepIn</span>
+            <span class="post-date" title="2023-12-27 10:23:00">2023/12/27</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/26/wumei_deviceInto/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceInto">wumei-deviceInto</span>
+            <span class="post-date" title="2023-12-26 11:20:00">2023/12/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/12/12/ESP32-C3/"
+           data-tag="ESP32C3"
+           data-author="" >
+            <span class="post-title" title="ESP32C3">ESP32C3</span>
+            <span class="post-date" title="2023-12-12 15:43:52">2023/12/12</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/11/wumei/"
+           data-tag="Fastbee"
+           data-author="" >
+            <span class="post-title" title="wumei">wumei</span>
+            <span class="post-date" title="2023-12-11 09:48:52">2023/12/11</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/11/08/ESP32/"
+           data-tag="MircroPython"
+           data-author="" >
+            <span class="post-title" title="MircroPython">MircroPython</span>
+            <span class="post-date" title="2023-11-08 18:02:31">2023/11/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 数学 "
+           href="/2023/11/01/Q-rsqrt/"
+           data-tag="快速平方根"
+           data-author="" >
+            <span class="post-title" title="Q_rsqrt">Q_rsqrt</span>
+            <span class="post-date" title="2023-11-01 08:52:08">2023/11/01</span>
+        </a>
+        
+        <a  class="全部文章 工具 audio "
+           href="/2023/10/16/audioConvert/"
+           data-tag="python,audio"
+           data-author="" >
+            <span class="post-title" title="audioConvert">audioConvert</span>
+            <span class="post-date" title="2023-10-16 19:34:43">2023/10/16</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/14/STM32/"
+           data-tag="STM32"
+           data-author="" >
+            <span class="post-title" title="STM32">STM32</span>
+            <span class="post-date" title="2023-10-14 08:59:19">2023/10/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/08/51C/"
+           data-tag="51C"
+           data-author="" >
+            <span class="post-title" title="51C">51C</span>
+            <span class="post-date" title="2023-10-08 17:20:10">2023/10/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 面试题 "
+           href="/2023/09/18/JobInterview/"
+           data-tag="N的阶乘"
+           data-author="" >
+            <span class="post-title" title="JobInterview">JobInterview</span>
+            <span class="post-date" title="2023-09-18 21:55:19">2023/09/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 LeetCode "
+           href="/2023/09/13/hot100/"
+           data-tag="LeetCode"
+           data-author="" >
+            <span class="post-title" title="hot100">hot100</span>
+            <span class="post-date" title="2023-09-13 10:17:00">2023/09/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/09/05/4Job/"
+           data-tag="Shell,Job,WebGIS"
+           data-author="" >
+            <span class="post-title" title="Javaer&#39;s development">Javaer&#39;s development</span>
+            <span class="post-date" title="2023-09-05 00:00:00">2023/09/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/03/24/Stream/"
+           data-tag="Stream"
+           data-author="" >
+            <span class="post-title" title="Stream">Stream</span>
+            <span class="post-date" title="2023-03-24 09:42:49">2023/03/24</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/03/08/ESP32ATLog/"
+           data-tag="ESP32,AT"
+           data-author="" >
+            <span class="post-title" title="ESP32AT指令集探索">ESP32AT指令集探索</span>
+            <span class="post-date" title="2023-03-08 14:52:56">2023/03/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/02/09/AddOn4SpeedPlay/"
+           data-tag="video"
+           data-author="" >
+            <span class="post-title" title="AddOn4SpeedPlay">AddOn4SpeedPlay</span>
+            <span class="post-date" title="2023-02-09 13:05:26">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 ChatGPT "
+           href="/2023/02/09/ChatGPT/"
+           data-tag="ChatGPT"
+           data-author="" >
+            <span class="post-title" title="Usage of ChatGPT">Usage of ChatGPT</span>
+            <span class="post-date" title="2023-02-09 12:34:54">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/02/09/Java-io/"
+           data-tag="IO"
+           data-author="" >
+            <span class="post-title" title="Java-io">Java-io</span>
+            <span class="post-date" title="2023-02-09 12:27:55">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/01/17/Freedom/"
+           data-tag="油猴"
+           data-author="" >
+            <span class="post-title" title="Videos">Videos</span>
+            <span class="post-date" title="2023-01-17 21:43:30">2023/01/17</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/12/04/DevConcludes/"
+           data-tag="开发"
+           data-author="" >
+            <span class="post-title" title="DevConcludes">DevConcludes</span>
+            <span class="post-date" title="2022-12-04 22:16:46">2022/12/04</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/10/16/Java-Utils/"
+           data-tag="Utils"
+           data-author="" >
+            <span class="post-title" title="Java-Utils">Java-Utils</span>
+            <span class="post-date" title="2022-10-16 16:15:29">2022/10/16</span>
+        </a>
+        
+        <a  class="全部文章 算法 数组 "
+           href="/2022/05/02/Array/"
+           data-tag="数组"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2022-05-02 00:00:00">2022/05/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2022/01/23/TopologicalSorting/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2022-01-23 00:00:00">2022/01/23</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2021/12/31/Graph-DataStructure/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="图的数据结构">图的数据结构</span>
+            <span class="post-date" title="2021-12-31 10:41:29">2021/12/31</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/12/13/BinaryTree-traverse/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历框架">二叉树的遍历框架</span>
+            <span class="post-date" title="2021-12-13 10:50:34">2021/12/13</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/12/08/Trie-341-NestedIterator/"
+           data-tag="前缀树,N叉树,迭代器"
+           data-author="" >
+            <span class="post-title" title="扁平化嵌套列表迭代器">扁平化嵌套列表迭代器</span>
+            <span class="post-date" title="2021-12-08 16:38:11">2021/12/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/11/26/BinaryTree-297-SerializeAndDeserialize/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的序列化和反序列化">二叉树的序列化和反序列化</span>
+            <span class="post-date" title="2021-11-26 17:32:54">2021/11/26</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-160-getIntersectionNode/"
+           data-tag="160,链表"
+           data-author="" >
+            <span class="post-title" title="两个链表是否相交">两个链表是否相交</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-19-removeNthFromEnd/"
+           data-tag="链表,19"
+           data-author="" >
+            <span class="post-title" title="单链表的倒数第K个节点">单链表的倒数第K个节点</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-23-mergeKLists/"
+           data-tag="链表,23"
+           data-author="" >
+            <span class="post-title" title="合并K个有序链表">合并K个有序链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-234-isPalindrome/"
+           data-tag="链表,234"
+           data-author="" >
+            <span class="post-title" title="回文链表">回文链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-25-reverseKGroup/"
+           data-tag="链表,25,迭代"
+           data-author="" >
+            <span class="post-title" title="K个一组反转链表">K个一组反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-92-reverseBetween/"
+           data-tag="链表,92,递归"
+           data-author="" >
+            <span class="post-title" title="反转链表">反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/18/LinkedList-21-mergeTwoLists/"
+           data-tag="链表,21"
+           data-author="" >
+            <span class="post-title" title="合并两个有序链表">合并两个有序链表</span>
+            <span class="post-date" title="2021-11-18 00:00:00">2021/11/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/09/16/Calculate-date/"
+           data-tag="闰年"
+           data-author="" >
+            <span class="post-title" title="Calculate_date">Calculate_date</span>
+            <span class="post-date" title="2021-09-16 21:05:01">2021/09/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatterofStrategy/"
+           data-tag="行为型模式,策略模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2021-09-15 20:58:14">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofObserver/"
+           data-tag="观察者模式,行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2021-09-15 20:41:49">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofProxy/"
+           data-tag="代理模式,结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2021-09-15 20:30:32">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/09/07/PriorityQueue/"
+           data-tag="优先队列,贪心"
+           data-author="" >
+            <span class="post-title" title="PriorityQueue">PriorityQueue</span>
+            <span class="post-date" title="2021-09-07 00:00:00">2021/09/07</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/09/05/LinkedList-203-removeElements/"
+           data-tag="203,移除链表元素"
+           data-author="" >
+            <span class="post-title" title="移除链表元素">移除链表元素</span>
+            <span class="post-date" title="2021-09-05 00:00:00">2021/09/05</span>
+        </a>
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2021/08/31/SearchAndSort/"
+           data-tag="排序,查找"
+           data-author="" >
+            <span class="post-title" title="SearchAndSort">SearchAndSort</span>
+            <span class="post-date" title="2021-08-31 14:27:08">2021/08/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/07/09/Trie/"
+           data-tag="前缀树,N叉树"
+           data-author="" >
+            <span class="post-title" title="过滤敏感词">过滤敏感词</span>
+            <span class="post-date" title="2021-07-09 00:00:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 算法 滑动窗口 "
+           href="/2021/07/02/slidingwindow/"
+           data-tag="滑动窗口"
+           data-author="" >
+            <span class="post-title" title="滑动窗口">滑动窗口</span>
+            <span class="post-date" title="2021-07-02 00:00:00">2021/07/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 双指针 "
+           href="/2021/07/01/doublepointers/"
+           data-tag="双指针"
+           data-author="" >
+            <span class="post-title" title="双指针">双指针</span>
+            <span class="post-date" title="2021-07-01 00:00:00">2021/07/01</span>
+        </a>
+        
+        <a  class="全部文章 数据库 Redis "
+           href="/2021/06/29/redis-LearningNote/"
+           data-tag="NoSQL"
+           data-author="" >
+            <span class="post-title" title="redis学习笔记">redis学习笔记</span>
+            <span class="post-date" title="2021-06-29 00:00:00">2021/06/29</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/06/27/Zeller/"
+           data-tag="蔡勒公式,OJ"
+           data-author="" >
+            <span class="post-title" title="Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7">Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7</span>
+            <span class="post-date" title="2021-06-27 00:00:00">2021/06/27</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/06/01/BinaryTree/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树">二叉树</span>
+            <span class="post-date" title="2021-06-01 00:00:00">2021/06/01</span>
+        </a>
+        
+        <a  class="全部文章 运维 "
+           href="/2021/05/27/linuxLearningNote/"
+           data-tag="Linux,Shell"
+           data-author="" >
+            <span class="post-title" title="Linux 与 Shell">Linux 与 Shell</span>
+            <span class="post-date" title="2021-05-27 00:00:00">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式,构建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="构建型模式,单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/09/DesignPatternofSixPrinciples/"
+           data-tag="六大原则"
+           data-author="" >
+            <span class="post-title" title="六大设计原则">六大设计原则</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="构建型模式,原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="Python,爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-SpringBoor_Vue" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">SpringBoot_Vue</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="后端">后端</a> > 
+            
+            <a  data-rel="后端&lt;---&gt;SpringBoot">SpringBoot</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">SpringBoot</a>
+            
+            <a class="color4">Vue</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2025-10-09 11:15:22'>2024-01-05 11:20</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:7.6k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot-Vue%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6"><span class="toc-text">SpringBoot_Vue搭建开发框架</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA"><span class="toc-text">SpringBoot项目搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E9%85%8D%E7%BD%AE"><span class="toc-text">编码配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JDK%E9%85%8D%E7%BD%AE"><span class="toc-text">JDK配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Maven%E9%85%8D%E7%BD%AE"><span class="toc-text">Maven配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git%E9%85%8D%E7%BD%AE"><span class="toc-text">Git配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ComponentScan"><span class="toc-text">@ComponentScan</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RestController"><span class="toc-text">@RestController</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RequestMapping"><span class="toc-text">@RequestMapping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E6%9F%A5%E6%94%B9%E8%AF%B7%E6%B1%82"><span class="toc-text">增删查改请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#httpClient%E6%B5%8B%E8%AF%95%E6%8E%A5%E5%8F%A3"><span class="toc-text">httpClient测试接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">读取配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E7%83%AD%E9%83%A8%E7%BD%B2"><span class="toc-text">集成热部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%AD%E5%BB%BA"><span class="toc-text">数据库搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0or%E8%BF%9C%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">本地or远程数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IDEA%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">IDEA数据库插件配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E6%8C%81%E4%B9%85%E5%B1%82%E6%A1%86%E6%9E%B6MyBatis"><span class="toc-text">集成持久层框架MyBatis</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%95%E5%85%A5%E4%BE%9D%E8%B5%96"><span class="toc-text">引入依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E6%BA%90"><span class="toc-text">配置数据源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BD%93%E7%B1%BB"><span class="toc-text">实体类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%BA%94Mapper%E6%96%87%E4%BB%B6"><span class="toc-text">对应Mapper文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEmybatis%E5%AF%B9%E5%BA%94%E7%9A%84xml%E6%96%87%E4%BB%B6%E7%9A%84%E8%B7%AF%E5%BE%84"><span class="toc-text">配置mybatis对应的xml文件的路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEmybatis%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%8F%92%E4%BB%B6"><span class="toc-text">配置mybatis自动生成代码插件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BAgenerator-config-xml%E6%96%87%E4%BB%B6"><span class="toc-text">新建generator-config.xml文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E6%A0%87%E5%87%86%E6%96%87%E4%BB%B6"><span class="toc-text">生成标准文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AF"><span class="toc-text">业务返回信息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E8%BF%94%E5%9B%9E%E4%BF%A1%E6%81%AF"><span class="toc-text">通用返回信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E5%92%8C%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0"><span class="toc-text">封装请求参数和返回参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85%E5%B7%A5%E5%85%B7%E7%B1%BB"><span class="toc-text">封装工具类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CopyUtil"><span class="toc-text">CopyUtil</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91"><span class="toc-text">业务逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Service"><span class="toc-text">Service</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Controller"><span class="toc-text">Controller</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mybatis%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-text">Mybatis自动生成的代码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ebook"><span class="toc-text">Ebook</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EbookExample"><span class="toc-text">EbookExample</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EbookMapper-java"><span class="toc-text">EbookMapper.java</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EbookMapper-xml"><span class="toc-text">EbookMapper.xml</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD%E2%80%A6"><span class="toc-text">未完待续…</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="SpringBoot-Vue搭建开发框架"><a href="#SpringBoot-Vue搭建开发框架" class="headerlink" title="SpringBoot_Vue搭建开发框架"></a>SpringBoot_Vue搭建开发框架</h1><h2 id="SpringBoot项目搭建"><a href="#SpringBoot项目搭建" class="headerlink" title="SpringBoot项目搭建"></a>SpringBoot项目搭建</h2><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104142239652.png" alt="image-20240104142239652"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104142319718.png" alt="image-20240104142319718"></p>
+<p>选择依赖</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104142339100.png" alt="image-20240104142339100"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104142426545.png" alt="image-20240104142426545"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104142446193.png" alt="image-20240104142446193"></p>
+<p>注意：设置Maven配置，如位置，仓库，镜像。</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104142713979.png" alt="image-20240104142713979"></p>
+<h3 id="编码配置"><a href="#编码配置" class="headerlink" title="编码配置"></a>编码配置</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104143057214.png" alt="image-20240104143057214"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104143115086.png" alt="image-20240104143115086"></p>
+<h3 id="JDK配置"><a href="#JDK配置" class="headerlink" title="JDK配置"></a>JDK配置</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104143201414.png" alt="image-20240104143201414"></p>
+<h3 id="Maven配置"><a href="#Maven配置" class="headerlink" title="Maven配置"></a>Maven配置</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104143446022.png" alt="image-20240104143446022"></p>
+<p>参考配置：</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;settings xmlns=&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;
+          xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+          xsi:schemaLocation=&quot;http://maven.apache.org/SETTINGS/1.0.0     http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;&gt;
+    &lt;localRepository&gt;C:\Users\甲蛙\.m2\repository&lt;/localRepository&gt;
+
+    &lt;pluginGroups&gt;
+    &lt;/pluginGroups&gt;
+    &lt;proxies&gt;
+    &lt;/proxies&gt;
+    &lt;servers&gt;
+    &lt;/servers&gt;
+
+    &lt;mirrors&gt;
+        &lt;mirror&gt;
+            &lt;id&gt;alimaven&lt;/id&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+            &lt;name&gt;aliyun maven&lt;/name&gt;
+            &lt;url&gt;http://maven.aliyun.com/nexus/content/repositories/central&lt;/url&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;alimaven&lt;/id&gt;
+            &lt;name&gt;aliyun maven&lt;/name&gt;
+            &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;central&lt;/id&gt;
+            &lt;name&gt;Maven Repository Switchboard&lt;/name&gt;
+            &lt;url&gt;http://repo1.maven.org/maven2&lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;repo2&lt;/id&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+            &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;
+            &lt;url&gt;http://repo2.maven.org/maven2&lt;/url&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;ibiblio&lt;/id&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+            &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;
+            &lt;url&gt;http://mirrors.ibiblio.org/pub/mirrors/maven2&lt;/url&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;jboss-public-repository-group&lt;/id&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+            &lt;name&gt;JBoss Public Repository Group&lt;/name&gt;
+            &lt;url&gt;http://repository.jboss.org/nexus/content/groups/public&lt;/url&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;google-maven-central&lt;/id&gt;
+            &lt;name&gt;Google Maven Central&lt;/name&gt;
+            &lt;url&gt;https://maven-central.storage.googleapis.com
+            &lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+
+        &lt;!-- 中央仓库在中国的镜像 --&gt;
+        &lt;mirror&gt;
+            &lt;id&gt;maven.net.cn&lt;/id&gt;
+            &lt;name&gt;one of the central mirrors in china&lt;/name&gt;
+            &lt;url&gt;http://maven.net.cn/content/groups/public&lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+    &lt;/mirrors&gt;
+
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;jdk-1.8&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+                &lt;jdk&gt;1.8&lt;/jdk&gt;
+            &lt;/activation&gt;
+            &lt;properties&gt;
+                &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;
+                &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;
+                &lt;maven.compiler.compilerVersion&gt;1.8&lt;/maven.compiler.compilerVersion&gt;
+            &lt;/properties&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;repository_set&lt;/id&gt;
+            &lt;repositories&gt;
+                &lt;repository&gt;
+                    &lt;snapshots&gt;
+                        &lt;enabled&gt;false&lt;/enabled&gt;
+                    &lt;/snapshots&gt;
+                    &lt;id&gt;public&lt;/id&gt;
+                    &lt;name&gt;Public Repository&lt;/name&gt;
+                    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/repositories&gt;
+            &lt;pluginRepositories&gt;
+                &lt;pluginRepository&gt;
+                    &lt;releases&gt;
+                        &lt;updatePolicy&gt;never&lt;/updatePolicy&gt;
+                    &lt;/releases&gt;
+                    &lt;snapshots&gt;
+                        &lt;enabled&gt;false&lt;/enabled&gt;
+                    &lt;/snapshots&gt;
+                    &lt;id&gt;public&lt;/id&gt;
+                    &lt;name&gt;Public Repository&lt;/name&gt;
+                    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+                &lt;/pluginRepository&gt;
+            &lt;/pluginRepositories&gt;
+        &lt;/profile&gt;
+
+    &lt;/profiles&gt;
+
+&lt;/settings&gt;
+</code></pre>
+<h3 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104143904698.png" alt="image-20240104143904698"></p>
+<h3 id="ComponentScan"><a href="#ComponentScan" class="headerlink" title="@ComponentScan"></a>@ComponentScan</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45433031/article/details/124272633">SpringBoot启动类默认自动扫描包范围 + spring.factories理解_spring.factories 清单-CSDN博客</a></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104150101118.png" alt="image-20240104150101118"></p>
+</blockquote>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104145127784.png" alt="image-20240104145127784"></p>
+<p>原先的启动类：</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104144434290.png" alt="image-20240104144434290"></p>
+<p>如果移动了位置</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104145149336.png" alt="image-20240104145149336"></p>
+<blockquote>
+<p>一旦指定了@ComponentScan，则将不会在默认的启动类的包名下扫描注入容器，因此在扫描列表中还需要单独添加启动类所在的包</p>
+<p>添加扫描包：com.jiawa</p>
+</blockquote>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104144352540.png" alt="image-20240104144352540"></p>
+<h3 id="RestController"><a href="#RestController" class="headerlink" title="@RestController"></a>@RestController</h3><blockquote>
+<p>@RestController = @Controller + @ResponseBody</p>
+</blockquote>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104144617468.png" alt="image-20240104144617468"></p>
+<h3 id="RequestMapping"><a href="#RequestMapping" class="headerlink" title="@RequestMapping"></a>@RequestMapping</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104144804062.png" alt="image-20240104144804062"></p>
+<h3 id="增删查改请求"><a href="#增删查改请求" class="headerlink" title="增删查改请求"></a>增删查改请求</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104144923350.png" alt="image-20240104144923350"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104144930402.png" alt="image-20240104144930402"></p>
+<h3 id="httpClient测试接口"><a href="#httpClient测试接口" class="headerlink" title="httpClient测试接口"></a>httpClient测试接口</h3><p>创建文件夹 ，用于放置测试文件，文件的后缀必须是 <code>.http</code></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104150421346.png" alt="image-20240104150421346"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104150510167.png" alt="image-20240104150510167"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104150616153.png" alt="image-20240104150616153"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104150809326.png" alt="image-20240104150809326"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104153440376.png" alt="image-20240104153440376"></p>
+<p><strong>测试成功</strong></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104153635584.png" alt="image-20240104153635584"></p>
+<p><strong>测试失败</strong></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104153819585.png" alt="image-20240104153819585"></p>
+<h3 id="读取配置文件"><a href="#读取配置文件" class="headerlink" title="读取配置文件"></a>读取配置文件</h3><blockquote>
+<p>优先读取配置文件，没有就用默认值。</p>
+</blockquote>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104154317438.png" alt="image-20240104154317438"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104154359156.png" alt="image-20240104154359156"></p>
+<h3 id="集成热部署"><a href="#集成热部署" class="headerlink" title="集成热部署"></a>集成热部署</h3><p><strong>自动编译</strong></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104154931201.png" alt="image-20240104154931201"></p>
+<p><strong>按两次shift -&gt; Registry</strong> </p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104155134239.png" alt="image-20240104155134239"></p>
+<p><strong>运行时也可以编译</strong></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104155228122.png" alt="image-20240104155228122"></p>
+<h2 id="数据库搭建"><a href="#数据库搭建" class="headerlink" title="数据库搭建"></a>数据库搭建</h2><h3 id="本地or远程数据库"><a href="#本地or远程数据库" class="headerlink" title="本地or远程数据库"></a>本地or远程数据库</h3><p>新建数据库</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104155759227.png" alt="image-20240104155759227"></p>
+<p>创建专用账户</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104155906019.png" alt="image-20240104155906019"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104155927097.png" alt="image-20240104155927097"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104155953685.png" alt="image-20240104155953685"></p>
+<h3 id="IDEA数据库插件配置"><a href="#IDEA数据库插件配置" class="headerlink" title="IDEA数据库插件配置"></a>IDEA数据库插件配置</h3><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104160557940.png" alt="image-20240104160557940"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104160636581.png" alt="image-20240104160636581"></p>
+<p><strong>编辑后记得提交</strong></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104160856695.png" alt="image-20240104160856695"></p>
+<p><strong>脚本直接执行到数据库</strong></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104161105596.png" alt="image-20240104161105596"></p>
+<h3 id="集成持久层框架MyBatis"><a href="#集成持久层框架MyBatis" class="headerlink" title="集成持久层框架MyBatis"></a>集成持久层框架MyBatis</h3><h4 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h4><pre><code class="xml">&lt;!-- 集成mybatis--&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;
+    &lt;version&gt;2.1.3&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- 集成mysql连接 --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;mysql&lt;/groupId&gt;
+    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+    &lt;version&gt;8.0.22&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h4 id="配置数据源"><a href="#配置数据源" class="headerlink" title="配置数据源"></a><strong>配置数据源</strong></h4><p><img src="/2024/01/05/SpringBoor_Vue/image-20240104161615538.png" alt="image-20240104161615538"></p>
+<p>我的本地数据源：</p>
+<pre><code class="properties">server.port=8880
+
+test.hello=Hello3
+
+# 增加数据库连接 wikidev
+spring.datasource.url=jdbc:mysql://localhost/wikidev?characterEncoding=UTF8&amp;autoReconnect=true&amp;serverTimezone=Asia/Shanghai&amp;allowMultiQueries=true
+spring.datasource.username=wikidev
+spring.datasource.password=666666
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+</code></pre>
+<h4 id="实体类"><a href="#实体类" class="headerlink" title="实体类"></a><strong>实体类</strong></h4><blockquote>
+<p> 数据库中新建表Test，实体类和表一一对应起来。</p>
+<p>注：实体类需要加上@Mapper</p>
+</blockquote>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104164335338.png" alt="image-20240104164335338"></p>
+<pre><code class="java">@Data
+public class Test &#123;
+
+    private Integer id;
+
+    private String name;
+
+    private String password;
+
+&#125;
+</code></pre>
+<h4 id="对应Mapper文件"><a href="#对应Mapper文件" class="headerlink" title="对应Mapper文件"></a>对应Mapper文件</h4><pre><code class="java">@Mapper
+public interface TestMapper &#123;
+
+    List&lt;Test&gt; list();
+
+&#125;
+</code></pre>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;
+        &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot; &gt;
+&lt;mapper namespace=&quot;com.jungle.wiki.mapper.TestMapper&quot; &gt;
+
+    &lt;select id=&quot;list&quot; resultType=&quot;com.jungle.wiki.domain.Test&quot;&gt;
+        select id, name, password from test
+    &lt;/select&gt;
+
+&lt;/mapper&gt;
+</code></pre>
+<h4 id="配置mybatis对应的xml文件的路径"><a href="#配置mybatis对应的xml文件的路径" class="headerlink" title="配置mybatis对应的xml文件的路径"></a>配置mybatis对应的xml文件的路径</h4><pre><code class="properties"># 配置mybatis所有Mapper.xml所在的路径 /**/ 表示无论多少层文件夹；*.xml代表所有的xml文件
+mybatis.mapper-locations=classpath:/mapper/**/*.xml
+</code></pre>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240104165931657.png" alt="image-20240104165931657"></p>
+<blockquote>
+<p><strong>ps:</strong> <code>controller -&gt; service -&gt; mapper</code></p>
+</blockquote>
+<h4 id="配置mybatis自动生成代码插件"><a href="#配置mybatis自动生成代码插件" class="headerlink" title="配置mybatis自动生成代码插件"></a>配置mybatis自动生成代码插件</h4><pre><code class="xml">&lt;!-- mybatis generator 自动生成代码插件 --&gt;
+&lt;plugin&gt;
+    &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+    &lt;artifactId&gt;mybatis-generator-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;1.4.0&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;configurationFile&gt;src/main/resources/generator/generator-config.xml&lt;/configurationFile&gt;
+        &lt;overwrite&gt;true&lt;/overwrite&gt;
+        &lt;verbose&gt;true&lt;/verbose&gt;
+    &lt;/configuration&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+            &lt;version&gt;8.0.22&lt;/version&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/plugin&gt;
+</code></pre>
+<h4 id="新建generator-config-xml文件"><a href="#新建generator-config-xml文件" class="headerlink" title="新建generator-config.xml文件"></a>新建generator-config.xml文件</h4><p><img src="/2024/01/05/SpringBoor_Vue/image-20240105100918647.png" alt="image-20240105100918647"></p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE generatorConfiguration
+        PUBLIC &quot;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&quot;
+        &quot;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&quot;&gt;
+
+&lt;generatorConfiguration&gt;
+    &lt;context id=&quot;Mysql&quot; targetRuntime=&quot;MyBatis3&quot; defaultModelType=&quot;flat&quot;&gt;
+
+        &lt;!-- 自动检查关键字，为关键字增加反引号 --&gt;
+        &lt;property name=&quot;autoDelimitKeywords&quot; value=&quot;true&quot;/&gt;
+        &lt;property name=&quot;beginningDelimiter&quot; value=&quot;`&quot;/&gt;
+        &lt;property name=&quot;endingDelimiter&quot; value=&quot;`&quot;/&gt;
+
+        &lt;!--覆盖生成XML文件--&gt;
+        &lt;plugin type=&quot;org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin&quot; /&gt;
+        &lt;!-- 生成的实体类添加toString()方法 --&gt;
+        &lt;plugin type=&quot;org.mybatis.generator.plugins.ToStringPlugin&quot;/&gt;
+
+        &lt;!-- 不生成注释 --&gt;
+        &lt;commentGenerator&gt;
+            &lt;property name=&quot;suppressAllComments&quot; value=&quot;true&quot;/&gt;
+        &lt;/commentGenerator&gt;
+
+        &lt;jdbcConnection driverClass=&quot;com.mysql.cj.jdbc.Driver&quot;
+                        connectionURL=&quot;jdbc:mysql://localhost:3306/wikidev?serverTimezone=Asia/Shanghai&quot;
+                        userId=&quot;wikidev&quot;
+                        password=&quot;666666&quot;&gt;
+        &lt;/jdbcConnection&gt;
+
+        &lt;!-- domain类的位置 --&gt;
+        &lt;javaModelGenerator targetProject=&quot;src\main\java&quot;
+                            targetPackage=&quot;com.jungle.wiki.domain&quot;/&gt;
+
+        &lt;!-- mapper xml的位置 --&gt;
+        &lt;sqlMapGenerator targetProject=&quot;src\main\resources&quot;
+                         targetPackage=&quot;mapper&quot;/&gt;
+
+        &lt;!-- mapper类的位置 --&gt;
+        &lt;javaClientGenerator targetProject=&quot;src\main\java&quot;
+                             targetPackage=&quot;com.jungle.wiki.mapper&quot;
+                             type=&quot;XMLMAPPER&quot;/&gt;
+
+&lt;!--        &lt;table tableName=&quot;demo&quot; domainObjectName=&quot;Demo&quot;/&gt;--&gt;
+&lt;!--        &lt;table tableName=&quot;ebook&quot; domainObjectName=&quot;Ebook&quot;/&gt;--&gt;
+    &lt;/context&gt;
+&lt;/generatorConfiguration&gt;
+</code></pre>
+<h4 id="生成标准文件"><a href="#生成标准文件" class="headerlink" title="生成标准文件"></a>生成标准文件</h4><blockquote>
+<p>注：使用完后立即注释掉：</p>
+<p><code>&lt;!--        &lt;table tableName=&quot;demo&quot; domainObjectName=&quot;Demo&quot;/&gt;--&gt;</code></p>
+</blockquote>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240105102639925.png" alt="image-20240105102639925"></p>
+<hr>
+<h2 id="业务返回信息"><a href="#业务返回信息" class="headerlink" title="业务返回信息"></a>业务返回信息</h2><h3 id="通用返回信息"><a href="#通用返回信息" class="headerlink" title="通用返回信息"></a>通用返回信息</h3><pre><code class="java">package com.jungle.wiki.resp;
+
+
+/**
+ * 通用返回类
+ */
+public class CommonResp&lt;T&gt; &#123;
+
+    /**
+     * 业务上的成功或失败
+     */
+    private boolean success = true;
+
+    /**
+     * 返回信息
+     */
+    private String message;
+
+    /**
+     * 返回泛型数据，自定义类型
+     */
+    private T content;
+
+    public boolean getSuccess() &#123;
+        return success;
+    &#125;
+
+    public void setSuccess(boolean success) &#123;
+        this.success = success;
+    &#125;
+
+    public String getMessage() &#123;
+        return message;
+    &#125;
+
+    public void setMessage(String message) &#123;
+        this.message = message;
+    &#125;
+
+    public T getContent() &#123;
+        return content;
+    &#125;
+
+    public void setContent(T content) &#123;
+        this.content = content;
+    &#125;
+
+    @Override
+    public String toString() &#123;
+        final StringBuffer sb = new StringBuffer(&quot;ResponseDto&#123;&quot;);
+        sb.append(&quot;success=&quot;).append(success);
+        sb.append(&quot;, message=&#39;&quot;).append(message).append(&#39;\&#39;&#39;);
+        sb.append(&quot;, content=&quot;).append(content);
+        sb.append(&#39;&#125;&#39;);
+        return sb.toString();
+    &#125;
+&#125;
+</code></pre>
+<p>如登录成功或失败</p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240105103901189.png" alt="image-20240105103901189"></p>
+<p><img src="/2024/01/05/SpringBoor_Vue/image-20240105103932139.png" alt="image-20240105103932139"></p>
+<h3 id="封装请求参数和返回参数"><a href="#封装请求参数和返回参数" class="headerlink" title="封装请求参数和返回参数"></a>封装请求参数和返回参数</h3><blockquote>
+<p>以电子书为例，封装请求参数：</p>
+</blockquote>
+<pre><code class="java">@Data
+public class EbookReq &#123;
+
+    private Long id;
+
+    private String name;
+
+&#125;
+</code></pre>
+<blockquote>
+<p>封装返回参数：根据需要选择字段，大多数情况可以和原数据对象保持一致。</p>
+</blockquote>
+<pre><code class="java">package com.jungle.wiki.resp;
+
+import lombok.Data;
+
+@Data
+public class EbookResp &#123;
+
+    private Long id;
+
+    private String name;
+
+    private Long category1Id;
+
+    private Long category2Id;
+
+    private String description;
+
+    private String cover;
+
+    private Integer docCount;
+
+    private Integer viewCount;
+
+    private Integer voteCount;
+
+&#125;
+</code></pre>
+<hr>
+<h3 id="封装工具类"><a href="#封装工具类" class="headerlink" title="封装工具类"></a>封装工具类</h3><h4 id="CopyUtil"><a href="#CopyUtil" class="headerlink" title="CopyUtil"></a>CopyUtil</h4><pre><code class="java">package com.jungle.wiki.util;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.util.CollectionUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author Jungle
+ */
+public class CopyUtil &#123;
+
+    /**
+     * 单体复制：单个对象的复制
+     * @param source 源对象
+     * @param clazz 目标对象类型
+     */
+    public static &lt;T&gt; T copy(Object source, Class&lt;T&gt; clazz) &#123;
+        if (source == null) &#123;
+            return null;
+        &#125;
+        T obj = null;
+        try &#123;
+            // 生成目标对象
+            obj = clazz.newInstance();
+        &#125; catch (Exception e) &#123;
+            e.printStackTrace();
+            return null;
+        &#125;
+        // 把原对象复制到目标对象
+        BeanUtils.copyProperties(source, obj);
+        // 返回目标对象
+        return obj;
+    &#125;
+
+    /**
+     * 列表复制
+     * @param source 源对象列表
+     * @param clazz 目标对象类型
+     */
+    public static &lt;T&gt; List&lt;T&gt; copyList(List source, Class&lt;T&gt; clazz) &#123;
+        List&lt;T&gt; target = new ArrayList&lt;&gt;();
+        // 如果源对象列表不为空，就遍历
+        if (!CollectionUtils.isEmpty(source))&#123;
+            for (Object s : source) &#123;
+                // 每个对象复制到目标对象并添加到目标对象列表
+                T obj = copy(s, clazz);
+                target.add(obj);
+            &#125;
+        &#125;
+        // 返回目标对象列表
+        return target;
+    &#125;
+&#125;
+</code></pre>
+<hr>
+<h3 id="业务逻辑"><a href="#业务逻辑" class="headerlink" title="业务逻辑"></a>业务逻辑</h3><h4 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h4><pre><code class="java">package com.jungle.wiki.service;
+
+import com.jungle.wiki.domain.Ebook;
+import com.jungle.wiki.domain.EbookExample;
+import com.jungle.wiki.mapper.EbookMapper;
+import com.jungle.wiki.req.EbookReq;
+import com.jungle.wiki.resp.EbookResp;
+import com.jungle.wiki.util.CopyUtil;
+import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+/**
+ * 使用@Service注解, 将这个Service交给Spring来管理 
+ * @author Jungle 
+ * @version 2022/11/12 12:09
+**/
+@Service
+public class EbookService &#123;
+
+    @Resource
+    private EbookMapper ebookMapper;
+
+    public List&lt;EbookResp&gt; getList(EbookReq req) &#123;
+        // 相当于 查询条件 Where
+        EbookExample ebookExample = new EbookExample();
+        EbookExample.Criteria criteria = ebookExample.createCriteria();
+        // StringUtils.isEmpty 已废弃, 建议使用 ObjectUtils.isEmpty
+        if (!ObjectUtils.isEmpty(req.getName())) &#123;
+            criteria.andNameLike(&quot;%&quot; + req.getName() + &quot;%&quot;);
+        &#125;
+        List&lt;Ebook&gt; ebooksList = ebookMapper.selectByExample(ebookExample);
+
+        // 返回 EbookResp的列表，EbookResp只包含了ebook的部分数据
+        return clazzConverter(ebooksList);
+
+    &#125;
+
+    /**
+     * 类转换器
+     * 数据返回时不一定全部返回，这个时候需要根据需要返回部分数据。
+     * */
+    private List&lt;EbookResp&gt; clazzConverter(List&lt;Ebook&gt; ebooksList) &#123;
+         /*List&lt;EbookResp&gt; res = new ArrayList&lt;&gt;();
+         for (Ebook ebook : ebooksList) &#123;
+             //EbookResp ebookResp = new EbookResp();
+             //BeanUtils.copyProperties(ebook, ebookResp);
+             // 对象复制
+             EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
+             res.add(ebookResp);
+         &#125;
+         return res;*/
+        /* 列表复制*/
+        return CopyUtil.copyList(ebooksList, EbookResp.class);
+    &#125;
+
+
+&#125;
+</code></pre>
+<h4 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h4><pre><code class="java">package com.jungle.wiki.controller;
+
+import com.jungle.wiki.req.EbookReq;
+import com.jungle.wiki.resp.CommonResp;
+import com.jungle.wiki.resp.EbookResp;
+import com.jungle.wiki.service.EbookService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+
+@RestController
+@RequestMapping(&quot;/ebook&quot;)
+public class EbookController &#123;
+
+    @Resource
+    private EbookService ebookService;
+
+
+    @GetMapping(&quot;/list&quot;)
+    public CommonResp&lt;List&lt;EbookResp&gt;&gt; list(EbookReq req) &#123; //将请求参数封装成一个类
+        CommonResp&lt;List&lt;EbookResp&gt;&gt; resp = new CommonResp&lt;&gt;();
+        List&lt;EbookResp&gt; list = ebookService.getList(req);
+        resp.setContent(list);
+        return resp;
+    &#125;
+
+&#125;
+</code></pre>
+<h3 id="Mybatis自动生成的代码"><a href="#Mybatis自动生成的代码" class="headerlink" title="Mybatis自动生成的代码"></a>Mybatis自动生成的代码</h3><h4 id="Ebook"><a href="#Ebook" class="headerlink" title="Ebook"></a>Ebook</h4><pre><code class="java">package com.jungle.wiki.domain;
+
+import lombok.Data;
+
+@Data
+public class Ebook &#123;
+    private Long id;
+
+    private String name;
+
+    private Long category1Id;
+
+    private Long category2Id;
+
+    private String description;
+
+    private String cover;
+
+    private Integer docCount;
+
+    private Integer viewCount;
+
+    private Integer voteCount;
+
+    public Long getId() &#123;
+        return id;
+    &#125;
+
+    public void setId(Long id) &#123;
+        this.id = id;
+    &#125;
+
+    public String getName() &#123;
+        return name;
+    &#125;
+
+    public void setName(String name) &#123;
+        this.name = name;
+    &#125;
+
+    public Long getCategory1Id() &#123;
+        return category1Id;
+    &#125;
+
+    public void setCategory1Id(Long category1Id) &#123;
+        this.category1Id = category1Id;
+    &#125;
+
+    public Long getCategory2Id() &#123;
+        return category2Id;
+    &#125;
+
+    public void setCategory2Id(Long category2Id) &#123;
+        this.category2Id = category2Id;
+    &#125;
+
+    public String getDescription() &#123;
+        return description;
+    &#125;
+
+    public void setDescription(String description) &#123;
+        this.description = description;
+    &#125;
+
+    public String getCover() &#123;
+        return cover;
+    &#125;
+
+    public void setCover(String cover) &#123;
+        this.cover = cover;
+    &#125;
+
+    public Integer getDocCount() &#123;
+        return docCount;
+    &#125;
+
+    public void setDocCount(Integer docCount) &#123;
+        this.docCount = docCount;
+    &#125;
+
+    public Integer getViewCount() &#123;
+        return viewCount;
+    &#125;
+
+    public void setViewCount(Integer viewCount) &#123;
+        this.viewCount = viewCount;
+    &#125;
+
+    public Integer getVoteCount() &#123;
+        return voteCount;
+    &#125;
+
+    public void setVoteCount(Integer voteCount) &#123;
+        this.voteCount = voteCount;
+    &#125;
+
+    @Override
+    public String toString() &#123;
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(&quot; [&quot;);
+        sb.append(&quot;Hash = &quot;).append(hashCode());
+        sb.append(&quot;, id=&quot;).append(id);
+        sb.append(&quot;, name=&quot;).append(name);
+        sb.append(&quot;, category1Id=&quot;).append(category1Id);
+        sb.append(&quot;, category2Id=&quot;).append(category2Id);
+        sb.append(&quot;, description=&quot;).append(description);
+        sb.append(&quot;, cover=&quot;).append(cover);
+        sb.append(&quot;, docCount=&quot;).append(docCount);
+        sb.append(&quot;, viewCount=&quot;).append(viewCount);
+        sb.append(&quot;, voteCount=&quot;).append(voteCount);
+        sb.append(&quot;]&quot;);
+        return sb.toString();
+    &#125;
+&#125;
+</code></pre>
+<h4 id="EbookExample"><a href="#EbookExample" class="headerlink" title="EbookExample"></a>EbookExample</h4><pre><code class="java">package com.jungle.wiki.domain;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EbookExample &#123;
+    protected String orderByClause;
+
+    protected boolean distinct;
+
+    protected List&lt;Criteria&gt; oredCriteria;
+
+    public EbookExample() &#123;
+        oredCriteria = new ArrayList&lt;&gt;();
+    &#125;
+
+    public void setOrderByClause(String orderByClause) &#123;
+        this.orderByClause = orderByClause;
+    &#125;
+
+    public String getOrderByClause() &#123;
+        return orderByClause;
+    &#125;
+
+    public void setDistinct(boolean distinct) &#123;
+        this.distinct = distinct;
+    &#125;
+
+    public boolean isDistinct() &#123;
+        return distinct;
+    &#125;
+
+    public List&lt;Criteria&gt; getOredCriteria() &#123;
+        return oredCriteria;
+    &#125;
+
+    public void or(Criteria criteria) &#123;
+        oredCriteria.add(criteria);
+    &#125;
+
+    public Criteria or() &#123;
+        Criteria criteria = createCriteriaInternal();
+        oredCriteria.add(criteria);
+        return criteria;
+    &#125;
+
+    public Criteria createCriteria() &#123;
+        Criteria criteria = createCriteriaInternal();
+        if (oredCriteria.size() == 0) &#123;
+            oredCriteria.add(criteria);
+        &#125;
+        return criteria;
+    &#125;
+
+    protected Criteria createCriteriaInternal() &#123;
+        Criteria criteria = new Criteria();
+        return criteria;
+    &#125;
+
+    public void clear() &#123;
+        oredCriteria.clear();
+        orderByClause = null;
+        distinct = false;
+    &#125;
+
+    protected abstract static class GeneratedCriteria &#123;
+        protected List&lt;Criterion&gt; criteria;
+
+        protected GeneratedCriteria() &#123;
+            super();
+            criteria = new ArrayList&lt;&gt;();
+        &#125;
+
+        public boolean isValid() &#123;
+            return criteria.size() &gt; 0;
+        &#125;
+
+        public List&lt;Criterion&gt; getAllCriteria() &#123;
+            return criteria;
+        &#125;
+
+        public List&lt;Criterion&gt; getCriteria() &#123;
+            return criteria;
+        &#125;
+
+        protected void addCriterion(String condition) &#123;
+            if (condition == null) &#123;
+                throw new RuntimeException(&quot;Value for condition cannot be null&quot;);
+            &#125;
+            criteria.add(new Criterion(condition));
+        &#125;
+
+        protected void addCriterion(String condition, Object value, String property) &#123;
+            if (value == null) &#123;
+                throw new RuntimeException(&quot;Value for &quot; + property + &quot; cannot be null&quot;);
+            &#125;
+            criteria.add(new Criterion(condition, value));
+        &#125;
+
+        protected void addCriterion(String condition, Object value1, Object value2, String property) &#123;
+            if (value1 == null || value2 == null) &#123;
+                throw new RuntimeException(&quot;Between values for &quot; + property + &quot; cannot be null&quot;);
+            &#125;
+            criteria.add(new Criterion(condition, value1, value2));
+        &#125;
+
+        public Criteria andIdIsNull() &#123;
+            addCriterion(&quot;id is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdIsNotNull() &#123;
+            addCriterion(&quot;id is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdEqualTo(Long value) &#123;
+            addCriterion(&quot;id =&quot;, value, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdNotEqualTo(Long value) &#123;
+            addCriterion(&quot;id &lt;&gt;&quot;, value, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdGreaterThan(Long value) &#123;
+            addCriterion(&quot;id &gt;&quot;, value, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdGreaterThanOrEqualTo(Long value) &#123;
+            addCriterion(&quot;id &gt;=&quot;, value, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdLessThan(Long value) &#123;
+            addCriterion(&quot;id &lt;&quot;, value, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdLessThanOrEqualTo(Long value) &#123;
+            addCriterion(&quot;id &lt;=&quot;, value, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdIn(List&lt;Long&gt; values) &#123;
+            addCriterion(&quot;id in&quot;, values, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdNotIn(List&lt;Long&gt; values) &#123;
+            addCriterion(&quot;id not in&quot;, values, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdBetween(Long value1, Long value2) &#123;
+            addCriterion(&quot;id between&quot;, value1, value2, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andIdNotBetween(Long value1, Long value2) &#123;
+            addCriterion(&quot;id not between&quot;, value1, value2, &quot;id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameIsNull() &#123;
+            addCriterion(&quot;`name` is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameIsNotNull() &#123;
+            addCriterion(&quot;`name` is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameEqualTo(String value) &#123;
+            addCriterion(&quot;`name` =&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameNotEqualTo(String value) &#123;
+            addCriterion(&quot;`name` &lt;&gt;&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameGreaterThan(String value) &#123;
+            addCriterion(&quot;`name` &gt;&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameGreaterThanOrEqualTo(String value) &#123;
+            addCriterion(&quot;`name` &gt;=&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameLessThan(String value) &#123;
+            addCriterion(&quot;`name` &lt;&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameLessThanOrEqualTo(String value) &#123;
+            addCriterion(&quot;`name` &lt;=&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameLike(String value) &#123;
+            addCriterion(&quot;`name` like&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameNotLike(String value) &#123;
+            addCriterion(&quot;`name` not like&quot;, value, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameIn(List&lt;String&gt; values) &#123;
+            addCriterion(&quot;`name` in&quot;, values, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameNotIn(List&lt;String&gt; values) &#123;
+            addCriterion(&quot;`name` not in&quot;, values, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameBetween(String value1, String value2) &#123;
+            addCriterion(&quot;`name` between&quot;, value1, value2, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andNameNotBetween(String value1, String value2) &#123;
+            addCriterion(&quot;`name` not between&quot;, value1, value2, &quot;name&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdIsNull() &#123;
+            addCriterion(&quot;category1_id is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdIsNotNull() &#123;
+            addCriterion(&quot;category1_id is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdEqualTo(Long value) &#123;
+            addCriterion(&quot;category1_id =&quot;, value, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdNotEqualTo(Long value) &#123;
+            addCriterion(&quot;category1_id &lt;&gt;&quot;, value, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdGreaterThan(Long value) &#123;
+            addCriterion(&quot;category1_id &gt;&quot;, value, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdGreaterThanOrEqualTo(Long value) &#123;
+            addCriterion(&quot;category1_id &gt;=&quot;, value, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdLessThan(Long value) &#123;
+            addCriterion(&quot;category1_id &lt;&quot;, value, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdLessThanOrEqualTo(Long value) &#123;
+            addCriterion(&quot;category1_id &lt;=&quot;, value, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdIn(List&lt;Long&gt; values) &#123;
+            addCriterion(&quot;category1_id in&quot;, values, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdNotIn(List&lt;Long&gt; values) &#123;
+            addCriterion(&quot;category1_id not in&quot;, values, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdBetween(Long value1, Long value2) &#123;
+            addCriterion(&quot;category1_id between&quot;, value1, value2, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory1IdNotBetween(Long value1, Long value2) &#123;
+            addCriterion(&quot;category1_id not between&quot;, value1, value2, &quot;category1Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdIsNull() &#123;
+            addCriterion(&quot;category2_id is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdIsNotNull() &#123;
+            addCriterion(&quot;category2_id is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdEqualTo(Long value) &#123;
+            addCriterion(&quot;category2_id =&quot;, value, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdNotEqualTo(Long value) &#123;
+            addCriterion(&quot;category2_id &lt;&gt;&quot;, value, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdGreaterThan(Long value) &#123;
+            addCriterion(&quot;category2_id &gt;&quot;, value, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdGreaterThanOrEqualTo(Long value) &#123;
+            addCriterion(&quot;category2_id &gt;=&quot;, value, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdLessThan(Long value) &#123;
+            addCriterion(&quot;category2_id &lt;&quot;, value, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdLessThanOrEqualTo(Long value) &#123;
+            addCriterion(&quot;category2_id &lt;=&quot;, value, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdIn(List&lt;Long&gt; values) &#123;
+            addCriterion(&quot;category2_id in&quot;, values, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdNotIn(List&lt;Long&gt; values) &#123;
+            addCriterion(&quot;category2_id not in&quot;, values, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdBetween(Long value1, Long value2) &#123;
+            addCriterion(&quot;category2_id between&quot;, value1, value2, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCategory2IdNotBetween(Long value1, Long value2) &#123;
+            addCriterion(&quot;category2_id not between&quot;, value1, value2, &quot;category2Id&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionIsNull() &#123;
+            addCriterion(&quot;description is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionIsNotNull() &#123;
+            addCriterion(&quot;description is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionEqualTo(String value) &#123;
+            addCriterion(&quot;description =&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionNotEqualTo(String value) &#123;
+            addCriterion(&quot;description &lt;&gt;&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionGreaterThan(String value) &#123;
+            addCriterion(&quot;description &gt;&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionGreaterThanOrEqualTo(String value) &#123;
+            addCriterion(&quot;description &gt;=&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionLessThan(String value) &#123;
+            addCriterion(&quot;description &lt;&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionLessThanOrEqualTo(String value) &#123;
+            addCriterion(&quot;description &lt;=&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionLike(String value) &#123;
+            addCriterion(&quot;description like&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionNotLike(String value) &#123;
+            addCriterion(&quot;description not like&quot;, value, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionIn(List&lt;String&gt; values) &#123;
+            addCriterion(&quot;description in&quot;, values, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionNotIn(List&lt;String&gt; values) &#123;
+            addCriterion(&quot;description not in&quot;, values, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionBetween(String value1, String value2) &#123;
+            addCriterion(&quot;description between&quot;, value1, value2, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDescriptionNotBetween(String value1, String value2) &#123;
+            addCriterion(&quot;description not between&quot;, value1, value2, &quot;description&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverIsNull() &#123;
+            addCriterion(&quot;cover is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverIsNotNull() &#123;
+            addCriterion(&quot;cover is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverEqualTo(String value) &#123;
+            addCriterion(&quot;cover =&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverNotEqualTo(String value) &#123;
+            addCriterion(&quot;cover &lt;&gt;&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverGreaterThan(String value) &#123;
+            addCriterion(&quot;cover &gt;&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverGreaterThanOrEqualTo(String value) &#123;
+            addCriterion(&quot;cover &gt;=&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverLessThan(String value) &#123;
+            addCriterion(&quot;cover &lt;&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverLessThanOrEqualTo(String value) &#123;
+            addCriterion(&quot;cover &lt;=&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverLike(String value) &#123;
+            addCriterion(&quot;cover like&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverNotLike(String value) &#123;
+            addCriterion(&quot;cover not like&quot;, value, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverIn(List&lt;String&gt; values) &#123;
+            addCriterion(&quot;cover in&quot;, values, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverNotIn(List&lt;String&gt; values) &#123;
+            addCriterion(&quot;cover not in&quot;, values, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverBetween(String value1, String value2) &#123;
+            addCriterion(&quot;cover between&quot;, value1, value2, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andCoverNotBetween(String value1, String value2) &#123;
+            addCriterion(&quot;cover not between&quot;, value1, value2, &quot;cover&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountIsNull() &#123;
+            addCriterion(&quot;doc_count is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountIsNotNull() &#123;
+            addCriterion(&quot;doc_count is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountEqualTo(Integer value) &#123;
+            addCriterion(&quot;doc_count =&quot;, value, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountNotEqualTo(Integer value) &#123;
+            addCriterion(&quot;doc_count &lt;&gt;&quot;, value, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountGreaterThan(Integer value) &#123;
+            addCriterion(&quot;doc_count &gt;&quot;, value, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountGreaterThanOrEqualTo(Integer value) &#123;
+            addCriterion(&quot;doc_count &gt;=&quot;, value, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountLessThan(Integer value) &#123;
+            addCriterion(&quot;doc_count &lt;&quot;, value, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountLessThanOrEqualTo(Integer value) &#123;
+            addCriterion(&quot;doc_count &lt;=&quot;, value, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountIn(List&lt;Integer&gt; values) &#123;
+            addCriterion(&quot;doc_count in&quot;, values, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountNotIn(List&lt;Integer&gt; values) &#123;
+            addCriterion(&quot;doc_count not in&quot;, values, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountBetween(Integer value1, Integer value2) &#123;
+            addCriterion(&quot;doc_count between&quot;, value1, value2, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andDocCountNotBetween(Integer value1, Integer value2) &#123;
+            addCriterion(&quot;doc_count not between&quot;, value1, value2, &quot;docCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountIsNull() &#123;
+            addCriterion(&quot;view_count is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountIsNotNull() &#123;
+            addCriterion(&quot;view_count is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountEqualTo(Integer value) &#123;
+            addCriterion(&quot;view_count =&quot;, value, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountNotEqualTo(Integer value) &#123;
+            addCriterion(&quot;view_count &lt;&gt;&quot;, value, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountGreaterThan(Integer value) &#123;
+            addCriterion(&quot;view_count &gt;&quot;, value, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountGreaterThanOrEqualTo(Integer value) &#123;
+            addCriterion(&quot;view_count &gt;=&quot;, value, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountLessThan(Integer value) &#123;
+            addCriterion(&quot;view_count &lt;&quot;, value, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountLessThanOrEqualTo(Integer value) &#123;
+            addCriterion(&quot;view_count &lt;=&quot;, value, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountIn(List&lt;Integer&gt; values) &#123;
+            addCriterion(&quot;view_count in&quot;, values, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountNotIn(List&lt;Integer&gt; values) &#123;
+            addCriterion(&quot;view_count not in&quot;, values, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountBetween(Integer value1, Integer value2) &#123;
+            addCriterion(&quot;view_count between&quot;, value1, value2, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andViewCountNotBetween(Integer value1, Integer value2) &#123;
+            addCriterion(&quot;view_count not between&quot;, value1, value2, &quot;viewCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountIsNull() &#123;
+            addCriterion(&quot;vote_count is null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountIsNotNull() &#123;
+            addCriterion(&quot;vote_count is not null&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountEqualTo(Integer value) &#123;
+            addCriterion(&quot;vote_count =&quot;, value, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountNotEqualTo(Integer value) &#123;
+            addCriterion(&quot;vote_count &lt;&gt;&quot;, value, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountGreaterThan(Integer value) &#123;
+            addCriterion(&quot;vote_count &gt;&quot;, value, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountGreaterThanOrEqualTo(Integer value) &#123;
+            addCriterion(&quot;vote_count &gt;=&quot;, value, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountLessThan(Integer value) &#123;
+            addCriterion(&quot;vote_count &lt;&quot;, value, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountLessThanOrEqualTo(Integer value) &#123;
+            addCriterion(&quot;vote_count &lt;=&quot;, value, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountIn(List&lt;Integer&gt; values) &#123;
+            addCriterion(&quot;vote_count in&quot;, values, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountNotIn(List&lt;Integer&gt; values) &#123;
+            addCriterion(&quot;vote_count not in&quot;, values, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountBetween(Integer value1, Integer value2) &#123;
+            addCriterion(&quot;vote_count between&quot;, value1, value2, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+
+        public Criteria andVoteCountNotBetween(Integer value1, Integer value2) &#123;
+            addCriterion(&quot;vote_count not between&quot;, value1, value2, &quot;voteCount&quot;);
+            return (Criteria) this;
+        &#125;
+    &#125;
+
+    public static class Criteria extends GeneratedCriteria &#123;
+        protected Criteria() &#123;
+            super();
+        &#125;
+    &#125;
+
+    public static class Criterion &#123;
+        private String condition;
+
+        private Object value;
+
+        private Object secondValue;
+
+        private boolean noValue;
+
+        private boolean singleValue;
+
+        private boolean betweenValue;
+
+        private boolean listValue;
+
+        private String typeHandler;
+
+        public String getCondition() &#123;
+            return condition;
+        &#125;
+
+        public Object getValue() &#123;
+            return value;
+        &#125;
+
+        public Object getSecondValue() &#123;
+            return secondValue;
+        &#125;
+
+        public boolean isNoValue() &#123;
+            return noValue;
+        &#125;
+
+        public boolean isSingleValue() &#123;
+            return singleValue;
+        &#125;
+
+        public boolean isBetweenValue() &#123;
+            return betweenValue;
+        &#125;
+
+        public boolean isListValue() &#123;
+            return listValue;
+        &#125;
+
+        public String getTypeHandler() &#123;
+            return typeHandler;
+        &#125;
+
+        protected Criterion(String condition) &#123;
+            super();
+            this.condition = condition;
+            this.typeHandler = null;
+            this.noValue = true;
+        &#125;
+
+        protected Criterion(String condition, Object value, String typeHandler) &#123;
+            super();
+            this.condition = condition;
+            this.value = value;
+            this.typeHandler = typeHandler;
+            if (value instanceof List&lt;?&gt;) &#123;
+                this.listValue = true;
+            &#125; else &#123;
+                this.singleValue = true;
+            &#125;
+        &#125;
+
+        protected Criterion(String condition, Object value) &#123;
+            this(condition, value, null);
+        &#125;
+
+        protected Criterion(String condition, Object value, Object secondValue, String typeHandler) &#123;
+            super();
+            this.condition = condition;
+            this.value = value;
+            this.secondValue = secondValue;
+            this.typeHandler = typeHandler;
+            this.betweenValue = true;
+        &#125;
+
+        protected Criterion(String condition, Object value, Object secondValue) &#123;
+            this(condition, value, secondValue, null);
+        &#125;
+    &#125;
+&#125;
+</code></pre>
+<h4 id="EbookMapper-java"><a href="#EbookMapper-java" class="headerlink" title="EbookMapper.java"></a>EbookMapper.java</h4><pre><code class="java">package com.jungle.wiki.mapper;
+
+import com.jungle.wiki.domain.Ebook;
+import com.jungle.wiki.domain.EbookExample;
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+@Mapper
+public interface EbookMapper &#123;
+    long countByExample(EbookExample example);
+
+    int deleteByExample(EbookExample example);
+
+    int deleteByPrimaryKey(Long id);
+
+    int insert(Ebook record);
+
+    int insertSelective(Ebook record);
+
+    List&lt;Ebook&gt; selectByExample(EbookExample example);
+
+    Ebook selectByPrimaryKey(Long id);
+
+    int updateByExampleSelective(@Param(&quot;record&quot;) Ebook record, @Param(&quot;example&quot;) EbookExample example);
+
+    int updateByExample(@Param(&quot;record&quot;) Ebook record, @Param(&quot;example&quot;) EbookExample example);
+
+    int updateByPrimaryKeySelective(Ebook record);
+
+    int updateByPrimaryKey(Ebook record);
+&#125;
+</code></pre>
+<h4 id="EbookMapper-xml"><a href="#EbookMapper-xml" class="headerlink" title="EbookMapper.xml"></a>EbookMapper.xml</h4><pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE mapper PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;&gt;
+&lt;mapper namespace=&quot;com.jungle.wiki.mapper.EbookMapper&quot;&gt;
+  &lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;com.jungle.wiki.domain.Ebook&quot;&gt;
+    &lt;id column=&quot;id&quot; jdbcType=&quot;BIGINT&quot; property=&quot;id&quot; /&gt;
+    &lt;result column=&quot;name&quot; jdbcType=&quot;VARCHAR&quot; property=&quot;name&quot; /&gt;
+    &lt;result column=&quot;category1_id&quot; jdbcType=&quot;BIGINT&quot; property=&quot;category1Id&quot; /&gt;
+    &lt;result column=&quot;category2_id&quot; jdbcType=&quot;BIGINT&quot; property=&quot;category2Id&quot; /&gt;
+    &lt;result column=&quot;description&quot; jdbcType=&quot;VARCHAR&quot; property=&quot;description&quot; /&gt;
+    &lt;result column=&quot;cover&quot; jdbcType=&quot;VARCHAR&quot; property=&quot;cover&quot; /&gt;
+    &lt;result column=&quot;doc_count&quot; jdbcType=&quot;INTEGER&quot; property=&quot;docCount&quot; /&gt;
+    &lt;result column=&quot;view_count&quot; jdbcType=&quot;INTEGER&quot; property=&quot;viewCount&quot; /&gt;
+    &lt;result column=&quot;vote_count&quot; jdbcType=&quot;INTEGER&quot; property=&quot;voteCount&quot; /&gt;
+  &lt;/resultMap&gt;
+  &lt;sql id=&quot;Example_Where_Clause&quot;&gt;
+    &lt;where&gt;
+      &lt;foreach collection=&quot;oredCriteria&quot; item=&quot;criteria&quot; separator=&quot;or&quot;&gt;
+        &lt;if test=&quot;criteria.valid&quot;&gt;
+          &lt;trim prefix=&quot;(&quot; prefixOverrides=&quot;and&quot; suffix=&quot;)&quot;&gt;
+            &lt;foreach collection=&quot;criteria.criteria&quot; item=&quot;criterion&quot;&gt;
+              &lt;choose&gt;
+                &lt;when test=&quot;criterion.noValue&quot;&gt;
+                  and $&#123;criterion.condition&#125;
+                &lt;/when&gt;
+                &lt;when test=&quot;criterion.singleValue&quot;&gt;
+                  and $&#123;criterion.condition&#125; #&#123;criterion.value&#125;
+                &lt;/when&gt;
+                &lt;when test=&quot;criterion.betweenValue&quot;&gt;
+                  and $&#123;criterion.condition&#125; #&#123;criterion.value&#125; and #&#123;criterion.secondValue&#125;
+                &lt;/when&gt;
+                &lt;when test=&quot;criterion.listValue&quot;&gt;
+                  and $&#123;criterion.condition&#125;
+                  &lt;foreach close=&quot;)&quot; collection=&quot;criterion.value&quot; item=&quot;listItem&quot; open=&quot;(&quot; separator=&quot;,&quot;&gt;
+                    #&#123;listItem&#125;
+                  &lt;/foreach&gt;
+                &lt;/when&gt;
+              &lt;/choose&gt;
+            &lt;/foreach&gt;
+          &lt;/trim&gt;
+        &lt;/if&gt;
+      &lt;/foreach&gt;
+    &lt;/where&gt;
+  &lt;/sql&gt;
+  &lt;sql id=&quot;Update_By_Example_Where_Clause&quot;&gt;
+    &lt;where&gt;
+      &lt;foreach collection=&quot;example.oredCriteria&quot; item=&quot;criteria&quot; separator=&quot;or&quot;&gt;
+        &lt;if test=&quot;criteria.valid&quot;&gt;
+          &lt;trim prefix=&quot;(&quot; prefixOverrides=&quot;and&quot; suffix=&quot;)&quot;&gt;
+            &lt;foreach collection=&quot;criteria.criteria&quot; item=&quot;criterion&quot;&gt;
+              &lt;choose&gt;
+                &lt;when test=&quot;criterion.noValue&quot;&gt;
+                  and $&#123;criterion.condition&#125;
+                &lt;/when&gt;
+                &lt;when test=&quot;criterion.singleValue&quot;&gt;
+                  and $&#123;criterion.condition&#125; #&#123;criterion.value&#125;
+                &lt;/when&gt;
+                &lt;when test=&quot;criterion.betweenValue&quot;&gt;
+                  and $&#123;criterion.condition&#125; #&#123;criterion.value&#125; and #&#123;criterion.secondValue&#125;
+                &lt;/when&gt;
+                &lt;when test=&quot;criterion.listValue&quot;&gt;
+                  and $&#123;criterion.condition&#125;
+                  &lt;foreach close=&quot;)&quot; collection=&quot;criterion.value&quot; item=&quot;listItem&quot; open=&quot;(&quot; separator=&quot;,&quot;&gt;
+                    #&#123;listItem&#125;
+                  &lt;/foreach&gt;
+                &lt;/when&gt;
+              &lt;/choose&gt;
+            &lt;/foreach&gt;
+          &lt;/trim&gt;
+        &lt;/if&gt;
+      &lt;/foreach&gt;
+    &lt;/where&gt;
+  &lt;/sql&gt;
+  &lt;sql id=&quot;Base_Column_List&quot;&gt;
+    id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, 
+    vote_count
+  &lt;/sql&gt;
+  &lt;select id=&quot;selectByExample&quot; parameterType=&quot;com.jungle.wiki.domain.EbookExample&quot; resultMap=&quot;BaseResultMap&quot;&gt;
+    select
+    &lt;if test=&quot;distinct&quot;&gt;
+      distinct
+    &lt;/if&gt;
+    &lt;include refid=&quot;Base_Column_List&quot; /&gt;
+    from ebook
+    &lt;if test=&quot;_parameter != null&quot;&gt;
+      &lt;include refid=&quot;Example_Where_Clause&quot; /&gt;
+    &lt;/if&gt;
+    &lt;if test=&quot;orderByClause != null&quot;&gt;
+      order by $&#123;orderByClause&#125;
+    &lt;/if&gt;
+  &lt;/select&gt;
+  &lt;select id=&quot;selectByPrimaryKey&quot; parameterType=&quot;java.lang.Long&quot; resultMap=&quot;BaseResultMap&quot;&gt;
+    select 
+    &lt;include refid=&quot;Base_Column_List&quot; /&gt;
+    from ebook
+    where id = #&#123;id,jdbcType=BIGINT&#125;
+  &lt;/select&gt;
+  &lt;delete id=&quot;deleteByPrimaryKey&quot; parameterType=&quot;java.lang.Long&quot;&gt;
+    delete from ebook
+    where id = #&#123;id,jdbcType=BIGINT&#125;
+  &lt;/delete&gt;
+  &lt;delete id=&quot;deleteByExample&quot; parameterType=&quot;com.jungle.wiki.domain.EbookExample&quot;&gt;
+    delete from ebook
+    &lt;if test=&quot;_parameter != null&quot;&gt;
+      &lt;include refid=&quot;Example_Where_Clause&quot; /&gt;
+    &lt;/if&gt;
+  &lt;/delete&gt;
+  &lt;insert id=&quot;insert&quot; parameterType=&quot;com.jungle.wiki.domain.Ebook&quot;&gt;
+    insert into ebook (id, `name`, category1_id, 
+      category2_id, description, cover, 
+      doc_count, view_count, vote_count
+      )
+    values (#&#123;id,jdbcType=BIGINT&#125;, #&#123;name,jdbcType=VARCHAR&#125;, #&#123;category1Id,jdbcType=BIGINT&#125;, 
+      #&#123;category2Id,jdbcType=BIGINT&#125;, #&#123;description,jdbcType=VARCHAR&#125;, #&#123;cover,jdbcType=VARCHAR&#125;, 
+      #&#123;docCount,jdbcType=INTEGER&#125;, #&#123;viewCount,jdbcType=INTEGER&#125;, #&#123;voteCount,jdbcType=INTEGER&#125;
+      )
+  &lt;/insert&gt;
+  &lt;insert id=&quot;insertSelective&quot; parameterType=&quot;com.jungle.wiki.domain.Ebook&quot;&gt;
+    insert into ebook
+    &lt;trim prefix=&quot;(&quot; suffix=&quot;)&quot; suffixOverrides=&quot;,&quot;&gt;
+      &lt;if test=&quot;id != null&quot;&gt;
+        id,
+      &lt;/if&gt;
+      &lt;if test=&quot;name != null&quot;&gt;
+        `name`,
+      &lt;/if&gt;
+      &lt;if test=&quot;category1Id != null&quot;&gt;
+        category1_id,
+      &lt;/if&gt;
+      &lt;if test=&quot;category2Id != null&quot;&gt;
+        category2_id,
+      &lt;/if&gt;
+      &lt;if test=&quot;description != null&quot;&gt;
+        description,
+      &lt;/if&gt;
+      &lt;if test=&quot;cover != null&quot;&gt;
+        cover,
+      &lt;/if&gt;
+      &lt;if test=&quot;docCount != null&quot;&gt;
+        doc_count,
+      &lt;/if&gt;
+      &lt;if test=&quot;viewCount != null&quot;&gt;
+        view_count,
+      &lt;/if&gt;
+      &lt;if test=&quot;voteCount != null&quot;&gt;
+        vote_count,
+      &lt;/if&gt;
+    &lt;/trim&gt;
+    &lt;trim prefix=&quot;values (&quot; suffix=&quot;)&quot; suffixOverrides=&quot;,&quot;&gt;
+      &lt;if test=&quot;id != null&quot;&gt;
+        #&#123;id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;name != null&quot;&gt;
+        #&#123;name,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;category1Id != null&quot;&gt;
+        #&#123;category1Id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;category2Id != null&quot;&gt;
+        #&#123;category2Id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;description != null&quot;&gt;
+        #&#123;description,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;cover != null&quot;&gt;
+        #&#123;cover,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;docCount != null&quot;&gt;
+        #&#123;docCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;viewCount != null&quot;&gt;
+        #&#123;viewCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;voteCount != null&quot;&gt;
+        #&#123;voteCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+    &lt;/trim&gt;
+  &lt;/insert&gt;
+  &lt;select id=&quot;countByExample&quot; parameterType=&quot;com.jungle.wiki.domain.EbookExample&quot; resultType=&quot;java.lang.Long&quot;&gt;
+    select count(*) from ebook
+    &lt;if test=&quot;_parameter != null&quot;&gt;
+      &lt;include refid=&quot;Example_Where_Clause&quot; /&gt;
+    &lt;/if&gt;
+  &lt;/select&gt;
+  &lt;update id=&quot;updateByExampleSelective&quot; parameterType=&quot;map&quot;&gt;
+    update ebook
+    &lt;set&gt;
+      &lt;if test=&quot;record.id != null&quot;&gt;
+        id = #&#123;record.id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.name != null&quot;&gt;
+        `name` = #&#123;record.name,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.category1Id != null&quot;&gt;
+        category1_id = #&#123;record.category1Id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.category2Id != null&quot;&gt;
+        category2_id = #&#123;record.category2Id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.description != null&quot;&gt;
+        description = #&#123;record.description,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.cover != null&quot;&gt;
+        cover = #&#123;record.cover,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.docCount != null&quot;&gt;
+        doc_count = #&#123;record.docCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.viewCount != null&quot;&gt;
+        view_count = #&#123;record.viewCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;record.voteCount != null&quot;&gt;
+        vote_count = #&#123;record.voteCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+    &lt;/set&gt;
+    &lt;if test=&quot;_parameter != null&quot;&gt;
+      &lt;include refid=&quot;Update_By_Example_Where_Clause&quot; /&gt;
+    &lt;/if&gt;
+  &lt;/update&gt;
+  &lt;update id=&quot;updateByExample&quot; parameterType=&quot;map&quot;&gt;
+    update ebook
+    set id = #&#123;record.id,jdbcType=BIGINT&#125;,
+      `name` = #&#123;record.name,jdbcType=VARCHAR&#125;,
+      category1_id = #&#123;record.category1Id,jdbcType=BIGINT&#125;,
+      category2_id = #&#123;record.category2Id,jdbcType=BIGINT&#125;,
+      description = #&#123;record.description,jdbcType=VARCHAR&#125;,
+      cover = #&#123;record.cover,jdbcType=VARCHAR&#125;,
+      doc_count = #&#123;record.docCount,jdbcType=INTEGER&#125;,
+      view_count = #&#123;record.viewCount,jdbcType=INTEGER&#125;,
+      vote_count = #&#123;record.voteCount,jdbcType=INTEGER&#125;
+    &lt;if test=&quot;_parameter != null&quot;&gt;
+      &lt;include refid=&quot;Update_By_Example_Where_Clause&quot; /&gt;
+    &lt;/if&gt;
+  &lt;/update&gt;
+  &lt;update id=&quot;updateByPrimaryKeySelective&quot; parameterType=&quot;com.jungle.wiki.domain.Ebook&quot;&gt;
+    update ebook
+    &lt;set&gt;
+      &lt;if test=&quot;name != null&quot;&gt;
+        `name` = #&#123;name,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;category1Id != null&quot;&gt;
+        category1_id = #&#123;category1Id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;category2Id != null&quot;&gt;
+        category2_id = #&#123;category2Id,jdbcType=BIGINT&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;description != null&quot;&gt;
+        description = #&#123;description,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;cover != null&quot;&gt;
+        cover = #&#123;cover,jdbcType=VARCHAR&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;docCount != null&quot;&gt;
+        doc_count = #&#123;docCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;viewCount != null&quot;&gt;
+        view_count = #&#123;viewCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+      &lt;if test=&quot;voteCount != null&quot;&gt;
+        vote_count = #&#123;voteCount,jdbcType=INTEGER&#125;,
+      &lt;/if&gt;
+    &lt;/set&gt;
+    where id = #&#123;id,jdbcType=BIGINT&#125;
+  &lt;/update&gt;
+  &lt;update id=&quot;updateByPrimaryKey&quot; parameterType=&quot;com.jungle.wiki.domain.Ebook&quot;&gt;
+    update ebook
+    set `name` = #&#123;name,jdbcType=VARCHAR&#125;,
+      category1_id = #&#123;category1Id,jdbcType=BIGINT&#125;,
+      category2_id = #&#123;category2Id,jdbcType=BIGINT&#125;,
+      description = #&#123;description,jdbcType=VARCHAR&#125;,
+      cover = #&#123;cover,jdbcType=VARCHAR&#125;,
+      doc_count = #&#123;docCount,jdbcType=INTEGER&#125;,
+      view_count = #&#123;viewCount,jdbcType=INTEGER&#125;,
+      vote_count = #&#123;voteCount,jdbcType=INTEGER&#125;
+    where id = #&#123;id,jdbcType=BIGINT&#125;
+  &lt;/update&gt;
+&lt;/mapper&gt;
+</code></pre>
+<hr>
+<hr>
+<h2 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…"></a>未完待续…</h2><hr>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1894278325&auto=1&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>

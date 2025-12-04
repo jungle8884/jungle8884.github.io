@@ -1,0 +1,3054 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>linux的基本使用 | blog of Jungle</title>
+  <meta name="keywords" content=" linux ">
+  <meta name="description" content="linux的基本使用 | blog of Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人简介">
+<meta property="og:url" content="http://example.com/about/index.html">
+<meta property="og:site_name" content="blog of Jungle">
+<meta property="og:description" content="个人介绍Jungle  本科毕业于CUIT, 目前在沈阳读研. 喜欢学习新技术 成为一个合格的程序员, 一定要学好三样东西: 数学 情商 财商     最近什么的干活 论文 刷算法题 秋招 规范: 阿里巴巴开发手册 做项目: 项目基本功能已实现, 后续优化中… 加油， 你一定行！！！   联系方式 email: &amp;#x4a;&amp;#117;&amp;#110;&amp;#103;&amp;#108;&amp;#101;&amp;#56;&amp;#">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T11:42:01.000Z">
+<meta property="article:modified_time" content="2021-09-29T14:22:42.308Z">
+<meta property="article:author" content="Jungle">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Jungle</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="leetcode" href="https://leetcode-cn.com/progress/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-leetcode"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://blog.csdn.net/jungle8884" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88786971" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(106)</small></div></li>
+    
+        
+            
+            <li><div data-rel="算法"><i class="fold iconfont icon-right"></i>算法<small>(25)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="算法<--->滑动窗口">滑动窗口<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->链表">链表<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->面试题">面试题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->日期">日期<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->树">树<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数学">数学<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->数组">数组<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->双指针">双指针<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->图">图<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="算法<--->LeetCode">LeetCode<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="DL"><i class="fold iconfont icon-right"></i>DL<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="DL<--->Python">Python<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="工具"><i class="fold iconfont icon-right"></i>工具<small>(11)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="工具<--->插件">插件<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->audio">audio<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->ChatGPT">ChatGPT<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->git">git<small>(3)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="工具<--->github">github<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="后端"><i class="fold iconfont icon-right"></i>后端<small>(27)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="后端<--->设计模式">设计模式<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->C#">C#<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->java">java<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->Java">Java<small>(14)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="后端<--->SpringBoot">SpringBoot<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="数据库"><i class="fold iconfont icon-right"></i>数据库<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="数据库<--->MySQL">MySQL<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="数据库<--->Redis">Redis<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="前端">前端<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="运维"><i class="fold iconfont icon-right"></i>运维<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="运维<--->Docker">Docker<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="沉淀一下"><i class="fold iconfont icon-right"></i>沉淀一下<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="沉淀一下<--->场景题">场景题<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="读书"><i class="fold iconfont icon-right"></i>读书<small>(3)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="读书<--->单词">单词<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->软件设计师">软件设计师<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="读书<--->英语">英语<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="物联网"><i class="fold iconfont icon-right"></i>物联网<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="物联网<--->乐鑫">乐鑫<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->设备端">设备端<small>(7)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="物联网<--->物联网平台">物联网平台<small>(5)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="docker"><i class="fold iconfont icon-right"></i>docker<small>(6)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="docker<--->fastbee">fastbee<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="docker<--->ruoyi">ruoyi<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="java"><i class="fold iconfont icon-right"></i>java<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="java<--->mq">mq<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="linux"><i class="fold iconfont icon-right"></i>linux<small>(4)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="linux<--->基本使用">基本使用<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->shell">shell<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="linux<--->wls">wls<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="Python">Python<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="106">
+<input type="hidden" id="yelog_site_word_count" value="308.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://lavender-z.github.io/">橘子</a></li>
+            
+            <li><a target="_blank" href="https://youngxhui.top/">ISLAND</a></li>
+            
+            <li><a target="_blank" href="https://www.liuchuo.net/about">柳神</a></li>
+            
+            <li><a target="_blank" href="https://programmercarl.com/">K神</a></li>
+            
+            <li><a target="_blank" href="https://labuladong.github.io/algo/">东哥</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_37541097?spm=1001.2014.3001.5509">D神</a></li>
+            
+            <li><a target="_blank" href="https://blog.csdn.net/qq_33369905?spm=1001.2014.3001.5509">狂神</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>160</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>19</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>203</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>21</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>23</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>234</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>25</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>51C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>92</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>蔡勒公式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>策略模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查找</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>抽象工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>创建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>单例模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>递归</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>迭代器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多表查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多态</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>多线程</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>分布式数据库系统及原理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>工厂方法模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>构建型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>观察者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>滑动窗口</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>机器学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>集合</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>计算机专业英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>简单工厂模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>建造者模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>结构型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>进制转换</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>镜像</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>开发框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>快速平方根</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>乐鑫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>链表</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六大原则</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>六级</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>爬虫</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>排序</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前缀树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>容器</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>闰年</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>深度学习</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的备份和还原</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据库的设计</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数组</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>双指针</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>贪心</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>委托与事件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>写作</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>行为型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>移除链表元素</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>优先队列</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>油猴</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原码, 反码, 补码, 移码</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>原型模式</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>约束</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ado.net</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ArrayList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>audio</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C#</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ChatGPT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>device</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>DL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker-desktop</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP Rainmaker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>esp-idf</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ESP32C3</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastapi</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Fastbee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FleetBee</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>github</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hutool</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>IO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Job</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jwt</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>k3s</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LeetCode</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>LinkedList</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>List</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mall</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Map</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MircroPython</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mqtt上传文件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N叉树</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>N的阶乘</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NoSQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OJ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pyside</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rabbitmq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Resnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Set</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shadowsocks</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STM32</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Stream</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>swagger</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tkinter</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Utils</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vector</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>video</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>WebGIS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>work</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 读书 单词 "
+           href="/2020/11/24/WordofCS/"
+           data-tag="机器学习,深度学习,计算机专业英语,分布式数据库系统及原理"
+           data-author="" >
+            <span class="post-title" title="WordofCS">WordofCS</span>
+            <span class="post-date" title="2020-11-24 17:21:02">2020/11/24</span>
+        </a>
+        
+        <a id="top" class="全部文章 读书 英语 "
+           href="/2020/09/18/CET-6-Writing/"
+           data-tag="六级,写作"
+           data-author="" >
+            <span class="post-title" title="六级写作">六级写作</span>
+            <span class="post-date" title="2020-09-18 10:21:32">2020/09/18</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/12/04/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2025-12-04 09:09:30">2025/12/04</span>
+        </a>
+        
+        <a  class="全部文章 沉淀一下 场景题 "
+           href="/2025/11/06/goodjob/"
+           data-tag="work"
+           data-author="" >
+            <span class="post-title" title="goodjob">goodjob</span>
+            <span class="post-date" title="2025-11-06 23:23:29">2025/11/06</span>
+        </a>
+        
+        <a  class="全部文章 java mq "
+           href="/2025/10/28/java-rabbitmq/"
+           data-tag="rabbitmq"
+           data-author="" >
+            <span class="post-title" title="java_rabbitmq">java_rabbitmq</span>
+            <span class="post-date" title="2025-10-28 17:12:04">2025/10/28</span>
+        </a>
+        
+        <a  class="全部文章 后端 java "
+           href="/2025/10/23/java-security/"
+           data-tag="jwt"
+           data-author="" >
+            <span class="post-title" title="java_security">java_security</span>
+            <span class="post-date" title="2025-10-23 17:40:33">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-swagger/"
+           data-tag="swagger"
+           data-author="" >
+            <span class="post-title" title="java_swagger">java_swagger</span>
+            <span class="post-date" title="2025-10-23 17:16:02">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/23/java-hutool/"
+           data-tag="hutool"
+           data-author="" >
+            <span class="post-title" title="java_hutool">java_hutool</span>
+            <span class="post-date" title="2025-10-23 16:34:49">2025/10/23</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2025/10/21/mall/"
+           data-tag="mall"
+           data-author="" >
+            <span class="post-title" title="mall">mall</span>
+            <span class="post-date" title="2025-10-21 22:02:56">2025/10/21</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2025/10/11/docker-destop/"
+           data-tag="docker-desktop"
+           data-author="" >
+            <span class="post-title" title="docker_destop">docker_destop</span>
+            <span class="post-date" title="2025-10-11 09:52:56">2025/10/11</span>
+        </a>
+        
+        <a  class="全部文章 后端 "
+           href="/2025/10/10/java-mark/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java要点小结">java要点小结</span>
+            <span class="post-date" title="2025-10-10 17:28:57">2025/10/10</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/29/pysideRecord/"
+           data-tag="pyside"
+           data-author="" >
+            <span class="post-title" title="pysideRecord">pysideRecord</span>
+            <span class="post-date" title="2025-09-29 20:46:51">2025/09/29</span>
+        </a>
+        
+        <a  class="全部文章 docker fastbee "
+           href="/2025/09/19/dockerDeploy/"
+           data-tag="iot"
+           data-author="" >
+            <span class="post-title" title="fastbee项目部署">fastbee项目部署</span>
+            <span class="post-date" title="2025-09-19 10:22:51">2025/09/19</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2025/09/18/fastapiLearning/"
+           data-tag="fastapi"
+           data-author="" >
+            <span class="post-title" title="fastapiNote">fastapiNote</span>
+            <span class="post-date" title="2025-09-18 15:42:57">2025/09/18</span>
+        </a>
+        
+        <a  class="全部文章 linux "
+           href="/2025/07/21/Ubuntu/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux">Linux</span>
+            <span class="post-date" title="2025-07-21 09:57:43">2025/07/21</span>
+        </a>
+        
+        <a  class="全部文章 物联网 "
+           href="/2025/03/06/esp32-ubuntun-start/"
+           data-tag="乐鑫"
+           data-author="" >
+            <span class="post-title" title="esp32_ubuntun_start">esp32_ubuntun_start</span>
+            <span class="post-date" title="2025-03-06 15:02:56">2025/03/06</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2025/01/18/vim-use/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="vim-use">vim-use</span>
+            <span class="post-date" title="2025-01-18 09:35:04">2025/01/18</span>
+        </a>
+        
+        <a  class="全部文章 linux shell "
+           href="/2025/01/15/shell-programming/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="shell_programming">shell_programming</span>
+            <span class="post-date" title="2025-01-15 15:40:40">2025/01/15</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/30/esp-idf-record/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-record">esp-idf-record</span>
+            <span class="post-date" title="2024-12-30 10:46:49">2024/12/30</span>
+        </a>
+        
+        <a  class="全部文章 物联网 乐鑫 "
+           href="/2024/12/27/esp-idf-cmd/"
+           data-tag="esp-idf"
+           data-author="" >
+            <span class="post-title" title="esp-idf-cmd">esp-idf-cmd</span>
+            <span class="post-date" title="2024-12-27 16:41:01">2024/12/27</span>
+        </a>
+        
+        <a  class="全部文章 Python "
+           href="/2024/09/06/pyGUI/"
+           data-tag="tkinter"
+           data-author="" >
+            <span class="post-title" title="tkinterecord">tkinterecord</span>
+            <span class="post-date" title="2024-09-06 14:41:16">2024/09/06</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/08/26/basic-Arduino/"
+           data-tag="C"
+           data-author="" >
+            <span class="post-title" title="basic_Arduino">basic_Arduino</span>
+            <span class="post-date" title="2024-08-26 17:47:27">2024/08/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/08/13/mqtt/"
+           data-tag="mqtt上传文件"
+           data-author="" >
+            <span class="post-title" title="MQTT">MQTT</span>
+            <span class="post-date" title="2024-08-13 15:45:34">2024/08/13</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2024/06/07/IntelligenLEDStrip/"
+           data-tag="ESP Rainmaker"
+           data-author="" >
+            <span class="post-title" title="智能灯带">智能灯带</span>
+            <span class="post-date" title="2024-06-07 10:15:00">2024/06/07</span>
+        </a>
+        
+        <a  class="全部文章 linux wls "
+           href="/2024/05/28/linux-note/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux_note">linux_note</span>
+            <span class="post-date" title="2024-05-28 09:22:34">2024/05/28</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/k3s%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/"
+           data-tag="k3s"
+           data-author="" >
+            <span class="post-title" title="k3s">k3s</span>
+            <span class="post-date" title="2024-05-14 16:36:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 docker "
+           href="/2024/05/14/local_deploy/"
+           data-tag="fastbee"
+           data-author="" >
+            <span class="post-title" title="物联网平台本地部署并接入摄像头">物联网平台本地部署并接入摄像头</span>
+            <span class="post-date" title="2024-05-14 16:31:52">2024/05/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2024/04/12/CameraAccess/"
+           data-tag="FleetBee"
+           data-author="" >
+            <span class="post-title" title="摄像头接入">摄像头接入</span>
+            <span class="post-date" title="2024-04-12 16:48:52">2024/04/12</span>
+        </a>
+        
+        <a  class="全部文章 linux 基本使用 "
+           href="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux的基本使用">linux的基本使用</span>
+            <span class="post-date" title="2024-03-31 17:40:34">2024/03/31</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/09/ruoyi_2Dev/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi-二次开发">ruoyi-二次开发</span>
+            <span class="post-date" title="2024-01-09 11:20:00">2024/01/09</span>
+        </a>
+        
+        <a  class="全部文章 docker ruoyi "
+           href="/2024/01/06/ruoyi/"
+           data-tag="开发框架"
+           data-author="" >
+            <span class="post-title" title="ruoyi">ruoyi</span>
+            <span class="post-date" title="2024-01-06 15:20:00">2024/01/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 SpringBoot "
+           href="/2024/01/05/SpringBoor_Vue/"
+           data-tag="SpringBoot,Vue"
+           data-author="" >
+            <span class="post-title" title="SpringBoot_Vue">SpringBoot_Vue</span>
+            <span class="post-date" title="2024-01-05 11:20:01">2024/01/05</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/27/wumei_DeepIn/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceDeepIn">wumei-deviceDeepIn</span>
+            <span class="post-date" title="2023-12-27 10:23:00">2023/12/27</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/26/wumei_deviceInto/"
+           data-tag="device"
+           data-author="" >
+            <span class="post-title" title="wumei-deviceInto">wumei-deviceInto</span>
+            <span class="post-date" title="2023-12-26 11:20:00">2023/12/26</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/12/12/ESP32-C3/"
+           data-tag="ESP32C3"
+           data-author="" >
+            <span class="post-title" title="ESP32C3">ESP32C3</span>
+            <span class="post-date" title="2023-12-12 15:43:52">2023/12/12</span>
+        </a>
+        
+        <a  class="全部文章 物联网 物联网平台 "
+           href="/2023/12/11/wumei/"
+           data-tag="Fastbee"
+           data-author="" >
+            <span class="post-title" title="wumei">wumei</span>
+            <span class="post-date" title="2023-12-11 09:48:52">2023/12/11</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/11/08/ESP32/"
+           data-tag="MircroPython"
+           data-author="" >
+            <span class="post-title" title="MircroPython">MircroPython</span>
+            <span class="post-date" title="2023-11-08 18:02:31">2023/11/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 数学 "
+           href="/2023/11/01/Q-rsqrt/"
+           data-tag="快速平方根"
+           data-author="" >
+            <span class="post-title" title="Q_rsqrt">Q_rsqrt</span>
+            <span class="post-date" title="2023-11-01 08:52:08">2023/11/01</span>
+        </a>
+        
+        <a  class="全部文章 工具 audio "
+           href="/2023/10/16/audioConvert/"
+           data-tag="python,audio"
+           data-author="" >
+            <span class="post-title" title="audioConvert">audioConvert</span>
+            <span class="post-date" title="2023-10-16 19:34:43">2023/10/16</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/14/STM32/"
+           data-tag="STM32"
+           data-author="" >
+            <span class="post-title" title="STM32">STM32</span>
+            <span class="post-date" title="2023-10-14 08:59:19">2023/10/14</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/10/08/51C/"
+           data-tag="51C"
+           data-author="" >
+            <span class="post-title" title="51C">51C</span>
+            <span class="post-date" title="2023-10-08 17:20:10">2023/10/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 面试题 "
+           href="/2023/09/18/JobInterview/"
+           data-tag="N的阶乘"
+           data-author="" >
+            <span class="post-title" title="JobInterview">JobInterview</span>
+            <span class="post-date" title="2023-09-18 21:55:19">2023/09/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 LeetCode "
+           href="/2023/09/13/hot100/"
+           data-tag="LeetCode"
+           data-author="" >
+            <span class="post-title" title="hot100">hot100</span>
+            <span class="post-date" title="2023-09-13 10:17:00">2023/09/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/09/05/4Job/"
+           data-tag="Shell,Job,WebGIS"
+           data-author="" >
+            <span class="post-title" title="Javaer&#39;s development">Javaer&#39;s development</span>
+            <span class="post-date" title="2023-09-05 00:00:00">2023/09/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/03/24/Stream/"
+           data-tag="Stream"
+           data-author="" >
+            <span class="post-title" title="Stream">Stream</span>
+            <span class="post-date" title="2023-03-24 09:42:49">2023/03/24</span>
+        </a>
+        
+        <a  class="全部文章 物联网 设备端 "
+           href="/2023/03/08/ESP32ATLog/"
+           data-tag="ESP32,AT"
+           data-author="" >
+            <span class="post-title" title="ESP32AT指令集探索">ESP32AT指令集探索</span>
+            <span class="post-date" title="2023-03-08 14:52:56">2023/03/08</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/02/09/AddOn4SpeedPlay/"
+           data-tag="video"
+           data-author="" >
+            <span class="post-title" title="AddOn4SpeedPlay">AddOn4SpeedPlay</span>
+            <span class="post-date" title="2023-02-09 13:05:26">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 ChatGPT "
+           href="/2023/02/09/ChatGPT/"
+           data-tag="ChatGPT"
+           data-author="" >
+            <span class="post-title" title="Usage of ChatGPT">Usage of ChatGPT</span>
+            <span class="post-date" title="2023-02-09 12:34:54">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2023/02/09/Java-io/"
+           data-tag="IO"
+           data-author="" >
+            <span class="post-title" title="Java-io">Java-io</span>
+            <span class="post-date" title="2023-02-09 12:27:55">2023/02/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 插件 "
+           href="/2023/01/17/Freedom/"
+           data-tag="油猴"
+           data-author="" >
+            <span class="post-title" title="Videos">Videos</span>
+            <span class="post-date" title="2023-01-17 21:43:30">2023/01/17</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/12/04/DevConcludes/"
+           data-tag="开发"
+           data-author="" >
+            <span class="post-title" title="DevConcludes">DevConcludes</span>
+            <span class="post-date" title="2022-12-04 22:16:46">2022/12/04</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2022/10/16/Java-Utils/"
+           data-tag="Utils"
+           data-author="" >
+            <span class="post-title" title="Java-Utils">Java-Utils</span>
+            <span class="post-date" title="2022-10-16 16:15:29">2022/10/16</span>
+        </a>
+        
+        <a  class="全部文章 算法 数组 "
+           href="/2022/05/02/Array/"
+           data-tag="数组"
+           data-author="" >
+            <span class="post-title" title="数组">数组</span>
+            <span class="post-date" title="2022-05-02 00:00:00">2022/05/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2022/01/23/TopologicalSorting/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="拓扑排序">拓扑排序</span>
+            <span class="post-date" title="2022-01-23 00:00:00">2022/01/23</span>
+        </a>
+        
+        <a  class="全部文章 算法 图 "
+           href="/2021/12/31/Graph-DataStructure/"
+           data-tag="图"
+           data-author="" >
+            <span class="post-title" title="图的数据结构">图的数据结构</span>
+            <span class="post-date" title="2021-12-31 10:41:29">2021/12/31</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/12/13/BinaryTree-traverse/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的遍历框架">二叉树的遍历框架</span>
+            <span class="post-date" title="2021-12-13 10:50:34">2021/12/13</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/12/08/Trie-341-NestedIterator/"
+           data-tag="前缀树,N叉树,迭代器"
+           data-author="" >
+            <span class="post-title" title="扁平化嵌套列表迭代器">扁平化嵌套列表迭代器</span>
+            <span class="post-date" title="2021-12-08 16:38:11">2021/12/08</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/11/26/BinaryTree-297-SerializeAndDeserialize/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树的序列化和反序列化">二叉树的序列化和反序列化</span>
+            <span class="post-date" title="2021-11-26 17:32:54">2021/11/26</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-160-getIntersectionNode/"
+           data-tag="160,链表"
+           data-author="" >
+            <span class="post-title" title="两个链表是否相交">两个链表是否相交</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-19-removeNthFromEnd/"
+           data-tag="链表,19"
+           data-author="" >
+            <span class="post-title" title="单链表的倒数第K个节点">单链表的倒数第K个节点</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-23-mergeKLists/"
+           data-tag="链表,23"
+           data-author="" >
+            <span class="post-title" title="合并K个有序链表">合并K个有序链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-234-isPalindrome/"
+           data-tag="链表,234"
+           data-author="" >
+            <span class="post-title" title="回文链表">回文链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-25-reverseKGroup/"
+           data-tag="链表,25,迭代"
+           data-author="" >
+            <span class="post-title" title="K个一组反转链表">K个一组反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/19/LinkedList-92-reverseBetween/"
+           data-tag="链表,92,递归"
+           data-author="" >
+            <span class="post-title" title="反转链表">反转链表</span>
+            <span class="post-date" title="2021-11-19 00:00:00">2021/11/19</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/11/18/LinkedList-21-mergeTwoLists/"
+           data-tag="链表,21"
+           data-author="" >
+            <span class="post-title" title="合并两个有序链表">合并两个有序链表</span>
+            <span class="post-date" title="2021-11-18 00:00:00">2021/11/18</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/09/16/Calculate-date/"
+           data-tag="闰年"
+           data-author="" >
+            <span class="post-title" title="Calculate_date">Calculate_date</span>
+            <span class="post-date" title="2021-09-16 21:05:01">2021/09/16</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatterofStrategy/"
+           data-tag="行为型模式,策略模式"
+           data-author="" >
+            <span class="post-title" title="策略模式">策略模式</span>
+            <span class="post-date" title="2021-09-15 20:58:14">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofObserver/"
+           data-tag="观察者模式,行为型模式"
+           data-author="" >
+            <span class="post-title" title="观察者模式">观察者模式</span>
+            <span class="post-date" title="2021-09-15 20:41:49">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/09/15/DesignPatternofProxy/"
+           data-tag="代理模式,结构型模式"
+           data-author="" >
+            <span class="post-title" title="代理模式">代理模式</span>
+            <span class="post-date" title="2021-09-15 20:30:32">2021/09/15</span>
+        </a>
+        
+        <a  class="全部文章 算法 "
+           href="/2021/09/07/PriorityQueue/"
+           data-tag="优先队列,贪心"
+           data-author="" >
+            <span class="post-title" title="PriorityQueue">PriorityQueue</span>
+            <span class="post-date" title="2021-09-07 00:00:00">2021/09/07</span>
+        </a>
+        
+        <a  class="全部文章 算法 链表 "
+           href="/2021/09/05/LinkedList-203-removeElements/"
+           data-tag="203,移除链表元素"
+           data-author="" >
+            <span class="post-title" title="移除链表元素">移除链表元素</span>
+            <span class="post-date" title="2021-09-05 00:00:00">2021/09/05</span>
+        </a>
+        
+        <a  class="全部文章 算法 基础 "
+           href="/2021/08/31/SearchAndSort/"
+           data-tag="排序,查找"
+           data-author="" >
+            <span class="post-title" title="SearchAndSort">SearchAndSort</span>
+            <span class="post-date" title="2021-08-31 14:27:08">2021/08/31</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/HashSet-HashMap-analyse/"
+           data-tag="集合,Set,Map"
+           data-author="" >
+            <span class="post-title" title="HashMap">HashMap</span>
+            <span class="post-date" title="2021-08-13 14:59:19">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/LinkedList-analyse/"
+           data-tag="集合,LinkedList"
+           data-author="" >
+            <span class="post-title" title="LinkedList-analyse">LinkedList-analyse</span>
+            <span class="post-date" title="2021-08-13 13:19:52">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Vector-analyse/"
+           data-tag="集合,List,Vector"
+           data-author="" >
+            <span class="post-title" title="Vector-analyse">Vector-analyse</span>
+            <span class="post-date" title="2021-08-13 11:42:21">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/13/Arraylist-analyse/"
+           data-tag="集合,List,ArrayList"
+           data-author="" >
+            <span class="post-title" title="Arraylist_analyse">Arraylist_analyse</span>
+            <span class="post-date" title="2021-08-13 08:59:00">2021/08/13</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/08/10/Java-JUC/"
+           data-tag="多线程"
+           data-author="" >
+            <span class="post-title" title="Java_JUC">Java_JUC</span>
+            <span class="post-date" title="2021-08-10 20:42:30">2021/08/10</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/07/09/Trie/"
+           data-tag="前缀树,N叉树"
+           data-author="" >
+            <span class="post-title" title="过滤敏感词">过滤敏感词</span>
+            <span class="post-date" title="2021-07-09 00:00:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 算法 滑动窗口 "
+           href="/2021/07/02/slidingwindow/"
+           data-tag="滑动窗口"
+           data-author="" >
+            <span class="post-title" title="滑动窗口">滑动窗口</span>
+            <span class="post-date" title="2021-07-02 00:00:00">2021/07/02</span>
+        </a>
+        
+        <a  class="全部文章 算法 双指针 "
+           href="/2021/07/01/doublepointers/"
+           data-tag="双指针"
+           data-author="" >
+            <span class="post-title" title="双指针">双指针</span>
+            <span class="post-date" title="2021-07-01 00:00:00">2021/07/01</span>
+        </a>
+        
+        <a  class="全部文章 数据库 Redis "
+           href="/2021/06/29/redis-LearningNote/"
+           data-tag="NoSQL"
+           data-author="" >
+            <span class="post-title" title="redis学习笔记">redis学习笔记</span>
+            <span class="post-date" title="2021-06-29 00:00:00">2021/06/29</span>
+        </a>
+        
+        <a  class="全部文章 算法 日期 "
+           href="/2021/06/27/Zeller/"
+           data-tag="蔡勒公式,OJ"
+           data-author="" >
+            <span class="post-title" title="Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7">Week = (Day + 2*Month + 3*(Month+1)/5 + Year + Year/4 - Year/100 + Year/400) % 7</span>
+            <span class="post-date" title="2021-06-27 00:00:00">2021/06/27</span>
+        </a>
+        
+        <a  class="全部文章 算法 树 "
+           href="/2021/06/01/BinaryTree/"
+           data-tag="二叉树"
+           data-author="" >
+            <span class="post-title" title="二叉树">二叉树</span>
+            <span class="post-date" title="2021-06-01 00:00:00">2021/06/01</span>
+        </a>
+        
+        <a  class="全部文章 运维 "
+           href="/2021/05/27/linuxLearningNote/"
+           data-tag="Linux,Shell"
+           data-author="" >
+            <span class="post-title" title="Linux 与 Shell">Linux 与 Shell</span>
+            <span class="post-date" title="2021-05-27 00:00:00">2021/05/27</span>
+        </a>
+        
+        <a  class="全部文章 DL "
+           href="/2021/05/05/Resnet/"
+           data-tag="DL,Resnet"
+           data-author="" >
+            <span class="post-title" title="Resnet">Resnet</span>
+            <span class="post-date" title="2021-05-05 00:00:00">2021/05/05</span>
+        </a>
+        
+        <a  class="全部文章 后端 Java "
+           href="/2021/04/29/Java-polymorphism/"
+           data-tag="多态"
+           data-author="" >
+            <span class="post-title" title="Java-polymorphism">Java-polymorphism</span>
+            <span class="post-date" title="2021-04-29 00:00:00">2021/04/29</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/14/DesignPatternofBuilder/"
+           data-tag="建造者模式,构建型模式"
+           data-author="" >
+            <span class="post-title" title="建造者模式">建造者模式</span>
+            <span class="post-date" title="2021-04-14 00:00:00">2021/04/14</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/10/DesignPatternofSingleton/"
+           data-tag="构建型模式,单例模式"
+           data-author="" >
+            <span class="post-title" title="单例模式">单例模式</span>
+            <span class="post-date" title="2021-04-10 00:00:00">2021/04/10</span>
+        </a>
+        
+        <a  class="全部文章 前端 "
+           href="/2021/04/09/JavaScript-Note/"
+           data-tag="前端,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2021-04-09 14:27:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/09/DesignPatternofSixPrinciples/"
+           data-tag="六大原则"
+           data-author="" >
+            <span class="post-title" title="六大设计原则">六大设计原则</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/04/09/DockerPractice/"
+           data-tag="Docker,DL"
+           data-author="" >
+            <span class="post-title" title="DockerPractice">DockerPractice</span>
+            <span class="post-date" title="2021-04-09 00:00:00">2021/04/09</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2021/04/06/GitLearningNote-2/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git学习笔记">git学习笔记</span>
+            <span class="post-date" title="2021-04-06 00:00:00">2021/04/06</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/04/02/DesignPatternofPrototype/"
+           data-tag="构建型模式,原型模式"
+           data-author="" >
+            <span class="post-title" title="原型模式">原型模式</span>
+            <span class="post-date" title="2021-04-02 00:00:00">2021/04/02</span>
+        </a>
+        
+        <a  class="全部文章 后端 设计模式 "
+           href="/2021/03/30/DesignPatternofFactory/"
+           data-tag="创建型模式,简单工厂模式,工厂方法模式,抽象工厂模式"
+           data-author="" >
+            <span class="post-title" title="工厂模式">工厂模式</span>
+            <span class="post-date" title="2021-03-30 00:00:00">2021/03/30</span>
+        </a>
+        
+        <a  class="全部文章 数据库 MySQL "
+           href="/2021/03/23/MySQLearningNote/"
+           data-tag="SQL,约束,数据库的设计,数据库的备份和还原,多表查询,事务"
+           data-author="" >
+            <span class="post-title" title="MySQL学习笔记">MySQL学习笔记</span>
+            <span class="post-date" title="2021-03-23 00:00:00">2021/03/23</span>
+        </a>
+        
+        <a  class="全部文章 运维 Docker "
+           href="/2021/03/19/DockerLearningNoteBase/"
+           data-tag="docker,镜像,容器"
+           data-author="" >
+            <span class="post-title" title="Docker学习笔记">Docker学习笔记</span>
+            <span class="post-date" title="2021-03-19 00:00:00">2021/03/19</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/10/16/Ado-.net/"
+           data-tag="C#,Ado.net"
+           data-author="" >
+            <span class="post-title" title="Ado.net">Ado.net</span>
+            <span class="post-date" title="2020-10-16 00:00:00">2020/10/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 github "
+           href="/2020/10/12/GitHubSearch/"
+           data-tag="github"
+           data-author="" >
+            <span class="post-title" title="学会在github上搜索项目">学会在github上搜索项目</span>
+            <span class="post-date" title="2020-10-12 13:55:57">2020/10/12</span>
+        </a>
+        
+        <a  class="全部文章 后端 C# "
+           href="/2020/09/21/Event-publisher-subscriber/"
+           data-tag="C#,委托与事件"
+           data-author="" >
+            <span class="post-title" title="Event_publisher_subscriber">Event_publisher_subscriber</span>
+            <span class="post-date" title="2020-09-21 15:17:32">2020/09/21</span>
+        </a>
+        
+        <a  class="全部文章 读书 软件设计师 "
+           href="/2019/12/16/SoftwareDesignTest/"
+           data-tag="原码, 反码, 补码, 移码,进制转换"
+           data-author="" >
+            <span class="post-title" title="软件设计师">软件设计师</span>
+            <span class="post-date" title="2019-12-16 10:46:08">2019/12/16</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/12/03/douban-spider/"
+           data-tag="Python,爬虫"
+           data-author="" >
+            <span class="post-title" title="豆瓣排行榜小爬虫">豆瓣排行榜小爬虫</span>
+            <span class="post-date" title="2019-12-03 00:00:00">2019/12/03</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/09/30/Crawler/"
+           data-tag="爬虫,http"
+           data-author="" >
+            <span class="post-title" title="什么是网络爬虫">什么是网络爬虫</span>
+            <span class="post-date" title="2019-09-30 14:35:05">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 DL Python "
+           href="/2019/08/31/PythonNote/"
+           data-tag="Python"
+           data-author="" >
+            <span class="post-title" title="Python学习笔记">Python学习笔记</span>
+            <span class="post-date" title="2019-08-31 14:28:16">2019/08/31</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/08/10/HowToMakeBlog/"
+           data-tag="博客搭建"
+           data-author="" >
+            <span class="post-title" title="搭建hexo博客">搭建hexo博客</span>
+            <span class="post-date" title="2019-08-10 00:00:00">2019/08/10</span>
+        </a>
+        
+        <a  class="全部文章 工具 git "
+           href="/2019/06/13/GitLearningNote-1/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git 初试">git 初试</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/06/13/On-the-Internet-Scientifically/"
+           data-tag="shadowsocks"
+           data-author="" >
+            <span class="post-title" title="科学上网">科学上网</span>
+            <span class="post-date" title="2019-06-13 00:00:00">2019/06/13</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-linux的基本使用" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">linux的基本使用</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="linux">linux</a> > 
+            
+            <a  data-rel="linux&lt;---&gt;基本使用">基本使用</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">linux</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2025-10-09 11:18:24'>2024-03-31 17:40</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:6.6k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-text">linux的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BC%80%E6%BA%90%E7%89%B9%E6%80%A7"><span class="toc-text">1. 开源特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A4%9A%E7%A7%8D%E5%8F%91%E8%A1%8C%E7%89%88"><span class="toc-text">2. 多种发行版</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-text">3. 文件系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%94%A8%E6%88%B7%E5%92%8C%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-text">4. 用户和权限管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8C%85%E7%AE%A1%E7%90%86"><span class="toc-text">5. 包管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2"><span class="toc-text">6. 命令行界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%92%8C%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-text">7. 稳定性和安全性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E7%A4%BE%E5%8C%BA%E6%94%AF%E6%8C%81"><span class="toc-text">8. 社区支持</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-text">9. 应用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83"><span class="toc-text">10. 桌面环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">目录结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%9B%AE%E5%BD%95"><span class="toc-text">常用目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E7%9B%AE%E5%BD%95"><span class="toc-text">其它目录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod"><span class="toc-text">chmod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#reboot"><span class="toc-text">reboot</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#shutdown"><span class="toc-text">shutdown</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pwd"><span class="toc-text">pwd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#head"><span class="toc-text">head</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9"><span class="toc-text">常用选项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tail"><span class="toc-text">tail</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9-1"><span class="toc-text">常用选项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#df"><span class="toc-text">df</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9-2"><span class="toc-text">常用选项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#zip"><span class="toc-text">zip</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9-3"><span class="toc-text">常用选项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#unzip"><span class="toc-text">unzip</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9-4"><span class="toc-text">常用选项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tar"><span class="toc-text">tar</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E9%80%89%E9%A1%B9-5"><span class="toc-text">常用选项</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tree"><span class="toc-text">tree</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#wget"><span class="toc-text">wget</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#curl"><span class="toc-text">curl</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#apt"><span class="toc-text">apt</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E5%91%BD%E4%BB%A4"><span class="toc-text">搜索命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#find"><span class="toc-text">find</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cat"><span class="toc-text">cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#awk"><span class="toc-text">awk</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E8%B7%B5"><span class="toc-text">实践</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%A7%A3%E5%8E%8B%E5%B7%A5%E5%85%B7"><span class="toc-text">安装解压工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH%E8%BF%9E%E6%8E%A5"><span class="toc-text">SSH连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A9%B1%E5%8A%A8%E7%BC%96%E8%AF%91"><span class="toc-text">驱动编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5"><span class="toc-text">问题排查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#aic8800-usb"><span class="toc-text">aic8800-usb</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#aic8800-sdio"><span class="toc-text">aic8800-sdio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%9E%E5%90%90%E9%87%8F%E6%B5%8B%E8%AF%95"><span class="toc-text">吞吐量测试</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="linux的基本使用"><a href="#linux的基本使用" class="headerlink" title="linux的基本使用"></a>linux的基本使用</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Linux是一种开源的类Unix操作系统，最初由林纳斯·托瓦兹（Linus Torvalds）于1991年开发。Linux的核心是内核（Kernel），它负责管理硬件资源并提供系统服务。以下是对Linux系统的一些详细介绍：</p>
+<h3 id="1-开源特性"><a href="#1-开源特性" class="headerlink" title="1. 开源特性"></a>1. 开源特性</h3><p>Linux是开源软件，这意味着任何人都可以查看、修改和分发其源代码。这种开放性促进了社区的参与和快速迭代，使得Linux不断发展和改进。</p>
+<h3 id="2-多种发行版"><a href="#2-多种发行版" class="headerlink" title="2. 多种发行版"></a>2. 多种发行版</h3><p>Linux有许多不同的发行版（Distribution），每个发行版都有其特定的功能和目标用户群体。常见的发行版包括：</p>
+<ul>
+<li><strong>Ubuntu</strong>：用户友好，适合初学者。</li>
+<li><strong>CentOS</strong>：企业级，基于Red Hat的稳定性。</li>
+<li><strong>Debian</strong>：注重稳定性和自由软件。</li>
+<li><strong>Fedora</strong>：前沿科技，适合开发者。</li>
+<li><strong>Arch Linux</strong>：极简主义，高度自定义。</li>
+</ul>
+<h3 id="3-文件系统"><a href="#3-文件系统" class="headerlink" title="3. 文件系统"></a>3. 文件系统</h3><p>Linux支持多种文件系统，如Ext4、Btrfs、XFS等。其文件系统结构通常遵循类似Unix的层次结构，从根目录（/）开始，下面有不同的子目录如/home、/etc、/usr等。</p>
+<h3 id="4-用户和权限管理"><a href="#4-用户和权限管理" class="headerlink" title="4. 用户和权限管理"></a>4. 用户和权限管理</h3><p>Linux是多用户操作系统，每个用户都有自己独立的权限。文件和目录具有访问权限设置，包括读、写和执行权限。通过用户组的管理，可以方便地控制不同用户对资源的访问。</p>
+<h3 id="5-包管理"><a href="#5-包管理" class="headerlink" title="5. 包管理"></a>5. 包管理</h3><p>大多数Linux发行版使用包管理系统来安装、更新和管理软件。例如，Debian及其衍生版使用APT（Advanced Package Tool），而基于Red Hat的系统使用YUM或DNF。这使得软件管理变得简单高效。</p>
+<h3 id="6-命令行界面"><a href="#6-命令行界面" class="headerlink" title="6. 命令行界面"></a>6. 命令行界面</h3><p>Linux有强大的命令行界面（CLI），用户可以通过终端输入命令来执行各种操作。这种方式灵活且功能强大，适合高级用户和系统管理员。</p>
+<h3 id="7-稳定性和安全性"><a href="#7-稳定性和安全性" class="headerlink" title="7. 稳定性和安全性"></a>7. 稳定性和安全性</h3><p>Linux因其稳定性和安全性被广泛应用于服务器、嵌入式设备和超级计算机。由于其开源特性，漏洞和安全问题通常能迅速得到修复。</p>
+<h3 id="8-社区支持"><a href="#8-社区支持" class="headerlink" title="8. 社区支持"></a>8. 社区支持</h3><p>Linux拥有活跃的开发者社区和用户社区，提供丰富的文档、论坛和技术支持。这种支持使得用户能够快速解决问题并学习新技能。</p>
+<h3 id="9-应用场景"><a href="#9-应用场景" class="headerlink" title="9. 应用场景"></a>9. 应用场景</h3><p>Linux被广泛应用于各种领域，包括：</p>
+<ul>
+<li>服务器（Web服务器、数据库服务器等）</li>
+<li>嵌入式系统（如路由器、物联网设备）</li>
+<li>桌面计算（如Ubuntu、Fedora等用户友好的桌面环境）</li>
+<li>科学计算（高性能计算集群）</li>
+</ul>
+<h3 id="10-桌面环境"><a href="#10-桌面环境" class="headerlink" title="10. 桌面环境"></a>10. 桌面环境</h3><p>虽然Linux传统上以服务器应用为主，但近年来许多用户友好的桌面环境（如GNOME、KDE Plasma、XFCE等）使得Linux在个人计算领域也获得越来越多的用户。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>Linux是一种功能强大的操作系统，适合各种应用场景。从服务器到桌面，Linux都发挥着重要作用。其开源特性、稳定性和灵活性使得它在全球范围内拥有广泛的用户基础和开发者社区。无论是个人用户还是企业，Linux都提供了丰富的选择和支持。</p>
+<hr>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><h3 id="常用目录"><a href="#常用目录" class="headerlink" title="常用目录"></a>常用目录</h3><ul>
+<li>/home：用户目录。<ul>
+<li>除了root用户外，其他所有的使用者的数据都存放在这个目录下，在树莓派的系统中，/home目录中有一个pi的子目录,这个就是pi用户的默认目录。</li>
+</ul>
+</li>
+<li>/bin： 主要放置系统的必备执行文件目录。<ul>
+<li>放置与Linux系统有关(包括运行图形界面所需的)的二进制可执行文件,如ls、mkdir、rm等。</li>
+</ul>
+</li>
+<li>/boot：引导目录。<ul>
+<li>用于存放系统引导程序，如linux内核以及启动配置文件，里面的config.txt也是用户配置使用频率最高的文件。</li>
+</ul>
+</li>
+<li>/etc： 系统配置文件存放目录。<ul>
+<li>在这个目录中存放了几乎所有的Linux系统软件所需的配置文件，如果需要对这个目录中的文本进行修改,那么最好是先将需要修改的文件进行备份，以保证在修改之后还可以回到原来的状态。</li>
+</ul>
+</li>
+</ul>
+<h3 id="其它目录"><a href="#其它目录" class="headerlink" title="其它目录"></a>其它目录</h3><ul>
+<li>/dev ：设备目录。在Linux系统中，所有设备都视为文件，而在这个目录中存放了所有设备，例如第一个SATA硬盘或U盘会被识别为sda文件，而SATA硬盘或U盘第一个分区会被识别为sda1文件。</li>
+<li>/lib：基本系统的动态链接库存放位置，在这个目录中存放了可以维持一个基本系统启动所需要的库文件。如果没有这个目录，系统程序根本就无法工作。</li>
+<li>/lost + found/分区系统的目录。系统非正常关机而产生的文件通常都存放在这里，另外由fsck等程序进行硬盘修复后产生的文件也存放在这里。</li>
+<li>/media：linux 系统会自动识别一些设备，例如U盘、光驱等等，当识别后，Linux会把识别的设备挂载到这个目录下。<ul>
+<li>【如果没有找到U盘，可以先通过命令lsblk找到设备的挂载点等信息】</li>
+<li>【然后再通过命令的方式挂载到某个目录下：】<ul>
+<li>mkdir /media/usb</li>
+<li>cd /media/usb</li>
+<li>mount /dev/sdb1 /media/usb</li>
+</ul>
+</li>
+<li>【最后再移除挂载点】<ul>
+<li>umount /dev/sdb1 【最直接】</li>
+<li>或者</li>
+<li>umount  /media/usb 【比较方便】</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>/mnt：传统的外部设备挂载点。在早期的时候，除了系统分区外的其他分 区，如U盘等设备，都会被挂载到这个目录下以供用户读写。不过现在已经被 /media/取代。</li>
+<li>/proc：proc是一个虚拟文件系统。这个目录是存放在内存中的，因此不会占用硬盘空间，系统或用户通过读取这些设备来了解它们的信息。例如，可以使用cat /proc/cpuinfo命令来査看CPU信息。</li>
+<li>/root：该目录为系统管理员，也称作超级权限者的用户主目录。</li>
+<li>/srv：该目录存放一些服务启动之后需要提取的数据。</li>
+<li>/sys：与/proc目录一样，也是一个虚拟目录，是由内核中的sysfs系统来实现的，其作用与proc有些类似，但除了与proc具有相同的查看和设定内核参数功能之外，还有为Linux统一设备模型作为管理之用。</li>
+<li>/tmp：临时目录。由程序所产生的临时文件都会存放在该目录下，不用担心这个目录会占用太多的空间，因为每次系统启动都会清除这个目录的内容；同时这也是系统为数不多的拥有所有用户可读写属性的目录。</li>
+<li>/usr：Linux系统所安装的程序都是存放在该目录中的，如非必要请不要修改这个目录的内容。类似于windows下的program files 目录。</li>
+<li>/usr/src：内核源代码默认的放置目录。</li>
+<li>/run：用于存放系统启动时描述系统信息的文件。这个目录最初是在/var/目录下的，但是现在被提升到根目录下。</li>
+</ul>
+<hr>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h4 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h4><ul>
+<li>chmod命令是控制用户对文件的权限的命令。</li>
+<li>Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用户组（Group）、其它用户（Other Users）。</li>
+<li>在下图中，显示了Linux根目录下的详细文件信息。在这些文件信息中, 最重要的就是第一列，它详细描述了文件和目录的权限,而第三与第四列则显示了这个文件和目录属于哪一个用户或组。</li>
+</ul>
+<p>​    <img src="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/chmod.png" alt="chmod.png"></p>
+<ul>
+<li>Linux的文件属性可以分为三种：只读（r）、写（w）和可执行（x）。但是上面的文件属性却分为10小格，这是因为除了第一格显示目录外，另外三组每组三格分别表示文件所有者权限、同一组内的权限以及其他用户权限。<ul>
+<li>第一栏中如果显示d,则表示这是一个目录；如果是链接文件，则在这里显示l;如果是设备文件，则显示c。</li>
+<li>第一个rwx栏位:-rwx—— 表示文件拥有者所拥有的权限。</li>
+<li>第二个rwx栏位:—rwx— 表示同一工作组内用户权限。</li>
+<li>第三个rwx栏位：——rwx 表示其他用户权限。</li>
+<li>例如：</li>
+<li>-rwx rwx rwx 表示无论哪个用户都可以对这个文件读写与执行。</li>
+<li>-rw- — — 表示只有文件拥有者有读写权限，但是没有执行权限。</li>
+<li>-rw -rw -rw 表示所有用户都有读写权。</li>
+</ul>
+</li>
+</ul>
+<p><strong>符号模式</strong></p>
+<ul>
+<li><p>who(用户类型)</p>
+<p><img src="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/who.png" alt="who"></p>
+</li>
+<li><p>operator(符号模式表)</p>
+<p><img src="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/operator.png" alt="operator"></p>
+</li>
+<li><p>permission 的符号模式表</p>
+<p><img src="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/permission.png" alt="permission"></p>
+</li>
+<li><p>符号模式实例</p>
+<ol>
+<li><p>给file的所有用户增加读权限</p>
+<pre><code>chmod a+r file
+</code></pre>
+</li>
+<li><p>删除file的所有用户的执行权限</p>
+<pre><code>chmod a-x file
+</code></pre>
+</li>
+<li><p>给file的所有用户增加读写权限</p>
+<pre><code>chmod a+rw file
+</code></pre>
+</li>
+<li><p>给file的所有用户增加读写执行权限</p>
+<pre><code>chmod +rwx file 
+</code></pre>
+</li>
+<li><p>对file的所有者设置读写权限，清空该用户组和其他用户对file的所有权限（空格代表无权限）</p>
+<pre><code>chmod u=rw,go= file
+</code></pre>
+</li>
+<li><p>对目录jungle和其子目录层次结构中的所有文件给用户增加读权限，而对用户组和其他用户删除读权限</p>
+<pre><code>chmod -R u+r,go-r jungle
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<p><strong>八进制语法</strong></p>
+<ul>
+<li><p>chmod命令可以使用八进制数来指定权限。文件或目录的权限位是由9个权限位来控制，每三位为一组，它们分别是文件所有者（User）的读、写、执行，用户组（Group）的读、写、执行以及其它用户（Other）的读、写、执行。</p>
+<p><img src="/2024/03/31/linux%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/bin_chmod.png" alt="bin_chmod"></p>
+<ul>
+<li><p>例如：765的解释如下：</p>
+<ul>
+<li>所有者的权限用数字表达：属主的那三个权限位的数字加起来的总和。如 rwx ，也就是 4+2+1 ，应该是 7。</li>
+<li>用户组的权限用数字表达：属组的那个权限位数字的相加的总和。如 rw- ，也就是 4+2+0 ，应该是 6。</li>
+<li>其它用户的权限数字表达：其它用户权限位的数字相加的总和。如 r-x ，也就是 4+0+1 ，应该是 5。</li>
+</ul>
+</li>
+<li><p>常用的数字权限</p>
+<ul>
+<li>400 -r——– 拥有者能够读，其他任何人不能进行任何操作；</li>
+<li>644 -rw-r–r– 拥有者都能够读，但只有拥有者可以编辑；</li>
+<li>660 -rw-rw—- 拥有者和组用户都可读和写，其他人不能进行任何操作；</li>
+<li>664 -rw-rw-r– 所有人都可读，但只有拥有者和组用户可编辑；</li>
+<li>700 -rwx—— 拥有者能够读、写和执行，其他用户不能任何操作；</li>
+<li>744 -rwxr–r– 所有人都能读，但只有拥有者才能编辑和执行；</li>
+<li>755 -rwxr-xr-x 所有人都能读和执行，但只有拥有者才能编辑；</li>
+<li>777 -rwxrwxrwx 所有人都能读、写和执行（该设置不建议使用）。</li>
+</ul>
+</li>
+<li><p>实例</p>
+<ul>
+<li><p>给file的所有用户增加读权限,拥有者和组用户可编辑权限</p>
+<pre><code>sudo chmod 664 file
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="reboot"><a href="#reboot" class="headerlink" title="reboot"></a>reboot</h4><ul>
+<li><p>reboot命令用于用来重新启动计算机,更改树莓派的配置经常需要重启。</p>
+</li>
+<li><p>reboot [-n] [-w] [-d] [-f] [-i]</p>
+</li>
+<li><p>参数:</p>
+<ul>
+<li>-n : 在重开机前不做将记忆体资料写回硬盘的动作</li>
+<li>-w : 并不会真的重开机，只是把记录写到 /var/log/wtmp 档案里</li>
+<li>-d : 不把记录写到 /var/log/wtmp 档案里（-n 这个参数包含了 -d）</li>
+<li>-f : 强迫重开机，不呼叫 shutdown 这个指令</li>
+<li>-i : 在重开机之前先把所有网络相关的装置先停止</li>
+</ul>
+</li>
+<li><p>重新启动</p>
+<pre><code>sudo reboot
+</code></pre>
+</li>
+</ul>
+<h4 id="shutdown"><a href="#shutdown" class="headerlink" title="shutdown"></a>shutdown</h4><ul>
+<li><p>树莓派的关机是不能直接拔掉电源线的,因为树莓派会将内存作为暂存区,如果直接拔掉电源线会使一些在内存中的数据没有来得及写入SD卡中，从而造成数据的丢失或是损坏SD卡上的数据,造成系统无法启动。</p>
+</li>
+<li><p>语法</p>
+<pre><code>shutdown [-t seconds] [-rkhncfF] time [message]
+</code></pre>
+</li>
+<li><p>参数</p>
+<ul>
+<li>-t seconds : 设定在几秒钟之后进行关机程序。</li>
+<li>-k : 并不会真的关机，只是将警告讯息传送给所有使用者。</li>
+<li>-r : 关机后重新开机。</li>
+<li>-h : 关机后停机。</li>
+<li>-n : 不采用正常程序来关机，用强迫的方式杀掉所有执行中的程序后自行关机。</li>
+<li>-c : 取消目前已经进行中的关机动作。</li>
+<li>-f : 关机时，不做 fsck 动作(检查 Linux 档系统)。</li>
+<li>-F : 关机时，强迫进行 fsck 动作。</li>
+<li>time : 设定关机的时间。</li>
+<li>message : 传送给所有使用者的警告讯息。</li>
+</ul>
+</li>
+<li><p>实例</p>
+<ul>
+<li>立即关机</li>
+</ul>
+</li>
+<li><p>sudo shutdown -h now</p>
+</li>
+<li></li>
+<li><p>指定 10 分钟后关机</p>
+</li>
+<li><p>sudo shutdown -h 10</p>
+</li>
+<li></li>
+<li><p>重新启动计算机</p>
+</li>
+<li><p>sudo shutdown -r now</p>
+</li>
+<li><p>无论使用哪一个命令来关闭系统都需要root用户权限，如果用户使用pi这样的普通用户，可以使用sudo命令暂时获得root权限。</p>
+</li>
+</ul>
+<h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h4><ul>
+<li>该pwd命令显示当前工作目录的名称：在树莓派上，输入pwd将输出类似/home/pi.</li>
+</ul>
+<h4 id="head"><a href="#head" class="headerlink" title="head"></a>head</h4><ul>
+<li><p>该head命令显示文件的开头。可用于-n指定要显示的行数（默认为 10 行），或与-c指定字节数。</p>
+<h4 id="常用选项"><a href="#常用选项" class="headerlink" title="常用选项"></a>常用选项</h4><ul>
+<li><code>-n N</code> 或 <code>--lines=N</code>：显示文件的前 N 行。例如，<code>head -n 5 filename.txt</code> 将显示 <code>filename.txt</code> 文件的前 5 行。</li>
+<li><code>-c N</code> 或 <code>--bytes=N</code>：显示文件的前 N 字节。例如，<code>head -c 20 filename.txt</code> 将显示文件的前 20 字节。</li>
+<li><code>-q</code> 或 <code>--quiet</code>：在显示多个文件时，不显示文件名。</li>
+<li><code>-v</code> 或 <code>--verbose</code>：在显示多个文件时，显示文件名。</li>
+</ul>
+<pre><code>head [选项] [文件...]
+head filename.txt            # 显示文件前 10 行
+head -n 5 filename.txt       # 显示文件前 5 行
+head -c 20 filename.txt      # 显示文件前 20 字节
+</code></pre>
+</li>
+</ul>
+<h4 id="tail"><a href="#tail" class="headerlink" title="tail"></a>tail</h4><ul>
+<li><p>tail命令用于显示文件的结尾部分。默认情况下，它显示文件的最后 10 行。</p>
+<h4 id="常用选项-1"><a href="#常用选项-1" class="headerlink" title="常用选项"></a>常用选项</h4><ul>
+<li><code>-n N</code> 或 <code>--lines=N</code>：显示文件的最后 N 行。例如，<code>tail -n 5 filename.txt</code> 将显示 <code>filename.txt</code> 文件的最后 5 行。</li>
+<li><code>-c N</code> 或 <code>--bytes=N</code>：显示文件的最后 N 字节。例如，<code>tail -c 20 filename.txt</code> 将显示文件的最后 20 字节。</li>
+<li><code>-f</code> 或 <code>--follow</code>：实时监视文件的追加内容，适用于查看日志文件的更新。使用 <code>tail -f filename.log</code> 可以持续显示 <code>filename.log</code> 文件的新增内容。</li>
+<li><code>-q</code> 或 <code>--quiet</code>：在显示多个文件时，不显示文件名。</li>
+<li><code>-v</code> 或 <code>--verbose</code>：在显示多个文件时，显示文件名。</li>
+</ul>
+<pre><code class="shell">tail [选项] [文件...]
+tail filename.txt            # 显示文件最后 10 行
+tail -n 5 filename.txt       # 显示文件最后 5 行
+tail -c 20 filename.txt      # 显示文件最后 20 字节
+tail -f filename.log         # 实时监视日志文件的追加内容
+</code></pre>
+</li>
+</ul>
+<h4 id="df"><a href="#df" class="headerlink" title="df"></a>df</h4><ul>
+<li><p> df命令的主要功能是报告文件系统的可用空间和使用情况。它可以帮助用户了解文件系统的健康状况以及是否需要进行清理。</p>
+</li>
+<li><p>用于df显示已安装文件系统上可用和使用的磁盘空间。用于df -h以可读的格式查看输出，使用 M 表示 MB，而不是显示字节数。</p>
+<h3 id="常用选项-2"><a href="#常用选项-2" class="headerlink" title="常用选项"></a>常用选项</h3><ul>
+<li><code>-h</code> 或 <code>--human-readable</code>：以人类可读的格式显示，自动选择适当的单位（如 KB、MB、GB）。</li>
+<li><code>-a</code> 或 <code>--all</code>：包括所有文件系统，包括那些已挂载但没有使用的文件系统。</li>
+<li><code>-T</code> 或 <code>--print-type</code>：显示文件系统的类型，例如 ext4、xfs 等。</li>
+<li><code>-i</code>：显示 inode 的使用情况，而不是磁盘空间的使用情况。</li>
+<li><code>-l</code> 或 <code>--local</code>：仅显示本地文件系统，不包括网络文件系统。</li>
+<li><code>-t 类型</code>：仅显示指定类型的文件系统，例如 <code>df -t ext4</code>。</li>
+<li><code>-x 类型</code>：排除指定类型的文件系统。</li>
+</ul>
+<pre><code>df [选项] [文件...]
+# 显示所有挂载文件系统的信息
+df
+# 以人类可读的格式显示空间使用情况
+df -h
+# 显示特定文件系统的使用情况
+df /home
+# 显示 inode 使用情况
+df -i
+# 显示文件系统类型
+df -T
+</code></pre>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li><code>df</code> 命令显示的结果可能会因为权限问题而有所不同。如果用户没有访问某个文件系统的权限，可能无法看到相关信息。</li>
+<li><code>df</code> 命令的输出信息和实际使用情况可能会有延迟，尤其是在使用 NFS 等网络文件系统时。</li>
+</ul>
+</li>
+</ul>
+<h4 id="zip"><a href="#zip" class="headerlink" title="zip"></a>zip</h4><ul>
+<li><p>zip命令用于压缩文件,zip 是个使用广泛的压缩程序，压缩后的文件后缀名为 .zip。</p>
+</li>
+<li><p>基本语法</p>
+<pre><code class="shell">zip [选项] zipfile files...
+</code></pre>
+<h4 id="常用选项-3"><a href="#常用选项-3" class="headerlink" title="常用选项"></a>常用选项</h4><ul>
+<li><code>-r</code>：递归压缩目录及其内容。</li>
+<li><code>-e</code>：创建加密的 zip 文件，压缩时会要求输入密码。</li>
+<li><code>-9</code>：使用最高压缩级别。</li>
+<li><code>-q</code>：安静模式，不显示处理的信息。</li>
+</ul>
+</li>
+<li><p>如果在我们在 /home/pi/waveshare 目录下，将这个目录下所有文件和文件夹打包为当前目录下的waveshare.zip,可以执行以下命令：</p>
+<pre><code>zip -q -r waveshare.zip *
+</code></pre>
+</li>
+</ul>
+<h4 id="unzip"><a href="#unzip" class="headerlink" title="unzip"></a>unzip</h4><ul>
+<li><p>unzip命令用于解压缩zip文件，unzip为.zip压缩文件的解压缩程序。</p>
+</li>
+<li><p>基本语法</p>
+<pre><code class="shell">unzip [选项] zipfile
+</code></pre>
+<h4 id="常用选项-4"><a href="#常用选项-4" class="headerlink" title="常用选项"></a>常用选项</h4><ul>
+<li><code>-d DIR</code>：指定解压缩的目标目录。</li>
+<li><code>-l</code>：列出压缩文件中的内容，而不解压。</li>
+<li><code>-o</code>：自动覆盖已有文件，不提示。</li>
+<li><code>-q</code>：安静模式，不显示处理的信息。</li>
+</ul>
+<pre><code>unzip waveshare.zip -d user/
+</code></pre>
+</li>
+</ul>
+<h4 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h4><ul>
+<li><p>tar命令是用来建立，还原备份文件的工具程序，它可以加入，解开备份文件内的文件。</p>
+</li>
+<li><p>基本语法</p>
+<pre><code class="shell">tar [选项] [归档文件] [要归档的文件或目录]
+</code></pre>
+<h3 id="常用选项-5"><a href="#常用选项-5" class="headerlink" title="常用选项"></a>常用选项</h3><ul>
+<li><code>-c</code>：创建一个新的归档文件。</li>
+<li><code>-x</code>：解压缩归档文件。</li>
+<li><code>-t</code>：列出归档文件的内容。</li>
+<li><code>-f</code>：指定归档文件的名称。</li>
+<li><code>-v</code>：显示详细的处理信息（verbose）。</li>
+<li><code>-z</code>：通过 gzip 压缩或解压缩（通常用于 <code>.tar.gz</code> 格式）。</li>
+<li><code>-j</code>：通过 bzip2 压缩或解压缩（通常用于 <code>.tar.bz2</code> 格式）。</li>
+<li><code>-J</code>：通过 xz 压缩或解压缩（通常用于 <code>.tar.xz</code> 格式）。</li>
+<li><code>-C</code>：指定解压缩时的目标目录。</li>
+</ul>
+</li>
+<li><p>压缩文件：</p>
+<pre><code>tar -cvzf waveshare.tar.gz *
+</code></pre>
+</li>
+<li><p>解压文件：</p>
+<pre><code class="shell">tar -xvzf waveshare.tar.gz 
+</code></pre>
+</li>
+</ul>
+<h4 id="tree"><a href="#tree" class="headerlink" title="tree"></a>tree</h4><ul>
+<li>使用该tree命令将目录以及所有子目录和文件缩进为树结构。</li>
+</ul>
+<h4 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h4><ul>
+<li><p>下载树莓派4数据表并将其另存为raspberry-pi-4-datasheet.pdf,使用</p>
+<pre><code>wget https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf
+</code></pre>
+</li>
+</ul>
+<h4 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h4><ul>
+<li><p>Linux curl命令是一个利用URL规则在命令行下工作的文件传输工具。它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称curl为下载工具。作为一款强力工具，curl支持包括HTTP、HTTPS、ftp等众多协议，还支持POST、cookies、认证、从指定偏移处下载部分文件、用户代理字符串、限速、文件大小、进度条等特征。做网页处理流程和数据检索自动化，curl可以祝一臂之力。</p>
+</li>
+<li><p>语法:</p>
+<pre><code>curl  (选项)  (参数)
+</code></pre>
+</li>
+<li><p>参数:</p>
+<ul>
+<li>-A/–user-agent <string> 设置用户代理发送给服务器</string></li>
+<li>-b/–cookie &lt;name=string/file&gt; cookie字符串或文件读取位置</li>
+<li>-c/–cookie-jar <file> 操作结束后把cookie写入到这个文件中</file></li>
+<li>-C/–continue-at <offset> 断点续转</offset></li>
+<li>-D/–dump-header <file> 把header信息写入到该文件中</file></li>
+<li>-e/–referer 来源网址</li>
+<li>-f/–fail 连接失败时不显示http错误</li>
+<li>-o/–output 把输出写到该文件中</li>
+<li>-O/–remote-name 把输出写到该文件中，保留远程文件的文件名</li>
+<li>-r/–range <range> 检索来自HTTP/1.1或FTP服务器字节范围</range></li>
+<li>-s/–silent 静音模式。不输出任何东西</li>
+<li>-T/–upload-file <file> 上传文件</file></li>
+<li>-u/–user &lt;user[:password]&gt; 设置服务器的用户和密码</li>
+<li>-w/–write-out [format] 什么输出完成后</li>
+<li>-x/–proxy &lt;host[:port]&gt; 在给定的端口上使用HTTP代理</li>
+<li>-#/–progress-bar 进度条显示当前的传送状态</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><p>基本用法： 执行以下命令，<a target="_blank" rel="noopener" href="http://www.waveshare.net/">www.waveshare.net</a> 的html就会显示在屏幕上:</p>
+<pre><code>curl http://www.waveshare.net
+</code></pre>
+</li>
+<li><p>保存访问网页： 使用curl的内置option:-o(小写)保存网页，显示100%则表示保存成功：</p>
+</li>
+</ol>
+<pre><code>curl -o waveshare.html http://www.waveshare.com
+</code></pre>
+<ol start="3">
+<li><p>使用curl的内置option:-O(大写)保存网页中的文件,要注意这里后面的url要具体到某个文件，不然抓不下来</p>
+<pre><code>curl -O http://www.waveshare.com/hello.sh
+</code></pre>
+<ol>
+<li><p>测试网页返回值</p>
+<pre><code>curl -o /dev/null -s -w %&#123;http_code&#125; www.waveshare.com
+</code></pre>
+</li>
+<li><p>利用curl下载文件:</p>
+<p>使用内置option：-o(小写)和内置option：-O（大写）</p>
+<pre><code>curl -o 1.png https://www.waveshare.net/wiki/文件:Test-1111.png
+</code></pre>
+<pre><code>curl -O https://www.waveshare.net/wiki/文件:Test-1111.png 
+</code></pre>
+</li>
+</ol>
+<h4 id="apt"><a href="#apt" class="headerlink" title="apt"></a>apt</h4></li>
+<li><ul>
+<li>apt（Advanced Packaging Tool）是一个在 Debian 和 Ubuntu 中的 Shell 前端软件包管理器。</li>
+<li>apt 命令提供了查找、安装、升级、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。</li>
+<li>apt 命令执行需要超级管理员权限(root)。</li>
+<li>apt 常用命令<ul>
+<li>列出所有可更新的软件清单命令：sudo apt update</li>
+<li>升级软件包：sudo apt upgrade</li>
+<li>列出可更新的软件包及版本信息：apt list –upgradeable</li>
+<li>升级软件包，升级前先删除需要更新软件包：sudo apt full-upgrade</li>
+<li>安装指定的软件命令：sudo apt install <package_name></package_name></li>
+<li>安装多个软件包：sudo apt install <package_1> <package_2> <package_3></package_3></package_2></package_1></li>
+<li>更新指定的软件命令：sudo apt update <package_name></package_name></li>
+<li>显示软件包具体信息,例如：版本号，安装大小，依赖关系等等：sudo apt show <package_name></package_name></li>
+<li>删除软件包命令：sudo apt remove <package_name></package_name></li>
+<li>清理不再使用的依赖和库文件: sudo apt autoremove</li>
+<li>移除软件包及配置文件: sudo apt purge <package_name></package_name></li>
+<li>查找软件包命令： sudo apt search <keyword></keyword></li>
+<li>列出所有已安装的包：apt list –installed</li>
+<li>列出所有已安装的包的版本信息：apt list –all-versions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="搜索命令"><a href="#搜索命令" class="headerlink" title="搜索命令"></a>搜索命令</h3><h4 id="find"><a href="#find" class="headerlink" title="find"></a>find</h4><ul>
+<li>Linux find 命令用来在指定目录下查找文件。任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则 find 命令将在当前目录下查找子目录与文件。并且将查找到的子目录和文件全部进行显示。</li>
+</ul>
+<ol>
+<li><p>通过文件名查找，例如我们查找waveshare.py文件:</p>
+<pre><code>find  -name waveshare.py 
+</code></pre>
+</li>
+<li><p>通过文件嵌套层数查找。</p>
+<ul>
+<li><p>文件查找最大层数为1，找出的文件全部在/etc目录下，例如我们查找/etc目录下的.conf文件：</p>
+<pre><code>find /etc/ -maxdepth 1 -name *.conf
+</code></pre>
+</li>
+<li><p>文件查找最小层数为2，找出的文件不会包含/etc目录下文件，而是去/etc子目录查找。</p>
+<pre><code>find /etc/ -mindepth 2 -name *.conf
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>将当前目录及其子目录下所有最近 20 天内更新过的文件列出:</p>
+<pre><code>find . -ctime -20
+</code></pre>
+</li>
+<li><p>查找/var/log目录中更改时间在7日以前的普通文件，并在删除之前询问它们：</p>
+<pre><code>find /var/log -type f -mtime +7 -ok rm &#123;&#125; \;
+</code></pre>
+</li>
+<li><p>查找当前目录中文件属主具有读、写权限，并且文件所属组的用户和其他用户具有读权限的文件：</p>
+<pre><code>find . -type f -perm 644 -exec ls -l &#123;&#125; \;
+</code></pre>
+</li>
+<li><p>查找系统中所有文件长度为0的普通文件，并列出它们的完整路径：</p>
+<pre><code>find / -type f -size 0 -exec ls -l &#123;&#125; \;
+</code></pre>
+</li>
+</ol>
+<h4 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h4><ul>
+<li><p>用于grep在文件内部搜索某些搜索模式,可以列出包含特殊字母所有组合。</p>
+<pre><code>ls | grep sys
+</code></pre>
+</li>
+</ul>
+<h4 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h4><ul>
+<li><p>您可以使用cat列出文件的内容，例如cat thisFile将显示thisFile. 可用于列出多个文件的内容，即cat *.txt会列出.txt当前目录下所有文件的内容。</p>
+<pre><code>cat test.txt
+</code></pre>
+</li>
+</ul>
+<h4 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h4><ul>
+<li>AWK 是一种处理文本文件的语言，是一个强大的文本分析工具，相对于grep的查找，sed的编辑，awk在其对数据分析并生成报告时，显得尤为强大。简单来说awk就是把文件逐行的读入，以空格为默认分隔符将每行切片，切开的部分再进行各种分析处理。</li>
+</ul>
+<ol>
+<li><p>每行按空格或TAB分割，输出文本中的1、4项：</p>
+<pre><code class="shell">awk &#39;&#123;print $1,$4&#125;&#39; waveshare.txt
+</code></pre>
+</li>
+<li><p>输出第一列大于2的行：</p>
+<pre><code class="shell">    awk &#39;$1&gt;2&#39; waveshare.txt
+</code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><h3 id="安装解压工具"><a href="#安装解压工具" class="headerlink" title="安装解压工具"></a>安装解压工具</h3><pre><code class="shell">sudo apt update
+sudo apt install zip unzip
+
+unzip huge-ic-smac-linux-driver-v2.3.2-29051_20240531184413.zip -d $(pwd)
+</code></pre>
+<h3 id="SSH连接"><a href="#SSH连接" class="headerlink" title="SSH连接"></a>SSH连接</h3><pre><code class="shell"># 切换到root
+sudo -i
+# 需要切换到4.x版本进行编译，于是换到16.04版本进行编译
+## 安装ssh
+### 使用以下命令安装 OpenSSH 服务器：
+sudo apt update
+sudo apt install openssh-server
+### 安装完成后，启动 SSH 服务并设置为开机自动启动：
+sudo systemctl start ssh
+sudo systemctl enable ssh
+### 再次检查 SSH 服务的状态，确认其已被正确启动：
+sudo systemctl status ssh
+### 确保防火墙允许 SSH 连接：
+sudo ufw allow ssh
+
+# 设置root
+sudo passwd root
+## 编辑 /etc/ssh/sshd_config 文件
+sudo vim /etc/ssh/sshd_config
+## 确保 PermitRootLogin 设置为 yes（请谨慎，因为这可能会带来安全风险）
+PermitRootLogin yes
+## 保存更改并重启 SSH 服务：
+sudo systemctl restart sshd
+
+# 16.04
+root
+0810
+</code></pre>
+<h3 id="驱动编译"><a href="#驱动编译" class="headerlink" title="驱动编译"></a>驱动编译</h3><pre><code class="shell"># 8852bs驱动编译及加载
+lspci
+lsmod
+rmmod 8852bs
+modprobe cfg80211
+make clean &amp;&amp; make
+insmod 8852bs.ko
+cat /proc/net/rtl8852bs/drv_cfg
+make install
+</code></pre>
+<h3 id="问题排查"><a href="#问题排查" class="headerlink" title="问题排查"></a>问题排查</h3><p>识别不到串口</p>
+<pre><code class="shell">- services.msc
+- 打开跟虚拟机相关的服务
+- 再次插拔串口
+</code></pre>
+<h3 id="aic8800-usb"><a href="#aic8800-usb" class="headerlink" title="aic8800-usb"></a>aic8800-usb</h3><p>1 准备相关文件</p>
+<pre><code class="shell">sudo mkdir -p /lib/firmware
+sudo cp -r /home/data/aic8800d_linux_sdk_V4.0_2024_1024_9a3636f0/USB/driver_fw/fw/* /lib/firmware
+</code></pre>
+<p>2 编译</p>
+<pre><code class="shell">mkdir -p /home/data
+# 上传压缩包并解压到该目录
+cd /home/data/aic8800d_linux_sdk_V4.0_2024_1024_9a3636f0/USB/driver_fw/drivers/aic8800
+make
+</code></pre>
+<p>3 加载驱动</p>
+<pre><code class="shell">sudo -s 
+
+cd /home/data/aic8800d_linux_sdk_V4.0_2024_1024_9a3636f0/USB/driver_fw/drivers/aic8800/
+
+sudo modprobe cfg80211
+
+sudo insmod aic_load_fw/aic_load_fw.ko adap_test=1
+lsusb
+lsmod | grep aic
+
+sudo insmod aic8800_fdrv/aic8800_fdrv.ko
+dmesg
+
+ifconfig
+</code></pre>
+<h3 id="aic8800-sdio"><a href="#aic8800-sdio" class="headerlink" title="aic8800-sdio"></a>aic8800-sdio</h3><p>1 准备相关文件</p>
+<pre><code class="shell">sudo mkdir -p /lib/firmware
+sudo cp -r /home/data/aic8800d_linux_sdk_V4.0_2024_1024_9a3636f0/SDIO/driver_fw/fw/* /lib/firmware
+</code></pre>
+<p>2 编译</p>
+<pre><code class="shell">mkdir -p /vendor/etc/firmware
+cp -r /home/data/aic8800d_linux_sdk_V4.0_2024_1024_9a3636f0/SDIO/driver_fw/fw/aic8800D80/* /vendor/etc/firmware
+
+mkdir -p /home/data
+# 上传压缩包并解压到该目录
+cd /home/data/aic8800d_linux_sdk_V4.0_2024_1024_9a3636f0/SDIO/driver_fw/driver/aic8800
+make
+</code></pre>
+<p>3 加载驱动</p>
+<pre><code class="shell">sudo modprobe cfg80211
+
+insmod aic8800_bsp/aic8800_bsp.ko adap_test=1
+# insmod aic8800_fdrv/aic8800_fdrv.ko
+ifconfig
+</code></pre>
+<p>4 其它问题</p>
+<pre><code class="shell">rmmod cfg80211
+rmmod 8821cs
+# 再次重试前需要移除驱动：
+rmmod aic8800_bsp
+# 然后再
+insmod aic8800_bsp/aic8800_bsp.ko adap_test=1
+</code></pre>
+<h3 id="吞吐量测试"><a href="#吞吐量测试" class="headerlink" title="吞吐量测试"></a>吞吐量测试</h3><p>服务端</p>
+<pre><code class="shell">iperf3 -s
+# 得到ip
+ipconfig 
+</code></pre>
+<p>客户端</p>
+<pre><code class="shell">iperf3 -c 192.168.31.126 -t 120
+
+iperf3 -c 192.168.31.126 -i 1 -w 8k -t 240
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jungle8884@163.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '6763cf342e4c3335d632',
+            clientSecret: '91ee1b22f4c8e5eff96b6e0eae5bdda1f6580ebb',
+            repo: 'jungle8884.github.io',
+            owner: 'jungle8884',
+            admin: ['jungle8884'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Jungle
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+<div>
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 0; right: 0;">
+<div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1894278325&auto=1&height=66"></iframe>
+</div>
+<!-- 以下代码是为了支持随时拖动音乐控件的位置，如没有需求，可去掉下面代码 -->
+<script>
+var $DOC = $(document)
+$('#musicMouseDrag').on ('mousedown', function (e) {
+// 阻止文本选中
+$DOC.bind ("selectstart", function () {
+return false;
+});
+$('#musicDragArea').css ('height', '100%');
+var $moveTarget = $('#musicMouseDrag');
+$moveTarget.css ('border', '1px dashed grey')
+var div_x = e.pageX - $moveTarget.offset ().left;
+var div_y = e.pageY - $moveTarget.offset ().top;
+$DOC.on ('mousemove', function (e) {
+var targetX = e.pageX - div_x;
+var targetY = e.pageY - div_y;
+targetX = targetX < 0 ? 0 : (targetX + $moveTarget.outerWidth () >= window.innerWidth) ? window.innerWidth - $moveTarget.outerWidth () : targetX;
+targetY = targetY < 0 ? 0 : (targetY + $moveTarget.outerHeight () >= window.innerHeight) ? window.innerHeight - $moveTarget.outerHeight () : targetY;
+$moveTarget.css ({'left': targetX + 'px', 'top': targetY + 'px', 'bottom': 'inherit', 'right': 'inherit'})
+}).on ('mouseup', function () {
+$DOC.unbind ("selectstart");
+$DOC.off ('mousemove')
+$DOC.off ('mouseup')
+$moveTarget.css ('border', 'none')
+$('#musicDragArea').css ('height', '10px');
+})
+})
+</script>
+
+</html>

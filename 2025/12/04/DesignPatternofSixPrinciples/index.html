@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>六大设计原则 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="设计模式的六大原则设计模式的世界丰富多彩，比如生产一个个“产品”的工厂模式，衔接两个不相关接口的适配器模式，用不同的方式做同一件事的策略模式，构建步骤稳定、根据构建过程的不同配置构建出不同对象的建造者模式等等。 无论何种设计模式，都是基于六大设计原则：  1、开闭原则： 一个软件实体如类、模块和函数应该对 修改封闭，对扩展开放。 Software entities like classes, mo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="六大设计原则">
+<meta property="og:url" content="http://example.com/2025/12/04/DesignPatternofSixPrinciples/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="设计模式的六大原则设计模式的世界丰富多彩，比如生产一个个“产品”的工厂模式，衔接两个不相关接口的适配器模式，用不同的方式做同一件事的策略模式，构建步骤稳定、根据构建过程的不同配置构建出不同对象的建造者模式等等。 无论何种设计模式，都是基于六大设计原则：  1、开闭原则： 一个软件实体如类、模块和函数应该对 修改封闭，对扩展开放。 Software entities like classes, mo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907122926155.png">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907132016968.png">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907132140394.png">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907132219875.png">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907132307753.png">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907132408072.png">
+<meta property="og:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907132536420.png">
+<meta property="article:published_time" content="2025-12-04T01:18:41.724Z">
+<meta property="article:modified_time" content="2022-11-22T17:04:58.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="六大原则">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/DesignPatternofSixPrinciples/image-20210907122926155.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-DesignPatternofSixPrinciples" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/04/DesignPatternofSixPrinciples/" class="article-date">
+  <time class="dt-published" datetime="2025-12-04T01:18:41.724Z" itemprop="datePublished">2025-12-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>►<a class="article-category-link" href="/categories/%E5%90%8E%E7%AB%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      六大设计原则
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="设计模式的六大原则"><a href="#设计模式的六大原则" class="headerlink" title="设计模式的六大原则"></a>设计模式的六大原则</h1><p>设计模式的世界丰富多彩，比如生产一个个“产品”的工厂模式，衔接两个不相关接口的适配器模式，用不同的方式做同一件事的策略模式，构建步骤稳定、根据构建过程的不同配置构建出不同对象的建造者模式等等。</p>
+<p>无论何种设计模式，都是基于六大设计原则：</p>
+<p><img src="/DesignPatternofSixPrinciples/image-20210907122926155.png" alt="image-20210907122926155"></p>
+<h2 id="1、开闭原则："><a href="#1、开闭原则：" class="headerlink" title="1、开闭原则："></a>1、开闭原则：</h2><blockquote>
+<p>一个软件实体如类、模块和函数应该对 <strong><code>修改封闭，对扩展开放</code></strong>。</p>
+<p>Software entities like classes, modules and functions should be open for extension but closed for modification</p>
+</blockquote>
+<p><strong>[Open Closed Principle，OCP]</strong></p>
+<ul>
+<li>当应用的需求改变时, 在不修改源代码的前提下, 可以扩展模块的功能, 使其满足新的需求.</li>
+<li>遵守开闭原则的软件，其稳定性高和延续性强，从而易于扩展和维护.</li>
+<li>对扩展开放是对提供方来说的, 对修改关闭是针对调用放来说的. <ul>
+<li>抽象类或接口: 对扩展开放</li>
+<li>具体怎么实现由写代码的人负责, 不需要其他人干涉: 对修改关闭</li>
+</ul>
+</li>
+</ul>
+<h2 id="2、单一职责原则："><a href="#2、单一职责原则：" class="headerlink" title="2、单一职责原则："></a>2、单一职责原则：</h2><blockquote>
+<p><code>一个类只做一件事，一个类应该只有一个引起它修改的原因</code>。</p>
+<p>There should never be more than one reason for a class to change.</p>
+</blockquote>
+<p><strong>[Single Responsibility Principle, SRP]</strong></p>
+<p><strong>简单来说，一个类中应该是一组相关性很高的函数、数据的封装。</strong></p>
+<ul>
+<li>比如当要做一个图片加载器的时候，不应该把所有的东西都写在一个类中，</li>
+<li>应该各个功能独立出来，可以分成图片加载功能和缓存功能等模块，</li>
+<li>这样类中的代码逻辑清晰可读性、可扩展性和可维护性会大大提高。</li>
+<li>比如: 设计一个Controller、Service、Mapper时.</li>
+</ul>
+<h2 id="3、里氏替换原则："><a href="#3、里氏替换原则：" class="headerlink" title="3、里氏替换原则："></a>3、里氏替换原则：</h2><blockquote>
+<p>所有引用基类的地方必须能透明地使用其子类的对象</p>
+<p>Functions that use use pointers or references to base classes must be able to use objects of derived classes without knowing it.</p>
+</blockquote>
+<p><strong>[Liskov Substitution Principle, LSP]</strong></p>
+<ul>
+<li><p>子类应该可以完全替换父类。</p>
+</li>
+<li><p>也就是说在使用继承时，只扩展新功能，而不要破坏父类原有的功能。</p>
+</li>
+<li><p>抽象类 或 接口 &lt;– T t &#x3D; new TImpl() –&gt; 实现类</p>
+</li>
+</ul>
+<h2 id="4、依赖倒置原则："><a href="#4、依赖倒置原则：" class="headerlink" title="4、依赖倒置原则："></a>4、依赖倒置原则：</h2><blockquote>
+<p>1、<strong>细节应该依赖于抽象</strong>，抽象不应依赖于细节。<br>2、把抽象层放在程序设计的高层，并保持稳定，程序的细节变化由低层的实现层来完成。</p>
+<p>High level modules should not depend upon low level modules. Both should depend upon abstractions.<br> Abstractions should not depend upon details. Details should depend upon abstractions.</p>
+</blockquote>
+<p><strong>[Dependence Inversion Principle]</strong></p>
+<ul>
+<li>要面向接口编程，不要面向实现编程</li>
+<li>抽象层则相对稳定，因此以抽象为基础搭建起来的架构要比以细节为基础搭建起来的架构要稳定得多</li>
+<li><code>抽象指的是接口或者抽象类，而细节是指具体的实现类</code></li>
+<li>抽象就是一种制定的标准</li>
+<li>依赖倒置原则的目的是通过要面向接口的编程来降低类间的耦合性:<ol>
+<li><code>每个类尽量提供接口或抽象类</code>，或者两者都具备</li>
+<li><code>变量的声明类型尽量是接口或者是抽象类</code></li>
+<li><code>任何类都不应该从具体类派生</code></li>
+<li><code>使用继承时尽量遵循里氏替换原则</code></li>
+</ol>
+</li>
+<li>就是我们一直在使用的Spring框架.<ul>
+<li>UserMapper –&gt; UserService </li>
+<li>变成: </li>
+<li>UserMapper –&gt; UserService –&gt; UserServiceImpl</li>
+<li>使用时, 直接注入接口就行</li>
+<li>只需要知道接口中定义了什么方法然后使用就行, 而具体的操作由接口实现类来完成, 并由Spring来为我们注入, 而不是我们用硬编码的方式去指定.</li>
+</ul>
+</li>
+</ul>
+<h2 id="5、迪米特法则："><a href="#5、迪米特法则：" class="headerlink" title="5、迪米特法则："></a>5、迪米特法则：</h2><blockquote>
+<p><strong><code>一个类不应知道自己操作的类的细节</code></strong>，换言之，只和朋友谈话，不和朋友的朋友谈话。</p>
+<p>Talk only to your immediate friends and not to strangers</p>
+</blockquote>
+<p><strong>[Demeter Principle]</strong></p>
+<ul>
+<li>迪米特法则，又名“最少知道原则”</li>
+<li>如果两个软件实体无须直接通信，那么就不应当发生直接的相互调用，可以通过第三方转发该调用。<ul>
+<li>一个类&#x2F;模块对其他类&#x2F;模块有越少的交互越好.</li>
+<li>当一个类发生改动时, 与其相关的类需要尽可能少的受影响, 维护项目的时候更加轻松.</li>
+<li>比如传递参数的时候, 传递的参数是一个类而不是一个具体的参数, 那么若该类发生了改变导致真正的参数获取不到了, 就会对相应的操作造成影响. [直接给真正的参数就完了!]</li>
+</ul>
+</li>
+<li>目的是降低类之间的耦合度，提高模块的相对独立性.</li>
+</ul>
+<h2 id="6、接口隔离原则："><a href="#6、接口隔离原则：" class="headerlink" title="6、接口隔离原则："></a>6、接口隔离原则：</h2><blockquote>
+<p><strong>客户端不应依赖它不需要的接口。</strong></p>
+<p>如果一个接口在实现时，部分方法由于冗余被客户端空实现，则应该将<strong>接口拆分</strong>，让<strong>实现类只需依赖自己需要的接口方法</strong>。</p>
+</blockquote>
+<p><strong>[Interface Segregation Principle]</strong></p>
+<ul>
+<li>要<strong>为各个类建立它们需要的专用接口</strong>，而不要试图去建立一个很庞大的接口供所有依赖它的类去调用.</li>
+<li>提高系统的灵活性和可维护性。</li>
+<li>提高了系统的内聚性，减少了对外交互，降低了系统的耦合性</li>
+<li>使用多个专门的接口还能够体现对象的层次，因为可以通过接口的继承，实现对总接口的定义</li>
+<li>在具体应用接口隔离原则时，应该根据以下几个规则来衡量<ol>
+<li>接口尽量小，但是要有限度。 <ul>
+<li><strong>一个接口只服务于一个子模块或业务逻辑</strong>.</li>
+<li>根据实际情况将接口进行细粒度的划分.</li>
+</ul>
+</li>
+<li>为依赖接口的类定制服务。 只提供调用者需要的方法，屏蔽不需要的方法.</li>
+<li><code>提高内聚</code>，减少对外交互。 使接口用最少的方法去完成最多的事情.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h1 id="其他原则"><a href="#其他原则" class="headerlink" title="其他原则"></a>其他原则</h1><h2 id="合成复用原则"><a href="#合成复用原则" class="headerlink" title="合成复用原则"></a>合成复用原则</h2><p><strong>[Composite Reuse Principle]</strong>  </p>
+<blockquote>
+<p>优先使用对象<strong>组合</strong>, 而不是通过继承来达到复用的目的.</p>
+<p>核心就是委派.</p>
+</blockquote>
+<p>在一个新对象里面使用一些已有的对象, 使之成为新对象的一部分, 新的对象通过这些对象的委派达到复用已有功能的目的.</p>
+<p>复用代码时： <strong>即 多用组合， 少用 继承</strong>. 【合成就是通过某种方式将代码组合在一起】</p>
+<p>这就让人想到了Spring的IOC, 依赖注入.</p>
+<hr>
+<h1 id="几种常见的UML图"><a href="#几种常见的UML图" class="headerlink" title="几种常见的UML图"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57620b762160">几种常见的UML图</a></h1><h2 id="1-继承：-空心三角形-实线-is-a"><a href="#1-继承：-空心三角形-实线-is-a" class="headerlink" title="1 继承： 空心三角形+实线 is-a"></a>1 继承： 空心三角形+实线 <code>is-a</code></h2><p><img src="/DesignPatternofSixPrinciples/image-20210907132016968.png" alt="image-20210907132016968"></p>
+<h2 id="2-实现：-空心三角形-虚线"><a href="#2-实现：-空心三角形-虚线" class="headerlink" title="2 实现： 空心三角形+虚线"></a>2 实现： 空心三角形+虚线</h2><p><img src="/DesignPatternofSixPrinciples/image-20210907132140394.png" alt="image-20210907132140394"></p>
+<h2 id="3-依赖：-虚线箭头"><a href="#3-依赖：-虚线箭头" class="headerlink" title="3 依赖： 虚线箭头"></a>3 依赖： 虚线箭头</h2><p><img src="/DesignPatternofSixPrinciples/image-20210907132219875.png" alt="image-20210907132219875"></p>
+<h2 id="4-关联：-实现箭头"><a href="#4-关联：-实现箭头" class="headerlink" title="4 关联： 实现箭头"></a>4 关联： 实现箭头</h2><p><img src="/DesignPatternofSixPrinciples/image-20210907132307753.png" alt="image-20210907132307753"></p>
+<h2 id="5-聚合：-空心的菱形-实线箭头-has-a-弱拥有"><a href="#5-聚合：-空心的菱形-实线箭头-has-a-弱拥有" class="headerlink" title="5 聚合： 空心的菱形+实线箭头 has-a 弱拥有"></a>5 聚合： 空心的菱形+实线箭头 <code>has-a 弱拥有</code></h2><p><img src="/DesignPatternofSixPrinciples/image-20210907132408072.png" alt="image-20210907132408072"></p>
+<h2 id="6-组合：-实心菱形-实线箭头-contains-a-强拥有"><a href="#6-组合：-实心菱形-实线箭头-contains-a-强拥有" class="headerlink" title="6 组合： 实心菱形+实线箭头 contains-a 强拥有"></a>6 组合： 实心菱形+实线箭头 <code>contains-a 强拥有</code></h2><p><img src="/DesignPatternofSixPrinciples/image-20210907132536420.png" alt="image-20210907132536420"></p>
+<hr>
+<h1 id="设计模式的总结"><a href="#设计模式的总结" class="headerlink" title="设计模式的总结"></a>设计模式的总结</h1><h2 id="一、构建型模式-：Creational-Pattern"><a href="#一、构建型模式-：Creational-Pattern" class="headerlink" title="一、构建型模式 ：Creational Pattern"></a>一、构建型模式 ：<code>Creational Pattern</code></h2><p>工厂方法模式：为每一类对象建立工厂，将对象交由工厂创建，客户端只和工厂打交道。<br>抽象工厂模式：为每一类工厂提取出抽象接口，使得新增工厂、替换工厂变得非常容易。<br>建造者模式：用于创建构造过程稳定的对象，不同的 Builder 可以定义不同的配置。<br>单例模式：全局使用同一个对象，分为饿汉式和懒汉式。懒汉式有双检锁和内部类两种实现方式。<br>原型模式：为一个类定义 clone 方法，使得创建相同的对象更方便。</p>
+<blockquote>
+<p>来源：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/design-patterns/991sn6/">https://leetcode-cn.com/leetbook/read/design-patterns/991sn6/</a></p>
+</blockquote>
+<hr>
+<h2 id="二、结构型模式-Structural-Pattern"><a href="#二、结构型模式-Structural-Pattern" class="headerlink" title="二、结构型模式 Structural Pattern"></a>二、结构型模式 <code>Structural Pattern</code></h2><p><strong>适配器模式：用于有相关性但不兼容的接口</strong></p>
+<p>桥接模式：用于同等级的接口互相组合<br>组合模式：用于整体与部分的结构</p>
+<p><strong>装饰器模式: 增强一个类原有的功能, 为一个类添加新的功能, 并且装饰器模式也不会改变原有的类。</strong></p>
+<p>外观模式：体现封装的思想<br>享元模式：体现面向对象的可复用性<br>代理模式：主要用于对某个对象加以控制</p>
+<blockquote>
+<p>来源：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/design-patterns/9eh29v/">https://leetcode-cn.com/leetbook/read/design-patterns/9eh29v/</a></p>
+</blockquote>
+<hr>
+<h2 id="三、行为型模式-Behavioral-Patterns"><a href="#三、行为型模式-Behavioral-Patterns" class="headerlink" title="三、行为型模式 Behavioral Patterns"></a>三、行为型模式 Behavioral Patterns</h2><blockquote>
+<p>行为型模式重点关注类与类之间的交互与协作。如同在工作中，每个人的行为都可能影响到其他同事，同时每个人也会受到别人的影响。我们一边接收上级的指令，一边派发任务给下级，在这样的协作中完成一项项伟大的工作。程序在运行时，每个对象都不是孤立的，他们可以通过通信与协作完成种种复杂的功能。</p>
+</blockquote>
+<p>责任链模式：处理职责相同，程度不同的对象，使其在一条链上传递<br>命令模式：封装“方法调用”，将行为请求者和行为实现者解耦<br>解释器模式：定义自己的语法规则<br>迭代器模式：定义 next() 方法和 hasNext() 方法，让外部类使用这两个方法来遍历列表，以达到隐藏列表内部细节的目的<br>中介者模式：通过引入中介者，将网状耦合结构变成星型结构<br>备忘录模式：存储对象的状态，以便恢复<br>观察者模式：处理一对多的依赖关系，被观察的对象改变时，多个观察者都能收到通知<br>状态模式：关于多态的设计模式，每个状态类处理对象的一种状态<br>策略模式：殊途同归，用多种方法做同一件事<br>模板方法模式：关于继承的设计模式，父类是子类的模板<br>访问者模式：将数据的结构和对数据的操作分离</p>
+<blockquote>
+<p>来源：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/leetbook/read/design-patterns/9ew9uc/">https://leetcode-cn.com/leetbook/read/design-patterns/9ew9uc/</a></p>
+</blockquote>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/04/DesignPatternofSixPrinciples/" data-id="cuidgMV5u9Gglrvw6RvSDciBZ" data-title="六大设计原则" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/" rel="tag">六大原则</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2025/12/04/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/pytorch/">pytorch</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/fastbee/">fastbee</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/ruoyi/">ruoyi</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/java/mq/">mq</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/shell/">shell</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/wls/">wls</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/%E4%B8%89%E5%89%91%E5%AE%A2/">三剑客</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/">基本使用</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8E%E7%AB%AF/C/">C#</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8E%E7%AB%AF/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8E%E7%AB%AF/SpringBoot/">SpringBoot</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8E%E7%AB%AF/java/">java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8E%E7%AB%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/ChatGPT/">ChatGPT</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/audio/">audio</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/github/">github</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/%E6%8F%92%E4%BB%B6/">插件</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/">MySQL</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/">Redis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B2%89%E6%B7%80%E4%B8%80%E4%B8%8B/">沉淀一下</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B2%89%E6%B7%80%E4%B8%80%E4%B8%8B/%E5%9C%BA%E6%99%AF%E9%A2%98/">场景题</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%89%A9%E8%81%94%E7%BD%91/">物联网</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%89%A9%E8%81%94%E7%BD%91/%E4%B9%90%E9%91%AB/">乐鑫</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%89%A9%E8%81%94%E7%BD%91/%E7%89%A9%E8%81%94%E7%BD%91%E5%B9%B3%E5%8F%B0/">物联网平台</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%89%A9%E8%81%94%E7%BD%91/%E8%AE%BE%E5%A4%87%E7%AB%AF/">设备端</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/LeetCode/">LeetCode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%8F%8C%E6%8C%87%E9%92%88/">双指针</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%9B%BE/">图</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80/">基础</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E5%AD%A6/">数学</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%95%B0%E7%BB%84/">数组</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%97%A5%E6%9C%9F/">日期</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%A0%91/">树</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">滑动窗口</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/51C/" rel="tag">51C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AT/" rel="tag">AT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ado-net/" rel="tag">Ado.net</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ArrayList/" rel="tag">ArrayList</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DL/" rel="tag">DL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESP-Rainmaker/" rel="tag">ESP Rainmaker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESP32/" rel="tag">ESP32</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESP32C3/" rel="tag">ESP32C3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fastbee/" rel="tag">Fastbee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FleetBee/" rel="tag">FleetBee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IO/" rel="tag">IO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Job/" rel="tag">Job</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LinkedList/" rel="tag">LinkedList</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/List/" rel="tag">List</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Map/" rel="tag">Map</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MircroPython/" rel="tag">MircroPython</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NoSQL/" rel="tag">NoSQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/N%E5%8F%89%E6%A0%91/" rel="tag">N叉树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/N%E7%9A%84%E9%98%B6%E4%B9%98/" rel="tag">N的阶乘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OJ/" rel="tag">OJ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Resnet/" rel="tag">Resnet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SQL/" rel="tag">SQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/STM32/" rel="tag">STM32</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Set/" rel="tag">Set</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shell/" rel="tag">Shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stream/" rel="tag">Stream</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Utils/" rel="tag">Utils</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vector/" rel="tag">Vector</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WebGIS/" rel="tag">WebGIS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/audio/" rel="tag">audio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/awk/" rel="tag">awk</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/device/" rel="tag">device</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker-desktop/" rel="tag">docker-desktop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/esp-idf/" rel="tag">esp-idf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fastapi/" rel="tag">fastapi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fastbee/" rel="tag">fastbee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grep/" rel="tag">grep</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hutool/" rel="tag">hutool</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iot/" rel="tag">iot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jwt/" rel="tag">jwt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/k3s/" rel="tag">k3s</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mall/" rel="tag">mall</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mqtt%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/" rel="tag">mqtt上传文件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pyside/" rel="tag">pyside</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pytorch/" rel="tag">pytorch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rabbitmq/" rel="tag">rabbitmq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sed/" rel="tag">sed</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shadowsocks/" rel="tag">shadowsocks</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/" rel="tag">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/swagger/" rel="tag">swagger</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tkinter/" rel="tag">tkinter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/video/" rel="tag">video</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/work/" rel="tag">work</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B9%90%E9%91%AB/" rel="tag">乐鑫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%8B%E5%8A%A1/" rel="tag">事务</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="tag">二叉树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" rel="tag">代理模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" rel="tag">优先队列</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/" rel="tag">六大原则</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" rel="tag">创建型模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%BC%80%E6%A0%91/" rel="tag">前缀树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="tag">单例模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="tag">博客搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/" rel="tag">原型模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8E%9F%E7%A0%81-%E5%8F%8D%E7%A0%81-%E8%A1%A5%E7%A0%81-%E7%A7%BB%E7%A0%81/" rel="tag">原码, 反码, 补码, 移码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag">双指针</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE/" rel="tag">图</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E6%80%81/" rel="tag">多态</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" rel="tag">多线程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2/" rel="tag">多表查询</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A7%94%E6%89%98%E4%B8%8E%E4%BA%8B%E4%BB%B6/" rel="tag">委托与事件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%B9%E5%99%A8/" rel="tag">容器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/" rel="tag">工厂方法模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/" rel="tag">建造者模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" rel="tag">开发框架</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%B3%E6%96%B9%E6%A0%B9/" rel="tag">快速平方根</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" rel="tag">抽象工厂模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A4%87%E4%BB%BD%E5%92%8C%E8%BF%98%E5%8E%9F/" rel="tag">数据库的备份和还原</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%AE%BE%E8%AE%A1/" rel="tag">数据库的设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9E%84%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" rel="tag">构建型模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9F%A5%E6%89%BE/" rel="tag">查找</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B2%B9%E7%8C%B4/" rel="tag">油猴</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" rel="tag">滑动窗口</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/" rel="tag">策略模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" rel="tag">简单工厂模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%A6%E6%9D%9F/" rel="tag">约束</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/" rel="tag">结构型模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%94%A1%E5%8B%92%E5%85%AC%E5%BC%8F/" rel="tag">蔡勒公式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" rel="tag">行为型模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" rel="tag">观察者模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B4%AA%E5%BF%83/" rel="tag">贪心</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" rel="tag">进制转换</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/" rel="tag">迭代器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%95%9C%E5%83%8F/" rel="tag">镜像</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%B0%E5%B9%B4/" rel="tag">闰年</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9B%86%E5%90%88/" rel="tag">集合</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/51C/" style="font-size: 10px;">51C</a> <a href="/tags/AT/" style="font-size: 10px;">AT</a> <a href="/tags/Ado-net/" style="font-size: 10px;">Ado.net</a> <a href="/tags/ArrayList/" style="font-size: 10px;">ArrayList</a> <a href="/tags/C/" style="font-size: 10px;">C</a> <a href="/tags/C/" style="font-size: 13.33px;">C#</a> <a href="/tags/ChatGPT/" style="font-size: 10px;">ChatGPT</a> <a href="/tags/DL/" style="font-size: 13.33px;">DL</a> <a href="/tags/ESP-Rainmaker/" style="font-size: 10px;">ESP Rainmaker</a> <a href="/tags/ESP32/" style="font-size: 10px;">ESP32</a> <a href="/tags/ESP32C3/" style="font-size: 10px;">ESP32C3</a> <a href="/tags/Fastbee/" style="font-size: 10px;">Fastbee</a> <a href="/tags/FleetBee/" style="font-size: 10px;">FleetBee</a> <a href="/tags/IO/" style="font-size: 10px;">IO</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Job/" style="font-size: 10px;">Job</a> <a href="/tags/LeetCode/" style="font-size: 10px;">LeetCode</a> <a href="/tags/LinkedList/" style="font-size: 10px;">LinkedList</a> <a href="/tags/List/" style="font-size: 13.33px;">List</a> <a href="/tags/Map/" style="font-size: 10px;">Map</a> <a href="/tags/MircroPython/" style="font-size: 10px;">MircroPython</a> <a href="/tags/NoSQL/" style="font-size: 10px;">NoSQL</a> <a href="/tags/N%E5%8F%89%E6%A0%91/" style="font-size: 13.33px;">N叉树</a> <a href="/tags/N%E7%9A%84%E9%98%B6%E4%B9%98/" style="font-size: 10px;">N的阶乘</a> <a href="/tags/OJ/" style="font-size: 10px;">OJ</a> <a href="/tags/Python/" style="font-size: 13.33px;">Python</a> <a href="/tags/Resnet/" style="font-size: 10px;">Resnet</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/STM32/" style="font-size: 10px;">STM32</a> <a href="/tags/Set/" style="font-size: 10px;">Set</a> <a href="/tags/Shell/" style="font-size: 10px;">Shell</a> <a href="/tags/SpringBoot/" style="font-size: 10px;">SpringBoot</a> <a href="/tags/Stream/" style="font-size: 10px;">Stream</a> <a href="/tags/Utils/" style="font-size: 10px;">Utils</a> <a href="/tags/Vector/" style="font-size: 10px;">Vector</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/WebGIS/" style="font-size: 10px;">WebGIS</a> <a href="/tags/audio/" style="font-size: 10px;">audio</a> <a href="/tags/awk/" style="font-size: 10px;">awk</a> <a href="/tags/device/" style="font-size: 13.33px;">device</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/docker-desktop/" style="font-size: 10px;">docker-desktop</a> <a href="/tags/esp-idf/" style="font-size: 13.33px;">esp-idf</a> <a href="/tags/fastapi/" style="font-size: 10px;">fastapi</a> <a href="/tags/fastbee/" style="font-size: 10px;">fastbee</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/grep/" style="font-size: 10px;">grep</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/hutool/" style="font-size: 10px;">hutool</a> <a href="/tags/iot/" style="font-size: 10px;">iot</a> <a href="/tags/jwt/" style="font-size: 10px;">jwt</a> <a href="/tags/k3s/" style="font-size: 10px;">k3s</a> <a href="/tags/linux/" style="font-size: 20px;">linux</a> <a href="/tags/mall/" style="font-size: 10px;">mall</a> <a href="/tags/mqtt%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/" style="font-size: 10px;">mqtt上传文件</a> <a href="/tags/pyside/" style="font-size: 10px;">pyside</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/pytorch/" style="font-size: 10px;">pytorch</a> <a href="/tags/rabbitmq/" style="font-size: 10px;">rabbitmq</a> <a href="/tags/sed/" style="font-size: 10px;">sed</a> <a href="/tags/shadowsocks/" style="font-size: 10px;">shadowsocks</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/swagger/" style="font-size: 10px;">swagger</a> <a href="/tags/tkinter/" style="font-size: 10px;">tkinter</a> <a href="/tags/video/" style="font-size: 10px;">video</a> <a href="/tags/work/" style="font-size: 10px;">work</a> <a href="/tags/%E4%B9%90%E9%91%AB/" style="font-size: 10px;">乐鑫</a> <a href="/tags/%E4%BA%8B%E5%8A%A1/" style="font-size: 10px;">事务</a> <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 16.67px;">二叉树</a> <a href="/tags/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">代理模式</a> <a href="/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" style="font-size: 10px;">优先队列</a> <a href="/tags/%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99/" style="font-size: 10px;">六大原则</a> <a href="/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">创建型模式</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E5%89%8D%E7%BC%80%E6%A0%91/" style="font-size: 13.33px;">前缀树</a> <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">单例模式</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 10px;">博客搭建</a> <a href="/tags/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">原型模式</a> <a href="/tags/%E5%8E%9F%E7%A0%81-%E5%8F%8D%E7%A0%81-%E8%A1%A5%E7%A0%81-%E7%A7%BB%E7%A0%81/" style="font-size: 10px;">原码, 反码, 补码, 移码</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 10px;">双指针</a> <a href="/tags/%E5%9B%BE/" style="font-size: 13.33px;">图</a> <a href="/tags/%E5%A4%9A%E6%80%81/" style="font-size: 10px;">多态</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 10px;">多线程</a> <a href="/tags/%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2/" style="font-size: 10px;">多表查询</a> <a href="/tags/%E5%A7%94%E6%89%98%E4%B8%8E%E4%BA%8B%E4%BB%B6/" style="font-size: 10px;">委托与事件</a> <a href="/tags/%E5%AE%B9%E5%99%A8/" style="font-size: 10px;">容器</a> <a href="/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">工厂方法模式</a> <a href="/tags/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">建造者模式</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 10px;">开发</a> <a href="/tags/%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/" style="font-size: 13.33px;">开发框架</a> <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%B3%E6%96%B9%E6%A0%B9/" style="font-size: 10px;">快速平方根</a> <a href="/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">抽象工厂模式</a> <a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 10px;">排序</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A4%87%E4%BB%BD%E5%92%8C%E8%BF%98%E5%8E%9F/" style="font-size: 10px;">数据库的备份和还原</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E8%AE%BE%E8%AE%A1/" style="font-size: 10px;">数据库的设计</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 10px;">数组</a> <a href="/tags/%E6%9E%84%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 16.67px;">构建型模式</a> <a href="/tags/%E6%9F%A5%E6%89%BE/" style="font-size: 10px;">查找</a> <a href="/tags/%E6%B2%B9%E7%8C%B4/" style="font-size: 10px;">油猴</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 10px;">滑动窗口</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 13.33px;">爬虫</a> <a href="/tags/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">策略模式</a> <a href="/tags/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">简单工厂模式</a> <a href="/tags/%E7%BA%A6%E6%9D%9F/" style="font-size: 10px;">约束</a> <a href="/tags/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">结构型模式</a> <a href="/tags/%E8%94%A1%E5%8B%92%E5%85%AC%E5%BC%8F/" style="font-size: 10px;">蔡勒公式</a> <a href="/tags/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 13.33px;">行为型模式</a> <a href="/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">观察者模式</a> <a href="/tags/%E8%B4%AA%E5%BF%83/" style="font-size: 10px;">贪心</a> <a href="/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" style="font-size: 10px;">进制转换</a> <a href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/" style="font-size: 10px;">迭代器</a> <a href="/tags/%E9%95%9C%E5%83%8F/" style="font-size: 10px;">镜像</a> <a href="/tags/%E9%97%B0%E5%B9%B4/" style="font-size: 10px;">闰年</a> <a href="/tags/%E9%9B%86%E5%90%88/" style="font-size: 20px;">集合</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/12/">December 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/11/">November 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/10/">October 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/09/">September 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/01/">January 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/12/04/DesignPatternofSixPrinciples/">六大设计原则</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/04/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/11/06/goodjob/">goodjob</a>
+          </li>
+        
+          <li>
+            <a href="/2025/10/28/java-rabbitmq/">java_rabbitmq</a>
+          </li>
+        
+          <li>
+            <a href="/2025/10/23/java-security/">java_security</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
